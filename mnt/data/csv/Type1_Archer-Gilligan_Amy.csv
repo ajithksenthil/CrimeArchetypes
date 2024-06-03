@@ -1,47 +1,23 @@
-Date,Age,Life Event,Life Event
-1873,0,"Born in Litchfield, CT to James Duggan and Mary Kennedy Duggan.","Born in Litchfield, CT to James Duggan and Mary Kennedy Duggan."
-1890,17,Amy attended New Britain Normal School,Amy attended New Britain Normal School
-1896,23,Marries James Archer,Marries James Archer
-1898,25,Amy gives birth to a daughter named Mary Archer.,Amy gives birth to a daughter named Mary Archer.
-1901,28,"Amy and James moved into the home of John D. Seymour in Newington, CT, to take care of him.","Amy and James moved into the home of John D. Seymour in Newington, CT, to take care of him."
-1904,31,John Seymour died. Seymour’s heirs turned the house into a home for the elderly which was run by Amy and James.,John Seymour died. Seymour’s heirs turned the house into a home for the elderly which was run by Amy and James.
-1907,34,"Amy and James moved into Windsor, Connecticut, and purchased a redbrick house that they turned into the Archer Home for the Elderly and Infirmed.","Amy and James moved into Windsor, Connecticut, and purchased a redbrick house that they turned into the Archer Home for the Elderly and Infirmed."
-1910,37,"-James Archer died suddenly from Bright’s disease. Amy had taken out an insurance policy weeks prior to his death. 
--The Archer home began experiencing financial problems after James’ death.","-James Archer died suddenly from Bright’s disease. Amy had taken out an insurance policy weeks prior to his death. 
--The Archer home began experiencing financial problems after James’ death."
-1911,38,81-year-old Hilton Griffin died of “general debility and old age”,81-year-old Hilton Griffin died of “general debility and old age”
-1912,39,"- Franklin Andrews entered the Archer home. 
-- Amy had 10 residents and an additional 15 deaths.","- Franklin Andrews entered the Archer home. 
-- Amy had 10 residents and an additional 15 deaths."
-,,,
-1913,40,"-Michael Gilligan moved into the Archer home during the summer, he was 57-years old and in perfect health. 
-- November 25, Amy Archer became Mrs. Amy Archer-Gilligan after marrying Michael Gilligan.","-Michael Gilligan moved into the Archer home during the summer, he was 57-years old and in perfect health. 
-- November 25, Amy Archer became Mrs. Amy Archer-Gilligan after marrying Michael Gilligan."
-1914,41,"- January 6, Amy sat down by a dim light in her bedroom and wrote Franklin Andrews a letter. 
--Second week of February, W.H. Mason’s registry of poisons recorded a purchase by Amy of ten ounces of arsenic. 
-- Michael Gilligan dies. 
--In March, Amy put in a claim at the court against the Gilligan estate for $1500, alongside several other businesses looking to divide Michael Gilligan’s $4500 worth of assets. 
-- May 29, Franklin Andrews dies at the Archer Home. 
-- June 11, Alice and Loren Gowdy signed a life contract with Amy Archer for $1000. 
-- December 3, Alice Gowdy died at the Archer Home.","- January 6, Amy sat down by a dim light in her bedroom and wrote Franklin Andrews a letter. 
--Second week of February, W.H. Mason’s registry of poisons recorded a purchase by Amy of ten ounces of arsenic. 
-- Michael Gilligan dies. 
--In March, Amy put in a claim at the court against the Gilligan estate for $1500, alongside several other businesses looking to divide Michael Gilligan’s $4500 worth of assets. 
-- May 29, Franklin Andrews dies at the Archer Home. 
-- June 11, Alice and Loren Gowdy signed a life contract with Amy Archer for $1000. 
-- December 3, Alice Gowdy died at the Archer Home."
-1916,43,"- Maud Lynch died at the age of 33 in the Archer Home. 
-May 09 – Several articles appear in the Hartford Courant about the “murder factory” and the number of deaths at the home. The Courant had been tipped by Nellie Pierce, the sister of victim Franklin Andrews. 
-- Amy is arrested on murder charges 
-July 13 – Amy is charged with murder in the first degree","- Maud Lynch died at the age of 33 in the Archer Home. 
-May 09 – Several articles appear in the Hartford Courant about the “murder factory” and the number of deaths at the home. The Courant had been tipped by Nellie Pierce, the sister of victim Franklin Andrews. 
-- Amy is arrested on murder charges 
-July 13 – Amy is charged with murder in the first degree"
-1917,44,"June 18 - Trial begins. 
-June 23 - Amy takes the stand for her own defense.","June 18 - Trial begins. 
-June 23 - Amy takes the stand for her own defense."
-1918,45,"Amy first spent time in the prison, then later was moved to a mental hospital where she spent the remainder of her life.","Amy first spent time in the prison, then later was moved to a mental hospital where she spent the remainder of her life."
-1919,46,Amy appeals conviction and is granted a new trial. This time she pled not guilty by reason of insanity. She is found guilty of second-degree murder for the death of Franklin Andrews and is sentenced to life in prison.,Amy appeals conviction and is granted a new trial. This time she pled not guilty by reason of insanity. She is found guilty of second-degree murder for the death of Franklin Andrews and is sentenced to life in prison.
-1924,51,"In early July, Amy was declared insane.","In early July, Amy was declared insane."
-,,,
-04/23/1962,89,Amy Archer-Gilligan dies in her hospital bed of natural causes,Amy Archer-Gilligan dies in her hospital bed of natural causes
+Date,Age,Life Event
+1873,0,"Born in Litchfield, CT to James Duggan and Mary Kennedy Duggan.",
+1890,17, "Amy attended New Britain Normal School",
+1896,23, "Marries James Archer",
+1898,25, "Amy gives birth to a daughter named Mary Archer.",
+1901,28,"Amy and James moved into the home of John D. Seymour in Newington, CT, to take care of him.",
+1904,31, "John Seymour died. Seymour’s heirs turned the house into a home for the elderly which was run by Amy and James.",
+1907,34,"Amy and James moved into Windsor, Connecticut, and purchased a redbrick house that they turned into the Archer Home for the Elderly and Infirmed.",
+1910,37,"James Archer died suddenly from Bright’s disease. Amy had taken out an insurance policy weeks prior to his death. The Archer home began experiencing financial problems after James’ death.",
+1911,38, "81-year-old Hilton Griffin died of “general debility and old age”,
+1912,39,"Franklin Andrews entered the Archer home. Amy had 10 residents and an additional 15 deaths."
+1913,40,"Michael Gilligan moved into the Archer home during the summer, he was 57-years old and in perfect health. November 25, Amy Archer became Mrs. Amy Archer-Gilligan after marrying Michael Gilligan.",
+1914,41,"January 6, Amy sat down by a dim light in her bedroom and wrote Franklin Andrews a letter. Second week of February, W.H. Mason’s registry of poisons recorded a purchase by Amy of ten ounces of arsenic. Michael Gilligan dies. In March, Amy put in a claim at the court against the Gilligan estate for $1500, alongside several other businesses looking to divide Michael Gilligan’s $4500 worth of assets."
+1914,41, "May 29, Franklin Andrews dies at the Archer Home."
+1914,41, "June 11, Alice and Loren Gowdy signed a life contract with Amy Archer for $1000. December 3, Alice Gowdy died at the Archer Home.",
+1916,43,"Maud Lynch died at the age of 33 in the Archer Home."
+1916,43, "May 09 – Several articles appear in the Hartford Courant about the “murder factory” and the number of deaths at the home. The Courant had been tipped off by Nellie Pierce, the sister of victim Franklin Andrews. Amy is arrested on murder charges.",
+1916,43, "July 13 – Amy is charged with murder in the first degree",
+1917,44,"June 18 - Trial begins.",
+1917,44, "June 23 - Amy takes the stand for her own defense.",
+1918,45,"Amy first spent time in the prison, then later was moved to a mental hospital where she spent the remainder of her life."
+1919,46, "Amy appeals conviction and is granted a new trial. This time she pled not guilty by reason of insanity. She is found guilty of second-degree murder for the death of Franklin Andrews and is sentenced to life in prison.",
+04/23/1962,89, "Amy Archer-Gilligan dies in her hospital bed of natural causes",
