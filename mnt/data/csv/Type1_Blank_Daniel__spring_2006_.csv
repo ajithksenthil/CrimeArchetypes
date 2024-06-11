@@ -1,30 +1,18 @@
-Date,Age,Life Event,Life Event
-1962,,"Born in Paulina, Louisiana.","Born in Paulina, Louisiana."
-Childhood?,,,
-10/17/1996,34,"Murdered Victor Rossi (WM, 41), beat him to death in his home in St. Amant, Louisiana. Blank worked as Rossi’s car repair shop","Murdered Victor Rossi (WM, 41), beat him to death in his home in St. Amant, Louisiana. Blank worked as Rossi’s car repair shop"
-04/09/1997,35,"Murdered Lillian Phillipe (WF, 71) of Gonzales, Louisiana. She was stabbed to death in her home. Blank previously bought car parts from the store that Phillipe’s husband had started.","Murdered Lillian Phillipe (WF, 71) of Gonzales, Louisiana. She was stabbed to death in her home. Blank previously bought car parts from the store that Phillipe’s husband had started."
-05/18/1997,35,"Murdered Barbara Bourgeois (WF, 58), of Paulina, Louisiana. She was stabbed to death at her home, a quarter mile away from Blank’s home.","Murdered Barbara Bourgeois (WF, 58), of Paulina, Louisiana. She was stabbed to death at her home, a quarter mile away from Blank’s home."
-05/09/1997,35,"Daniel bludgeoned to death, Sam Arcuri (WM, 76) and Louella Arcuri (WF, 69) in their LaPlace, Louisiana home.","Daniel bludgeoned to death, Sam Arcuri (WM, 76) and Louella Arcuri (WF, 69) in their LaPlace, Louisiana home."
-05/14/1997,35,"Daniel murdered Joan Brock (WF, 55), in the back yard of her LaPlace home. She was beaten to death. Blank had worked at Brock’s husband’s car repair shop in Reserve.","Daniel murdered Joan Brock (WF, 55), in the back yard of her LaPlace home. She was beaten to death. Blank had worked at Brock’s husband’s car repair shop in Reserve."
-07/07/1997,35,"Attempted murder of Leonce and Joyce Millet, both 66 years old. They were beaten and shot inside their Gonzales home. They both survived. 
-They helped the police composite a sketch of Daniel Blank that eventually lead to his arrest.","Attempted murder of Leonce and Joyce Millet, both 66 years old. They were beaten and shot inside their Gonzales home. They both survived. 
-They helped the police composite a sketch of Daniel Blank that eventually lead to his arrest."
-11-14-1997,35,"Daniel Blank was arrested in Onalsaka, Texas 
-Sherrif Jeff Wiley of Ascension Parish, La., said Blank confessed on videotape to stabbing, bludgeoning, or shooting six people to pay for his gambling habit.","Daniel Blank was arrested in Onalsaka, Texas 
-Sherrif Jeff Wiley of Ascension Parish, La., said Blank confessed on videotape to stabbing, bludgeoning, or shooting six people to pay for his gambling habit."
-"November,1997",35,"Daniel Blank’s girlfriend, Cynthia Bellard, was arrested days after Daniel was arrested on five different murder charges. In exchange for having those charges dropped, she agreed to testify about Blank’s killing spree.","Daniel Blank’s girlfriend, Cynthia Bellard, was arrested days after Daniel was arrested on five different murder charges. In exchange for having those charges dropped, she agreed to testify about Blank’s killing spree."
-05-15-1998,35,Daniel Blank was convicted of first-degree murder in the death of Joan Brock,Daniel Blank was convicted of first-degree murder in the death of Joan Brock
-07-23-1998,36,"The prosecutors dropped two counts of first-degree murder against Daniel Blanks ex-girlfriend, Cynthia Bellard.","The prosecutors dropped two counts of first-degree murder against Daniel Blanks ex-girlfriend, Cynthia Bellard."
-12-10-1998,36,Daniel Blank escaped during a pause in the hearing through a second-floor bathroom window. He was caught after a short chase.,Daniel Blank escaped during a pause in the hearing through a second-floor bathroom window. He was caught after a short chase.
-12-30-1998,36,Daniel Blank’s attorneys argued that the investigators coerced and manipulated their client into falsely confessing. The defense also motioned for a change of venue as a result of the cases popularity.,Daniel Blank’s attorneys argued that the investigators coerced and manipulated their client into falsely confessing. The defense also motioned for a change of venue as a result of the cases popularity.
-"September,1999",37,Was convicted of killing Lillian Philippe and was sentenced to death by lethal injection.,Was convicted of killing Lillian Philippe and was sentenced to death by lethal injection.
-04-11-2000,38,Convicted of killing Joan Brock and was sentenced to death by lethal injection,Convicted of killing Joan Brock and was sentenced to death by lethal injection
-,,,
-11-13-2001,39,Daniel plead guilty to two counts of first-degree murder for the deaths of Sam and Louella Arcuri. He was sentenced to two irrevocable life sentences.,Daniel plead guilty to two counts of first-degree murder for the deaths of Sam and Louella Arcuri. He was sentenced to two irrevocable life sentences.
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
+Date,Age,Life Event,
+1962,0,"Born in Paulina, Louisiana.",
+1962-1996,childhood, "info missing",
+10/17/1996,34,"Murdered Victor Rossi (WM, 41), beat him to death in his home in St. Amant, Louisiana. Blank worked at Rossi’s car repair shop",
+04/09/1997,35,"Murdered Lillian Phillipe (WF, 71) of Gonzales, Louisiana. She was stabbed to death in her home. Blank previously bought car parts from the store that Phillipe’s husband had started.",
+05/18/1997,35,"Murdered Barbara Bourgeois (WF, 58), of Paulina, Louisiana. She was stabbed to death at her home, a quarter mile away from Blank’s home.",
+05/09/1997,35,"Daniel bludgeoned to death, Sam Arcuri (WM, 76) and Louella Arcuri (WF, 69) in their LaPlace, Louisiana home.",
+05/14/1997,35,"Daniel murdered Joan Brock (WF, 55), in the back yard of her LaPlace home. She was beaten to death. Blank had worked at Brock’s husband’s car repair shop in Reserve.",
+07/07/1997,35,"Attempted murder of Leonce and Joyce Millet, both 66 years old. They were beaten and shot inside their Gonzales home. They both survived. They helped the police composite a sketch of Daniel Blank that eventually lead to his arrest.",
+11-14-1997,35,"Daniel Blank was arrested in Onalsaka, Texas. Sherrif Jeff Wiley of Ascension Parish, La., said Blank confessed on videotape to stabbing, bludgeoning, or shooting six people to pay for his gambling habit.",
+November 1997,35,"Daniel Blank’s girlfriend, Cynthia Bellard, was arrested days after Daniel was arrested on five different murder charges. In exchange for having those charges dropped, she agreed to testify about Blank’s killing spree.",
+05-15-1998,35,"Daniel Blank was convicted of first-degree murder in the death of Joan Brock",
+07-23-1998,36,"The prosecutors dropped two counts of first-degree murder against Daniel Blanks ex-girlfriend, Cynthia Bellard.",
+12-10-1998,36,"Daniel Blank escaped during a pause in the hearing through a second-floor bathroom window. He was caught after a short chase.",
+12-30-1998,36,"Daniel Blank’s attorneys argued that the investigators coerced and manipulated their client into falsely confessing. The defense also motioned for a change of venue as a result of the cases popularity.",
+September 1999,37,"Was convicted of killing Lillian Philippe and was sentenced to death by lethal injection.",
+04-11-2000,38,"Convicted of killing Joan Brock and was sentenced to death by lethal injection",
+11-13-2001,39,"Daniel plead guilty to two counts of first-degree murder for the deaths of Sam and Louella Arcuri. He was sentenced to two irrevocable life sentences."
