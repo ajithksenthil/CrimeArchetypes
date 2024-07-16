@@ -1,47 +1,34 @@
-Date,Age,Life Event,Life Event
-09/27/1940,0,"Born in Pittsburgh, Pennsylvania","Born in Pittsburgh, Pennsylvania"
-,,Adopted by Mr. & Mrs. George Bittaker,Adopted by Mr. & Mrs. George Bittaker
-,,"Moved around a lot. PA, FL, OH, then finally CA","Moved around a lot. PA, FL, OH, then finally CA"
-1957,17,Dropped out of school,Dropped out of school
-,,"Arrested for auto theft, hit & run, & evading arrest in Long Beach, CA","Arrested for auto theft, hit & run, & evading arrest in Long Beach, CA"
-1959,19,Released from California Youth Authority,Released from California Youth Authority
-Aug 1959,19,Convicted of Interstate Motor Vehicle Theft. Sentenced to serve 18 months at federal reformatory in Oklahoma,Convicted of Interstate Motor Vehicle Theft. Sentenced to serve 18 months at federal reformatory in Oklahoma
-,,Transferred to U.S. medical center in Springfield Missouri for good behavior at the federal reformatory in Oklahoma,Transferred to U.S. medical center in Springfield Missouri for good behavior at the federal reformatory in Oklahoma
-1960,20,Released by doctors from U.S. medical center in Springfield Missouri,Released by doctors from U.S. medical center in Springfield Missouri
-Dec 1960,20,Arrested in Los Angeles for robbery,Arrested in Los Angeles for robbery
-May 1961,21,Convicted of the L.A. robbery. Given an indeterminate sentence of 1-15 years in state prison,Convicted of the L.A. robbery. Given an indeterminate sentence of 1-15 years in state prison
-1961,21,"Diagnosed as “borderline psychotic” and “basically paranoid” while in state prison. Said to be manipulative, and a great deal of pent up hostility.","Diagnosed as “borderline psychotic” and “basically paranoid” while in state prison. Said to be manipulative, and a great deal of pent up hostility."
-1962,22,Psychiatrist noted him as having “poor control of impulse behavior”,Psychiatrist noted him as having “poor control of impulse behavior”
-1963,23,Paroled after serving barely 1/6 of his possible maximum sentence,Paroled after serving barely 1/6 of his possible maximum sentence
-1964,24,Jailed for parole violation & suspicion of robbery,Jailed for parole violation & suspicion of robbery
-1966,26,"Diagnosed again as “borderline psychosis” in jail; bragged about how stealing cars made him feel important; also stated he felt as if he were misunderstood, mistreated and falsely accused his whole life; medication was administered","Diagnosed again as “borderline psychosis” in jail; bragged about how stealing cars made him feel important; also stated he felt as if he were misunderstood, mistreated and falsely accused his whole life; medication was administered"
-1966,26,Released from jail,Released from jail
-1967,27,Parole Violation. Convicted of theft & leaving the scene of a hit & run accident. He received another 5 year sentence,Parole Violation. Convicted of theft & leaving the scene of a hit & run accident. He received another 5 year sentence
-April 1970,30,Paroled after serving less than 3 years,Paroled after serving less than 3 years
-March 1971,31,Arrested for burglary and parole violation,Arrested for burglary and parole violation
-Oct 1971,31,"Convicted on both counts, receiving an additional sentence of 6 months to 15 years","Convicted on both counts, receiving an additional sentence of 6 months to 15 years"
-1974,34,"Arrested for assault with intent to commit murder. Bittaker had stolen meat from a supermarket, put it down his pants and walked out, a store employee went outside to confront Bittaker and the employee was immediately stabbed.","Arrested for assault with intent to commit murder. Bittaker had stolen meat from a supermarket, put it down his pants and walked out, a store employee went outside to confront Bittaker and the employee was immediately stabbed."
-1974,34,Interviewed with forensic psychologist Dr. Ronald Markman; it was to be proven whether or not Bittaker was insane during the attempted murder. Dr.,Interviewed with forensic psychologist Dr. Ronald Markman; it was to be proven whether or not Bittaker was insane during the attempted murder. Dr.
-,,,
-,,"Markman confirmed that Bittaker was a sociopath, and it was revealed that Bittaker had faked all previous psychotic behavior.",
-1974,34,Was sent to California Men’s Colony at San Luis Obispo.,
-1978,38,"Met Roy Norris at California Men’s Colony 
-The two men claimed to be soul mates and never left one another’s side. They shared the same fantasies of domination through rape and torture. They made plans to have some “fun” after being released from prison. They planned to kill young women ages 13-19, every year of being a teenager.",
-Nov 1978,38,Released from California Men’s Colony; moved in with his mother and purchased a silver 1977 GMS cargo van and named it “Murder Mack”,
-Feb 1979,39,Wrote to Norris and arranged to meet at a cheap downtown hotel,
-Feb - June 1979,39,"The men searched for a place to kill the young women they planned on kidnapping. The place was buried deep in the San Gabriel mountains, on a fire mountain road;",
+Date,Age,Life Event,
+09/27/1940,0,"Born in Pittsburgh, Pennsylvania. Adopted by Mr. & Mrs. George Bittaker. Moved around a lot. PA, FL, OH, then finally CA",
+1957,17,"Dropped out of school. Arrested for auto theft, hit & run, & evading arrest in Long Beach, CA",
+1959,19, "Released from California Youth Authority",
+Aug 1959,19,"Convicted of Interstate Motor Vehicle Theft.Sentenced to serve 18 months at federal reformatory in Oklahoma. Transferred to U.S. medical center in Springfield Missouri for good behavior at the federal reformatory in Oklahoma.",
+1960,20,"Released by doctors from U.S. medical center in Springfield Missouri",
+Dec 1960,20,"Arrested in Los Angeles for robbery",y
+May 1961,21,"Convicted of the L.A. robbery. Given an indeterminate sentence of 1-15 years in state prison",
+1961,21,"Diagnosed as 'borderline psychotic' and 'basically paranoid' while in state prison. Said to be manipulative, and a great deal of pent up hostility.",
+1962,22,"Psychiatrist noted him as having 'poor control of impulse behavior'",
+1963,23,"Paroled after serving barely 1/6 of his possible maximum sentence",
+1964,24,"Jailed for parole violation & suspicion of robbery",
+1966,26,"Diagnosed again as 'borderline psychosis' in jail; bragged about how stealing cars made him feel important; also stated he felt as if he were misunderstood, mistreated and falsely accused his whole life; medication was administered",
+1966,26,"Released from jail",
+1967,27,"Parole Violation. Convicted of theft & leaving the scene of a hit & run accident. He received another 5 year sentence",
+April 1970,30,"Paroled after serving less than 3 years",
+March 1971,31,"Arrested for burglary and parole violation",
+Oct 1971,31,"Convicted on both counts, receiving an additional sentence of 6 months to 15 years",
+1974,34,"Arrested for assault with intent to commit murder. Bittaker had stolen meat from a supermarket, put it down his pants and walked out, a store employee went outside to confront Bittaker and the employee was immediately stabbed.",
+1974,34,"Interviewed with forensic psychologist Dr. Ronald Markman; it was to be proven whether or not Bittaker was insane during the attempted murder. Dr. Markman confirmed that Bittaker was a sociopath, and it was revealed that Bittaker had faked all previous psychotic behavior.",
+1974,34, "Was sent to California Men’s Colony at San Luis Obispo.",
+1978,38,"Met Roy Norris at California Men’s Colony. The two men claimed to be soul mates and never left one another’s side. They shared the same fantasies of domination through rape and torture. They made plans to have some 'fun' after being released from prison. They planned to kill young women ages 13-19, every year of being a teenager.",
+Nov 1978,38,"Released from California Men’s Colony; moved in with his mother and purchased a silver 1977 GMS cargo van and named it 'Murder Mack'",
+Feb 1979,39,"Wrote to Norris and arranged to meet at a cheap downtown hotel",
+Feb - June 1979,39,"The men searched for a place to kill the young women they planned on kidnapping. The place was buried deep in the San Gabriel mountains, on a fire mountain road",
 06/24/1979,39,"Norris and Bittaker find their first victim, Cindy Schaeffer (WF, 16). She was taken by the men and brought into the truck, where Norris duct taped her mouth shut and bound her ankles and wrists. She was driven to fire mountain road where she was raped, and strangled with a wire hanger. Her body was thrown in a canyon.",
-07/08/1979,39,"Norris and Bittaker picked-up Andrea Hall (WF, 18) who was hitch hiking the Pacific Coast Highway. She was taped and bound in the back of the truck and once again, brought back to fire mountain road. Andrea was repeatedly raped by turns. Norris and Bittaker took pictures of the girl as she fought for her life. 
-When she started to scream the men asked her not to stop. Bittaker stabbed Andrea twice with an ice pick, once in each ear. She was then strangled and then thrown off of a cliff",
-09/03/1979,39,"Norris and Bittaker spotted their 3rd and 4th victims hitchhiking along the Pacific Coast Highway. Leah Lamp (WF, 13) and Jackie Gilliam (WF, 15). 
-The men picked up the girls and said they were going to the beach; the girls smoked marijuana casually and noticed Bittaker drive away from the direction of the beach. The girls tried to resist but were tied, bound, taken to the fire road, and kept prisoners for two days. Bittaker and Norris repeatedly raped and tortured the girls while tape-recording the whole time. Norris took a baseball bat to Leah’s skull. Bittaker stabbed Gilliam in both ears with an ice pick, didn’t kill her so strangled her to death with a coat hanger. Bittaker squeezed Lamp’s throat while Norris pounded her head 7 times with a sledgehammer. 
-The girls were then thrown off of a cliff",
+07/08/1979,39,"Norris and Bittaker picked-up Andrea Hall (WF, 18) who was hitch hiking the Pacific Coast Highway. She was taped and bound in the back of the truck and once again, brought back to fire mountain road. Andrea was repeatedly raped by turns. Norris and Bittaker took pictures of the girl as she fought for her life. When she started to scream the men asked her not to stop. Bittaker stabbed Andrea twice with an ice pick, once in each ear. She was then strangled and then thrown off of a cliff",
+09/03/1979,39,"Norris and Bittaker spotted their 3rd and 4th victims hitchhiking along the Pacific Coast Highway. Leah Lamp (WF, 13) and Jackie Gilliam (WF, 15). The men picked up the girls and said they were going to the beach; the girls smoked marijuana casually and noticed Bittaker drive away from the direction of the beach. The girls tried to resist but were tied, bound, taken to the fire road, and kept prisoners for two days. Bittaker and Norris repeatedly raped and tortured the girls while tape-recording the whole time. Norris took a baseball bat to Leah’s skull. Bittaker stabbed Gilliam in both ears with an ice pick, didn’t kill her so strangled her to death with a coat hanger. Bittaker squeezed Lamp’s throat while Norris pounded her head 7 times with a sledgehammer. The girls were then thrown off of a cliff",
 10/31/1979,40,"While driving in the Sunland-Tujunga section of the San Fernando Valley the men picked up hitchhiker Shirley Ledford (WF, 16). Almost immediately after entering the van, Shirley was bound and gagged with construction tape. The men repeatedly stabbed her with pliers; hit her with ice picks in the ears, and hammers to the elbows 25 times while sodomizing her at the same time. They did not want her to stop screaming. The event was being recorded the whole time. The men eventually wrapped a hanger around Shirley’s neck tying it with pliers until she died. The men then decided, instead of throwing her off of a cliff, to set her body on the front yard in a residential neighborhood, Hermosa Beach.",
-11/20/1979,40,Burbank police in suspicion of rape and kidnapping arrested Bittaker at his home.,
-11/30/1979,40,"Norris was brought before Detectives Cray and Bynum as well as District Attorney Kay and a judge. He was confronted about possible information pertaining to the kidnapping, rape, torture and murder of several different women. He soon enough, confessed, and started to put blame on Bittaker. He was allowed to plea bargain, essentially putting more weight of the crimes on Bittaker. Norris and Bittaker were then charged with robbery, kidnapping,",
-,,,
-,,"forcible rape, sex perversion, criminal conspiracy, and five counts of murder. Bittaker denied everything.","forcible rape, sex perversion, criminal conspiracy, and five counts of murder. Bittaker denied everything."
-Feb 1980,40,Bittaker was given a jury trial; the prosecutor was seeking the death penalty. During trial Bittaker showed no remorse for the killings. He also wrote a book called The Last Ride which illustrated his partnership with Norris as well as details about their killing spree,Bittaker was given a jury trial; the prosecutor was seeking the death penalty. During trial Bittaker showed no remorse for the killings. He also wrote a book called The Last Ride which illustrated his partnership with Norris as well as details about their killing spree
-02/17/1981,40,"The Jury was finished deliberating the case, and brought 26 guilty verdicts for rape, torture, kidnapping, and murder. After these were heard, the case was moved on to a new phase, which would warrant the death penalty. 38 special circumstances were found;","The Jury was finished deliberating the case, and brought 26 guilty verdicts for rape, torture, kidnapping, and murder. After these were heard, the case was moved on to a new phase, which would warrant the death penalty. 38 special circumstances were found;"
-1981,40,"Bittaker was sentenced to death on March 24, 1981. The judge included an extra 199-year life sentence just in case his death sentence ever commuted to life.","Bittaker was sentenced to death on March 24, 1981. The judge included an extra 199-year life sentence just in case his death sentence ever commuted to life."
-As of 2007,,Bittaker is still on death row at San Quentin Prison,Bittaker is still on death row at San Quentin Prison
+11/20/1979,40,"Burbank police in suspicion of rape and kidnapping arrested Bittaker at his home.",
+11/30/1979,40,"Norris was brought before Detectives Cray and Bynum as well as District Attorney Kay and a judge. He was confronted about possible information pertaining to the kidnapping, rape, torture and murder of several different women. He soon enough, confessed, and started to put blame on Bittaker. He was allowed to plea bargain, essentially putting more weight of the crimes on Bittaker. Norris and Bittaker were then charged with robbery, kidnapping, forcible rape, sex perversion, criminal conspiracy, and five counts of murder. Bittaker denied everything.",
+Feb 1980,40,"Bittaker was given a jury trial; the prosecutor was seeking the death penalty. During trial Bittaker showed no remorse for the killings. He also wrote a book called The Last Ride which illustrated his partnership with Norris as well as details about their killing spree",
+02/17/1981,40,"The Jury was finished deliberating the case, and brought 26 guilty verdicts for rape, torture, kidnapping, and murder. After these were heard, the case was moved on to a new phase, which would warrant the death penalty. 38 special circumstances were found;",
+1981,40,"Bittaker was sentenced to death on March 24, 1981. The judge included an extra 199-year life sentence just in case his death sentence ever commuted to life. As of 2007,,Bittaker is still on death row at San Quentin Prison,Bittaker is still on death row at San Quentin Prison"
