@@ -1,0 +1,11 @@
+numpy==1.27.4
+scipy==1.11.3
+scikit-learn
+sentence-transformers
+langchain
+openai
+spacy==3.8.2
+nltk
+threadpoolctl==3.1.0
+pydantic
+thinc==8.2.4
