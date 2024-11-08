@@ -1,6 +1,6 @@
-
 import os
 import csv
+import json
 import numpy as np
 from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN
 from sentence_transformers import SentenceTransformer
@@ -12,13 +12,15 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 import openai
+import pickle  # Import pickle for serialization
+import copy    # Import copy for deep copying
 
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
 # Set up OpenAI API key
-openai.api_key = "my_openai_key"  # Replace with your actual OpenAI API key
+openai.api_key = "my_openAI_key"   # Replace with your actual OpenAI API key
 
 # Suppress warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -43,24 +45,18 @@ def load_csv_files(directory):
 def preprocess_text(text):
     # Convert to lowercase
     text = text.lower()
-    
     # Remove numbers and dates
     text = re.sub(r'\d+', '', text)
-    
     # Remove punctuation
     text = re.sub(r'[^\w\s]', '', text)
-    
     # Tokenize
     tokens = word_tokenize(text)
-    
     # Remove stopwords
     stop_words = set(stopwords.words('english'))
     tokens = [token for token in tokens if token not in stop_words]
-    
     # Lemmatization
     lemmatizer = WordNetLemmatizer()
     tokens = [lemmatizer.lemmatize(token) for token in tokens]
-    
     return " ".join(tokens)
 
 # Step 3: Generate sentence embeddings
@@ -78,7 +74,6 @@ def cluster_embeddings(embeddings, algorithm='kmeans', n_clusters=5):
         clusterer = DBSCAN(eps=0.5, min_samples=5)
     else:
         raise ValueError(f"Unsupported clustering algorithm: {algorithm}")
-    
     return clusterer.fit_predict(embeddings)
 
 # Step 5: Analyze clusters and find representative samples
@@ -88,7 +83,6 @@ def analyze_clusters(sentences, embeddings, cluster_labels, n_representatives=3)
         if label not in clusters:
             clusters[label] = []
         clusters[label].append(i)
-    
     results = []
     for label, indices in clusters.items():
         cluster_embeddings = embeddings[indices]
@@ -96,12 +90,14 @@ def analyze_clusters(sentences, embeddings, cluster_labels, n_representatives=3)
         distances = cosine_similarity([centroid], cluster_embeddings)[0]
         sorted_indices = np.argsort(distances)[::-1]  # Sort in descending order
         representative_indices = [indices[i] for i in sorted_indices[:n_representatives]]
+        representative_samples = [sentences[i] for i in representative_indices]
+        representative_embeddings = [embeddings[i] for i in representative_indices]
         results.append({
-            'cluster': label,
+            'cluster_id': int(label),  # Ensure cluster_id is JSON serializable
             'size': len(indices),
-            'representative_samples': [sentences[i] for i in representative_indices]
+            'representative_samples': representative_samples,
+            'representative_embeddings': representative_embeddings  # Add embeddings
         })
-    
     return results
 
 # Step 6: LLM analysis of cluster representatives
@@ -114,56 +110,86 @@ Life events:
 
 Archetypal theme:
 """
-
     events = "\n".join(cluster['representative_samples'])
     prompt = prompt_template.format(events=events)
-
-    response = openai.ChatCompletion.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": "You are an expert in criminal psychology and behavioral analysis."},
-            {"role": "user", "content": prompt}
-        ],
-        max_tokens=150,
-        n=1,
-        temperature=0.7,
-    )
-
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are an expert in criminal psychology and behavioral analysis."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=150,
+            n=1,
+            temperature=0.7,
+        )
+    except Exception as e:
+        print(f"Error with OpenAI API: {e}")
+        return "Unknown Archetypal Theme"
     reply = response.choices[0].message['content'].strip()
     return reply
 
+# Step 7: Export clusters and archetypes to JSON
+def export_clusters_to_json(clusters, filename='clusters.json'):
+    clusters_json = copy.deepcopy(clusters)
+    # Remove 'representative_embeddings' from each cluster
+    for cluster in clusters_json:
+        if 'representative_embeddings' in cluster:
+            del cluster['representative_embeddings']
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(clusters_json, f, ensure_ascii=False, indent=4)
+    print(f"Clusters and archetypal themes saved to {filename}")
+
+# Step 8: Export clusters and embeddings to Pickle
+def export_clusters_to_pickle(clusters, filename='clusters.pkl'):
+    with open(filename, 'wb') as f:
+        pickle.dump(clusters, f)
+    print(f"Clusters and embeddings saved to {filename}")
+
 # Main function to run the analysis
-def analyze_serial_killer_events(directory, algorithm='kmeans', n_clusters=10, n_representatives=5):
-    # Load and preprocess data
+def analyze_serial_killer_events(
+    directory,
+    algorithm='kmeans',
+    n_clusters=10,
+    n_representatives=5,
+    json_output_file='clusters.json',
+    pickle_output_file='clusters.pkl'
+):
+    # Load data
     life_events = load_csv_files(directory)
-    preprocessed_events = [preprocess_text(event) for event in life_events]
-    
-    # Generate embeddings and cluster
-    embeddings = generate_embeddings(preprocessed_events)
+    # Generate embeddings using original text
+    embeddings = generate_embeddings(life_events)
+    # Generate cluster labels
     cluster_labels = cluster_embeddings(embeddings, algorithm=algorithm, n_clusters=n_clusters)
-    
-    # Analyze results
-    results = analyze_clusters(life_events, embeddings, cluster_labels, n_representatives=n_representatives)
-    
-    # Sort results by cluster label
-    results.sort(key=lambda x: x['cluster'])
-    
+    # Analyze clusters
+    clusters = analyze_clusters(life_events, embeddings, cluster_labels, n_representatives=n_representatives)
+    # Sort clusters
+    clusters.sort(key=lambda x: x['cluster_id'])
     # Analyze each cluster with LLM
-    for cluster in results:
+    for cluster in clusters:
+        print(f"Analyzing Cluster {cluster['cluster_id']}...")
         cluster['archetypal_theme'] = analyze_cluster_with_llm(cluster)
-    
-    return results
+    # Export to JSON
+    export_clusters_to_json(clusters, filename=json_output_file)
+    # Export to Pickle
+    export_clusters_to_pickle(clusters, filename=pickle_output_file)
+    return clusters
 
 # Example usage
 if __name__ == "__main__":
     directory = "/Users/ajithsenthil/Desktop/CrimeArchetypes/mnt/data/csv"  # Update to your directory
-    results = analyze_serial_killer_events(directory, algorithm='kmeans', n_clusters=10, n_representatives=5)
-
+    results = analyze_serial_killer_events(
+        directory,
+        algorithm='kmeans',
+        n_clusters=10,
+        n_representatives=5,
+        json_output_file='clusters.json',
+        pickle_output_file='clusters.pkl'
+    )
     for cluster in results:
-        print(f"Cluster {cluster['cluster']}:")
+        print(f"Cluster {cluster['cluster_id']}:")
         print(f"  Size: {cluster['size']}")
         print("  Representative samples:")
         for i, sample in enumerate(cluster['representative_samples'], 1):
             print(f"    {i}. {sample}")
-        print(f"  Archetypal Theme: {cluster['archetypal_theme']}")
-        print()
+        print(f"  Archetypal Theme: {cluster['archetypal_theme']}\n")
