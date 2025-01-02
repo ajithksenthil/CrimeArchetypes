@@ -1,31 +1,30 @@
-Date,Age,Life Event,Life Event
-05/04/1887,0,Born in Bohemia (modern day Slovakia).,Born in Bohemia (modern day Slovakia).
-1910,23,Immigrated to America alone.,Immigrated to America alone.
-1913,26,"Moved in with his brother, Charles.","Moved in with his brother, Charles."
-1920,33,Charles married and left Frank alone.,Charles married and left Frank alone.
-09/05/1934,47,Body of possible first victim found (Lady of the Lake) near Euclid Beach Park.,Body of possible first victim found (Lady of the Lake) near Euclid Beach Park.
-09/23/1935,48,"Bodies of first and second known victims, Edward Andrassy and an unidentified white male, found in the Jackass Hill area of Kingsbury Run.","Bodies of first and second known victims, Edward Andrassy and an unidentified white male, found in the Jackass Hill area of Kingsbury Run."
-01/26/1936,48,"Body of third victim, Florence Polillo, found behind Hart’s Manufacturing on East 20th street.","Body of third victim, Florence Polillo, found behind Hart’s Manufacturing on East 20th street."
-02/07/1936,48,Additional remains of Polillo found behind a vacant house on Orange Avenue.,Additional remains of Polillo found behind a vacant house on Orange Avenue.
-05/1936,49,"Killed fourth victim, an unidentified white male.","Killed fourth victim, an unidentified white male."
-06/05/1936,49,"Fifth victim’s head, an unidentified white male, nicknamed the tattooed man, found in Kingsbury Run.","Fifth victim’s head, an unidentified white male, nicknamed the tattooed man, found in Kingsbury Run."
-06/1936,49,"Murdered sixth victim, an unidentified Black female.","Murdered sixth victim, an unidentified Black female."
-07/22/1936,49,"Body of fourth victim found in the Big Creek area of Brooklyn, on the west side of Cleveland.","Body of fourth victim found in the Big Creek area of Brooklyn, on the west side of Cleveland."
-09/10/1936,49,"Body of seventh victim, an unidentified white male, found in Kingsbury Run near a pool.","Body of seventh victim, an unidentified white male, found in Kingsbury Run near a pool."
-11/1936,49,Brought in for questioning by police.,Brought in for questioning by police.
-02/23/1937,49,"Body of eighth victim, an unidentified white female, found at Euclid Beach near Lake Erie.","Body of eighth victim, an unidentified white female, found at Euclid Beach near Lake Erie."
-06/06/1937,50,Body of sixth victim found beneath the Lorain-Carnegie Bridge,Body of sixth victim found beneath the Lorain-Carnegie Bridge
-,,,
-07/06/1937,50,"Body of ninth victim, an unidentified white male, found in the Cuyahoga River in the Cleveland Flats.","Body of ninth victim, an unidentified white male, found in the Cuyahoga River in the Cleveland Flats."
-11/1937-01/1938,50,"Time frame of murder for the tenth victim, an unidentified white male","Time frame of murder for the tenth victim, an unidentified white male"
-02/1938-04/1938,50,"Time frame of murder for the eleventh victim, an unidentified white female.","Time frame of murder for the eleventh victim, an unidentified white female."
-04/08/1938,50,"Body of twelfth victim, an unidentified white female, found in the Cuyahoga River in the Cleveland Flats.","Body of twelfth victim, an unidentified white female, found in the Cuyahoga River in the Cleveland Flats."
-09/16/1938,51,Bodies of tenth and eleventh victims found at the Lakeshore Dump on East 9th street.,Bodies of tenth and eleventh victims found at the Lakeshore Dump on East 9th street.
-07/05/1939,52,Arrested,Arrested
-07/07/1939,52,Confessed to killing Florence Polillo,Confessed to killing Florence Polillo
-07/10/1939,52,Two unsuccessful suicide attempts at 12:30 a.m. and 4:30 a.m.,Two unsuccessful suicide attempts at 12:30 a.m. and 4:30 a.m.
-07/10/1939,52,Given a lie detector test. Dolezal recanted his confession to killing Polillo.,Given a lie detector test. Dolezal recanted his confession to killing Polillo.
-07/11/1939,52,Appeared in court for first degree murder for killing Polillo. Entered no plea,Appeared in court for first degree murder for killing Polillo. Entered no plea
-07/11/1939,52,Examined and found not insane.,Examined and found not insane.
-08/24/1939,52,Found dead in his cell. Originally thought to be a suicide.,Found dead in his cell. Originally thought to be a suicide.
-08/2010,-,Exonerated of crimes and believed to have been murdered by police in jail.,Exonerated of crimes and believed to have been murdered by police in jail.
+Date,Age,Life Event,
+05/04/1887,0,"Born in Bohemia (modern day Slovakia).",
+1910,23,"Immigrated to America alone.",
+1913,26,"Moved in with his brother, Charles.",
+1920,33,"Charles married and left Frank alone.",
+09/05/1934,47,"Body of possible first victim found (Lady of the Lake) near Euclid Beach Park.",
+09/23/1935,48,"Bodies of first and second known victims, Edward Andrassy and an unidentified white male, found in the Jackass Hill area of Kingsbury Run.",
+01/26/1936,48,"Body of third victim, Florence Polillo, found behind Hart’s Manufacturing on East 20th street.",
+02/07/1936,48,"Additional remains of Polillo found behind a vacant house on Orange Avenue.",
+05/1936,49,"Killed fourth victim, an unidentified white male.",
+06/05/1936,49,"Fifth victim’s head, an unidentified white male, nicknamed the tattooed man, found in Kingsbury Run.",
+06/1936,49,"Murdered sixth victim, an unidentified Black female.",
+07/22/1936,49,"Body of fourth victim found in the Big Creek area of Brooklyn, on the west side of Cleveland.",
+09/10/1936,49,"Body of seventh victim, an unidentified white male, found in Kingsbury Run near a pool.",
+11/1936,49,"Brought in for questioning by police.",
+02/23/1937,49,"Body of eighth victim, an unidentified white female, found at Euclid Beach near Lake Erie.",
+06/06/1937,50,"Body of sixth victim found beneath the Lorain-Carnegie Bridge",
+07/06/1937,50,"Body of ninth victim, an unidentified white male, found in the Cuyahoga River in the Cleveland Flats.",
+"11/1937-01/1938",50,"Time frame of murder for the tenth victim, an unidentified white male",
+"02/1938-04/1938",50,"Time frame of murder for the eleventh victim, an unidentified white female.",
+04/08/1938,50,"Body of twelfth victim, an unidentified white female, found in the Cuyahoga River in the Cleveland Flats.",
+09/16/1938,51,"Bodies of tenth and eleventh victims found at the Lakeshore Dump on East 9th street.",
+07/05/1939,52,"Arrested",
+07/07/1939,52,"Confessed to killing Florence Polillo",
+07/10/1939,52,"Two unsuccessful suicide attempts at 12:30 a.m. and 4:30 a.m.",
+07/10/1939,52,"Given a lie detector test. Dolezal recanted his confession to killing Polillo.",
+07/11/1939,52,"Appeared in court for first degree murder for killing Polillo. Entered no plea",
+07/11/1939,52,"Examined and found not insane.",
+08/24/1939,52,"Found dead in his cell. Originally thought to be a suicide.",
+08/2010,"deceased","Exonerated of crimes and believed to have been murdered by police in jail.",
