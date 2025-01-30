@@ -1,31 +1,29 @@
-Date,Age,Life Event,Life Event
-12/23/1928,0,"Born in Joplin, Missouri","Born in Joplin, Missouri"
-1933,5,Dad leaves wife and children.,Dad leaves wife and children.
-Later 1933,5,Mom dies.,Mom dies.
-1940,11,In and out of juvenile jail,In and out of juvenile jail
-9/??/1943,14,Holds up and kidnaps a cab driver.,Holds up and kidnaps a cab driver.
-1943,14,Put in jail.,Put in jail.
-03/23/1946,18,Escapes jail.,Escapes jail.
-08/15/1946,18,Caught escaping jail.,Caught escaping jail.
-06/16/1950,22,Released from jail.,Released from jail.
-12/27/1950,23,Travels to Mexico.,Travels to Mexico.
-12/28/1950,23,"Meets Archer while hitching, later Archer escapes.","Meets Archer while hitching, later Archer escapes."
-12/29/1950,23,Mosser family picks-up Cook hitchhiking. He then holds them hostage.,Mosser family picks-up Cook hitchhiking. He then holds them hostage.
-01/01/1951,23,Stops at store for food.,Stops at store for food.
-01/02/1951,23,"All five members of the Mosser family and their dog are shot to death in the car in Oklahoma. Their bodies are dumped in an abandoned mine shaft near Jopli, Missouri.","All five members of the Mosser family and their dog are shot to death in the car in Oklahoma. Their bodies are dumped in an abandoned mine shaft near Jopli, Missouri."
-01/02/1951,23,Car  is seen by individuals and called in to police,Car  is seen by individuals and called in to police
-01/03/1951,23,Officers discover the bloodshed in the car,Officers discover the bloodshed in the car
-010/6/1951,23,"Meets Waldrip, and Waldrip later gets away.","Meets Waldrip, and Waldrip later gets away."
-01/06/1951,23,"Cook kills 6th victim, Robert Dewey (WM, 68) in Imperial County in California.","Cook kills 6th victim, Robert Dewey (WM, 68) in Imperial County in California."
-01/07/1951,23,Cook meets Burk & Damron and  later get away,Cook meets Burk & Damron and  later get away
-01/09/1951,23,Cook is found by police,Cook is found by police
-01/15/1951,23,Police find the five bodies of the Mosser family.,Police find the five bodies of the Mosser family.
-01/15/1951,23,Cook is sent back to the states from Mexico.,Cook is sent back to the states from Mexico.
-01/29/1951,23,Preliminary hearing/trial,Preliminary hearing/trial
-03/20/1951,23,Sanity hearing – given 300 years for murders of Mosser family.,Sanity hearing – given 300 years for murders of Mosser family.
-10/13/1951,23,Tried for Dewey’s murder in California.,Tried for Dewey’s murder in California.
-11/28/1951,23,Sentenced to death,Sentenced to death
-05/07/1952,24,Appeal,Appeal
-12/12/1952,24,Executed in the gas chamber,Executed in the gas chamber
-,,,
-,,,
+Date,Age,Life Event,
+12/23/1928,0,"Born in Joplin, Missouri",
+1933,5,"Dad leaves wife and children.",
+"Later 1933",5,"Mom dies.",
+1940,11,"In and out of juvenile jail",
+"9/??/1943",14,"Holds up and kidnaps a cab driver.",
+1943,14,"Put in jail.",
+03/23/1946,18,"Escapes jail.",
+08/15/1946,18,"Caught escaping jail.",
+06/16/1950,22,"Released from jail.",
+12/27/1950,23,"Travels to Mexico.",
+12/28/1950,23,"Meets Archer while hitching, later Archer escapes.",
+12/29/1950,23,"Mosser family picks-up Cook hitchhiking. He then holds them hostage.",
+01/01/1951,23,"Stops at store for food.",
+01/02/1951,23,"All five members of the Mosser family and their dog are shot to death in the car in Oklahoma. Their bodies are dumped in an abandoned mine shaft near Joplin, Missouri.",
+01/02/1951,23, "Car is seen by individuals and called in to police",
+01/03/1951,23,"Officers discover the bloodshed in the car",
+10/6/1951,23,"Meets Waldrip, and Waldrip later gets away.",
+01/06/1951,23,"Cook kills 6th victim, Robert Dewey (WM, 68) in Imperial County in California.",
+01/07/1951,23,"Cook meets Burk & Damron and later get away",
+01/09/1951,23,"Cook is found by police",
+01/15/1951,23,"Police find the five bodies of the Mosser family.",
+01/15/1951,23,"Cook is sent back to the states from Mexico.",
+01/29/1951,23,"Preliminary hearing/trial",
+03/20/1951,23,"Sanity hearing – given 300 years for murders of Mosser family.",
+10/13/1951,23,"Tried for Dewey’s murder in California.",
+11/28/1951,23,"Sentenced to death",
+05/07/1952,24,"Appeal",
+12/12/1952,24,"Executed in the gas chamber",
