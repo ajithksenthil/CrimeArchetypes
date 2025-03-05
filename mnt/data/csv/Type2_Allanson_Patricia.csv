@@ -6,7 +6,7 @@ Country where killing occurred,United States
 States where killing occurred,Georgia
 Cities where killing occurred,Zebulon and Atlanta
 Type of killer,Financial gain
-Height,
+Height,MISSING
 Childhood Information:,
 Date of birth,08/22/1937
 Location,"Wilmington, North Carolina"
@@ -115,7 +115,10 @@ Disposal of Body,
 "Moved, no attempt to hide",No
 "Moved, buried",No
 Cut-up and disposed of,No
-"Moved, too home",No
+Burned body,No
+"Dumped body in lake, river, etc.",No
+"Moved, took home",No
+Sentencing:,
 Date killer arrested,Never for murder
 Date convicted,Never for murder
 Sentence,"Different sentences of 8 years"
