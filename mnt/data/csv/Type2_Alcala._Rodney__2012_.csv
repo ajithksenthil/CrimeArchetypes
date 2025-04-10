@@ -4,27 +4,27 @@ Race,White
 Number of victims,8
 Country where killing occurred,United States
 States where killing occurred,"California, New York"
-Cities where killing occurred,"Los Angeles, New York City – Manhattan, San Francisco"
+Cities where killing occurred,"Los Angeles, New York City, San Francisco"
 Counties where killing occurred,"Los Angeles, Orange, New York, San Francisco"
-Type of killer,Serial Killer
-Height,
-Childhood Information,
+Type of killer,Serial
+Height,MISSING
+Childhood Information:,
 Date of birth,8-23-1943
 Location,"San Antonio, Texas"
-Birth order,Third child
+Birth order,Middle
 Number of siblings,3
-XYY?,
-Raised by,"Anna Maria Gutierrez, Mother"
-Birth category,Middle child
+XYY?,No
+Raised by,Mother
+Birth category,Middle
 Parent’s marital status,Divorced
 Did serial killer spend time in an orphanage?,No
 Did serial killer spend time in a foster home?,No
 Was serial killer ever raised by a relative?,No
 Did serial killer ever live with adopted family?,No
 Did serial killer ever live with a step-parent?,No
-Family event,Grandmother passed away around 1951 and around the same time his father abandoned family
-Age of family event,8
-Problems in school?,"No. According to those who knew him, he had many friends, many dates, enjoyed the piano. He was on the yearbook planning"
+Family event,"Death, abandonment"
+Age of family event,Childhood
+Problems in school?,No
 Teased while in school?,No
 Physically attractive?,Yes
 Physical defect?,No
@@ -33,48 +33,48 @@ Head injury?,No
 Physically abused?,No
 Psychologically abused?,No
 Sexually abused?,No
-Father’s occupation,Spanish-language instructor
-Cognitive Ability,
-Highest grade in school,16 - Graduated  UCLA School of Fine Arts
+Father’s occupation,Education
+Cognitive Ability:,
+Highest grade in school,16
 Highest degree,Bachelor of Fine Arts
-Grades in school,Top of his class.
-IQ,"Genius level , 160"
-Source of IQ information,The Dating Game Killer by Stella Sands
-Work History,
+Grades in school,Top of class
+IQ,160
+Source of IQ information,Book
+Work History:,
 Served in the military?,Yes
 Branch,Army
-Type of discharge,"Medically, he was diagnosed with anti-social personality"
+Type of discharge,Medical
 Saw combat duty,No
 Killed enemy during service?,No
 Applied for job as a cop?,No
 Worked in law enforcement?,No
 Fired from jobs?,No
-Types of jobs worked,"Security guard so he could afford tuition, Counselor as an arts counselor at a drama camp for children in New Hampshire and photographer"
+Types of jobs worked,"Security guard, camp counselor"
 Employment status during series,Employed
 Sexual preference,Heterosexual
 Marital status,Single
 Number of children,0
 Living with,"Mother, girlfriend"
-Triad,
+Triad:,
 Animal torture,No
 Fire setting,No
 Bed wetting,No
-Killer Psychological Information,
+Killer Psychological Information:,
 Abused drugs?,Yes
-Been to a psychologist (prior to killing)?,"Yes, while he was in the Army he began to experience nervous breakdowns and was unable to perform his duties."
-Time in forensic hospital (prior to killing)?,"Yes, He was taken to a hospital in San Francisco then transferred to one on the Marine Corps base in El Toro."
-Diagnosis,"Antisocial personality disorder, chronic, severe"
-Killer Criminal History (Prior to the series),
+Been to a psychologist (prior to killing)?,Yes
+Time in forensic hospital (prior to killing)?,Yes
+Diagnosis,Antisocial personality disorder
+Killer Criminal History (Prior to the series):,
 Committed previous crimes?,Yes
 Spent time in jail?,Yes
 Spent time in prison?,Yes
-Killed prior to series?  Age?,No—attempted killing at age 25
-Serial Killing,
+Killed prior to series?  Age?,No
+Serial Killing:,
 Number of victims (suspected of),8
 Number of victims (confessed to),2
 Number of victims (convicted of),7
 Victim type,Young women
-Killer age at start of series,25-34
+Killer age at start of series,25
 Killer age at end of series,36
 Date of first kill in series,11/10/1977
 Date of final kill in series,06/20/1979
@@ -82,16 +82,22 @@ Gender of victims,Female
 Race of victims,White
 Age of victims,"12, 18, 19, 21, 23, 23, 27, 31"
 Type of victim,Young women
-Method of killing,"Strangulation, bludgeon"
-Weapon,"Hands, Miscellaneous objects"
+Method of killing,"Strangulation, bludgeoning"
+Weapon,"Hands, objects"
 Was gun used?,No
+Type,None
 Did killer have a partner?,No
-How close did killer live?,Within driving distance
-Location of first contact,"Public locations (beach, bar) and victim’s homes"
-Location of killing,Public locations and victim’s homes
+Name of partner,N/A 
+Sex of partner,N/A 
+Relationship of partner,N/A 
+Type of serial killer,MISSING
+How close did killer live?,Driving distance
+Location of first contact,"Public, victim’s homes"
+Location of killing,"Public, victim’s homes"
 Killing occurred in home of victim?,Yes
 Killing occurred in home of killer?,No
 Victim abducted or killed at contact?,Yes
+Behavior During Crimes:,
 Rape?,Yes
 Tortured victims?,Yes
 Overkill?,Yes
@@ -107,6 +113,7 @@ Posed the body?,Yes
 Took totem – body part,No
 Took totem – personal item,Yes
 Robbed victim or location,No
+Disposal of Body:,
 "Left at scene, no attempt to hide",Yes
 "Left at scene, hidden",No
 "Left at scene, buried",No
@@ -117,104 +124,14 @@ Cut-op and disposed of,No
 Burned body,No
 "Dumped body in lake, river, etc.",No
 "Moved, took home",No
-Date killer arrested,07/26/1979 for murder of Robin Samsoe
+Date killer arrested,07/26/1979
 Date convicted,06/20/1986
 Sentence,Death
-Killer executed?,Currently on Death Row
+Killer executed?,On Death Row
 Did killer plead NGRI?,No
-Did serial killer confess?,"Confessed after conviction, confessed & recanted"
-Name and state of prison,San Quentin Prison in California
-Killer committed suicide?,Attempted suicide but was not successful
-Killer killed in prison?,"No, yes, attempted"
-Name,Jill Barcomb
-Date killed,11-09-1977
-Date body was found,11-10-1977
-Gender,Female
-Race,White
-Age,18
-How killed,"Blunt force trauma to head and neck, strangulation"
-State killed,California
-City killed,Hollywood Hills
-County killed,Los Angeles
-Type of target,Random
-Did killer confess to this murder?,No
-Was killer convicted of this murder?,Yes
-Name,Georgia Wixted
-Date body was found,12-16-1977
-Gender,Female
-Race,White
-Age,27
-How killed,"Bludgeoned by hammer, strangulation"
-State killed,California
-City killed,Malibu
-County killed,Los Angeles
-Type of target,Home Invasion
-Did killer confess to this murder?,No
-Was killer convicted of this murder?,Yes
-Name,Charlotte Lamb
-Date body was found,06-24-1978
-Gender,Female
-Race,White
-Age,32
-How killed,Strangulation
-State killed,California
-City killed,El Segundo
-County killed,Los Angeles
-Type of target,Home invasion
-Did killer confess to this murder?,No
-Was killer convicted of this murder?,Yes
-Name,Jill Parenteau
-Date body was found,06-14-1979
-Gender,Female
-Race,White
-Age,21
-How killed,Strangulation
-State killed,California
-City killed,Burbank
-County killed,Los Angeles
-Type of target,Home Invasion
-Did killer confess to this murder?,No
-Was killer convicted of this murder?,Yes
-Name,Robin Samsoe
-Date killed,06/20/1979
-Gender,Female
-Race,White
-Age,12
-State killed,California
-City killed,Huntington Beach
-County killed,Orange
-Did killer confess to this murder?,No
-Was killer convicted of this murder?,Yes
-Name,Cornelia Michel Crilley
-Date killed,06/12/1971
-Gender,Female
-Race,White
-Age,23
-How killed,Strangled
-State killed,New York
-City killed,NYC – Manhattan
-County killed,New York
-Did killer confess to this murder?,No
-Was killer convicted of this murder?,"No (as of November, 2012)"
-Name,Ellen Jane Hover
-Date killed,07/15/1977
-Gender,Female
-Race,White
-Age,23
-State killed,New York
-City killed,NYC – Manhattan
-County killed,New York
-Did killer confess to this murder?,No
-Was killer convicted of this murder?,"No (as of November, 2012)"
-Name,Pamela Jean Lambson
-Date killed,10/08/1977
-Gender,Female
-Race,White
-Age,19
-How killed,Bludgeoned
-State killed,California
-City killed,San Francisco
-County killed,San Francisco
-Type of target,Asked to pose as a model
-Did killer confess to this murder?,No
-Was killer convicted of this murder?,"No (as of November, 2012)"
+Did serial killer confess?,"Yes, recanted"
+Name and state of prison,San Quentin in California
+Killer committed suicide?,Attempted
+Killer killed in prison?,No
+Date of death, None
+Cause of death, None
