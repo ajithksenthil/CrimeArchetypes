@@ -1,23 +1,26 @@
 Heading,Value
 Sex,Female
 Race,White
-Number of victims,5-48
+Number of victims,5-48 suspected
 Country where killing occurred,United States
 States where killing occurred,Connecticut
 Cities where killing occurred,Windsor
-Type of killer,Gain Killer: Lethal Caretaker
+Type of killer,Financial gain
 Height,5’3”
-Childhood Information,
+Childhood Information:,
 Date of birth,October 1873
 Location,"Litchfield, Connecticut"
-Birth order,
+Birth order,MISSING
 Number of siblings,4
-Raised by,Both parents
+Raised by,Parents
+Birth category,MISSING
 Parent’s marital status,Married
 Did serial killer spend time in an orphanage?,No
 Did serial killer spend time in a foster home?,No
 Was serial killer ever raised by a relative?,No
 Did serial killer live with a step-parent?,No
+Family event,MISSING
+Age of family event,MISSING
 Problems in school?,No
 Teased while in school?,No
 Physically attractive?,Yes
@@ -27,51 +30,76 @@ Head injury?,No
 Physically abused?,No
 Psychologically abused?,No
 Sexually abused?,No
-Cognitive Ability,
-Work History,
+Father’s occupation,MISSING
+Age of first sexual experience,MISSING
+Age when first had intercourse,MISSING
+Mother’s occupation,MISSING
+Father abused drugs/alcohol,MISSING 
+Mother abused drugs/alcohol,MISSING
+Cognitive Ability:,
+Highest grade in school,MISSING
+Highest degree,MISSING
+Grades in school,MISSING
+IQ,MISSING
+Source of IQ information,MISSING
+Work History:,
 Served in the military?,No
+Branch,None
+Type of discharge,None 
+Saw combat duty,No
+Killed enemy during service?,No
 Applied for job as a cop?,No
 Worked in law enforcement?,No
 Fired from jobs?,No
-Types of jobs worked,Worked as a caretaker of patients at her home
+Types of jobs worked,Caretaker
 Employment status during series,Self-employed
+Relationships:, 
 Sexual preference,Heterosexual
 Marital status,Remarried
 Number of children,1
 Living with,Spouse
-Triad,
-Killer Psychological Information,
+Triad:,
+Animal torture,MISSING
+Fire setting,MISSING
+Bed wetting,MISSING
+Killer Psychological Information:,
 Abused drugs?,No
 Abused alcohol?,No
 Been to a psychologist (prior to killing)?,No
 Time in forensic hospital (prior to killing)?,No
-Killer Criminal History (Prior to the series),
+Diagnosis, None
+Killer Criminal History (Prior to the series):,
 Committed previous crimes?,No
 Spent time in jail?,No
 Spent time in prison?,No
 Killed prior to series?  Age?,No
-Serial Killing,
-Number of victims,5-48
-Victim type,Strangers that lived in her home that she took care of
+Serial Killing:,
+Number of victims (suspected of),5-48
+Number of victims (confessed to),MISSING
+Number of victims (convicted of),MISSING
+Victim type,Patients
 Killer age at start of series,35
 Date of first kill in series,1908
 Date of final kill in series,1916
-Gender of victims,Male and female
+Gender of victims,Mixed
 Race of victims,White
-Age of victims,Varied
+Age of victims,Mixed
 Type of victim,Patients
-Method of killing,Poison (arsenic)
-Weapon,No
+Method of killing,Poison
 Was gun used?,No
+Type,None
 Did killer have a partner?,No
-Type of serial killer,Gain Killer- Lethal Caretaker
-How close did killer live?,Lived at the home
-Location of first contact,Archer Home
-Location of killing,Archer Home
+Name of partner,N/A
+Sex of partner,N/A
+Relationship of partner,N/A
+Type of serial killer,Financial gain
+How close did killer live?,Close
+Location of first contact,Victim's homes
+Location of killing,Victim's homes
 Killing occurred in home of victim?,No
 Killing occurred in home of killer?,Yes
 Victim abducted or killed at contact?,No
-Behavior During Crimes,
+Behavior During Crimes:,
 Rape?,No
 Tortured victims?,No
 Stalked victims?,No
@@ -79,7 +107,7 @@ Overkill?,No
 Quick & efficient?,No
 Used blindfold?,No
 Bound the victims?,No
-After Death Behavior,
+After Death Behavior:,
 Sex with the body?,No
 Mutilated body?,No
 Ate part of the body?,No
@@ -88,23 +116,26 @@ Posed the body?,No
 Took totem – body part,No
 Took totem – personal item,No
 Robbed victim or location,Yes
-Disposal of Body,
+Disposal of Body:,
 "Left at scene, no attempt to hide",Yes
 "Left at scene, hidden",No
 "Left at scene, buried",No
 "Moved, no attempt to hide",No
 "Moved, buried",No
 Cut-up and disposed of,No
-"Moved, too home",No
+Burned body,MISSING
+"Dumped body in lake, river, etc.",MISSING
+"Moved, took home",No
+Sentencing:,
 Date killer arrested,1916
 Date convicted,1919
-Sentence,Life imprisonment
+Sentence,Life
 Killer executed?,No
-Did killer plead NGRI?,"No, but she was sent to a mental facility after her conviction"
-Was the NGRI plea successful?,No
+Did killer plead NGRI?,No
+Was the NGRI plea successful?,N/A
 Did serial killer confess?,No
 Name and state of prison,"Wethersfield Prison, Connecticut"
 Killer committed suicide?,No
 Killer killed in prison?,No
-Date of death,"April 23, 1962 at age of 89"
-Cause of death,Natural causes
+Date of death,"April 23, 1962="
+Cause of death,Natural

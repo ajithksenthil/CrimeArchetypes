@@ -21,9 +21,12 @@ streamlit>=1.30.0
 
 # NLP
 nltk>=3.6.0
+spacy>=3.5.0
 
-# Optional: LLM-based classification (requires API key)
+# LLM-related
 openai>=1.0.0
+langchain>=0.1.0
+pydantic>=2.0.0
 
 # Development
 jupyter>=1.0.0

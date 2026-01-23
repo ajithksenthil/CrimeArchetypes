@@ -1,78 +1,99 @@
 Heading,Value
 Sex,Male
 Race,White
-Number of victims,"Convicted of 2, suspected of 3-7"
+Number of victims,"3-7 suspected, 2 convicted"
 Country where killing occurred,United States
-States where killing occurred,"Illinois (Bellville, St. Clair County)"
+States where killing occurred,"Illinois"
 Type of killer,"Organized, paranoid"
-Childhood Information,
+Childhood Information:,
 Date of birth,"November 24, 1951"
 Location,"Canton, Ohio"
-Birth order,Only Child
-Number of siblings,None
+Birth order,Only child
+Number of siblings,0
 XYY?,No
-Raised by,"Both parents, and grandmother"
+Raised by,"Both parents, grandmother"
+Birth category,Only
 Parent’s marital status,Married
-Problems in school?,"Loner who did not date, an almost invisible student"
-Teased while in school?,"Didn’t have many friends, loner"
+Did serial killer spend time in an orphanage?,MISSING
+Did serial killer spend time in a foster home?,MISSING
+Was serial killer ever raised by a relative?,MISSING
+Did serial killer live with a step-parent?,MISSING
+Family event,MISSING
+Age of family event,MISSING
+Problems in school?,Social
+Teased while in school?,Yes
 Physically attractive?,No
 Physical defect?,No
 Speech defect?,No
-Head injury?,None reported
+Head injury?,Unknown
 Physically abused?,No
 Psychologically abused?,No
 Sexually abused?,No
-Father’s occupation,Dairy farmer who later became a miner
+Father’s occupation,Laborer
 Age of first sexual experience,Unknown
 Age when first had intercourse,Unknown
 Mother’s occupation,Unknown
 Father abused drugs/alcohol,Unknown
 Mother abused drugs/alcohol,Unknown
-Cognitive Ability,
+Cognitive Ability:,
 Highest grade in school,12
-Highest degree,"B.A., Graduated from Illinois State University"
-Grades in school,Regularly made Dean’s List in college
-Work History,
+Highest degree,Bachelor of Arts
+Grades in school,High
+Work History:,
 Served in the military?,No
+Branch,None
+Type of discharge,None 
+Saw combat duty,No
+Killed enemy during service?,No
 Applied for job as a cop?,Yes
-Worked in law enforcement?,"Sheriff’s deputy at the St. Clair County Jail, and a jail guard"
-Fired from jobs?,"Yes, four different jobs"
-Types of jobs worked,"Allstate Insurance as a claims adjuster, Sheriff, Jail Guard"
-Employment status during series,Caseworker for Dept. of Public Aid
+Worked in law enforcement?,Yes
+Fired from jobs?,Yes
+Types of jobs worked,"Insurance, law enforcement"
+Employment status during series,Employed
 Sexual preference,Heterosexual
 Marital status,Married
 Number of children,2
-Lives with his children,yes
-Living with,"Spouse, mother, girl friend, self, friend"
-Triad,
-Animal torture,Poisoned a supervisor’s dog
+Lives with his children,Yes
+Living with,"Spouse, mother, girl friend, friend"
+Triad:,
+Animal torture,Yes
 Fire setting,No
 Bed wetting,No
-Killer Psychological Information,
+Killer Psychological Information:,
 Abused drugs?,No
 Abused alcohol?,No
-Been to a psychologist?,Yes
-Time in forensic hospital?,No
+Been to a psychologist (prior to killing)?,Yes
+Time in forensic hospital (prior to killing)?,Yes
 Diagnosis,"Psychotic personality, paranoid, passive-aggressive manipulator, obsessive-compulsive behavior"
-Killer Criminal History,
-Committed previous crimes?,"Disorderly conduct, Impersonating a police officer, Assault, Misdemeanor count of disorderly conduct"
-Spend time in jail?,"Some time after minor crimes and misdemeanors but always released, in jail since 1989 for one murder"
-Spend time in prison?,"Yes, briefly"
-Killed prior to series?  Age?,Believed to have killed 5 prior to convicted murder
-Serial Killing,
-Number of victims,"2 Known, 1 Questionable, 4 Suspected"
-Victim type,"Women, children, Newspaper reporter,"
+Killer Criminal History (Prior to the series):,
+Committed previous crimes?,Yes
+Spend time in jail?,Yes
+Spend time in prison?,Yes
+Killed prior to series?  Age?,Unknown
+Serial Killing:,
+Number of victims (suspected of),4
+Number of victims (confessed to),2
+Number of victims (convicted of),MISSING
+Victim type,"Women, children, random"
 Killer age at start of series,27
-Gender of victims,"Women, 1 young male, and one unborn child"
+Date of first kill in series,MISSING
+Date of final kill in series,MISSING
+Gender of victims,Mixed
 Race of victims,White
-Age of victims,Younger
-Method of killing,"Strangled, and possibly one cut throat, looped rope around the neck, beat, stabbed, garrote."
+Age of victims,Young
+Method of killing,"Strangulation, beating, stabbing, garrote"
+Was gun used?,MISSING
+Type,MISSING
+Did killer have a partner?,MISSING
+Name of partner,MISSING
+Sex of partner,MISSING
+Relationship of partner,MISSING
 Type of serial killer,"Organized lust, disorganized thrill"
-How close did killer live?,"In the same area, murders got closer to Anderson’s home"
+How close did killer live?,Close
 Killing occurred in home of victim?,Yes
 Killing occurred in home of killer?,No
-Weapon,"If any were used, he brought them with him"
-Behavior During Crimes,
+Victim abducted or killed at contact?,MISSING
+Behavior During Crimes:,
 Rape?,No
 Tortured victims?,Yes
 Stalked victims?,Yes
@@ -80,7 +101,7 @@ Overkill?,No
 Quick & efficient?,No
 Used blindfold?,No
 Bound the victims?,Yes
-After Death Behavior,
+After Death Behavior:,
 Sex with the body?,No
 Mutilated body?,Yes
 Ate part of the body?,No
@@ -89,26 +110,26 @@ Posed the body?,No
 Took totem – body part,No
 Took totem – personal item,Yes
 Robbed victim or location,No
-Disposal of Body,
+Disposal of Body:,
 "Left at scene, no attempt to hide",No
 "Left at scene, hidden",No
 "Left at scene, buried",No
-"Moved, no attempt to hide",Moved to overgrown creeks and land
+"Moved, no attempt to hide",Yes
 "Moved, buried",No
 Cut-up and disposed of,No
-"Moved, too home",No
+Burned body,MISSING
+"Dumped body in lake, river, etc.",MISSING
+"Moved, took home",No
+Sentencing:, 
 Date killer arrested,"Sept 29, 1989"
 Date convicted,"April 17, 1990"
-Sentence,Life sentence without parole
-Killer executed?,"No, because one juror didn’t believe in the death penalty"
-Name and state of prison,"Solitary confinement in Menard Correctional Center near Chester, Illinois."
+Sentence,Life without parole
+Killer executed?,No
+Did killer plead NGRI?,MISSING
+Was the NGRI plea successful?,MISSING
+Did serial killer confess?,MISSING
+Name and state of prison,Menard Correctional Center in Illinois
 Killer committed suicide?,No
 Killer killed in prison?,No
-References,
-"Busch A.  Deadly Deception (book) 
-Franklin, D. E. and Jokovac, L. (1989).  St. Louis Post-Dispatch. Bellville man is charged in murder of 	 woman, boy. Sept. 30. 
-St. Louis Post Dispatch. (1998). Chronology of the Audrey Cardenas Case. March 8. 
-Tuft, C. and Smith, B. (1999).  St. Louis Post-Dispatch. Convict fits pattern of a serial killer; Dale 	 Anderson murdered others, leading expert believes who killed Audrey Cardenas? Feb. 21. 
-Tuft, C. (1998). St. Louis Post-Dispatch. Who killed Audrey Cardenas?: Dale Anderson; paranoia, rage, 	 and revenge led to life in prison. Who killed Audrey Cardenas? March 29.  
-Website 
-http://www.crimezzz.net/serialkillers/A/ANDERSON_dale_r.htm",
+Date of death,MISSING
+Cause of death,MISSING
