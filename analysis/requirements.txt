@@ -19,6 +19,14 @@ plotly>=5.18.0
 # Dashboard
 streamlit>=1.30.0
 
+# Report generation
+fpdf2>=2.7.0  # PDF export for clinical reports
+
+# REST API
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
 # NLP
 nltk>=3.6.0
 spacy>=3.5.0

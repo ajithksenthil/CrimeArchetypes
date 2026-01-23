@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from data.loader import DashboardDataLoader, STATE_NAMES
 from config import DATA_DIR, ANIMAL_COLORS, RISK_COLORS
-from components.report_export import generate_html_report
+from components.report_export import generate_html_report, generate_pdf_report, is_pdf_available
 
 # Import intervention module
 try:
@@ -643,9 +643,11 @@ if analysis_mode == "Individual Analysis":
             with tab4:
                 st.subheader("Clinical Report")
 
+                # Check if PDF is available
+                format_options = ["Preview", "PDF", "HTML", "Markdown", "JSON"] if is_pdf_available() else ["Preview", "HTML", "Markdown", "JSON"]
                 report_format = st.radio(
                     "Format",
-                    ["Preview", "HTML", "Markdown", "JSON"],
+                    format_options,
                     horizontal=True
                 )
 
@@ -674,6 +676,29 @@ if analysis_mode == "Individual Analysis":
                         for i, rec in enumerate(report.recommended_interventions[:3], 1):
                             st.markdown(f"{i}. **{rec.protocol.display_name}** - "
                                        f"Expected benefit: {rec.expected_benefit:.1%}")
+
+                elif report_format == "PDF":
+                    # Generate PDF report
+                    try:
+                        pdf_bytes = generate_pdf_report(
+                            individual_name=selected,
+                            report=report,
+                            trajectory=trajectory,
+                            classification=classification,
+                            data_source=data_source
+                        )
+                        st.download_button(
+                            "Download PDF Report",
+                            pdf_bytes,
+                            file_name=f"clinical_report_{selected}.pdf",
+                            mime="application/pdf",
+                            type="primary"
+                        )
+                        st.success("Click above to download the professional PDF report.")
+                        st.info("PDF includes: Risk assessment, trajectory analysis, intervention recommendations, and monitoring plan.")
+                    except Exception as e:
+                        st.error(f"PDF generation error: {e}")
+                        st.info("Try HTML format instead.")
 
                 elif report_format == "HTML":
                     # Generate HTML report with styling

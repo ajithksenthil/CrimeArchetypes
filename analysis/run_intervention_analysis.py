@@ -16,6 +16,15 @@ from datetime import datetime
 from collections import Counter, defaultdict
 import numpy as np
 
+# Visualization imports (optional)
+try:
+    import matplotlib.pyplot as plt
+    import matplotlib.patches as mpatches
+    import seaborn as sns
+    VISUALIZATION_AVAILABLE = True
+except ImportError:
+    VISUALIZATION_AVAILABLE = False
+
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent / 'dashboard'))
 
@@ -199,10 +208,19 @@ def run_batch_analysis(data_dir: str, output_dir: str = None):
     with open(output_dir / "ANALYSIS_SUMMARY.md", 'w') as f:
         f.write(summary_report)
 
+    # Generate comparative analysis
+    comparative = generate_comparative_analysis(results, output_dir)
+
+    # Generate visualizations
+    generate_visualizations(results, pop_stats, output_dir)
+
     print(f"\nResults saved to: {output_dir}")
     print(f"  - individual_results.json: {len(results)} individuals")
     print(f"  - population_statistics.json: Aggregate statistics")
     print(f"  - ANALYSIS_SUMMARY.md: Human-readable summary")
+    print(f"  - comparative_analysis.json: Cross-archetype analysis")
+    print(f"  - COMPARATIVE_ANALYSIS.md: Comparative report")
+    print(f"  - figures/: Visualization images")
     if failed:
         print(f"  - failed_analyses.json: {len(failed)} failures")
 
@@ -347,6 +365,359 @@ Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
     report += """
 ---
 *This analysis is for research purposes only. Clinical decisions should be made by qualified professionals.*
+"""
+    return report
+
+
+def generate_visualizations(results: list, pop_stats: dict, output_dir: Path):
+    """
+    Generate visualization figures for the batch analysis.
+
+    Args:
+        results: List of individual analysis results
+        pop_stats: Population statistics dict
+        output_dir: Directory to save figures
+    """
+    if not VISUALIZATION_AVAILABLE:
+        print("Warning: matplotlib/seaborn not available, skipping visualizations")
+        return
+
+    print("\nGenerating visualizations...")
+    figures_dir = output_dir / "figures"
+    figures_dir.mkdir(exist_ok=True)
+
+    # Set style
+    plt.style.use('seaborn-v0_8-whitegrid')
+    colors = {
+        'Critical': '#c0392b',
+        'High': '#e67e22',
+        'Moderate': '#f39c12',
+        'Low': '#27ae60'
+    }
+    state_colors = {
+        'Seeking': '#3498db',
+        'Directing': '#e74c3c',
+        'Conferring': '#27ae60',
+        'Revising': '#f39c12'
+    }
+
+    # 1. Risk Distribution Pie Chart
+    fig, ax = plt.subplots(figsize=(8, 6))
+    risk_data = pop_stats['risk_distribution']
+    risk_levels = ['Critical', 'High', 'Moderate', 'Low']
+    values = [risk_data.get(level, 0) for level in risk_levels]
+    risk_colors = [colors[level] for level in risk_levels]
+
+    # Only include non-zero values
+    labels_filtered = [l for l, v in zip(risk_levels, values) if v > 0]
+    values_filtered = [v for v in values if v > 0]
+    colors_filtered = [c for c, v in zip(risk_colors, values) if v > 0]
+
+    if values_filtered:
+        ax.pie(values_filtered, labels=labels_filtered, colors=colors_filtered,
+               autopct='%1.1f%%', startangle=90, explode=[0.02]*len(values_filtered))
+        ax.set_title('Risk Level Distribution', fontsize=14, fontweight='bold')
+        plt.savefig(figures_dir / 'risk_distribution.png', dpi=150, bbox_inches='tight')
+        plt.close()
+        print("  - risk_distribution.png")
+
+    # 2. State Distribution Bar Chart
+    fig, ax = plt.subplots(figsize=(10, 6))
+    states = list(STATE_NAMES)
+    avg_dist = [pop_stats['avg_state_distribution'].get(s, 0) * 100 for s in states]
+    bar_colors = [state_colors.get(s, '#95a5a6') for s in states]
+
+    bars = ax.bar(states, avg_dist, color=bar_colors, edgecolor='white', linewidth=1.5)
+    ax.set_ylabel('Average Percentage (%)', fontsize=12)
+    ax.set_xlabel('Behavioral State', fontsize=12)
+    ax.set_title('Population Average State Distribution', fontsize=14, fontweight='bold')
+    ax.set_ylim(0, max(avg_dist) * 1.2 if avg_dist else 100)
+
+    # Add value labels on bars
+    for bar, val in zip(bars, avg_dist):
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
+                f'{val:.1f}%', ha='center', va='bottom', fontsize=10)
+
+    plt.savefig(figures_dir / 'state_distribution.png', dpi=150, bbox_inches='tight')
+    plt.close()
+    print("  - state_distribution.png")
+
+    # 3. MFPT Distribution Histogram
+    mfpt_values = [r['mfpt_to_directing'] for r in results if r.get('mfpt_to_directing')]
+    if mfpt_values:
+        fig, ax = plt.subplots(figsize=(10, 6))
+        ax.hist(mfpt_values, bins=15, color='#3498db', edgecolor='white', alpha=0.8)
+        ax.axvline(np.mean(mfpt_values), color='#e74c3c', linestyle='--', linewidth=2,
+                   label=f'Mean: {np.mean(mfpt_values):.1f}')
+        ax.set_xlabel('Mean First Passage Time to Directing (events)', fontsize=12)
+        ax.set_ylabel('Frequency', fontsize=12)
+        ax.set_title('Distribution of MFPT to Directing State', fontsize=14, fontweight='bold')
+        ax.legend()
+        plt.savefig(figures_dir / 'mfpt_distribution.png', dpi=150, bbox_inches='tight')
+        plt.close()
+        print("  - mfpt_distribution.png")
+
+    # 4. Protocol Recommendations Bar Chart
+    protocol_counts = pop_stats.get('protocol_recommendation_counts', {})
+    if protocol_counts:
+        fig, ax = plt.subplots(figsize=(12, 6))
+        sorted_protocols = sorted(protocol_counts.items(), key=lambda x: x[1], reverse=True)[:10]
+        protocols = [p[0].replace('_', ' ').title()[:25] for p in sorted_protocols]
+        counts = [p[1] for p in sorted_protocols]
+
+        bars = ax.barh(protocols, counts, color='#9b59b6', edgecolor='white')
+        ax.set_xlabel('Times Recommended', fontsize=12)
+        ax.set_title('Top 10 Recommended Intervention Protocols', fontsize=14, fontweight='bold')
+        ax.invert_yaxis()  # Highest at top
+
+        for bar, count in zip(bars, counts):
+            ax.text(bar.get_width() + 0.3, bar.get_y() + bar.get_height()/2,
+                    str(count), va='center', fontsize=10)
+
+        plt.savefig(figures_dir / 'protocol_recommendations.png', dpi=150, bbox_inches='tight')
+        plt.close()
+        print("  - protocol_recommendations.png")
+
+    # 5. Risk Score vs MFPT Scatter Plot
+    risk_scores = [r['risk_score'] for r in results if r.get('risk_score') and r.get('mfpt_to_directing')]
+    mfpt_for_scatter = [r['mfpt_to_directing'] for r in results if r.get('risk_score') and r.get('mfpt_to_directing')]
+    risk_levels_scatter = [r['risk_level'] for r in results if r.get('risk_score') and r.get('mfpt_to_directing')]
+
+    if risk_scores and mfpt_for_scatter:
+        fig, ax = plt.subplots(figsize=(10, 8))
+        scatter_colors = [colors.get(rl, '#95a5a6') for rl in risk_levels_scatter]
+
+        ax.scatter(mfpt_for_scatter, risk_scores, c=scatter_colors, s=100, alpha=0.7, edgecolors='white')
+        ax.set_xlabel('MFPT to Directing (events)', fontsize=12)
+        ax.set_ylabel('Risk Score', fontsize=12)
+        ax.set_title('Risk Score vs. Mean First Passage Time', fontsize=14, fontweight='bold')
+
+        # Add legend
+        legend_handles = [mpatches.Patch(color=colors[level], label=level)
+                         for level in ['Critical', 'High', 'Moderate', 'Low']
+                         if level in risk_levels_scatter]
+        ax.legend(handles=legend_handles, title='Risk Level')
+
+        plt.savefig(figures_dir / 'risk_vs_mfpt.png', dpi=150, bbox_inches='tight')
+        plt.close()
+        print("  - risk_vs_mfpt.png")
+
+    # 6. Classification Distribution Stacked Bar
+    classification_dist = pop_stats.get('classification_distribution', {})
+    if classification_dist.get('primary') and classification_dist.get('subtype'):
+        fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+
+        # Primary types
+        primary = classification_dist['primary']
+        ax1 = axes[0]
+        ax1.bar(primary.keys(), primary.values(), color='#3498db', edgecolor='white')
+        ax1.set_title('Primary Classification Types', fontsize=12, fontweight='bold')
+        ax1.set_ylabel('Count')
+        ax1.tick_params(axis='x', rotation=45)
+
+        # Subtypes
+        subtype = classification_dist['subtype']
+        ax2 = axes[1]
+        sorted_subtypes = sorted(subtype.items(), key=lambda x: x[1], reverse=True)[:10]
+        ax2.barh([s[0][:20] for s in sorted_subtypes], [s[1] for s in sorted_subtypes],
+                 color='#e74c3c', edgecolor='white')
+        ax2.set_title('Top Subtypes', fontsize=12, fontweight='bold')
+        ax2.set_xlabel('Count')
+        ax2.invert_yaxis()
+
+        plt.tight_layout()
+        plt.savefig(figures_dir / 'classification_distribution.png', dpi=150, bbox_inches='tight')
+        plt.close()
+        print("  - classification_distribution.png")
+
+    # 7. Individual Comparison Heatmap (State Distributions)
+    if len(results) >= 3:
+        fig, ax = plt.subplots(figsize=(12, max(6, len(results) * 0.4)))
+
+        # Create matrix
+        names = [r['name'][:20] for r in results]
+        states = list(STATE_NAMES)
+        matrix = np.array([[r['state_distribution'].get(s, 0) for s in states] for r in results])
+
+        # Create heatmap
+        im = ax.imshow(matrix, cmap='YlOrRd', aspect='auto')
+        ax.set_xticks(range(len(states)))
+        ax.set_xticklabels(states, fontsize=10)
+        ax.set_yticks(range(len(names)))
+        ax.set_yticklabels(names, fontsize=8)
+
+        # Add colorbar
+        cbar = plt.colorbar(im, ax=ax)
+        cbar.set_label('State Proportion', fontsize=10)
+
+        ax.set_title('Individual State Distribution Comparison', fontsize=14, fontweight='bold')
+        ax.set_xlabel('Behavioral State', fontsize=12)
+        ax.set_ylabel('Individual', fontsize=12)
+
+        plt.savefig(figures_dir / 'individual_comparison_heatmap.png', dpi=150, bbox_inches='tight')
+        plt.close()
+        print("  - individual_comparison_heatmap.png")
+
+    print(f"Visualizations saved to: {figures_dir}")
+
+
+def generate_comparative_analysis(results: list, output_dir: Path) -> dict:
+    """
+    Generate comparative analysis across individuals and archetypes.
+
+    Args:
+        results: List of individual analysis results
+        output_dir: Directory to save analysis files
+
+    Returns:
+        Dict with comparative analysis results
+    """
+    print("\nGenerating comparative analysis...")
+
+    # Group by archetype
+    by_primary = defaultdict(list)
+    by_subtype = defaultdict(list)
+
+    for r in results:
+        primary = r['classification']['primary_type']
+        subtype = r['classification']['subtype']
+        by_primary[primary].append(r)
+        by_subtype[subtype].append(r)
+
+    # Compute archetype-level statistics
+    archetype_stats = {}
+
+    for archetype, individuals in by_primary.items():
+        mfpt_values = [r['mfpt_to_directing'] for r in individuals if r.get('mfpt_to_directing')]
+        risk_scores = [r['risk_score'] for r in individuals if r.get('risk_score')]
+        risk_counts = Counter(r['risk_level'] for r in individuals)
+
+        # Average state distribution for this archetype
+        avg_state = defaultdict(float)
+        for r in individuals:
+            for state, val in r['state_distribution'].items():
+                avg_state[state] += val
+        for state in avg_state:
+            avg_state[state] /= len(individuals)
+
+        # Protocol recommendations for this archetype
+        protocol_counts = Counter()
+        for r in individuals:
+            for rec in r.get('top_recommendations', []):
+                protocol_counts[rec['protocol']] += 1
+
+        archetype_stats[archetype] = {
+            'n_individuals': len(individuals),
+            'avg_mfpt': np.mean(mfpt_values) if mfpt_values else 0,
+            'std_mfpt': np.std(mfpt_values) if mfpt_values else 0,
+            'avg_risk_score': np.mean(risk_scores) if risk_scores else 0,
+            'risk_distribution': dict(risk_counts),
+            'avg_state_distribution': dict(avg_state),
+            'top_protocols': dict(protocol_counts.most_common(5)),
+            'avg_intervention_windows': np.mean([r.get('n_intervention_windows', 0) for r in individuals]),
+            'avg_critical_transitions': np.mean([r.get('n_critical_transitions', 0) for r in individuals])
+        }
+
+    # Subtype-level statistics
+    subtype_stats = {}
+    for subtype, individuals in by_subtype.items():
+        mfpt_values = [r['mfpt_to_directing'] for r in individuals if r.get('mfpt_to_directing')]
+        risk_scores = [r['risk_score'] for r in individuals if r.get('risk_score')]
+
+        subtype_stats[subtype] = {
+            'n_individuals': len(individuals),
+            'avg_mfpt': np.mean(mfpt_values) if mfpt_values else 0,
+            'avg_risk_score': np.mean(risk_scores) if risk_scores else 0,
+            'primary_types': dict(Counter(r['classification']['primary_type'] for r in individuals))
+        }
+
+    # Cross-archetype protocol effectiveness
+    protocol_by_archetype = {}
+    for archetype, stats in archetype_stats.items():
+        for protocol, count in stats['top_protocols'].items():
+            if protocol not in protocol_by_archetype:
+                protocol_by_archetype[protocol] = {}
+            protocol_by_archetype[protocol][archetype] = count
+
+    comparative = {
+        'archetype_statistics': archetype_stats,
+        'subtype_statistics': subtype_stats,
+        'protocol_by_archetype': protocol_by_archetype,
+        'highest_risk_archetype': max(archetype_stats.items(),
+                                       key=lambda x: x[1]['avg_risk_score'])[0] if archetype_stats else None,
+        'lowest_mfpt_archetype': min(archetype_stats.items(),
+                                      key=lambda x: x[1]['avg_mfpt'] if x[1]['avg_mfpt'] > 0 else float('inf'))[0] if archetype_stats else None
+    }
+
+    # Save comparative analysis
+    with open(output_dir / 'comparative_analysis.json', 'w') as f:
+        json.dump(comparative, f, indent=2)
+
+    # Generate comparative report
+    report = generate_comparative_report(comparative)
+    with open(output_dir / 'COMPARATIVE_ANALYSIS.md', 'w') as f:
+        f.write(report)
+
+    print(f"  - comparative_analysis.json")
+    print(f"  - COMPARATIVE_ANALYSIS.md")
+
+    return comparative
+
+
+def generate_comparative_report(comparative: dict) -> str:
+    """Generate a markdown comparative analysis report."""
+    report = f"""# Comparative Intervention Analysis
+
+Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+## Executive Summary
+
+- **Highest Risk Archetype:** {comparative.get('highest_risk_archetype', 'N/A')}
+- **Fastest Escalation (Lowest MFPT):** {comparative.get('lowest_mfpt_archetype', 'N/A')}
+
+## Archetype Comparison
+
+"""
+    for archetype, stats in comparative.get('archetype_statistics', {}).items():
+        report += f"""### {archetype}
+
+- **Individuals:** {stats['n_individuals']}
+- **Average Risk Score:** {stats['avg_risk_score']:.2f}
+- **Average MFPT to Directing:** {stats['avg_mfpt']:.1f} events (±{stats['std_mfpt']:.1f})
+- **Average Intervention Windows:** {stats['avg_intervention_windows']:.1f}
+- **Average Critical Transitions:** {stats['avg_critical_transitions']:.1f}
+
+**Risk Distribution:** {stats['risk_distribution']}
+
+**Top Recommended Protocols:**
+"""
+        for protocol, count in stats['top_protocols'].items():
+            report += f"- {protocol}: {count} recommendations\n"
+        report += "\n"
+
+    report += """## Subtype Analysis
+
+| Subtype | N | Avg Risk Score | Avg MFPT |
+|---------|---|----------------|----------|
+"""
+    for subtype, stats in sorted(comparative.get('subtype_statistics', {}).items(),
+                                  key=lambda x: x[1]['avg_risk_score'], reverse=True):
+        report += f"| {subtype[:25]} | {stats['n_individuals']} | {stats['avg_risk_score']:.2f} | {stats['avg_mfpt']:.1f} |\n"
+
+    report += """
+
+## Protocol Effectiveness by Archetype
+
+| Protocol | """ + " | ".join(comparative.get('archetype_statistics', {}).keys()) + """ |
+|----------|""" + "|".join(["---"] * len(comparative.get('archetype_statistics', {}))) + """|
+"""
+    for protocol, archetypes in comparative.get('protocol_by_archetype', {}).items():
+        row = [str(archetypes.get(a, 0)) for a in comparative.get('archetype_statistics', {}).keys()]
+        report += f"| {protocol[:30]} | " + " | ".join(row) + " |\n"
+
+    report += """
+---
+*This comparative analysis identifies patterns across archetypes to inform targeted intervention strategies.*
 """
     return report
 
