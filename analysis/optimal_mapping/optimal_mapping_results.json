@@ -1,0 +1,102 @@
+{
+  "theoretical": {
+    "mapping": {
+      "0": 2,
+      "1": 1,
+      "2": 3,
+      "3": 1,
+      "4": 1,
+      "5": 0,
+      "6": 3,
+      "7": 0,
+      "8": 2,
+      "9": 1
+    },
+    "mapping_name": "Theoretical",
+    "information_retention": 0.6503760134556066,
+    "mutual_information": 1.7759479954500075,
+    "source_entropy": 2.730648053906481,
+    "target_entropy": 1.7759479954500081,
+    "target_distribution": {
+      "Seeking": 0.3645418326693227,
+      "Directing": 0.4033864541832669,
+      "Conferring": 0.1344621513944223,
+      "Revising": 0.09760956175298804
+    }
+  },
+  "greedy_optimal": {
+    "mapping": {
+      "0": 2,
+      "1": 1,
+      "2": 2,
+      "3": 2,
+      "4": 0,
+      "5": 1,
+      "6": 2,
+      "7": 3,
+      "8": 1,
+      "9": 2
+    },
+    "mapping_name": "Greedy Optimal",
+    "information_retention": 0.7238544016211762,
+    "mutual_information": 1.976591613098505,
+    "source_entropy": 2.730648053906481,
+    "target_entropy": 1.9765916130985053,
+    "target_distribution": {
+      "Seeking": 0.2250996015936255,
+      "Directing": 0.23904382470119523,
+      "Conferring": 0.20816733067729085,
+      "Revising": 0.32768924302788843
+    }
+  },
+  "spectral_optimal": {
+    "mapping": {
+      "0": 2,
+      "1": 3,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 3,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    "mapping_name": "Spectral Optimal",
+    "information_retention": 0.5271426781263906,
+    "mutual_information": 1.439441128156879,
+    "source_entropy": 2.730648053906481,
+    "target_entropy": 1.439441128156879,
+    "target_distribution": {
+      "Seeking": 0.48904382470119523,
+      "Directing": 0.4043824701195219,
+      "Conferring": 0.014940239043824702,
+      "Revising": 0.09163346613545817
+    }
+  },
+  "exhaustive_optimal": {
+    "mapping": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2,
+      "5": 0,
+      "6": 1,
+      "7": 3,
+      "8": 1,
+      "9": 1
+    },
+    "mapping_name": "Exhaustive Optimal",
+    "information_retention": 0.7244174113646588,
+    "mutual_information": 1.978128994558876,
+    "source_entropy": 2.730648053906481,
+    "target_entropy": 1.978128994558876,
+    "target_distribution": {
+      "Seeking": 0.22310756972111553,
+      "Directing": 0.2241035856573705,
+      "Conferring": 0.2250996015936255,
+      "Revising": 0.32768924302788843
+    }
+  }
+}
