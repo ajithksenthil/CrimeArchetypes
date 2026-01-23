@@ -303,11 +303,42 @@ This variation motivates the hierarchical classification system developed in Stu
 
 Examining case histories, we observed a striking pattern: similar behavioral sequences appear across individuals who never met, were separated by decades, and could not have directly influenced each other. We term this phenomenon \textit{archetypal reincarnation}---the recurrence of hierarchical behavioral patterns across human lifetimes.
 
-This terminology is not merely metaphorical. Transfer entropy quantifies the degree to which one individual's life trajectory provides predictive information about another's. When $TE(A \rightarrow B) > 0$, individual $A$'s behavioral sequence reduces uncertainty about individual $B$'s future states, even though these individuals never interacted. Mathematically, this constitutes \textit{experiential influence across lifetimes}: the structure of lived experience in one life informs the structure of another.
+\subsubsection{Theoretical Foundation: Attachment as Influence Across Time}
 
-\textbf{Archetypes}, in this framework, are the latent generative patterns that produce similar trajectories across individuals. When multiple unconnected individuals exhibit high mutual transfer entropy, they share an underlying archetypal structure---a common ``template'' that shapes how motivational states unfold over a life course. The term \textit{reincarnation} captures the empirical observation that these templates manifest repeatedly across different lives, as if the same experiential pattern were being re-instantiated in new individuals.
+This phenomenon has deep roots in attachment theory \citep{bowlby1969attachment, ainsworth1978patterns}. The core mechanism of attachment is \textit{influence over another's future behavior}: internal working models (IWMs) formed through early relationships shape how individuals act, relate, and regulate throughout life. Critically, attachment patterns transmit intergenerationally---a parent's attachment style influences their parenting, which shapes the child's attachment, which shapes their adult relationships and parenting in turn \citep{main1985security}.
 
-Computational Psychodynamics provides the mathematical tools to operationalize these concepts: \textbf{transfer entropy} measures directed predictive influence between life trajectories, while \textbf{network analysis} reveals the hierarchical structure of archetypal relationships.
+Transfer entropy formalizes this mechanism mathematically. When $TE(A \rightarrow B) > 0$, individual $A$'s behavioral sequence reduces uncertainty about individual $B$'s future states:
+
+\begin{equation}
+    TE(A \rightarrow B) = H(B_t \mid B_{t-1}) - H(B_t \mid B_{t-1}, A_{t-1})
+\end{equation}
+
+This is precisely what attachment accomplishes: one person's experiential structure providing predictive information about another's trajectory. The attachment figure's pattern ($A_{t-1}$) adds information beyond what the individual's own history ($B_{t-1}$) provides---the mathematical signature of relational influence.
+
+\subsubsection{Beyond Linear Time: Archetypes as Attachment Templates}
+
+Traditional attachment research assumes linear temporal causation: parent influences child through direct interaction. But if we relax this assumption, a deeper pattern emerges. The individuals in our dataset never met---they were separated by decades, geography, and social context. Yet their behavioral trajectories predict each other.
+
+This is not paradoxical; it is the logical extension of attachment transmission. Attachment patterns do not require direct contact to propagate---they are \textit{generative templates} that manifest wherever the conditions for their expression exist. A ``disorganized attachment'' pattern can emerge in individuals across different eras because the template itself is latent in human relational possibility space.
+
+\textbf{Archetypes}, in this framework, are these latent attachment templates---the underlying generative structures that produce similar trajectories across individuals. When multiple unconnected individuals exhibit high mutual transfer entropy, they share an underlying archetypal structure: the same relational template manifesting in different lives.
+
+The term \textit{reincarnation} captures this precisely. These templates do not die with individuals---they persist as patterns that can be re-instantiated. When we detect $TE(A \rightarrow B) > 0$ between individuals who never interacted, we are detecting shared generative structure: as if the same ``soul''---the same experiential template---were influencing behavior across lifetimes. This is not mysticism but mathematics: the same mechanism that transmits attachment patterns from parent to child also explains why unrelated individuals across different eras exhibit predictable behavioral similarities.
+
+\subsubsection{The Four States as Attachment Dynamics}
+
+The Computational Psychodynamics states map onto attachment processes:
+
+\begin{itemize}
+    \item \textbf{Seeking}: Exploration from secure base, or anxious proximity-seeking when the base is unavailable; fantasy as substitute attachment
+    \item \textbf{Directing}: Controlling attachment behavior---domination as a strategy when secure attachment fails
+    \item \textbf{Conferring}: Hypervigilant monitoring of attachment figures; surveillance as pathological attachment-seeking
+    \item \textbf{Revising}: Consolidating internal working models; ritualized self-regulation when external co-regulation is unavailable
+\end{itemize}
+
+The critical Seeking$\rightarrow$Directing transition can be understood as attachment system failure: when internal regulation through fantasy (Seeking) fails to achieve equilibrium, the individual escalates to external control (Directing). Violence emerges as a pathological attempt to regulate what cannot be securely attached to---consistent with the trajectory from disorganized attachment to controlling behavior in adulthood \citep{main1990procedures}.
+
+Computational Psychodynamics provides the mathematical tools to operationalize these concepts: \textbf{transfer entropy} measures directed influence between life trajectories (the mechanism of attachment transmission), while \textbf{network analysis} reveals the hierarchical structure of archetypal relationships (the topology of how templates propagate).
 
 \subsection{Methods}
 
@@ -892,6 +923,18 @@ Shannon, C. E. (1948). A mathematical theory of communication. \textit{Bell Syst
 
 \bibitem[Cover \& Thomas(2006)]{cover2006elements}
 Cover, T. M., \& Thomas, J. A. (2006). \textit{Elements of information theory} (2nd ed.). Wiley-Interscience.
+
+\bibitem[Bowlby(1969)]{bowlby1969attachment}
+Bowlby, J. (1969). \textit{Attachment and loss: Vol. 1. Attachment}. Basic Books.
+
+\bibitem[Ainsworth et al.(1978)]{ainsworth1978patterns}
+Ainsworth, M. D. S., Blehar, M. C., Waters, E., \& Wall, S. N. (1978). \textit{Patterns of attachment: A psychological study of the strange situation}. Lawrence Erlbaum Associates.
+
+\bibitem[Main et al.(1985)]{main1985security}
+Main, M., Kaplan, N., \& Cassidy, J. (1985). Security in infancy, childhood, and adulthood: A move to the level of representation. \textit{Monographs of the Society for Research in Child Development}, 50(1-2), 66--104.
+
+\bibitem[Main \& Hesse(1990)]{main1990procedures}
+Main, M., \& Hesse, E. (1990). Parents' unresolved traumatic experiences are related to infant disorganized attachment status: Is frightened and/or frightening parental behavior the linking mechanism? In M. T. Greenberg, D. Cicchetti, \& E. M. Cummings (Eds.), \textit{Attachment in the preschool years} (pp. 161--182). University of Chicago Press.
 
 \end{thebibliography}
 
