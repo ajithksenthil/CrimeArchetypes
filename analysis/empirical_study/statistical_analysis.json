@@ -1,0 +1,61 @@
+{
+  "bootstrap_confidence_intervals": {
+    "KMeans_K4": {
+      "estimate": 0.5078968833367282,
+      "ci_lower": 0.4246192303220556,
+      "ci_upper": 0.5762948933824985,
+      "se": 0.04048502356902459,
+      "n_bootstrap": 10000
+    },
+    "Agglom_Ward_K4": {
+      "estimate": 0.617979065833538,
+      "ci_lower": 0.5509838476542992,
+      "ci_upper": 0.6849742840127767,
+      "se": 0.03447380079886291,
+      "n_bootstrap": 10000
+    },
+    "Agglom_Complete_K4": {
+      "estimate": 0.6091065270789442,
+      "ci_lower": 0.5671746849957976,
+      "ci_upper": 0.6510383691620908,
+      "se": 0.022132900879932065,
+      "n_bootstrap": 10000
+    },
+    "GMM_K4": {
+      "estimate": 0.5083776249280476,
+      "ci_lower": 0.4871216689852248,
+      "ci_upper": 0.5252421961676704,
+      "se": 0.00985781613118002,
+      "n_bootstrap": 10000
+    },
+    "4-Animal_Embedding": {
+      "estimate": 0.6917192704780768,
+      "ci_lower": 0.6685746474756179,
+      "ci_upper": 0.7200766072645702,
+      "se": 0.01355154345514479,
+      "n_bootstrap": 10000
+    }
+  },
+  "effect_sizes": {
+    "KMeans_K4": {
+      "d": 2.4372033486784237,
+      "interpretation": "large"
+    },
+    "Agglom_Ward_K4": {
+      "d": 1.1175181356710973,
+      "interpretation": "large"
+    },
+    "Agglom_Complete_K4": {
+      "d": 1.7952981848040772,
+      "interpretation": "large"
+    },
+    "GMM_K4": {
+      "d": 6.176897965238434,
+      "interpretation": "large"
+    }
+  },
+  "friedman_test": {
+    "test": "Friedman",
+    "statistic": 14.719999999999999,
+    "p_value": 0.005318619121741908,
+    "significant": 

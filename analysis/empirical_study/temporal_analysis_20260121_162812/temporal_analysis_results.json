@@ -1,0 +1,7 @@
+{
+  "n_individuals": 26,
+  "stationarity_test": {
+    "chi2_statistic": 136.10885653400106,
+    "p_value": 1.3447731834384243e-21,
+    "degrees_of_freedom": 15,
+    "stationary": 

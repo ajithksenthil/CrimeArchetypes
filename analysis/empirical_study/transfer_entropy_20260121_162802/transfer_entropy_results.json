@@ -1,0 +1,99 @@
+{
+  "n_individuals": 26,
+  "archetypal_influence": {
+    "influence_matrix": [
+      [
+        0.2214765100671141,
+        0.5436241610738255,
+        0.15436241610738255,
+        0.08053691275167785
+      ],
+      [
+        0.08774038461538461,
+        0.7668269230769231,
+        0.09014423076923077,
+        0.055288461538461536
+      ],
+      [
+        0.15625,
+        0.53125,
+        0.2625,
+        0.05
+      ],
+      [
+        0.16455696202531644,
+        0.5316455696202531,
+        0.11392405063291139,
+        0.189873417721519
+      ]
+    ],
+    "attractor_strength": {
+      "Seeking": {
+        "persistence": 0.2214765100671141,
+        "attractiveness": 0.13618244888023368,
+        "combined": 0.1788294794736739
+      },
+      "Directing": {
+        "persistence": 0.7668269230769231,
+        "attractiveness": 0.5355065768980262,
+        "combined": 0.6511667499874747
+      },
+      "Conferring": {
+        "persistence": 0.2625,
+        "attractiveness": 0.11947689916984157,
+        "combined": 0.19098844958492078
+      },
+      "Revising": {
+        "persistence": 0.189873417721519,
+        "attractiveness": 0.06194179143004647,
+        "combined": 0.12590760457578273
+      }
+    },
+    "state_counts": {
+      "Seeking": 149,
+      "Directing": 832,
+      "Conferring": 160,
+      "Revising": 79
+    }
+  },
+  "behavioral_clusters": {
+    "Cluster_0": [
+      "Alcala._Rodney__2012_",
+      "Allanson_Patricia",
+      "Anderson_Dale_-_2005",
+      "Archer-Gilligan_Amy",
+      "Armstrong_John_Eric",
+      "Barfield_Velma_-_2005_Fall",
+      "Beets_Betty_Lou__spring_2007_",
+      "Berdella_Robert",
+      "Bernardo_Paul",
+      "Bianchi_Kenneth",
+      "Bittaker_Lawrence__fall_2007_",
+      "Black_Robert_-_spring_2006",
+      "Bland_Warren_James__fall_2006_",
+      "Blank_Daniel__spring_2006_",
+      "Bonin_William_-_fall_2007",
+      "Browne_Robert_Charles__2008_spring_",
+      "Brudos_Jerome",
+      "Buenoano_Judias_-_fall_2005",
+      "Bundy_Ted_-_2005",
+      "Bunting_John_Justin",
+      "Buono_Angelo",
+      "Burke_William__2008_spring_",
+      "Cleaned_Albright_Charles_table",
+      "campbell_charles"
+    ],
+    "Cluster_2": [
+      "Bathory_Elizabeth_-_spring_2006"
+    ],
+    "Cluster_1": [
+      "Baumeister_Herb_-_fall_2005"
+    ]
+  },
+  "similarity_statistics": {
+    "mean": 0.595379285305984,
+    "std": 0.08679567834705322,
+    "min": 0.31188044557411476,
+    "max": 0.804312972443179
+  }
+}

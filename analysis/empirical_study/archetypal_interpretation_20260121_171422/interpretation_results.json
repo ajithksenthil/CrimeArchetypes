@@ -1,0 +1,935 @@
+{
+  "profiles": {
+    "SOURCES": {
+      "role": "SOURCES",
+      "n_members": 3,
+      "members": [
+        "Berdella_Robert",
+        "Bundy_Ted_-_2005",
+        "Black_Robert_-_spring_2006"
+      ],
+      "state_distribution": {
+        "mean": {
+          "Seeking": 0.09737678514825192,
+          "Directing": 0.6802753433224532,
+          "Conferring": 0.1577398545323704,
+          "Revising": 0.06460801699692445
+        },
+        "std": {
+          "Seeking": 0.030229312665137755,
+          "Directing": 0.05565566689325983,
+          "Conferring": 0.07286679426669514,
+          "Revising": 0.018851588556105994
+        }
+      },
+      "dominant_states": {
+        "Directing": 3
+      },
+      "common_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "common_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Conferring"
+          ],
+          1
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "escalation": {
+        "mean_score": 0.4425213675213675,
+        "pct_escalating": 1.0
+      },
+      "phase_patterns": {
+        "early": {
+          "mean": {
+            "Seeking": 0.21153846153846154,
+            "Directing": 0.42414529914529914,
+            "Conferring": 0.2435897435897436,
+            "Revising": 0.12072649572649573
+          },
+          "dominant": "Directing"
+        },
+        "middle": {
+          "mean": {
+            "Seeking": 0.05555555555555555,
+            "Directing": 0.7264957264957266,
+            "Conferring": 0.16452991452991453,
+            "Revising": 0.053418803418803416
+          },
+          "dominant": "Directing"
+        },
+        "late": {
+          "mean": {
+            "Seeking": 0.03333333333333333,
+            "Directing": 0.8666666666666667,
+            "Conferring": 0.07333333333333333,
+            "Revising": 0.02666666666666667
+          },
+          "dominant": "Directing"
+        }
+      },
+      "transition_matrix": {
+        "Seeking": {
+          "Seeking": 0.15,
+          "Directing": 0.37222222222222223,
+          "Conferring": 0.41111111111111115,
+          "Revising": 0.06666666666666667
+        },
+        "Directing": {
+          "Seeking": 0.06859849883105697,
+          "Directing": 0.7816845084286945,
+          "Conferring": 0.10794266026824166,
+          "Revising": 0.04177433247200688
+        },
+        "Conferring": {
+          "Seeking": 0.20175438596491227,
+          "Directing": 0.5921052631578947,
+          "Conferring": 0.08771929824561403,
+          "Revising": 0.11842105263157894
+        },
+        "Revising": {
+          "Seeking": 0.3333333333333333,
+          "Directing": 0.4444444444444444,
+          "Conferring": 0.05555555555555555,
+          "Revising": 0.16666666666666666
+        }
+      },
+      "narrative": {
+        "summary": "SOURCES archetype: Directing dominant (68.0%), dominated by control/exploitation behaviors, active surveillance/observation periods",
+        "dominant_behavior": {
+          "description": "Control and exploitation of others",
+          "psychological": "Dominance needs, lack of empathy, predatory focus",
+          "behavioral": "Manipulation, violence, coercion, murder",
+          "risk_indicator": "Active harm, peak danger phase"
+        },
+        "key_transitions": [
+          {
+            "from": "Seeking",
+            "to": "Directing",
+            "probability": 0.37222222222222223,
+            "interpretation": "Fantasy-to-action escalation"
+          },
+          {
+            "from": "Seeking",
+            "to": "Conferring",
+            "probability": 0.41111111111111115,
+            "interpretation": "Internal focus shifting to external observation"
+          },
+          {
+            "from": "Directing",
+            "to": "Directing",
+            "probability": 0.7816845084286945,
+            "interpretation": "Sustained predatory activity"
+          },
+          {
+            "from": "Conferring",
+            "to": "Directing",
+            "probability": 0.5921052631578947,
+            "interpretation": "Observation leading to action"
+          },
+          {
+            "from": "Revising",
+            "to": "Seeking",
+            "probability": 0.3333333333333333,
+            "interpretation": "Routine disruption causing introspection"
+          },
+          {
+            "from": "Revising",
+            "to": "Directing",
+            "probability": 0.4444444444444444,
+            "interpretation": "Ritual triggering offense"
+          }
+        ],
+        "trajectory": "Consistent Directing pattern throughout",
+        "escalation": "Strong escalation pattern - Directing behavior increases significantly over time",
+        "risk_profile": "Active harm, peak danger phase"
+      }
+    },
+    "SINKS": {
+      "role": "SINKS",
+      "n_members": 3,
+      "members": [
+        "Buenoano_Judias_-_fall_2005",
+        "Archer-Gilligan_Amy",
+        "Bunting_John_Justin"
+      ],
+      "state_distribution": {
+        "mean": {
+          "Seeking": 0.15695415695415696,
+          "Directing": 0.6802641802641802,
+          "Conferring": 0.11320901320901322,
+          "Revising": 0.04957264957264957
+        },
+        "std": {
+          "Seeking": 0.061763009284156616,
+          "Directing": 0.010525421277501223,
+          "Conferring": 0.017387812205442183,
+          "Revising": 0.048484973004043884
+        }
+      },
+      "dominant_states": {
+        "Directing": 3
+      },
+      "common_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking"
+          ],
+          2
+        ]
+      ],
+      "common_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Seeking"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          1
+        ]
+      ],
+      "escalation": {
+        "mean_score": 0.5464285714285715,
+        "pct_escalating": 1.0
+      },
+      "phase_patterns": {
+        "early": {
+          "mean": {
+            "Seeking": 0.45476190476190476,
+            "Directing": 0.38690476190476186,
+            "Conferring": 0.075,
+            "Revising": 0.08333333333333333
+          },
+          "dominant": "Seeking"
+        },
+        "middle": {
+          "mean": {
+            "Seeking": 0.03333333333333333,
+            "Directing": 0.6964285714285715,
+            "Conferring": 0.1952380952380952,
+            "Revising": 0.075
+          },
+          "dominant": "Directing"
+        },
+        "late": {
+          "mean": {
+            "Seeking": 0.0,
+            "Directing": 0.9333333333333332,
+            "Conferring": 0.06666666666666667,
+            "Revising": 0.0
+          },
+          "dominant": "Directing"
+        }
+      },
+      "transition_matrix": {
+        "Seeking": {
+          "Seeking": 0.26666666666666666,
+          "Directing": 0.5,
+          "Conferring": 0.06666666666666667,
+          "Revising": 0.16666666666666666
+        },
+        "Directing": {
+          "Seeking": 0.07850508624502432,
+          "Directing": 0.7841662980981866,
+          "Conferring": 0.09811292938227922,
+          "Revising": 0.0392156862745098
+        },
+        "Conferring": {
+          "Seeking": 0.08333333333333333,
+          "Directing": 0.5833333333333334,
+          "Conferring": 0.25,
+          "Revising": 0.08333333333333333
+        },
+        "Revising": {
+          "Seeking": 0.0,
+          "Directing": 0.5555555555555555,
+          "Conferring": 0.1111111111111111,
+          "Revising": 0.0
+        }
+      },
+      "narrative": {
+        "summary": "SINKS archetype: Directing dominant (68.0%), dominated by control/exploitation behaviors",
+        "dominant_behavior": {
+          "description": "Control and exploitation of others",
+          "psychological": "Dominance needs, lack of empathy, predatory focus",
+          "behavioral": "Manipulation, violence, coercion, murder",
+          "risk_indicator": "Active harm, peak danger phase"
+        },
+        "key_transitions": [
+          {
+            "from": "Seeking",
+            "to": "Directing",
+            "probability": 0.5,
+            "interpretation": "Fantasy-to-action escalation"
+          },
+          {
+            "from": "Directing",
+            "to": "Directing",
+            "probability": 0.7841662980981866,
+            "interpretation": "Sustained predatory activity"
+          },
+          {
+            "from": "Conferring",
+            "to": "Directing",
+            "probability": 0.5833333333333334,
+            "interpretation": "Observation leading to action"
+          },
+          {
+            "from": "Revising",
+            "to": "Directing",
+            "probability": 0.5555555555555555,
+            "interpretation": "Ritual triggering offense"
+          }
+        ],
+        "trajectory": "Trajectory shifts from Seeking to Directing",
+        "escalation": "Strong escalation pattern - Directing behavior increases significantly over time",
+        "risk_profile": "Active harm, peak danger phase"
+      }
+    },
+    "HUBS": {
+      "role": "HUBS",
+      "n_members": 4,
+      "members": [
+        "Bianchi_Kenneth",
+        "Baumeister_Herb_-_fall_2005",
+        "Armstrong_John_Eric",
+        "Brudos_Jerome"
+      ],
+      "state_distribution": {
+        "mean": {
+          "Seeking": 0.21572155473247098,
+          "Directing": 0.5213506861370074,
+          "Conferring": 0.15715222384812785,
+          "Revising": 0.10577553528239375
+        },
+        "std": {
+          "Seeking": 0.05224645982273225,
+          "Directing": 0.07336637962508859,
+          "Conferring": 0.0734838135134604,
+          "Revising": 0.037374918929817424
+        }
+      },
+      "dominant_states": {
+        "Directing": 4
+      },
+      "common_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          4
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Revising",
+            "Revising"
+          ],
+          1
+        ],
+        [
+          [
+            "Revising",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "common_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "escalation": {
+        "mean_score": 0.13531082887700538,
+        "pct_escalating": 0.75
+      },
+      "phase_patterns": {
+        "early": {
+          "mean": {
+            "Seeking": 0.3235294117647059,
+            "Directing": 0.4573529411764705,
+            "Conferring": 0.1125,
+            "Revising": 0.10661764705882354
+          },
+          "dominant": "Directing"
+        },
+        "middle": {
+          "mean": {
+            "Seeking": 0.18970588235294117,
+            "Directing": 0.5095588235294117,
+            "Conferring": 0.18799019607843137,
+            "Revising": 0.1127450980392157
+          },
+          "dominant": "Directing"
+        },
+        "late": {
+          "mean": {
+            "Seeking": 0.1412218296409473,
+            "Directing": 0.5926637700534759,
+            "Conferring": 0.16821046600458367,
+            "Revising": 0.09790393430099312
+          },
+          "dominant": "Directing"
+        }
+      },
+      "transition_matrix": {
+        "Seeking": {
+          "Seeking": 0.2215909090909091,
+          "Directing": 0.4517045454545454,
+          "Conferring": 0.20454545454545453,
+          "Revising": 0.12215909090909091
+        },
+        "Directing": {
+          "Seeking": 0.19523809523809524,
+          "Directing": 0.607936507936508,
+          "Conferring": 0.10039682539682539,
+          "Revising": 0.09642857142857142
+        },
+        "Conferring": {
+          "Seeking": 0.2794871794871795,
+          "Directing": 0.43525641025641026,
+          "Conferring": 0.22435897435897437,
+          "Revising": 0.060897435897435896
+        },
+        "Revising": {
+          "Seeking": 0.20833333333333331,
+          "Directing": 0.4305555555555555,
+          "Conferring": 0.15277777777777776,
+          "Revising": 0.20833333333333331
+        }
+      },
+      "narrative": {
+        "summary": "HUBS archetype: Directing dominant (52.1%), dominated by control/exploitation behaviors, significant introspective phases, active surveillance/observation periods, ritualistic/compulsive elements",
+        "dominant_behavior": {
+          "description": "Control and exploitation of others",
+          "psychological": "Dominance needs, lack of empathy, predatory focus",
+          "behavioral": "Manipulation, violence, coercion, murder",
+          "risk_indicator": "Active harm, peak danger phase"
+        },
+        "key_transitions": [
+          {
+            "from": "Seeking",
+            "to": "Directing",
+            "probability": 0.4517045454545454,
+            "interpretation": "Fantasy-to-action escalation"
+          },
+          {
+            "from": "Directing",
+            "to": "Directing",
+            "probability": 0.607936507936508,
+            "interpretation": "Sustained predatory activity"
+          },
+          {
+            "from": "Conferring",
+            "to": "Directing",
+            "probability": 0.43525641025641026,
+            "interpretation": "Observation leading to action"
+          },
+          {
+            "from": "Revising",
+            "to": "Directing",
+            "probability": 0.4305555555555555,
+            "interpretation": "Ritual triggering offense"
+          }
+        ],
+        "trajectory": "Consistent Directing pattern throughout",
+        "escalation": "Strong escalation pattern - Directing behavior increases significantly over time",
+        "risk_profile": "Active harm, peak danger phase"
+      }
+    },
+    "GENERAL": {
+      "role": "GENERAL",
+      "n_members": 16,
+      "members": [
+        "Alcala._Rodney__2012_",
+        "Allanson_Patricia",
+        "Anderson_Dale_-_2005",
+        "Barfield_Velma_-_2005_Fall",
+        "Bathory_Elizabeth_-_spring_2006",
+        "Beets_Betty_Lou__spring_2007_",
+        "Bernardo_Paul",
+        "Bittaker_Lawrence__fall_2007_",
+        "Bland_Warren_James__fall_2006_",
+        "Blank_Daniel__spring_2006_",
+        "Bonin_William_-_fall_2007",
+        "Browne_Robert_Charles__2008_spring_",
+        "Buono_Angelo",
+        "Burke_William__2008_spring_",
+        "Cleaned_Albright_Charles_table",
+        "campbell_charles"
+      ],
+      "state_distribution": {
+        "mean": {
+          "Seeking": 0.10508056967679939,
+          "Directing": 0.7406552869611296,
+          "Conferring": 0.09796139725597003,
+          "Revising": 0.05630274610610092
+        },
+        "std": {
+          "Seeking": 0.07445045852544657,
+          "Directing": 0.0827968284262725,
+          "Conferring": 0.06977332416183067,
+          "Revising": 0.05062881816131367
+        }
+      },
+      "dominant_states": {
+        "Directing": 16
+      },
+      "common_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          16
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          12
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          11
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          10
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          8
+        ]
+      ],
+      "common_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          16
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          10
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          8
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          7
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          6
+        ]
+      ],
+      "escalation": {
+        "mean_score": 0.23246776794437565,
+        "pct_escalating": 0.875
+      },
+      "phase_patterns": {
+        "early": {
+          "mean": {
+            "Seeking": 0.16961798433524938,
+            "Directing": 0.6173397927547292,
+            "Conferring": 0.12651902932042491,
+            "Revising": 0.08652319358959656
+          },
+          "dominant": "Directing"
+        },
+        "middle": {
+          "mean": {
+            "Seeking": 0.09096941655059032,
+            "Directing": 0.7465811391454658,
+            "Conferring": 0.10584641622278292,
+            "Revising": 0.056603028081160967
+          },
+          "dominant": "Directing"
+        },
+        "late": {
+          "mean": {
+            "Seeking": 0.05643146681749624,
+            "Directing": 0.8498075606991048,
+            "Conferring": 0.06654352081741788,
+            "Revising": 0.02721745166598108
+          },
+          "dominant": "Directing"
+        }
+      },
+      "transition_matrix": {
+        "Seeking": {
+          "Seeking": 0.13209776334776335,
+          "Directing": 0.6285522637085137,
+          "Conferring": 0.11505681818181818,
+          "Revising": 0.061793154761904764
+        },
+        "Directing": {
+          "Seeking": 0.08535012744785317,
+          "Directing": 0.7964128671602382,
+          "Conferring": 0.06530960338597565,
+          "Revising": 0.05292740200593313
+        },
+        "Conferring": {
+          "Seeking": 0.17772381756756758,
+          "Directing": 0.6976140202702703,
+          "Conferring": 0.11906672297297297,
+          "Revising": 0.005595439189189189
+        },
+        "Revising": {
+          "Seeking": 0.10416666666666667,
+          "Directing": 0.5338541666666666,
+          "Conferring": 0.0546875,
+          "Revising": 0.11979166666666666
+        }
+      },
+      "narrative": {
+        "summary": "GENERAL archetype: Directing dominant (74.1%), dominated by control/exploitation behaviors",
+        "dominant_behavior": {
+          "description": "Control and exploitation of others",
+          "psychological": "Dominance needs, lack of empathy, predatory focus",
+          "behavioral": "Manipulation, violence, coercion, murder",
+          "risk_indicator": "Active harm, peak danger phase"
+        },
+        "key_transitions": [
+          {
+            "from": "Seeking",
+            "to": "Directing",
+            "probability": 0.6285522637085137,
+            "interpretation": "Fantasy-to-action escalation"
+          },
+          {
+            "from": "Directing",
+            "to": "Directing",
+            "probability": 0.7964128671602382,
+            "interpretation": "Sustained predatory activity"
+          },
+          {
+            "from": "Conferring",
+            "to": "Directing",
+            "probability": 0.6976140202702703,
+            "interpretation": "Observation leading to action"
+          },
+          {
+            "from": "Revising",
+            "to": "Directing",
+            "probability": 0.5338541666666666,
+            "interpretation": "Ritual triggering offense"
+          }
+        ],
+        "trajectory": "Consistent Directing pattern throughout",
+        "escalation": "Strong escalation pattern - Directing behavior increases significantly over time",
+        "risk_profile": "Active harm, peak danger phase"
+      }
+    }
+  },
+  "signatures": {
+    "Alcala._Rodney__2012_": {
+      "name": "Alcala._Rodney__2012_",
+      "n_events": 124,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.6048387096774194,
+      "state_distribution": {
+        "Seeking": 0.06451612903225806,
+        "Directing": 0.6048387096774194,
+        "Conferring": 0.29838709677419356,
+        "Revising": 0.03225806451612903
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.7567567567567568,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          56
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring"
+          ],
+          21
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          12
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          11
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          4
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          43
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring",
+            "Conferring"
+          ],
+          16
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          9
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          7
+        ],
+        [
+          [
+            "Directing",
+            "Conferring",
+            "Directing"
+          ],
+          6
+        ]
+      ],
+      "escalation_score": 0.41579558652729376,
+      "shows_escalation": 

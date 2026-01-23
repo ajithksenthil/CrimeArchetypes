@@ -1,0 +1,21 @@
+\begin{table}[h]
+\centering
+\caption{Comparison of K=4 State Space Methods for Criminal Life Event Sequences}
+\label{tab:method_comparison}
+\begin{tabular}{lcccc}
+\toprule
+Method & CV Accuracy & Silhouette & Entropy Rate & Eff. States \\
+\midrule
+\textbf{4-Animal (Theory)} & \textbf{69.2\% $\pm$ 3.0\%} & 0.018 & 1.32 & 2.58 \\
+Agglom. Ward & 61.8\% $\pm$ 7.8\% & 0.014 & 1.05 & 2.87 \\
+Agglom. Complete & 60.9\% $\pm$ 5.0\% & 0.013 & 1.41 & 3.29 \\
+K-Means & 50.8\% $\pm$ 9.0\% & 0.029 & 1.58 & 3.74 \\
+GMM & 50.8\% $\pm$ 2.2\% & 0.026 & 1.75 & 3.94 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Note: CV = 5-fold cross-validation. Entropy rate in bits.
+\item Best prediction accuracy shown in bold.
+\end{tablenotes}
+\end{table}

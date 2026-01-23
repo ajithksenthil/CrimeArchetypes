@@ -1,0 +1,29 @@
+# Core dependencies for Criminal Life Event Analysis
+# Install with: pip install -r requirements.txt
+
+# Data processing
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Machine learning
+scikit-learn>=1.0.0
+sentence-transformers>=2.2.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+networkx>=2.6.0
+plotly>=5.18.0
+
+# Dashboard
+streamlit>=1.30.0
+
+# NLP
+nltk>=3.6.0
+
+# Optional: LLM-based classification (requires API key)
+openai>=1.0.0
+
+# Development
+jupyter>=1.0.0

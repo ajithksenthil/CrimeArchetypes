@@ -1,0 +1,51 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Data files (large binary)
+*.npy
+*.pkl
+*.zip
+
+# Generated images
+*.png
+*.jpg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+
+# PDF files
+*.pdf
+
+# Test/output directories
+test_output/
+analysis_output/
+output/
+figures/
+oldcode/
+crime_analysis_env/

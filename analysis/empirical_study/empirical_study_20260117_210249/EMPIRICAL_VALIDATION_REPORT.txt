@@ -1,0 +1,132 @@
+================================================================================
+RIGOROUS EMPIRICAL VALIDATION STUDY
+Criminal Life Event State Space Analysis
+================================================================================
+
+1. DESCRIPTIVE STATISTICS
+----------------------------------------
+   Methods evaluated: 23
+   K range: 4 - 20
+
+   Silhouette Score:
+     Mean: 0.0356
+     Std:  0.0434
+     Range: [0.0040, 0.2248]
+
+   CV Accuracy:
+     Mean: 0.4602
+     Std:  0.1939
+     Range: [0.0625, 0.9782]
+
+
+2. TOP PERFORMING METHODS
+----------------------------------------
+
+   By Clustering Quality (Silhouette):
+     DBSCAN_eps0.3             K= 8  Sil=0.2248  CV=0.0625
+     KMeans_K20                K=20  Sil=0.0510  CV=0.2550
+     KMeans_K12                K=12  Sil=0.0457  CV=0.3337
+     GMM_K15                   K=15  Sil=0.0456  CV=0.2587
+     KMeans_K15                K=15  Sil=0.0452  CV=0.2854
+
+   By Predictive Power (CV Accuracy):
+     DBSCAN_eps0.5             K= 4  Sil=0.0046  CV=0.9782
+     Spectral_K4               K= 4  Sil=0.0040  CV=0.8281
+     Agglom_Ward_K4            K= 4  Sil=0.0142  CV=0.6180
+     Agglom_Complete_K4        K= 4  Sil=0.0134  CV=0.6091
+     Spectral_K8               K= 8  Sil=0.0221  CV=0.5995
+
+   By State Efficiency:
+     GMM_K4                    K= 4  Efficiency=0.9861
+     KMeans_K20                K=20  Efficiency=0.9539
+     GMM_K8                    K= 8  Efficiency=0.9529
+     GMM_K15                   K=15  Efficiency=0.9496
+     GMM_K10                   K=10  Efficiency=0.9475
+
+
+3. STATISTICAL SIGNIFICANCE TESTING
+----------------------------------------
+
+   Friedman Test (CV Accuracy across folds):
+     χ² = 87.3972
+     p-value = 0.000000
+     Significant at α=0.05: Yes
+
+
+4. EFFECT SIZES (vs KMeans_K4 baseline)
+----------------------------------------
+
+   Methods with Medium/Large Effects:
+     DBSCAN_eps0.5             d=+7.280 (large)
+     DBSCAN_eps0.3             d=-4.082 (large)
+     KMeans_K20                d=-2.939 (large)
+     GMM_K15                   d=-2.917 (large)
+     KMeans_K15                d=-2.646 (large)
+     KMeans_K10                d=-2.301 (large)
+     Spectral_K4               d=+2.074 (large)
+     KMeans_K12                d=-1.816 (large)
+     Agglom_Ward_K15           d=-1.617 (large)
+     KMeans_K6                 d=-1.413 (large)
+     Agglom_Complete_K4        d=+1.387 (large)
+     GMM_K10                   d=-1.383 (large)
+     Agglom_Ward_K4            d=+1.305 (large)
+     GMM_K8                    d=-1.237 (large)
+     Agglom_Ward_K10           d=-1.027 (large)
+     KMeans_K8                 d=-0.948 (large)
+     Agglom_Complete_K10       d=-0.677 (medium)
+     Spectral_K10              d=+0.539 (medium)
+     Spectral_K8               d=+0.532 (medium)
+
+
+5. RESEARCH QUESTION FINDINGS
+========================================
+
+   RQ1: Do data-driven clusters outperform theory-driven states (K=4)?
+   ------------------------------------------------------------
+   Best K=4 method: KMeans_K4 (Sil=0.0292)
+   Best overall: DBSCAN_eps0.3 (Sil=0.2248)
+
+   FINDING: Yes, optimal K ≈ 8 (670.8% better than K=4)
+
+   RQ2: Which approach has better predictive power?
+   ------------------------------------------------------------
+   Best predictor: DBSCAN_eps0.5
+   CV Accuracy: 0.9782 ± 0.0128
+   Optimal K for prediction: 4
+
+   Correlation(K, CV_Accuracy) = -0.621
+   FINDING: Smaller K reduces prediction.
+
+   RQ3: How efficiently do methods use their state space?
+   ------------------------------------------------------------
+   Average State Efficiency:
+     K=4:  0.7021
+     K=10: 0.8362
+     K=20: 0.9539
+
+   FINDING: Smaller K values (20) use state space more efficiently.
+
+   RQ4: Does a 4-state model provide meaningful distinctions?
+   ------------------------------------------------------------
+   K=4 Average Performance:
+     Silhouette: 0.0153
+     CV Accuracy: 0.6749
+     State Efficiency: 0.7021
+
+   FINDING: K=4 shows 57.1% lower clustering quality
+   and -46.7% lower prediction accuracy vs average.
+
+
+6. RECOMMENDATIONS
+========================================
+
+   Best Balanced Method: GMM_K4
+     K = 4
+     Silhouette = 0.0264
+     CV Accuracy = 0.5084
+     State Efficiency = 0.9861
+
+
+================================================================================
+END OF REPORT
+================================================================================

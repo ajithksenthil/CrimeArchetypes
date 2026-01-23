@@ -1,0 +1,1974 @@
+{
+  "metadata": {
+    "timestamp": "20260117_210249",
+    "n_events": 1246,
+    "n_individuals": 26,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "alpha": 1.0
+  },
+  "summary": [
+    {
+      "Method": "KMeans_K4",
+      "K": 4,
+      "Silhouette": "0.029162513",
+      "Calinski-Harabasz": "34.443146",
+      "Davies-Bouldin": 4.567640264715809,
+      "Entropy_Rate": 1.5847917173345398,
+      "Normalized_Entropy": 0.7923958586672699,
+      "Effective_States": 3.7363885974652287,
+      "State_Efficiency": 0.9340971493663072,
+      "CV_Accuracy_Mean": 0.5078968833367282,
+      "CV_Accuracy_Std": 0.09045926698531527,
+      "Mean_Coherence": 0.2511182129383087,
+      "Runtime": 0.13301992416381836
+    },
+    {
+      "Method": "KMeans_K6",
+      "K": 6,
+      "Silhouette": "0.030875133",
+      "Calinski-Harabasz": "28.955963",
+      "Davies-Bouldin": 4.160793673295024,
+      "Entropy_Rate": 2.0793290561105358,
+      "Normalized_Entropy": 0.8043942825207104,
+      "Effective_States": 5.593400621073843,
+      "State_Efficiency": 0.9322334368456405,
+      "CV_Accuracy_Mean": 0.38841755605571676,
+      "CV_Accuracy_Std": 0.07822720553406964,
+      "Mean_Coherence": 0.28370212266842526,
+      "Runtime": 0.07503199577331543
+    },
+    {
+      "Method": "KMeans_K8",
+      "K": 8,
+      "Silhouette": "0.035570808",
+      "Calinski-Harabasz": "25.668795",
+      "Davies-Bouldin": 4.019366074144156,
+      "Entropy_Rate": 2.1179644538684235,
+      "Normalized_Entropy": 0.7059881512894745,
+      "Effective_States": 7.094383114787103,
+      "State_Efficiency": 0.8867978893483879,
+      "CV_Accuracy_Mean": 0.4036726468711441,
+      "CV_Accuracy_Std": 0.1264728630487716,
+      "Mean_Coherence": 0.32029688730835915,
+      "Runtime": 0.08338713645935059
+    },
+    {
+      "Method": "KMeans_K10",
+      "K": 10,
+      "Silhouette": "0.041107986",
+      "Calinski-Harabasz": "23.479853",
+      "Davies-Bouldin": 3.8066957872763263,
+      "Entropy_Rate": 2.5633045641372667,
+      "Normalized_Entropy": 0.7716315618277046,
+      "Effective_States": 9.360803270273081,
+      "State_Efficiency": 0.9360803270273081,
+      "CV_Accuracy_Mean": 0.3212821360778196,
+      "CV_Accuracy_Std": 0.07047369728433459,
+      "Mean_Coherence": 0.3257329210639,
+      "Runtime": 0.10196423530578613
+    },
+    {
+      "Method": "KMeans_K12",
+      "K": 12,
+      "Silhouette": "0.04568143",
+      "Calinski-Harabasz": "21.713196",
+      "Davies-Bouldin": 3.7441579921539465,
+      "Entropy_Rate": 2.7189684680803743,
+      "Normalized_Entropy": 0.7584370736188797,
+      "Effective_States": 10.878022090683992,
+      "State_Efficiency": 0.9065018408903326,
+      "CV_Accuracy_Mean": 0.33367806517071597,
+      "CV_Accuracy_Std": 0.10113546111459613,
+      "Mean_Coherence": 0.32513997455437976,
+      "Runtime": 0.11370515823364258
+    },
+    {
+      "Method": "KMeans_K15",
+      "K": 15,
+      "Silhouette": "0.045151275",
+      "Calinski-Harabasz": "19.297546",
+      "Davies-Bouldin": 3.7262604318148798,
+      "Entropy_Rate": 3.068253432436895,
+      "Normalized_Entropy": 0.7853440881824842,
+      "Effective_States": 14.128842371975173,
+      "State_Efficiency": 0.9419228247983449,
+      "CV_Accuracy_Mean": 0.28537612900029113,
+      "CV_Accuracy_Std": 0.07723782290974807,
+      "Mean_Coherence": 0.33578221599260966,
+      "Runtime": 0.15030813217163086
+    },
+    {
+      "Method": "KMeans_K20",
+      "K": 20,
+      "Silhouette": "0.05098404",
+      "Calinski-Harabasz": "16.76041",
+      "Davies-Bouldin": 3.4980604081458724,
+      "Entropy_Rate": 3.433524934155733,
+      "Normalized_Entropy": 0.7944428641044332,
+      "Effective_States": 19.077908516995198,
+      "State_Efficiency": 0.9538954258497598,
+      "CV_Accuracy_Mean": 0.25503222504123146,
+      "CV_Accuracy_Std": 0.08137913438995167,
+      "Mean_Coherence": 0.3454113930463791,
+      "Runtime": 0.18065500259399414
+    },
+    {
+      "Method": "Agglom_Ward_K4",
+      "K": 4,
+      "Silhouette": "0.014246734",
+      "Calinski-Harabasz": "23.739481",
+      "Davies-Bouldin": 4.856760259096331,
+      "Entropy_Rate": 1.0507608447812098,
+      "Normalized_Entropy": 0.5253804223906049,
+      "Effective_States": 2.8745264736898455,
+      "State_Efficiency": 0.7186316184224614,
+      "CV_Accuracy_Mean": 0.617979065833538,
+      "CV_Accuracy_Std": 0.0777658787717827,
+      "Mean_Coherence": 0.3094942197203636,
+      "Runtime": 0.06526589393615723
+    },
+    {
+      "Method": "Agglom_Ward_K8",
+      "K": 8,
+      "Silhouette": "0.024773132",
+      "Calinski-Harabasz": "20.286963",
+      "Davies-Bouldin": 4.32473120796975,
+      "Entropy_Rate": 1.8501152215791545,
+      "Normalized_Entropy": 0.6167050738597182,
+      "Effective_States": 6.151552062550345,
+      "State_Efficiency": 0.7689440078187931,
+      "CV_Accuracy_Mean": 0.4758248553078522,
+      "CV_Accuracy_Std": 0.08818201991910833,
+      "Mean_Coherence": 0.3200894109904766,
+      "Runtime": 0.06372523307800293
+    },
+    {
+      "Method": "Agglom_Ward_K10",
+      "K": 10,
+      "Silhouette": "0.026804779",
+      "Calinski-Harabasz": "19.056536",
+      "Davies-Bouldin": 4.23907966093022,
+      "Entropy_Rate": 2.228132994812107,
+      "Normalized_Entropy": 0.670734865767062,
+      "Effective_States": 8.441525511830076,
+      "State_Efficiency": 0.8441525511830076,
+      "CV_Accuracy_Mean": 0.41316089726242244,
+      "CV_Accuracy_Std": 0.09396138851595265,
+      "Mean_Coherence": 0.3177900597453117,
+      "Runtime": 0.06125903129577637
+    },
+    {
+      "Method": "Agglom_Ward_K15",
+      "K": 15,
+      "Silhouette": "0.03184107",
+      "Calinski-Harabasz": "16.47686",
+      "Davies-Bouldin": 3.8950515201005858,
+      "Entropy_Rate": 2.754052031931231,
+      "Normalized_Entropy": 0.7049217183165768,
+      "Effective_States": 12.831109243549411,
+      "State_Efficiency": 0.855407282903294,
+      "CV_Accuracy_Mean": 0.38348957028107455,
+      "CV_Accuracy_Std": 0.06047555012414831,
+      "Mean_Coherence": 0.34664991398652395,
+      "Runtime": 0.060111045837402344
+    },
+    {
+      "Method": "Agglom_Complete_K4",
+      "K": 4,
+      "Silhouette": "0.01344784",
+      "Calinski-Harabasz": "16.53288",
+      "Davies-Bouldin": 6.019315811289739,
+      "Entropy_Rate": 1.4143584249589605,
+      "Normalized_Entropy": 0.7071792124794802,
+      "Effective_States": 3.294311513202256,
+      "State_Efficiency": 0.823577878300564,
+      "CV_Accuracy_Mean": 0.6091065270789442,
+      "CV_Accuracy_Std": 0.04968837242154476,
+      "Mean_Coherence": 0.20723921433091164,
+      "Runtime": 0.058397769927978516
+    },
+    {
+      "Method": "Agglom_Complete_K8",
+      "K": 8,
+      "Silhouette": "0.0098236445",
+      "Calinski-Harabasz": "13.057983",
+      "Davies-Bouldin": 5.3720494325761265,
+      "Entropy_Rate": 2.2246447170390287,
+      "Normalized_Entropy": 0.7415482390130096,
+      "Effective_States": 6.59495288917584,
+      "State_Efficiency": 0.82436911114698,
+      "CV_Accuracy_Mean": 0.5080093933220157,
+      "CV_Accuracy_Std": 0.05371903764209626,
+      "Mean_Coherence": 0.2368682250380516,
+      "Runtime": 0.06005096435546875
+    },
+    {
+      "Method": "Agglom_Complete_K10",
+      "K": 10,
+      "Silhouette": "0.011048113",
+      "Calinski-Harabasz": "12.34648",
+      "Davies-Bouldin": 5.317051433014118,
+      "Entropy_Rate": 2.593536200673559,
+      "Normalized_Entropy": 0.7807321912431398,
+      "Effective_States": 8.908077013567928,
+      "State_Efficiency": 0.8908077013567928,
+      "CV_Accuracy_Mean": 0.45497224450054946,
+      "CV_Accuracy_Std": 0.06368128778350135,
+      "Mean_Coherence": 0.24197790920734405,
+      "Runtime": 0.059329986572265625
+    },
+    {
+      "Method": "GMM_K4",
+      "K": 4,
+      "Silhouette": "0.026361004",
+      "Calinski-Harabasz": "32.730362",
+      "Davies-Bouldin": 4.823379655305865,
+      "Entropy_Rate": 1.746823444431469,
+      "Normalized_Entropy": 0.8734117222157345,
+      "Effective_States": 3.944347299701696,
+      "State_Efficiency": 0.986086824925424,
+      "CV_Accuracy_Mean": 0.5083776249280476,
+      "CV_Accuracy_Std": 0.022148854873564956,
+      "Mean_Coherence": 0.22829074040055275,
+      "Runtime": 0.1955258846282959
+    },
+    {
+      "Method": "GMM_K8",
+      "K": 8,
+      "Silhouette": "0.032428365",
+      "Calinski-Harabasz": "23.927435",
+      "Davies-Bouldin": 4.354488985991382,
+      "Entropy_Rate": 2.4189593360982684,
+      "Normalized_Entropy": 0.8063197786994228,
+      "Effective_States": 7.623383829421071,
+      "State_Efficiency": 0.9529229786776339,
+      "CV_Accuracy_Mean": 0.40628226864165373,
+      "CV_Accuracy_Std": 0.07287203472032472,
+      "Mean_Coherence": 0.281170379370451,
+      "Runtime": 0.36864185333251953
+    },
+    {
+      "Method": "GMM_K10",
+      "K": 10,
+      "Silhouette": "0.03527173",
+      "Calinski-Harabasz": "22.282309",
+      "Davies-Bouldin": 4.064404017795243,
+      "Entropy_Rate": 2.662994734275175,
+      "Normalized_Entropy": 0.8016412933120608,
+      "Effective_States": 9.475469711381429,
+      "State_Efficiency": 0.9475469711381429,
+      "CV_Accuracy_Mean": 0.38906155387732044,
+      "CV_Accuracy_Std": 0.0812010235917498,
+      "Mean_Coherence": 0.29523844718933107,
+      "Runtime": 0.4706690311431885
+    },
+    {
+      "Method": "GMM_K15",
+      "K": 15,
+      "Silhouette": "0.045605257",
+      "Calinski-Harabasz": "19.06951",
+      "Davies-Bouldin": 3.7649242799108267,
+      "Entropy_Rate": 3.0330786476133302,
+      "Normalized_Entropy": 0.7763408197359344,
+      "Effective_States": 14.244017343042016,
+      "State_Efficiency": 0.9496011562028011,
+      "CV_Accuracy_Mean": 0.2586583082704387,
+      "CV_Accuracy_Std": 0.08010323195371619,
+      "Mean_Coherence": 0.3260521739721298,
+      "Runtime": 0.6511590480804443
+    },
+    {
+      "Method": "Spectral_K4",
+      "K": 4,
+      "Silhouette": "0.0039563663",
+      "Calinski-Harabasz": "17.817501",
+      "Davies-Bouldin": 3.401294522656601,
+      "Entropy_Rate": 0.3051104723171418,
+      "Normalized_Entropy": 0.1525552361585709,
+      "Effective_States": 1.8357907551625188,
+      "State_Efficiency": 0.4589476887906297,
+      "CV_Accuracy_Mean": 0.8281088013005456,
+      "CV_Accuracy_Std": 0.19877233473895076,
+      "Mean_Coherence": 0.3566185534000397,
+      "Runtime": 0.10164308547973633
+    },
+    {
+      "Method": "Spectral_K8",
+      "K": 8,
+      "Silhouette": "0.022050561",
+      "Calinski-Harabasz": "19.043276",
+      "Davies-Bouldin": 3.9965836370288415,
+      "Entropy_Rate": 1.3202391122864787,
+      "Normalized_Entropy": 0.4400797040954929,
+      "Effective_States": 5.255770409843773,
+      "State_Efficiency": 0.6569713012304716,
+      "CV_Accuracy_Mean": 0.5995382371400814,
+      "CV_Accuracy_Std": 0.22619455585337228,
+      "Mean_Coherence": 0.3318039234727621,
+      "Runtime": 0.09888100624084473
+    },
+    {
+      "Method": "Spectral_K10",
+      "K": 10,
+      "Silhouette": "0.014351574",
+      "Calinski-Harabasz": "15.944882",
+      "Davies-Bouldin": 3.6510434536252903,
+      "Entropy_Rate": 1.397213698800256,
+      "Normalized_Entropy": 0.4206032336914962,
+      "Effective_States": 5.6230535027185695,
+      "State_Efficiency": 0.5623053502718569,
+      "CV_Accuracy_Mean": 0.5961328054047451,
+      "CV_Accuracy_Std": 0.21313826449327852,
+      "Mean_Coherence": 0.36676777601242067,
+      "Runtime": 0.11878514289855957
+    },
+    {
+      "Method": "DBSCAN_eps0.3",
+      "K": 8,
+      "Silhouette": "0.22478522",
+      "Calinski-Harabasz": "13.12424",
+      "Davies-Bouldin": 1.5291137324261606,
+      "Entropy_Rate": 2.1106425309659635,
+      "Normalized_Entropy": 0.7035475103219878,
+      "Effective_States": 7.4587100951635925,
+      "State_Efficiency": 0.9323387618954491,
+      "CV_Accuracy_Mean": 0.0625,
+      "CV_Accuracy_Std": 0.125,
+      "Mean_Coherence": 0.657396137714386,
+      "Runtime": 0.004909038543701172
+    },
+    {
+      "Method": "DBSCAN_eps0.5",
+      "K": 4,
+      "Silhouette": "0.0045935265",
+      "Calinski-Harabasz": "4.02643",
+      "Davies-Bouldin": 2.129893241469201,
+      "Entropy_Rate": 0.15874613343668753,
+      "Normalized_Entropy": 0.07937306671834377,
+      "Effective_States": 1.1657927256268077,
+      "State_Efficiency": 0.2914481814067019,
+      "CV_Accuracy_Mean": 0.9781864770827806,
+      "CV_Accuracy_Std": 0.012798544183098325,
+      "Mean_Coherence": 0.4265097752213478,
+      "Runtime": 0.005034923553466797
+    }
+  ],
+  "statistics": {
+    "friedman_test": {
+      "statistic": 87.39723046488625,
+      "p_value": 9.465710432763167e-10
+    },
+    "pairwise_wilcoxon": {
+      "KMeans_K4 vs KMeans_K6": {
+        "statistic": 2.0,
+        "p_value": 0.1875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs KMeans_K8": {
+        "statistic": 2.0,
+        "p_value": 0.1875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs KMeans_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs KMeans_K12": {
+        "statistic": 0.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs KMeans_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs KMeans_K20": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Agglom_Ward_K4": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Agglom_Ward_K8": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Agglom_Ward_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Agglom_Ward_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Agglom_Complete_K8": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Agglom_Complete_K10": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs GMM_K4": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs GMM_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs GMM_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Spectral_K4": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Spectral_K8": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs Spectral_K10": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K4 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs KMeans_K8": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs KMeans_K10": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs KMeans_K12": {
+        "statistic": 2.0,
+        "p_value": 0.375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs KMeans_K15": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs KMeans_K20": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Agglom_Ward_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Agglom_Ward_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Agglom_Ward_K10": {
+        "statistic": 7.0,
+        "p_value": 1.0,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Agglom_Ward_K15": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Agglom_Complete_K8": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Agglom_Complete_K10": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs GMM_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs GMM_K8": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs GMM_K10": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Spectral_K8": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs Spectral_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K6 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs KMeans_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs KMeans_K12": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs KMeans_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs KMeans_K20": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Agglom_Ward_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Agglom_Ward_K8": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Agglom_Ward_K10": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Agglom_Ward_K15": {
+        "statistic": 3.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Agglom_Complete_K8": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Agglom_Complete_K10": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs GMM_K4": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs GMM_K8": {
+        "statistic": 5.0,
+        "p_value": 1.0,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs GMM_K10": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Spectral_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs Spectral_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K8 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs KMeans_K12": {
+        "statistic": 7.0,
+        "p_value": 1.0,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs KMeans_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs KMeans_K20": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Agglom_Ward_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Agglom_Ward_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Agglom_Ward_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Agglom_Ward_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Agglom_Complete_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Agglom_Complete_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs GMM_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs GMM_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs GMM_K10": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs GMM_K15": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Spectral_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs Spectral_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K10 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs KMeans_K15": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs KMeans_K20": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Agglom_Ward_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Agglom_Ward_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Agglom_Ward_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Agglom_Ward_K15": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Agglom_Complete_K8": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Agglom_Complete_K10": {
+        "statistic": 2.0,
+        "p_value": 0.1875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs GMM_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs GMM_K8": {
+        "statistic": 2.0,
+        "p_value": 0.1875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs GMM_K10": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Spectral_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs Spectral_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K12 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs KMeans_K20": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Agglom_Ward_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Agglom_Ward_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Agglom_Ward_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Agglom_Ward_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Agglom_Complete_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Agglom_Complete_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs GMM_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs GMM_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs GMM_K10": {
+        "statistic": 2.0,
+        "p_value": 0.1875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs GMM_K15": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Spectral_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs Spectral_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K15 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Agglom_Ward_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Agglom_Ward_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Agglom_Ward_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Agglom_Ward_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Agglom_Complete_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Agglom_Complete_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs GMM_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs GMM_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs GMM_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs GMM_K15": {
+        "statistic": 4.0,
+        "p_value": 0.875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Spectral_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs Spectral_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "KMeans_K20 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs Agglom_Ward_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs Agglom_Ward_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs Agglom_Ward_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs Agglom_Complete_K4": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs Agglom_Complete_K8": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs Agglom_Complete_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs GMM_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs GMM_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs GMM_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs Spectral_K8": {
+        "statistic": 7.0,
+        "p_value": 1.0,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs Spectral_K10": {
+        "statistic": 7.0,
+        "p_value": 1.0,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K4 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs Agglom_Ward_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs Agglom_Ward_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs Agglom_Complete_K8": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs Agglom_Complete_K10": {
+        "statistic": 4.0,
+        "p_value": 0.875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs GMM_K4": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs GMM_K8": {
+        "statistic": 2.0,
+        "p_value": 0.1875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs GMM_K10": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs Spectral_K8": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs Spectral_K10": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K8 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs Agglom_Ward_K15": {
+        "statistic": 3.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs Agglom_Complete_K8": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs Agglom_Complete_K10": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs GMM_K4": {
+        "statistic": 2.0,
+        "p_value": 0.1875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs GMM_K8": {
+        "statistic": 7.0,
+        "p_value": 1.0,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs GMM_K10": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs Spectral_K8": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs Spectral_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K10 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs Agglom_Complete_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs Agglom_Complete_K8": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs Agglom_Complete_K10": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs GMM_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs GMM_K8": {
+        "statistic": 4.0,
+        "p_value": 0.875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs GMM_K10": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs Spectral_K8": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs Spectral_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Ward_K15 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs Agglom_Complete_K8": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs Agglom_Complete_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs GMM_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs GMM_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs GMM_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs Spectral_K4": {
+        "statistic": 2.0,
+        "p_value": 0.1875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs Spectral_K8": {
+        "statistic": 7.0,
+        "p_value": 1.0,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs Spectral_K10": {
+        "statistic": 7.0,
+        "p_value": 1.0,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K4 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs Agglom_Complete_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs GMM_K4": {
+        "statistic": 7.0,
+        "p_value": 1.0,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs GMM_K8": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs GMM_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs Spectral_K4": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs Spectral_K8": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs Spectral_K10": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K8 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K10 vs GMM_K4": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K10 vs GMM_K8": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K10 vs GMM_K10": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K10 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K10 vs Spectral_K4": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K10 vs Spectral_K8": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K10 vs Spectral_K10": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K10 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Agglom_Complete_K10 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K4 vs GMM_K8": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K4 vs GMM_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K4 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K4 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K4 vs Spectral_K8": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K4 vs Spectral_K10": {
+        "statistic": 4.0,
+        "p_value": 0.4375,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K4 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K4 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K8 vs GMM_K10": {
+        "statistic": 5.0,
+        "p_value": 0.625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K8 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K8 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K8 vs Spectral_K8": {
+        "statistic": 2.0,
+        "p_value": 0.1875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K8 vs Spectral_K10": {
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K8 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K8 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K10 vs GMM_K15": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K10 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K10 vs Spectral_K8": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K10 vs Spectral_K10": {
+        "statistic": 3.0,
+        "p_value": 0.3125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K10 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K10 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K15 vs Spectral_K4": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K15 vs Spectral_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K15 vs Spectral_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K15 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "GMM_K15 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Spectral_K4 vs Spectral_K8": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Spectral_K4 vs Spectral_K10": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Spectral_K4 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Spectral_K4 vs DBSCAN_eps0.5": {
+        "statistic": 6.0,
+        "p_value": 0.8125,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Spectral_K8 vs Spectral_K10": {
+        "statistic": 4.0,
+        "p_value": 0.875,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Spectral_K8 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Spectral_K8 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Spectral_K10 vs DBSCAN_eps0.3": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "Spectral_K10 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      },
+      "DBSCAN_eps0.3 vs DBSCAN_eps0.5": {
+        "statistic": 0.0,
+        "p_value": 0.0625,
+        "significant_0.05": "False",
+        "significant_0.01": "False"
+      }
+    },
+    "n_methods": 23,
+    "n_folds": 5
+  },
+  "effect_sizes": {
+    "KMeans_K6": {
+      "cohens_d": -1.4128748390330899,
+      "interpretation": "large"
+    },
+    "KMeans_K8": {
+      "cohens_d": -0.9479188547540729,
+      "interpretation": "large"
+    },
+    "KMeans_K10": {
+      "cohens_d": -2.301482324252386,
+      "interpretation": "large"
+    },
+    "KMeans_K12": {
+      "cohens_d": -1.8158012050620647,
+      "interpretation": "large"
+    },
+    "KMeans_K15": {
+      "cohens_d": -2.6456317675594705,
+      "interpretation": "large"
+    },
+    "KMeans_K20": {
+      "cohens_d": -2.938951614901626,
+      "interpretation": "large"
+    },
+    "Agglom_Ward_K4": {
+      "cohens_d": 1.3050384554614705,
+      "interpretation": "large"
+    },
+    "Agglom_Ward_K8": {
+      "cohens_d": -0.3590370740191397,
+      "interpretation": "small"
+    },
+    "Agglom_Ward_K10": {
+      "cohens_d": -1.027204993341022,
+      "interpretation": "large"
+    },
+    "Agglom_Ward_K15": {
+      "cohens_d": -1.6168953725749078,
+      "interpretation": "large"
+    },
+    "Agglom_Complete_K4": {
+      "cohens_d": 1.3868360435745266,
+      "interpretation": "large"
+    },
+    "Agglom_Complete_K8": {
+      "cohens_d": 0.0015123748433491285,
+      "interpretation": "negligible"
+    },
+    "Agglom_Complete_K10": {
+      "cohens_d": -0.6765725706741609,
+      "interpretation": "medium"
+    },
+    "GMM_K4": {
+      "cohens_d": 0.0073001323857575405,
+      "interpretation": "negligible"
+    },
+    "GMM_K8": {
+      "cohens_d": -1.2371247449511444,
+      "interpretation": "large"
+    },
+    "GMM_K10": {
+      "cohens_d": -1.3825313898560168,
+      "interpretation": "large"
+    },
+    "GMM_K15": {
+      "cohens_d": -2.9171761430642755,
+      "interpretation": "large"
+    },
+    "Spectral_K4": {
+      "cohens_d": 2.0735939250804902,
+      "interpretation": "large"
+    },
+    "Spectral_K8": {
+      "cohens_d": 0.5319951042384398,
+      "interpretation": "medium"
+    },
+    "Spectral_K10": {
+      "cohens_d": 0.5389323920322532,
+      "interpretation": "medium"
+    },
+    "DBSCAN_eps0.3": {
+      "cohens_d": -4.08227087394232,
+      "interpretation": "large"
+    },
+    "DBSCAN_eps0.5": {
+      "cohens_d": 7.279866923558588,
+      "interpretation": "large"
+    }
+  }
+}

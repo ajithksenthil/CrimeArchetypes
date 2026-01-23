@@ -1,0 +1,289 @@
+{
+  "summary": {
+    "total": 26,
+    "primary_distribution": {
+      "FOCUSED": 23,
+      "COMPLEX": 3
+    },
+    "subtype_distribution": {
+      "FOCUSED": {
+        "Strong Escalator": 8,
+        "Fantasy-Actor": 3,
+        "Stalker-Striker": 8,
+        "Pure Predator": 4
+      },
+      "COMPLEX": {
+        "Chameleon": 2,
+        "Multi-Modal": 1
+      }
+    },
+    "primary_percentages": {
+      "FOCUSED": 88.46153846153845,
+      "COMPLEX": 11.538461538461538
+    }
+  },
+  "classifications": [
+    {
+      "name": "Alcala._Rodney__2012_",
+      "primary_type": "FOCUSED",
+      "subtype": "Strong Escalator",
+      "primary_confidence": 0.6327760120363757,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Strong Escalator"
+    },
+    {
+      "name": "Allanson_Patricia",
+      "primary_type": "FOCUSED",
+      "subtype": "Fantasy-Actor",
+      "primary_confidence": 0.7175838888064072,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Fantasy-Actor"
+    },
+    {
+      "name": "Anderson_Dale_-_2005",
+      "primary_type": "FOCUSED",
+      "subtype": "Stalker-Striker",
+      "primary_confidence": 0.7908929918431479,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Stalker-Striker"
+    },
+    {
+      "name": "Archer-Gilligan_Amy",
+      "primary_type": "FOCUSED",
+      "subtype": "Strong Escalator",
+      "primary_confidence": 0.6399212875240531,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Strong Escalator"
+    },
+    {
+      "name": "Armstrong_John_Eric",
+      "primary_type": "COMPLEX",
+      "subtype": "Chameleon",
+      "primary_confidence": 0.7529165441020201,
+      "subtype_confidence": 1.0,
+      "full_label": "COMPLEX/Chameleon"
+    },
+    {
+      "name": "Barfield_Velma_-_2005_Fall",
+      "primary_type": "FOCUSED",
+      "subtype": "Strong Escalator",
+      "primary_confidence": 0.750484619716905,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Strong Escalator"
+    },
+    {
+      "name": "Bathory_Elizabeth_-_spring_2006",
+      "primary_type": "COMPLEX",
+      "subtype": "Multi-Modal",
+      "primary_confidence": 0.7144359929598284,
+      "subtype_confidence": 1.0,
+      "full_label": "COMPLEX/Multi-Modal"
+    },
+    {
+      "name": "Baumeister_Herb_-_fall_2005",
+      "primary_type": "COMPLEX",
+      "subtype": "Chameleon",
+      "primary_confidence": 0.7214509205004285,
+      "subtype_confidence": 1.0,
+      "full_label": "COMPLEX/Chameleon"
+    },
+    {
+      "name": "Beets_Betty_Lou__spring_2007_",
+      "primary_type": "FOCUSED",
+      "subtype": "Stalker-Striker",
+      "primary_confidence": 0.6193235160904677,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Stalker-Striker"
+    },
+    {
+      "name": "Berdella_Robert",
+      "primary_type": "FOCUSED",
+      "subtype": "Strong Escalator",
+      "primary_confidence": 0.6588428121717615,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Strong Escalator"
+    },
+    {
+      "name": "Bernardo_Paul",
+      "primary_type": "FOCUSED",
+      "subtype": "Stalker-Striker",
+      "primary_confidence": 0.7438725276269431,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Stalker-Striker"
+    },
+    {
+      "name": "Bianchi_Kenneth",
+      "primary_type": "FOCUSED",
+      "subtype": "Strong Escalator",
+      "primary_confidence": 0.6995801386820956,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Strong Escalator"
+    },
+    {
+      "name": "Bittaker_Lawrence__fall_2007_",
+      "primary_type": "FOCUSED",
+      "subtype": "Stalker-Striker",
+      "primary_confidence": 0.7070059111538127,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Stalker-Striker"
+    },
+    {
+      "name": "Black_Robert_-_spring_2006",
+      "primary_type": "FOCUSED",
+      "subtype": "Stalker-Striker",
+      "primary_confidence": 0.7429488021690893,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Stalker-Striker"
+    },
+    {
+      "name": "Bland_Warren_James__fall_2006_",
+      "primary_type": "FOCUSED",
+      "subtype": "Stalker-Striker",
+      "primary_confidence": 0.7953296713029693,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Stalker-Striker"
+    },
+    {
+      "name": "Blank_Daniel__spring_2006_",
+      "primary_type": "FOCUSED",
+      "subtype": "Pure Predator",
+      "primary_confidence": 0.7692976062234632,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Pure Predator"
+    },
+    {
+      "name": "Bonin_William_-_fall_2007",
+      "primary_type": "FOCUSED",
+      "subtype": "Pure Predator",
+      "primary_confidence": 0.6896518790241022,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Pure Predator"
+    },
+    {
+      "name": "Browne_Robert_Charles__2008_spring_",
+      "primary_type": "FOCUSED",
+      "subtype": "Fantasy-Actor",
+      "primary_confidence": 0.8048626309447874,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Fantasy-Actor"
+    },
+    {
+      "name": "Brudos_Jerome",
+      "primary_type": "FOCUSED",
+      "subtype": "Fantasy-Actor",
+      "primary_confidence": 0.5666220915538804,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Fantasy-Actor"
+    },
+    {
+      "name": "Buenoano_Judias_-_fall_2005",
+      "primary_type": "FOCUSED",
+      "subtype": "Strong Escalator",
+      "primary_confidence": 0.7453237880877139,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Strong Escalator"
+    },
+    {
+      "name": "Bundy_Ted_-_2005",
+      "primary_type": "FOCUSED",
+      "subtype": "Strong Escalator",
+      "primary_confidence": 0.6492343296277062,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Strong Escalator"
+    },
+    {
+      "name": "Bunting_John_Justin",
+      "primary_type": "FOCUSED",
+      "subtype": "Strong Escalator",
+      "primary_confidence": 0.7827538306750194,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Strong Escalator"
+    },
+    {
+      "name": "Buono_Angelo",
+      "primary_type": "FOCUSED",
+      "subtype": "Pure Predator",
+      "primary_confidence": 0.7131871806515074,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Pure Predator"
+    },
+    {
+      "name": "Burke_William__2008_spring_",
+      "primary_type": "FOCUSED",
+      "subtype": "Stalker-Striker",
+      "primary_confidence": 0.7361139271590501,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Stalker-Striker"
+    },
+    {
+      "name": "Cleaned_Albright_Charles_table",
+      "primary_type": "FOCUSED",
+      "subtype": "Pure Predator",
+      "primary_confidence": 0.6529495760382212,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Pure Predator"
+    },
+    {
+      "name": "campbell_charles",
+      "primary_type": "FOCUSED",
+      "subtype": "Stalker-Striker",
+      "primary_confidence": 0.7627845164585921,
+      "subtype_confidence": 1.0,
+      "full_label": "FOCUSED/Stalker-Striker"
+    }
+  ],
+  "primary_types": {
+    "COMPLEX": {
+      "description": "Multi-modal behavioral pattern with unpredictable state transitions",
+      "risk_level": "UNPREDICTABLE - Difficult to anticipate; utilizes multiple behavioral modes"
+    },
+    "FOCUSED": {
+      "description": "Directing-dominant pattern with clear escalation trajectory",
+      "risk_level": "HIGH - Predictable escalation pattern; sustained exploitation behavior"
+    }
+  },
+  "subtypes": {
+    "Chameleon": {
+      "code": "CHA",
+      "parent": "COMPLEX",
+      "description": "Utilizes all four behavioral modes fluidly",
+      "risk_profile": "UNPREDICTABLE - No consistent pattern to monitor. Can switch modes rapidly without warning."
+    },
+    "Multi-Modal": {
+      "code": "MUL",
+      "parent": "COMPLEX",
+      "description": "Multiple active states without full chameleon flexibility",
+      "risk_profile": "MODERATE-HIGH - Some pattern variability. Harder to profile than FOCUSED types."
+    },
+    "Pure Predator": {
+      "code": "PRD",
+      "parent": "FOCUSED",
+      "description": "Overwhelming dominance of exploitation behavior (75%+)",
+      "risk_profile": "CRITICAL - Highest danger. Once in Directing mode, 76%+ probability of staying there."
+    },
+    "Strong Escalator": {
+      "code": "ESC",
+      "parent": "FOCUSED",
+      "description": "Dramatic increase in Directing behavior over time",
+      "risk_profile": "HIGH - Escalation is the key warning sign. Early detection critical before full escalation."
+    },
+    "Stalker-Striker": {
+      "code": "STK",
+      "parent": "FOCUSED",
+      "description": "Methodical observation followed by calculated action",
+      "risk_profile": "HIGH - Surveillance phase offers detection opportunity. Once target selected, action follows."
+    },
+    "Fantasy-Actor": {
+      "code": "FAN",
+      "parent": "FOCUSED",
+      "description": "Direct leap from internal fantasy to violent action",
+      "risk_profile": "CRITICAL - Fast escalation. Short window for intervention between fantasy development and action."
+    },
+    "Standard": {
+      "code": "STD",
+      "parent": "FOCUSED",
+      "description": "Typical Directing-dominant pattern without distinctive features",
+      "risk_profile": "HIGH - Typical danger profile. Follows expected Directing-dominant trajectory."
+    }
+  }
+}

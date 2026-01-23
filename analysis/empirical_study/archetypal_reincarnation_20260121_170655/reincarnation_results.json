@@ -1,0 +1,246 @@
+{
+  "n_individuals": 26,
+  "matrix_stats": {
+    "mean": 0.23711712420415956,
+    "std": 0.1387900002697408,
+    "max": 0.8219097878225013,
+    "nonzero_fraction": 0.9984615384615385
+  },
+  "roles": {
+    "sources": [
+      {
+        "name": "Berdella_Robert",
+        "outgoing": 7.584269269781597,
+        "incoming": 7.058683042721427
+      },
+      {
+        "name": "Bundy_Ted_-_2005",
+        "outgoing": 7.292027816187049,
+        "incoming": 7.0804890973768835
+      },
+      {
+        "name": "Black_Robert_-_spring_2006",
+        "outgoing": 7.246363924945792,
+        "incoming": 5.9140150706411
+      }
+    ],
+    "sinks": [
+      {
+        "name": "Buenoano_Judias_-_fall_2005",
+        "outgoing": 7.059692838141003,
+        "incoming": 9.095364098732217
+      },
+      {
+        "name": "Archer-Gilligan_Amy",
+        "outgoing": 6.353775017382308,
+        "incoming": 7.913797204983688
+      },
+      {
+        "name": "Bunting_John_Justin",
+        "outgoing": 6.916384658759922,
+        "incoming": 7.627202929316732
+      }
+    ],
+    "hubs": [
+      {
+        "name": "Bianchi_Kenneth",
+        "outgoing": 7.803874655291256,
+        "incoming": 9.701265762210651
+      },
+      {
+        "name": "Baumeister_Herb_-_fall_2005",
+        "outgoing": 7.710863852459347,
+        "incoming": 8.67501038426812
+      },
+      {
+        "name": "Armstrong_John_Eric",
+        "outgoing": 7.921605239224458,
+        "incoming": 8.114586083441111
+      },
+      {
+        "name": "Brudos_Jerome",
+        "outgoing": 7.0983425364434645,
+        "incoming": 7.68770589905286
+      }
+    ],
+    "n_isolated": 16
+  },
+  "lineages": [
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Baumeister_Herb_-_fall_2005",
+      "Buenoano_Judias_-_fall_2005",
+      "Alcala._Rodney__2012_"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Bittaker_Lawrence__fall_2007_",
+      "Buenoano_Judias_-_fall_2005",
+      "Alcala._Rodney__2012_"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Bittaker_Lawrence__fall_2007_",
+      "Bundy_Ted_-_2005",
+      "Archer-Gilligan_Amy"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Buenoano_Judias_-_fall_2005",
+      "Bundy_Ted_-_2005",
+      "Archer-Gilligan_Amy"
+    ],
+    [
+      "Allanson_Patricia",
+      "Archer-Gilligan_Amy",
+      "Bernardo_Paul",
+      "Baumeister_Herb_-_fall_2005",
+      "Armstrong_John_Eric"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Bittaker_Lawrence__fall_2007_",
+      "Bundy_Ted_-_2005",
+      "Armstrong_John_Eric"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Buenoano_Judias_-_fall_2005",
+      "Alcala._Rodney__2012_",
+      "Armstrong_John_Eric"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Buenoano_Judias_-_fall_2005",
+      "Baumeister_Herb_-_fall_2005",
+      "Armstrong_John_Eric"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Buenoano_Judias_-_fall_2005",
+      "Bundy_Ted_-_2005",
+      "Armstrong_John_Eric"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Bunting_John_Justin",
+      "Baumeister_Herb_-_fall_2005",
+      "Armstrong_John_Eric"
+    ],
+    [
+      "Allanson_Patricia",
+      "Archer-Gilligan_Amy",
+      "Alcala._Rodney__2012_",
+      "Armstrong_John_Eric",
+      "Baumeister_Herb_-_fall_2005"
+    ],
+    [
+      "Allanson_Patricia",
+      "Archer-Gilligan_Amy",
+      "Alcala._Rodney__2012_",
+      "Buenoano_Judias_-_fall_2005",
+      "Baumeister_Herb_-_fall_2005"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Bittaker_Lawrence__fall_2007_",
+      "Armstrong_John_Eric",
+      "Baumeister_Herb_-_fall_2005"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Bittaker_Lawrence__fall_2007_",
+      "Buenoano_Judias_-_fall_2005",
+      "Baumeister_Herb_-_fall_2005"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Bittaker_Lawrence__fall_2007_",
+      "Bundy_Ted_-_2005",
+      "Baumeister_Herb_-_fall_2005"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Bittaker_Lawrence__fall_2007_",
+      "Bunting_John_Justin",
+      "Baumeister_Herb_-_fall_2005"
+    ],
+    [
+      "Allanson_Patricia",
+      "Berdella_Robert",
+      "Buenoano_Judias_-_fall_2005",
+      "Bundy_Ted_-_2005",
+      "Baumeister_Herb_-_fall_2005"
+    ],
+    [
+      "Allanson_Patricia",
+      "Archer-Gilligan_Amy",
+      "Alcala._Rodney__2012_",
+      "Armstrong_John_Eric",
+      "Bianchi_Kenneth"
+    ],
+    [
+      "Allanson_Patricia",
+      "Archer-Gilligan_Amy",
+      "Alcala._Rodney__2012_",
+      "Bland_Warren_James__fall_2006_",
+      "Bianchi_Kenneth"
+    ],
+    [
+      "Allanson_Patricia",
+      "Archer-Gilligan_Amy",
+      "Alcala._Rodney__2012_",
+      "Buenoano_Judias_-_fall_2005",
+      "Bianchi_Kenneth"
+    ]
+  ],
+  "clusters": {
+    "1": [
+      "Alcala._Rodney__2012_",
+      "Allanson_Patricia",
+      "Anderson_Dale_-_2005",
+      "Archer-Gilligan_Amy",
+      "Armstrong_John_Eric",
+      "Barfield_Velma_-_2005_Fall",
+      "Bathory_Elizabeth_-_spring_2006",
+      "Baumeister_Herb_-_fall_2005",
+      "Beets_Betty_Lou__spring_2007_",
+      "Berdella_Robert",
+      "Bernardo_Paul",
+      "Bianchi_Kenneth",
+      "Bittaker_Lawrence__fall_2007_",
+      "Black_Robert_-_spring_2006",
+      "Bland_Warren_James__fall_2006_",
+      "Blank_Daniel__spring_2006_",
+      "Browne_Robert_Charles__2008_spring_",
+      "Brudos_Jerome",
+      "Buenoano_Judias_-_fall_2005",
+      "Bundy_Ted_-_2005",
+      "Bunting_John_Justin",
+      "Burke_William__2008_spring_",
+      "campbell_charles"
+    ],
+    "4": [
+      "Bonin_William_-_fall_2007"
+    ],
+    "3": [
+      "Buono_Angelo"
+    ],
+    "2": [
+      "Cleaned_Albright_Charles_table"
+    ]
+  }
+}

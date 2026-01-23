@@ -1,0 +1,470 @@
+{
+  "Alcala._Rodney__2012_": {
+    "openness": 0.3629032258064516,
+    "conscientiousness": 0.10322580645161289,
+    "extraversion": 0.903225806451613,
+    "agreeableness": 0.3951612903225806,
+    "neuroticism": 0.6286965057269429,
+    "state_distribution": {
+      "Seeking": 0.06451612903225806,
+      "Directing": 0.6048387096774194,
+      "Conferring": 0.29838709677419356,
+      "Revising": 0.03225806451612903
+    },
+    "directing_persistence": 0.7540322580645162,
+    "exploitation_index": 0.6370967741935484,
+    "exploration_index": 0.3629032258064516,
+    "self_focus": 0.0967741935483871,
+    "other_focus": 0.903225806451613
+  },
+  "Allanson_Patricia": {
+    "openness": 0.17948717948717946,
+    "conscientiousness": 0.23076923076923078,
+    "extraversion": 0.7948717948717949,
+    "agreeableness": 0.2564102564102564,
+    "neuroticism": 0.5508775286158496,
+    "state_distribution": {
+      "Seeking": 0.1282051282051282,
+      "Directing": 0.7435897435897436,
+      "Conferring": 0.05128205128205128,
+      "Revising": 0.07692307692307693
+    },
+    "directing_persistence": 0.7781690140845069,
+    "exploitation_index": 0.8205128205128205,
+    "exploration_index": 0.17948717948717946,
+    "self_focus": 0.20512820512820512,
+    "other_focus": 0.7948717948717949
+  },
+  "Anderson_Dale_-_2005": {
+    "openness": 0.26666666666666666,
+    "conscientiousness": 0.12333333333333332,
+    "extraversion": 0.8333333333333334,
+    "agreeableness": 0.2833333333333333,
+    "neuroticism": 0.5257564778776539,
+    "state_distribution": {
+      "Seeking": 0.15,
+      "Directing": 0.7166666666666667,
+      "Conferring": 0.11666666666666667,
+      "Revising": 0.016666666666666666
+    },
+    "directing_persistence": 0.7396313364055299,
+    "exploitation_index": 0.7333333333333334,
+    "exploration_index": 0.26666666666666666,
+    "self_focus": 0.16666666666666666,
+    "other_focus": 0.8333333333333334
+  },
+  "Archer-Gilligan_Amy": {
+    "openness": 0.3181818181818182,
+    "conscientiousness": 0.13636363636363635,
+    "extraversion": 0.7727272727272727,
+    "agreeableness": 0.31818181818181823,
+    "neuroticism": 0.48521588477891453,
+    "state_distribution": {
+      "Seeking": 0.22727272727272727,
+      "Directing": 0.6818181818181818,
+      "Conferring": 0.09090909090909091,
+      "Revising": 0.0
+    },
+    "directing_persistence": 0.8402777777777778,
+    "exploitation_index": 0.6818181818181818,
+    "exploration_index": 0.3181818181818182,
+    "self_focus": 0.22727272727272727,
+    "other_focus": 0.7727272727272727
+  },
+  "Armstrong_John_Eric": {
+    "openness": 0.42105263157894735,
+    "conscientiousness": 0.3315789473684211,
+    "extraversion": 0.631578947368421,
+    "agreeableness": 0.5,
+    "neuroticism": 0.797685742986022,
+    "state_distribution": {
+      "Seeking": 0.2894736842105263,
+      "Directing": 0.5,
+      "Conferring": 0.13157894736842105,
+      "Revising": 0.07894736842105263
+    },
+    "directing_persistence": 0.6032608695652173,
+    "exploitation_index": 0.5789473684210527,
+    "exploration_index": 0.42105263157894735,
+    "self_focus": 0.368421052631579,
+    "other_focus": 0.631578947368421
+  },
+  "Barfield_Velma_-_2005_Fall": {
+    "openness": 0.22448979591836732,
+    "conscientiousness": 0.15918367346938775,
+    "extraversion": 0.8061224489795918,
+    "agreeableness": 0.2551020408163265,
+    "neuroticism": 0.49391987034495277,
+    "state_distribution": {
+      "Seeking": 0.16326530612244897,
+      "Directing": 0.7448979591836735,
+      "Conferring": 0.061224489795918366,
+      "Revising": 0.030612244897959183
+    },
+    "directing_persistence": 0.8301104972375691,
+    "exploitation_index": 0.7755102040816327,
+    "exploration_index": 0.22448979591836732,
+    "self_focus": 0.19387755102040816,
+    "other_focus": 0.8061224489795918
+  },
+  "Bathory_Elizabeth_-_spring_2006": {
+    "openness": 0.38461538461538464,
+    "conscientiousness": 0.18461538461538463,
+    "extraversion": 0.6923076923076923,
+    "agreeableness": 0.3846153846153846,
+    "neuroticism": 0.5478120394886318,
+    "state_distribution": {
+      "Seeking": 0.3076923076923077,
+      "Directing": 0.6153846153846154,
+      "Conferring": 0.07692307692307693,
+      "Revising": 0.0
+    },
+    "directing_persistence": 0.6891891891891893,
+    "exploitation_index": 0.6153846153846154,
+    "exploration_index": 0.38461538461538464,
+    "self_focus": 0.3076923076923077,
+    "other_focus": 0.6923076923076923
+  },
+  "Baumeister_Herb_-_fall_2005": {
+    "openness": 0.5217391304347826,
+    "conscientiousness": 0.27391304347826084,
+    "extraversion": 0.6956521739130435,
+    "agreeableness": 0.5869565217391304,
+    "neuroticism": 0.8444042846155926,
+    "state_distribution": {
+      "Seeking": 0.2391304347826087,
+      "Directing": 0.41304347826086957,
+      "Conferring": 0.2826086956521739,
+      "Revising": 0.06521739130434782
+    },
+    "directing_persistence": 0.4402173913043478,
+    "exploitation_index": 0.4782608695652174,
+    "exploration_index": 0.5217391304347826,
+    "self_focus": 0.30434782608695654,
+    "other_focus": 0.6956521739130435
+  },
+  "Beets_Betty_Lou__spring_2007_": {
+    "openness": 0.3,
+    "conscientiousness": 0.132,
+    "extraversion": 0.7799999999999999,
+    "agreeableness": 0.30000000000000004,
+    "neuroticism": 0.5706612640703977,
+    "state_distribution": {
+      "Seeking": 0.22,
+      "Directing": 0.7,
+      "Conferring": 0.08,
+      "Revising": 0.0
+    },
+    "directing_persistence": 0.7005813953488371,
+    "exploitation_index": 0.7,
+    "exploration_index": 0.3,
+    "self_focus": 0.22,
+    "other_focus": 0.7799999999999999
+  },
+  "Berdella_Robert": {
+    "openness": 0.21951219512195122,
+    "conscientiousness": 0.2195121951219512,
+    "extraversion": 0.8048780487804877,
+    "agreeableness": 0.29268292682926833,
+    "neuroticism": 0.45786146353825674,
+    "state_distribution": {
+      "Seeking": 0.12195121951219512,
+      "Directing": 0.7073170731707317,
+      "Conferring": 0.0975609756097561,
+      "Revising": 0.07317073170731707
+    },
+    "directing_persistence": 0.8838028169014083,
+    "exploitation_index": 0.7804878048780487,
+    "exploration_index": 0.21951219512195122,
+    "self_focus": 0.1951219512195122,
+    "other_focus": 0.8048780487804877
+  },
+  "Bernardo_Paul": {
+    "openness": 0.23863636363636365,
+    "conscientiousness": 0.10227272727272727,
+    "extraversion": 0.9090909090909092,
+    "agreeableness": 0.2727272727272727,
+    "neuroticism": 0.5840398862884693,
+    "state_distribution": {
+      "Seeking": 0.056818181818181816,
+      "Directing": 0.7272727272727273,
+      "Conferring": 0.18181818181818182,
+      "Revising": 0.03409090909090909
+    },
+    "directing_persistence": 0.7271293375394321,
+    "exploitation_index": 0.7613636363636364,
+    "exploration_index": 0.23863636363636365,
+    "self_focus": 0.09090909090909091,
+    "other_focus": 0.9090909090909092
+  },
+  "Bianchi_Kenneth": {
+    "openness": 0.27419354838709675,
+    "conscientiousness": 0.4290322580645161,
+    "extraversion": 0.6612903225806452,
+    "agreeableness": 0.4354838709677419,
+    "neuroticism": 0.7772549344621806,
+    "state_distribution": {
+      "Seeking": 0.1774193548387097,
+      "Directing": 0.5645161290322581,
+      "Conferring": 0.0967741935483871,
+      "Revising": 0.16129032258064516
+    },
+    "directing_persistence": 0.7372881355932203,
+    "exploitation_index": 0.7258064516129032,
+    "exploration_index": 0.27419354838709675,
+    "self_focus": 0.33870967741935487,
+    "other_focus": 0.6612903225806452
+  },
+  "Bittaker_Lawrence__fall_2007_": {
+    "openness": 0.18181818181818182,
+    "conscientiousness": 0.3575757575757576,
+    "extraversion": 0.7575757575757576,
+    "agreeableness": 0.33333333333333337,
+    "neuroticism": 0.6354903460763761,
+    "state_distribution": {
+      "Seeking": 0.09090909090909091,
+      "Directing": 0.6666666666666666,
+      "Conferring": 0.09090909090909091,
+      "Revising": 0.15151515151515152
+    },
+    "directing_persistence": 0.763392857142857,
+    "exploitation_index": 0.8181818181818181,
+    "exploration_index": 0.18181818181818182,
+    "self_focus": 0.24242424242424243,
+    "other_focus": 0.7575757575757576
+  },
+  "Black_Robert_-_spring_2006": {
+    "openness": 0.23076923076923078,
+    "conscientiousness": 0.14615384615384616,
+    "extraversion": 0.8461538461538461,
+    "agreeableness": 0.2692307692307693,
+    "neuroticism": 0.5490639439273526,
+    "state_distribution": {
+      "Seeking": 0.11538461538461539,
+      "Directing": 0.7307692307692307,
+      "Conferring": 0.11538461538461539,
+      "Revising": 0.038461538461538464
+    },
+    "directing_persistence": 0.7663043478260868,
+    "exploitation_index": 0.7692307692307692,
+    "exploration_index": 0.23076923076923078,
+    "self_focus": 0.15384615384615385,
+    "other_focus": 0.8461538461538461
+  },
+  "Bland_Warren_James__fall_2006_": {
+    "openness": 0.17391304347826086,
+    "conscientiousness": 0.22608695652173913,
+    "extraversion": 0.826086956521739,
+    "agreeableness": 0.26086956521739135,
+    "neuroticism": 0.5470874587357796,
+    "state_distribution": {
+      "Seeking": 0.08695652173913043,
+      "Directing": 0.7391304347826086,
+      "Conferring": 0.08695652173913043,
+      "Revising": 0.08695652173913043
+    },
+    "directing_persistence": 0.8113772455089819,
+    "exploitation_index": 0.826086956521739,
+    "exploration_index": 0.17391304347826086,
+    "self_focus": 0.17391304347826086,
+    "other_focus": 0.826086956521739
+  },
+  "Blank_Daniel__spring_2006_": {
+    "openness": 0.1764705882352941,
+    "conscientiousness": 0.03529411764705882,
+    "extraversion": 0.9411764705882353,
+    "agreeableness": 0.17647058823529416,
+    "neuroticism": 0.3174302133432933,
+    "state_distribution": {
+      "Seeking": 0.058823529411764705,
+      "Directing": 0.8235294117647058,
+      "Conferring": 0.11764705882352941,
+      "Revising": 0.0
+    },
+    "directing_persistence": 0.9029850746268657,
+    "exploitation_index": 0.8235294117647058,
+    "exploration_index": 0.1764705882352941,
+    "self_focus": 0.058823529411764705,
+    "other_focus": 0.9411764705882353
+  },
+  "Bonin_William_-_fall_2007": {
+    "openness": 0.03571428571428571,
+    "conscientiousness": 0.07142857142857142,
+    "extraversion": 0.9642857142857143,
+    "agreeableness": 0.0714285714285714,
+    "neuroticism": 0.31077417535935026,
+    "state_distribution": {
+      "Seeking": 0.0,
+      "Directing": 0.9285714285714286,
+      "Conferring": 0.03571428571428571,
+      "Revising": 0.03571428571428571
+    },
+    "directing_persistence": 0.9094488188976376,
+    "exploitation_index": 0.9642857142857143,
+    "exploration_index": 0.03571428571428571,
+    "self_focus": 0.03571428571428571,
+    "other_focus": 0.9642857142857143
+  },
+  "Browne_Robert_Charles__2008_spring_": {
+    "openness": 0.17857142857142858,
+    "conscientiousness": 0.28928571428571426,
+    "extraversion": 0.7678571428571429,
+    "agreeableness": 0.2857142857142857,
+    "neuroticism": 0.6518726661300858,
+    "state_distribution": {
+      "Seeking": 0.125,
+      "Directing": 0.7142857142857143,
+      "Conferring": 0.05357142857142857,
+      "Revising": 0.10714285714285714
+    },
+    "directing_persistence": 0.6707920792079207,
+    "exploitation_index": 0.8214285714285714,
+    "exploration_index": 0.17857142857142858,
+    "self_focus": 0.23214285714285715,
+    "other_focus": 0.7678571428571429
+  },
+  "Brudos_Jerome": {
+    "openness": 0.27450980392156865,
+    "conscientiousness": 0.32941176470588235,
+    "extraversion": 0.7254901960784313,
+    "agreeableness": 0.3921568627450981,
+    "neuroticism": 0.7455001203822705,
+    "state_distribution": {
+      "Seeking": 0.1568627450980392,
+      "Directing": 0.6078431372549019,
+      "Conferring": 0.11764705882352941,
+      "Revising": 0.11764705882352941
+    },
+    "directing_persistence": 0.6282894736842105,
+    "exploitation_index": 0.7254901960784313,
+    "exploration_index": 0.27450980392156865,
+    "self_focus": 0.27450980392156865,
+    "other_focus": 0.7254901960784313
+  },
+  "Buenoano_Judias_-_fall_2005": {
+    "openness": 0.3,
+    "conscientiousness": 0.16666666666666666,
+    "extraversion": 0.7999999999999999,
+    "agreeableness": 0.33333333333333337,
+    "neuroticism": 0.6119688894333198,
+    "state_distribution": {
+      "Seeking": 0.16666666666666666,
+      "Directing": 0.6666666666666666,
+      "Conferring": 0.13333333333333333,
+      "Revising": 0.03333333333333333
+    },
+    "directing_persistence": 0.7783505154639174,
+    "exploitation_index": 0.7,
+    "exploration_index": 0.3,
+    "self_focus": 0.19999999999999998,
+    "other_focus": 0.7999999999999999
+  },
+  "Bundy_Ted_-_2005": {
+    "openness": 0.3150684931506849,
+    "conscientiousness": 0.19726027397260273,
+    "extraversion": 0.8630136986301369,
+    "agreeableness": 0.3972602739726028,
+    "neuroticism": 0.706577526307943,
+    "state_distribution": {
+      "Seeking": 0.0547945205479452,
+      "Directing": 0.6027397260273972,
+      "Conferring": 0.2602739726027397,
+      "Revising": 0.0821917808219178
+    },
+    "directing_persistence": 0.6705069124423962,
+    "exploitation_index": 0.684931506849315,
+    "exploration_index": 0.3150684931506849,
+    "self_focus": 0.136986301369863,
+    "other_focus": 0.8630136986301369
+  },
+  "Bunting_John_Justin": {
+    "openness": 0.19230769230769232,
+    "conscientiousness": 0.27692307692307694,
+    "extraversion": 0.8076923076923077,
+    "agreeableness": 0.3076923076923077,
+    "neuroticism": 0.6220936879840998,
+    "state_distribution": {
+      "Seeking": 0.07692307692307693,
+      "Directing": 0.6923076923076923,
+      "Conferring": 0.11538461538461539,
+      "Revising": 0.11538461538461539
+    },
+    "directing_persistence": 0.6954022988505747,
+    "exploitation_index": 0.8076923076923077,
+    "exploration_index": 0.19230769230769232,
+    "self_focus": 0.19230769230769232,
+    "other_focus": 0.8076923076923077
+  },
+  "Buono_Angelo": {
+    "openness": 0.09999999999999999,
+    "conscientiousness": 0.11666666666666667,
+    "extraversion": 0.8833333333333334,
+    "agreeableness": 0.1333333333333333,
+    "neuroticism": 0.34822894238585816,
+    "state_distribution": {
+      "Seeking": 0.08333333333333333,
+      "Directing": 0.8666666666666667,
+      "Conferring": 0.016666666666666666,
+      "Revising": 0.03333333333333333
+    },
+    "directing_persistence": 0.8774319066147859,
+    "exploitation_index": 0.9,
+    "exploration_index": 0.09999999999999999,
+    "self_focus": 0.11666666666666667,
+    "other_focus": 0.8833333333333334
+  },
+  "Burke_William__2008_spring_": {
+    "openness": 0.23076923076923078,
+    "conscientiousness": 0.1,
+    "extraversion": 0.923076923076923,
+    "agreeableness": 0.2692307692307693,
+    "neuroticism": 0.4272853226729985,
+    "state_distribution": {
+      "Seeking": 0.038461538461538464,
+      "Directing": 0.7307692307692307,
+      "Conferring": 0.19230769230769232,
+      "Revising": 0.038461538461538464
+    },
+    "directing_persistence": 0.8749999999999998,
+    "exploitation_index": 0.7692307692307692,
+    "exploration_index": 0.23076923076923078,
+    "self_focus": 0.07692307692307693,
+    "other_focus": 0.923076923076923
+  },
+  "Cleaned_Albright_Charles_table": {
+    "openness": 0.08695652173913043,
+    "conscientiousness": 0.19999999999999998,
+    "extraversion": 0.8695652173913043,
+    "agreeableness": 0.17391304347826086,
+    "neuroticism": 0.49822276149853184,
+    "state_distribution": {
+      "Seeking": 0.043478260869565216,
+      "Directing": 0.8260869565217391,
+      "Conferring": 0.043478260869565216,
+      "Revising": 0.08695652173913043
+    },
+    "directing_persistence": 0.8048128342245988,
+    "exploitation_index": 0.9130434782608696,
+    "exploration_index": 0.08695652173913043,
+    "self_focus": 0.13043478260869565,
+    "other_focus": 0.8695652173913043
+  },
+  "campbell_charles": {
+    "openness": 0.1276595744680851,
+    "conscientiousness": 0.37872340425531914,
+    "extraversion": 0.7659574468085106,
+    "agreeableness": 0.2978723404255319,
+    "neuroticism": 0.5506397278259322,
+    "state_distribution": {
+      "Seeking": 0.06382978723404255,
+      "Directing": 0.7021276595744681,
+      "Conferring": 0.06382978723404255,
+      "Revising": 0.1702127659574468
+    },
+    "directing_persistence": 0.7746913580246912,
+    "exploitation_index": 0.8723404255319149,
+    "exploration_index": 0.1276595744680851,
+    "self_focus": 0.23404255319148937,
+    "other_focus": 0.7659574468085106
+  }
+}

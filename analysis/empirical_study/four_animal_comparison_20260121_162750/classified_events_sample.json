@@ -1,0 +1,1102 @@
+[
+  {
+    "event": "\"Rodney\u2019s older brother",
+    "animal": "Directing",
+    "confidence": 0.0629485696554184,
+    "similarities": {
+      "Seeking": 0.15436379611492157,
+      "Directing": 0.24722138047218323,
+      "Conferring": 0.19069401919841766,
+      "Revising": 0.2077605426311493
+    }
+  },
+  {
+    "event": "Rodney\u2019s older sister, Marie Therese, was born in San Antonio, TX",
+    "animal": "Directing",
+    "confidence": 0.07891771197319031,
+    "similarities": {
+      "Seeking": 0.0491168238222599,
+      "Directing": 0.11894027143716812,
+      "Conferring": 0.03786447271704674,
+      "Revising": 0.0330863855779171
+    }
+  },
+  {
+    "event": "Rodrigo Jacques Alcala-Buquor was born in San Antonio, Texas to Raou Alcala-Buquor and Anna Maria Gutierrez. He lived with his parents, two sisters, one brother and maternal grandmother.",
+    "animal": "Conferring",
+    "confidence": 0.0420161671936512,
+    "similarities": {
+      "Seeking": 0.022404946386814117,
+      "Directing": 0.09037622809410095,
+      "Conferring": 0.09219053387641907,
+      "Revising": 0.03774193301796913
+    }
+  },
+  {
+    "event": "His youngest sister, Marie Christine, was born in San Antonio, TX",
+    "animal": "Directing",
+    "confidence": 0.0820298120379448,
+    "similarities": {
+      "Seeking": 0.02662762813270092,
+      "Directing": 0.07287263125181198,
+      "Conferring": -0.011452109552919865,
+      "Revising": -0.04264706000685692
+    }
+  },
+  {
+    "event": "He attended kindergarten, first at St. Joseph Catholic Elementary and then moved to Mount Sacred Heart",
+    "animal": "Revising",
+    "confidence": 0.07497955858707428,
+    "similarities": {
+      "Seeking": 0.10162170976400375,
+      "Directing": 0.03893113508820534,
+      "Conferring": -0.016619481146335602,
+      "Revising": 0.11629068106412888
+    }
+  },
+  {
+    "event": "His maternal grandmother became ill and wanted to spend her final years in Mexico. The family moved to Mexico where Rodney attended his first non-Catholic school. While living in Mexico, his grandmother passed away.",
+    "animal": "Directing",
+    "confidence": 0.08337607979774475,
+    "similarities": {
+      "Seeking": 0.2164413034915924,
+      "Directing": 0.2669309675693512,
+      "Conferring": 0.14923517405986786,
+      "Revising": 0.1849881112575531
+    }
+  },
+  {
+    "event": "After three years of living in Mexico, his father left the family to return to the United States. Soon after, the family relocated to Los Angeles, California.  Rodney was enrolled in St. Alphonsus in East Los Angeles where he attended for two years.",
+    "animal": "Directing",
+    "confidence": 0.059565380215644836,
+    "similarities": {
+      "Seeking": 0.13807590305805206,
+      "Directing": 0.18512848019599915,
+      "Conferring": 0.08718694746494293,
+      "Revising": 0.15142641961574554
+    }
+  },
+  {
+    "event": "He finished eighth grade and then attended high school at private Cantwell-Sacred Heart of Mary. During his last semester in high school, he felt like he had enough religious education and insisted on attending public school.",
+    "animal": "Seeking",
+    "confidence": 0.16839025914669037,
+    "similarities": {
+      "Seeking": 0.32098400592803955,
+      "Directing": 0.14736834168434143,
+      "Conferring": 0.11510361731052399,
+      "Revising": 0.19530928134918213
+    }
+  },
+  {
+    "event": "Graduated from the public high school, Montebello High School.",
+    "animal": "Conferring",
+    "confidence": 0.11446061730384827,
+    "similarities": {
+      "Seeking": 0.04941324144601822,
+      "Directing": 0.04853299632668495,
+      "Conferring": 0.158421128988266,
+      "Revising": 0.03393528610467911
+    }
+  },
+  {
+    "event": "\"He entered a program in North Carolina to become a paratrooper. He then enlisted in the U.S Army where he served as a clerk for four years.\"",
+    "animal": "Directing",
+    "confidence": 0.056977368891239166,
+    "similarities": {
+      "Seeking": 0.08195891231298447,
+      "Directing": 0.16969133913516998,
+      "Conferring": 0.16788995265960693,
+      "Revising": 0.08829301595687866
+    }
+  },
+  {
+    "event": "His father unexpectedly passed away in Tulare County, California. The whole family attended the funeral.",
+    "animal": "Directing",
+    "confidence": 0.07307325303554535,
+    "similarities": {
+      "Seeking": 0.10659066587686539,
+      "Directing": 0.16077177226543427,
+      "Conferring": 0.09562572836875916,
+      "Revising": 0.06087915599346161
+    }
+  },
+  {
+    "event": "\"Unexpectedly showed up at his mother\u2019s door. Hs said that he had hitchhiked from Fort Bragg and traveled about three thousand miles to go AWOL.\"",
+    "animal": "Seeking",
+    "confidence": 0.05102819204330444,
+    "similarities": {
+      "Seeking": 0.17215865850448608,
+      "Directing": 0.16672851145267487,
+      "Conferring": 0.13844722509384155,
+      "Revising": 0.0582156665623188
+    }
+  },
+  {
+    "event": "Medically discharged from the U.S. Army after having a nervous breakdown. He was then diagnosed with an antisocial personality disorder, chronic, severe. When he was released from the hospital, he returned home where he began to feel more like himself.",
+    "animal": "Seeking",
+    "confidence": 0.12578225135803223,
+    "similarities": {
+      "Seeking": 0.36250555515289307,
+      "Directing": 0.3061088025569916,
+      "Conferring": 0.17466308176517487,
+      "Revising": 0.2293979823589325
+    }
+  },
+  {
+    "event": "Raped and attempted to murder an 8-year old white female in his apartment in Los Angeles, California. Managed to escape before LAPD entered apartment.",
+    "animal": "Directing",
+    "confidence": 0.2410951405763626,
+    "similarities": {
+      "Seeking": 0.247636079788208,
+      "Directing": 0.48543721437454224,
+      "Conferring": 0.2720578610897064,
+      "Revising": 0.21333234012126923
+    }
+  },
+  {
+    "event": "After speaking to neighbors and finding a University of California at Los Angeles (UCLA) student ID in the apartment, Detective Steve Hodel determined Rodney Alcala was the main suspect in the attack of Victim 1 (WF, 8).",
+    "animal": "Directing",
+    "confidence": 0.1316540539264679,
+    "similarities": {
+      "Seeking": 0.1870145946741104,
+      "Directing": 0.3973913788795471,
+      "Conferring": 0.35305893421173096,
+      "Revising": 0.2571384608745575
+    }
+  },
+  {
+    "event": "Accepted to New York University\u2019s School of the Arts undergraduate program under the alias, John Berger.",
+    "animal": "Conferring",
+    "confidence": 0.10174844413995743,
+    "similarities": {
+      "Seeking": 0.15829209983348846,
+      "Directing": 0.0910743996500969,
+      "Conferring": 0.20311561226844788,
+      "Revising": 0.05473499000072479
+    }
+  },
+  {
+    "event": "Hired as an arts and drama counselor at a summer camp in George Mills, New Hampshire under the alias John Berger",
+    "animal": "Conferring",
+    "confidence": 0.10223617404699326,
+    "similarities": {
+      "Seeking": 0.1027841717004776,
+      "Directing": 0.12566564977169037,
+      "Conferring": 0.19975893199443817,
+      "Revising": 0.0641184151172638
+    }
+  },
+  {
+    "event": "Graduated from NYU and began his third summer working at the arts and drama camp in George Mills, New Hampshire.",
+    "animal": "Conferring",
+    "confidence": 0.0609758198261261,
+    "similarities": {
+      "Seeking": 0.11621664464473724,
+      "Directing": 0.09238550812005997,
+      "Conferring": 0.16700002551078796,
+      "Revising": 0.10947045683860779
+    }
+  },
+  {
+    "event": "Began working as a photographer, primarily focusing on young women, in Manhattan under the alias John Berger.",
+    "animal": "Conferring",
+    "confidence": 0.1573711633682251,
+    "similarities": {
+      "Seeking": 0.17635565996170044,
+      "Directing": 0.15750586986541748,
+      "Conferring": 0.3038780391216278,
+      "Revising": 0.10565914213657379
+    }
+  },
+  {
+    "event": "The body of Cornelia 'Michael' Crilley (WF, 23), was found in her apartment in the Yorkville area of Manhattan, New York.",
+    "animal": "Conferring",
+    "confidence": 0.0293775275349617,
+    "similarities": {
+      "Seeking": 0.10898482799530029,
+      "Directing": 0.13923457264900208,
+      "Conferring": 0.14638522267341614,
+      "Revising": 0.10280368477106094
+    }
+  },
+  {
+    "event": "After a meeting between the FBI and Detective Hodel, Alcala was added to the FBI\u2019s Ten Most Wanted Fugitives List in an attempt to locate him three years after the attack on Victim 1.",
+    "animal": "Conferring",
+    "confidence": 0.1054832935333252,
+    "similarities": {
+      "Seeking": 0.06123294681310654,
+      "Directing": 0.21360091865062714,
+      "Conferring": 0.2509094774723053,
+      "Revising": 0.16144463419914246
+    }
+  },
+  {
+    "event": "Two George Mills\u2019 campers recognize their counselor, John Berger, on the FBI\u2019s Ten Most Wanted Fugitives List while at the local post office. The camp director confirms the man listed as Rodney Alcala is his employee, John Berger, and calls the FBI.",
+    "animal": "Conferring",
+    "confidence": 0.12837617099285126,
+    "similarities": {
+      "Seeking": 0.10980165749788284,
+      "Directing": 0.28358957171440125,
+      "Conferring": 0.32030439376831055,
+      "Revising": 0.1823934018611908
+    }
+  },
+  {
+    "event": "FBI agents arrive to the camp in George Mills, NH and arrest Alcala with the help of fingerprint evidence. Alcala was extradited back to Los Angeles, CA.",
+    "animal": "Directing",
+    "confidence": 0.09885300695896149,
+    "similarities": {
+      "Seeking": 0.04552561417222023,
+      "Directing": 0.22741658985614777,
+      "Conferring": 0.2070394605398178,
+      "Revising": 0.1331256777048111
+    }
+  },
+  {
+    "event": "\"A plea agreement is reached between the prosecution and the defense in which Alcala pleaded guilty to child molestation of Victim 1.\"",
+    "animal": "Directing",
+    "confidence": 0.20395343005657196,
+    "similarities": {
+      "Seeking": 0.12420512735843658,
+      "Directing": 0.3556087613105774,
+      "Conferring": 0.1639159619808197,
+      "Revising": 0.16684499382972717
+    }
+  },
+  {
+    "event": "For the crime of child molestation on Victim 1, Alcala received an indeterminate sentencing\u2014which allowed the judge to set a range of time instead of a specified time frame to be served\u2014of one to ten years, with the option of parole.",
+    "animal": "Directing",
+    "confidence": 0.18809466063976288,
+    "similarities": {
+      "Seeking": 0.07584930956363678,
+      "Directing": 0.3312317132949829,
+      "Conferring": 0.12240427732467651,
+      "Revising": 0.23115763068199158
+    }
+  },
+  {
+    "event": "Alcala was determined, by a state prison psychiatrist, to have considerably improved during his time incarcerated and was released on parole in Los Angeles, CA under the stipulation that he register as a sex offender with the Monterey Park Police Department.",
+    "animal": "Revising",
+    "confidence": 0.08368746936321259,
+    "similarities": {
+      "Seeking": 0.14826737344264984,
+      "Directing": 0.2421521097421646,
+      "Conferring": 0.18699312210083008,
+      "Revising": 0.27615833282470703
+    }
+  },
+  {
+    "event": "\"Hired by a photography company to take photos in stores throughout Los Angeles County.\"",
+    "animal": "Conferring",
+    "confidence": 0.07747714966535568,
+    "similarities": {
+      "Seeking": 0.07265570014715195,
+      "Directing": 0.1173502504825592,
+      "Conferring": 0.18026041984558105,
+      "Revising": 0.11834385991096497
+    }
+  },
+  {
+    "event": "Kidnapped a 13-year old white, female in Huntington Beach, California and forced her to smoke marijuana with him before being arrested by a park ranger who smelled the marijuana and decided to investigate.",
+    "animal": "Directing",
+    "confidence": 0.09435887634754181,
+    "similarities": {
+      "Seeking": 0.18230535089969635,
+      "Directing": 0.27154257893562317,
+      "Conferring": 0.17325037717819214,
+      "Revising": 0.17599542438983917
+    }
+  },
+  {
+    "event": "Charged with selling marijuana, kidnapping Victim 2 (WF, 13), and violating parole, and was taken to jail to await his trial",
+    "animal": "Directing",
+    "confidence": 0.1557023525238037,
+    "similarities": {
+      "Seeking": 0.14553138613700867,
+      "Directing": 0.34715068340301514,
+      "Conferring": 0.1744607537984848,
+      "Revising": 0.2543528974056244
+    }
+  },
+  {
+    "event": "Convicted of violating parole and providing drugs to a minor, Victim 2, and was sent to prison.",
+    "animal": "Directing",
+    "confidence": 0.1927528828382492,
+    "similarities": {
+      "Seeking": 0.18740418553352356,
+      "Directing": 0.44243547320365906,
+      "Conferring": 0.23009422421455383,
+      "Revising": 0.3315494656562805
+    }
+  },
+  {
+    "event": "Served sentence for charges against Victim 2 at the Southern California reception center for new California Department of Corrections inmates and parole violators in Chino, CA and at California\u2019s Men\u2019s Colony in San Luis Obispo, CA.",
+    "animal": "Directing",
+    "confidence": 0.17598263919353485,
+    "similarities": {
+      "Seeking": 0.14532798528671265,
+      "Directing": 0.41577833890914917,
+      "Conferring": 0.2657358944416046,
+      "Revising": 0.30832332372665405
+    }
+  },
+  {
+    "event": "Released on parole after being pronounced \u201cre-reformed\u201d due to the self-improvement programs completed while in prison, under the condition that he report to a parole officer weekly.",
+    "animal": "Revising",
+    "confidence": 0.19475838541984558,
+    "similarities": {
+      "Seeking": 0.09478697925806046,
+      "Directing": 0.11046072095632553,
+      "Conferring": 0.09502796083688736,
+      "Revising": 0.29485026001930237
+    }
+  },
+  {
+    "event": "Parole officer approved request made by Alcala, allowing him to travel to New York to visit relatives.",
+    "animal": "Directing",
+    "confidence": 0.015352107584476471,
+    "similarities": {
+      "Seeking": 0.10026908665895462,
+      "Directing": 0.1349823772907257,
+      "Conferring": 0.1336071789264679,
+      "Revising": 0.1250145584344864
+    }
+  },
+  {
+    "event": "Ellen Jane Hover (WF, 23) is considered a missing person after last being seen with a photographer named John Berger in New York City, NY.",
+    "animal": "Conferring",
+    "confidence": 0.14100125432014465,
+    "similarities": {
+      "Seeking": 0.14814336597919464,
+      "Directing": 0.09486397355794907,
+      "Conferring": 0.21097680926322937,
+      "Revising": -0.033080682158470154
+    }
+  },
+  {
+    "event": "\"Alcala returned to Los Angeles from New York and was hired as a typesetter at the Los Angeles Times.\"",
+    "animal": "Conferring",
+    "confidence": 0.04293341189622879,
+    "similarities": {
+      "Seeking": 0.0712134838104248,
+      "Directing": 0.10689349472522736,
+      "Conferring": 0.13091617822647095,
+      "Revising": 0.08584132790565491
+    }
+  },
+  {
+    "event": "The body of Jill Barcomb, 18-year old white female, was found in the Hollywood Hills area of West Los Angeles, California. She had been sexually assaulted, bludgeoned and strangled with a pair of blue pants.",
+    "animal": "Directing",
+    "confidence": 0.10317346453666687,
+    "similarities": {
+      "Seeking": 0.16412481665611267,
+      "Directing": 0.2710735499858856,
+      "Conferring": 0.22160080075263977,
+      "Revising": 0.1179746463894844
+    }
+  },
+  {
+    "event": "After receiving a call from the FBI pertaining to the disappearance of Ellen Hoover and the man she was last seen with, John Berger, the LAPD determined John Berger was an alias used by Rodney Alcala and brought him in for questioning. However, without a body or any evidence directly linking Alcala and However, he was released from custody.",
+    "animal": "Conferring",
+    "confidence": 0.08643181622028351,
+    "similarities": {
+      "Seeking": 0.17811231315135956,
+      "Directing": 0.2590172588825226,
+      "Conferring": 0.2734517455101013,
+      "Revising": 0.12393021583557129
+    }
+  },
+  {
+    "event": "The body of Georgia Witxed, 27-year old white female, was found in her apartment in Malibu after she did not pick up a co-worker, as she routinely did. She had been sexually assaulted and strangled.",
+    "animal": "Directing",
+    "confidence": 0.1523429900407791,
+    "similarities": {
+      "Seeking": 0.1735772341489792,
+      "Directing": 0.36712196469306946,
+      "Conferring": 0.27163195610046387,
+      "Revising": 0.19912771880626678
+    }
+  },
+  {
+    "event": "\"Spent a brief period of time in jail when marijuana was found in his home while being interviewed by the Hillside Strangler Task Force due to his classification as a sex offender.\"",
+    "animal": "Directing",
+    "confidence": 0.073126882314682,
+    "similarities": {
+      "Seeking": 0.29130879044532776,
+      "Directing": 0.3893091380596161,
+      "Conferring": 0.29225724935531616,
+      "Revising": 0.3649807870388031
+    }
+  },
+  {
+    "event": "The body of an unidentified white female, Jane Doe, was found in the laundry room of the Illinois Court apartment complex in El Segundo, CA.",
+    "animal": "Directing",
+    "confidence": 0.060209184885025024,
+    "similarities": {
+      "Seeking": 0.10475635528564453,
+      "Directing": 0.19756768643856049,
+      "Conferring": 0.1752408891916275,
+      "Revising": 0.13207826018333435
+    }
+  },
+  {
+    "event": "Richard Plasse, a homicide police officer for Santa Monica, CA, received a call reporting a missing woman, Charlotte Lamb.",
+    "animal": "Directing",
+    "confidence": 0.09997554123401642,
+    "similarities": {
+      "Seeking": 0.07293497771024704,
+      "Directing": 0.21075023710727692,
+      "Conferring": 0.1833440512418747,
+      "Revising": 0.07604502886533737
+    }
+  },
+  {
+    "event": "The remains of Ellen Hoover were found in North Tarrytown in Westchester County, New York after the NYPD Missing Person Squad interviewed people who knew Alcala and determined he often took women to that area to take photographs of them",
+    "animal": "Conferring",
+    "confidence": 0.10864316672086716,
+    "similarities": {
+      "Seeking": 0.10261893272399902,
+      "Directing": 0.17453612387180328,
+      "Conferring": 0.22692842781543732,
+      "Revising": 0.07770071178674698
+    }
+  },
+  {
+    "event": "The body of the Jane Doe found in El Segundo, CA was identified as the missing woman, Charlotte Lamb.",
+    "animal": "Directing",
+    "confidence": 0.06159696727991104,
+    "similarities": {
+      "Seeking": 0.10798238217830658,
+      "Directing": 0.17131754755973816,
+      "Conferring": 0.16101700067520142,
+      "Revising": 0.06016234681010246
+    }
+  },
+  {
+    "event": "Alcala appeared on The Dating Game show as Bachelor number one and was chosen by the woman contestant, Cheryl Bradshaw, to go on a date.",
+    "animal": "Conferring",
+    "confidence": 0.08913582563400269,
+    "similarities": {
+      "Seeking": -0.034898288547992706,
+      "Directing": 0.010613885708153248,
+      "Conferring": 0.09012297540903091,
+      "Revising": 0.02724585495889187
+    }
+  },
+  {
+    "event": "\"Alcala offered a ride to a 15-year old white female who was hitchhiking and persuaded her by asking to take pictures of her for a contest.\"",
+    "animal": "Directing",
+    "confidence": 0.0493171364068985,
+    "similarities": {
+      "Seeking": 0.18812869489192963,
+      "Directing": 0.21250280737876892,
+      "Conferring": 0.2080005258321762,
+      "Revising": 0.09342777729034424
+    }
+  },
+  {
+    "event": "After spending the night together, Alcala drove Victim 3 (WF, 15) to a secluded area, took naked photos of her, then raped her. Victim 3 gained trust from Alcala by being as friendly as possible and then escaped when he went into a gas station bathroom",
+    "animal": "Directing",
+    "confidence": 0.18555808067321777,
+    "similarities": {
+      "Seeking": 0.29564449191093445,
+      "Directing": 0.4911089539527893,
+      "Conferring": 0.31604599952697754,
+      "Revising": 0.304962158203125
+    }
+  },
+  {
+    "event": "After being immediately identified by Victim 3 in a photographic lineup, Alcala was arrested and admitted to choking and raping the young woman.",
+    "animal": "Directing",
+    "confidence": 0.16174165904521942,
+    "similarities": {
+      "Seeking": 0.1471312791109085,
+      "Directing": 0.37142109870910645,
+      "Conferring": 0.2538183331489563,
+      "Revising": 0.22808879613876343
+    }
+  },
+  {
+    "event": "\"Alcala gave his two weeks\u2019 notice to the Los Angeles Times.\"",
+    "animal": "Conferring",
+    "confidence": 0.03028690814971924,
+    "similarities": {
+      "Seeking": 0.06063040345907211,
+      "Directing": 0.14312843978405,
+      "Conferring": 0.1448061168193817,
+      "Revising": 0.13979879021644592
+    }
+  },
+  {
+    "event": "\"Last day of work at the Los Angeles Times.\"",
+    "animal": "Conferring",
+    "confidence": 0.0691542997956276,
+    "similarities": {
+      "Seeking": 0.07574750483036041,
+      "Directing": 0.09084627777338028,
+      "Conferring": 0.16983874142169952,
+      "Revising": 0.13545957207679749
+    }
+  },
+  {
+    "event": "Photographs 17 year old Monterrey Park neighbor, Linda L., whose pictures are in his 2010 photo release, and shows her pictures of naked women and children. Claims to be a member of Mensa",
+    "animal": "Conferring",
+    "confidence": 0.06528005003929138,
+    "similarities": {
+      "Seeking": 0.10693792998790741,
+      "Directing": 0.21025554835796356,
+      "Conferring": 0.21314223110675812,
+      "Revising": 0.12639304995536804
+    }
+  },
+  {
+    "event": "The body of Jill Parenteau, 21-year old white female, was found in her apartment in Burbank located in Los Angeles, CA.",
+    "animal": "Conferring",
+    "confidence": 0.06743562966585159,
+    "similarities": {
+      "Seeking": 0.11447780579328537,
+      "Directing": 0.1873522847890854,
+      "Conferring": 0.19140593707561493,
+      "Revising": 0.07008086889982224
+    }
+  },
+  {
+    "event": "12 year old Robin Samsoe, white female, and her friend were approached by a curly-haired man asking to take their photographs.",
+    "animal": "Conferring",
+    "confidence": 0.13640810549259186,
+    "similarities": {
+      "Seeking": 0.15646237134933472,
+      "Directing": 0.23102973401546478,
+      "Conferring": 0.3005266487598419,
+      "Revising": 0.10486344248056412
+    }
+  },
+  {
+    "event": "Dana Crappa, a 20-year old firefighter, saw a strange dark haired man dragging a young blond female into the woods while she was driving to work, yet decided to keep her observation to herself.",
+    "animal": "Conferring",
+    "confidence": 0.09886497259140015,
+    "similarities": {
+      "Seeking": 0.18481890857219696,
+      "Directing": 0.18106141686439514,
+      "Conferring": 0.2624225616455078,
+      "Revising": 0.1247924342751503
+    }
+  },
+  {
+    "event": "At 11:05 p.m., a nationwide broadcast on the missing 12-year old, Robin, was released asking for any information on her whereabouts.",
+    "animal": "Conferring",
+    "confidence": 0.15586063265800476,
+    "similarities": {
+      "Seeking": 0.06993815302848816,
+      "Directing": 0.12329735606908798,
+      "Conferring": 0.23167380690574646,
+      "Revising": 0.034204039722681046
+    }
+  },
+  {
+    "event": "Forensic artist, Marilyn Droz, composed a sketch of the man last seen with Robin based off of Robin\u2019s friends description of him.",
+    "animal": "Conferring",
+    "confidence": 0.10388931632041931,
+    "similarities": {
+      "Seeking": 0.19172517955303192,
+      "Directing": 0.1209494099020958,
+      "Conferring": 0.24899671971797943,
+      "Revising": 0.12264765799045563
+    }
+  },
+  {
+    "event": "\"Alcala changed the carpet in his car; claiming he spilled gasoline on it.\"",
+    "animal": "Revising",
+    "confidence": 0.043676212430000305,
+    "similarities": {
+      "Seeking": 0.11284983158111572,
+      "Directing": 0.16588252782821655,
+      "Conferring": 0.09823600947856903,
+      "Revising": 0.1693323403596878
+    }
+  },
+  {
+    "event": "The composite developed between Marilyn Droz and Robin\u2019s friend of the man last seen with Robin was shown on the 5 p.m. news broadcast, showing a young man with dark, curly hair.",
+    "animal": "Conferring",
+    "confidence": 0.11014100164175034,
+    "similarities": {
+      "Seeking": 0.13919275999069214,
+      "Directing": 0.04790762439370155,
+      "Conferring": 0.18732495605945587,
+      "Revising": 0.04445147141814232
+    }
+  },
+  {
+    "event": "\"Alcala chemically straightened his naturally curly hair.\"",
+    "animal": "Seeking",
+    "confidence": 0.07878436148166656,
+    "similarities": {
+      "Seeking": 0.13347920775413513,
+      "Directing": 0.05491841956973076,
+      "Conferring": 0.04592800512909889,
+      "Revising": 0.06323812156915665
+    }
+  },
+  {
+    "event": "Dana Crappa returns to site where she saw the man dragging a young girl into the woods and finds human remains, she once again keeps this observation to herself.",
+    "animal": "Conferring",
+    "confidence": 0.08637525141239166,
+    "similarities": {
+      "Seeking": 0.21191363036632538,
+      "Directing": 0.17197182774543762,
+      "Conferring": 0.2666477859020233,
+      "Revising": 0.15693216025829315
+    }
+  },
+  {
+    "event": "Once his curls start to grow back, Alcala decides to cut his hair short.",
+    "animal": "Seeking",
+    "confidence": 0.040069565176963806,
+    "similarities": {
+      "Seeking": 0.0596294030547142,
+      "Directing": 0.019908973947167397,
+      "Conferring": -0.016445625573396683,
+      "Revising": 0.055216167122125626
+    }
+  },
+  {
+    "event": "After receiving several convincing tips about a man who raped and attempted to murder an 8-year old girl, Detective Craig Robinson furthers his research on Rodney Alcala as a possible suspect in the Samsoe case and decides to drive to Riverside, CA to obtain his mug shot.",
+    "animal": "Directing",
+    "confidence": 0.11496594548225403,
+    "similarities": {
+      "Seeking": 0.23052343726158142,
+      "Directing": 0.3973201513290405,
+      "Conferring": 0.35860830545425415,
+      "Revising": 0.25793084502220154
+    }
+  },
+  {
+    "event": "After comparing Alcala\u2019s mug shot and the composite sketch developed by Marilyn Droz, Detective Robinson officially announces Alcala as a person of interest in the case of missing Robin Samsoe.",
+    "animal": "Conferring",
+    "confidence": 0.11315290629863739,
+    "similarities": {
+      "Seeking": 0.17130409181118011,
+      "Directing": 0.20470856130123138,
+      "Conferring": 0.27598750591278076,
+      "Revising": 0.11249113827943802
+    }
+  },
+  {
+    "event": "After coincidentally watching Alcala\u2019s episode of The Dating Game the night before, Detective Art Droz, Marilyn Droz\u2019s husband, sends someone to pick up a copy of Alcala\u2019s episode from Chuck Barris Productions.",
+    "animal": "Conferring",
+    "confidence": 0.07031098753213882,
+    "similarities": {
+      "Seeking": 0.10179044306278229,
+      "Directing": 0.11511300504207611,
+      "Conferring": 0.18516531586647034,
+      "Revising": 0.12765952944755554
+    }
+  },
+  {
+    "event": "Detectives investigating the disappearance of Robin Samsoe, compiled six photos of similar looking men and showed them to people who claimed to have seen Robin Samsoe at the beach the day she disappeared. All of the witnesses shown the lineup identified Alcala as the man seen with Samsoe.",
+    "animal": "Conferring",
+    "confidence": 0.1453857123851776,
+    "similarities": {
+      "Seeking": 0.17638932168483734,
+      "Directing": 0.18594901263713837,
+      "Conferring": 0.31995031237602234,
+      "Revising": 0.1613554209470749
+    }
+  },
+  {
+    "event": "\"Detectives were sent to Alcala\u2019s address to look for vehicles used during the kidnapping being investigated; brief observations were made of Alcala in a blue station wagon before he made a U-turn abruptly and lost the detectives.\"",
+    "animal": "Conferring",
+    "confidence": 0.10626137256622314,
+    "similarities": {
+      "Seeking": 0.18827855587005615,
+      "Directing": 0.2908889055252075,
+      "Conferring": 0.3281952142715454,
+      "Revising": 0.18663407862186432
+    }
+  },
+  {
+    "event": "Dana Crappa returns to site where she discovered human remains once again, after working in the same area earlier that day with a fellow fireman, William Poepke, where she became visibly upset when Poepke jokingly threw what he thought was a deer bone at her. Crappa returned to the site to confirm her hunch that the bones found were those of a human and not an animal, she was correct, and once again did not share her findings with anyone.",
+    "animal": "Conferring",
+    "confidence": 0.07227985560894012,
+    "similarities": {
+      "Seeking": 0.1596137136220932,
+      "Directing": 0.16765178740024567,
+      "Conferring": 0.2325059175491333,
+      "Revising": 0.15341269969940186
+    }
+  },
+  {
+    "event": "William Poepke discovers human remains while reworking the area him and Crappa had been at three days earlier and immediately understands Crappa\u2019s odd reaction to his prank. Unlike his coworker, Poepke reports his findings of the dead body to the authorities.",
+    "animal": "Conferring",
+    "confidence": 0.06882674992084503,
+    "similarities": {
+      "Seeking": 0.22607514262199402,
+      "Directing": 0.2186409831047058,
+      "Conferring": 0.299287348985672,
+      "Revising": 0.24666571617126465
+    }
+  },
+  {
+    "event": "\"Autopsy on remains found by Poepke determined they were of a young girl around 12 years of age; dental records confirmed they were the remains of Robin Samsoe.\"",
+    "animal": "Conferring",
+    "confidence": 0.06938835978507996,
+    "similarities": {
+      "Seeking": 0.15231065452098846,
+      "Directing": 0.20072124898433685,
+      "Conferring": 0.24397514760494232,
+      "Revising": 0.17072851955890656
+    }
+  },
+  {
+    "event": "Alcala tells current girlfriend, Elizabeth Kelleher, he wants to move to Dallas to broaden his career opportunities",
+    "animal": "Seeking",
+    "confidence": 0.08776094764471054,
+    "similarities": {
+      "Seeking": 0.06692095845937729,
+      "Directing": -0.014703618362545967,
+      "Conferring": -0.0035790964029729366,
+      "Revising": -0.04423725977540016
+    }
+  },
+  {
+    "event": "Alcala rents a storage unit from Cecil Lockrem and her husband, who own the storage facility in Seattle, Washington.",
+    "animal": "Directing",
+    "confidence": 0.025939812883734703,
+    "similarities": {
+      "Seeking": -0.007703944109380245,
+      "Directing": 0.024755369871854782,
+      "Conferring": -0.008202916011214256,
+      "Revising": 0.012353532016277313
+    }
+  },
+  {
+    "event": "Alcala returns to Los Angeles to see Kelleher and informs her he will be moving to Texas permanently only July 24, 1979, yet does not mention his trip to Seattle to her or anyone else.",
+    "animal": "Seeking",
+    "confidence": 0.04624307528138161,
+    "similarities": {
+      "Seeking": 0.05192335695028305,
+      "Directing": -0.013373946771025658,
+      "Conferring": 0.013217894360423088,
+      "Revising": 0.0171968974173069
+    }
+  },
+  {
+    "event": "Based on the strong evidence against Alcala, Sergeant Ron Jenkins, Detective Robinson, and other members of the Huntington Beach Police Department arrived at Alcala\u2019s house with a warrant allowing them to search his car and house, as well as obtain certain evidence they believed would connect him to the murder of Robin Samsoe.",
+    "animal": "Conferring",
+    "confidence": 0.12908534705638885,
+    "similarities": {
+      "Seeking": 0.16164149343967438,
+      "Directing": 0.27755206823349,
+      "Conferring": 0.3484519422054291,
+      "Revising": 0.21890629827976227
+    }
+  },
+  {
+    "event": "After obtaining necessary evidence from their search of Alcala\u2019s home, Alcala was booked on suspicion of the murder of Robin Samsoe at the Huntington Beach jail and had a bail set at $250,000.",
+    "animal": "Directing",
+    "confidence": 0.11169034242630005,
+    "similarities": {
+      "Seeking": 0.04740557819604874,
+      "Directing": 0.2467452883720398,
+      "Conferring": 0.20615632832050323,
+      "Revising": 0.15160292387008667
+    }
+  },
+  {
+    "event": "After being informed of a suspicious phone conversation between Alcala and his sister, Maria Christine (Krissy) De La Cerda, Sergeant Ed McErlain of the HBPD drove to De La Cerda\u2019s home where she and her mother provided alibi\u2019s for Alcala on multiple occasions where he was witnessed to be somewhere else.",
+    "animal": "Directing",
+    "confidence": 0.0765330046415329,
+    "similarities": {
+      "Seeking": 0.15995654463768005,
+      "Directing": 0.2663191556930542,
+      "Conferring": 0.24104276299476624,
+      "Revising": 0.16835914552211761
+    }
+  },
+  {
+    "event": "Several HBPD detectives returned to Alcala\u2019s mothers home to search for the storage unit receipt that was seen on the day of Alcala\u2019s arrest, however they were not able to find it.",
+    "animal": "Conferring",
+    "confidence": 0.07663486152887344,
+    "similarities": {
+      "Seeking": 0.03592166304588318,
+      "Directing": 0.07958415895700455,
+      "Conferring": 0.15121200680732727,
+      "Revising": 0.10822559893131256
+    }
+  },
+  {
+    "event": "Sergeant McErlain and Detective Robinson obtained a warrant for the storage locker rented by Alcala in Seattle, WA and flew there to search the unit. After a three hour search, the officers collected several pieces of evidence, including over 1,700 photos and negatives in boxes, one of which was labeled 'Ode to New York by John Berger.'",
+    "animal": "Conferring",
+    "confidence": 0.11550009250640869,
+    "similarities": {
+      "Seeking": 0.12565626204013824,
+      "Directing": 0.22997143864631653,
+      "Conferring": 0.3102843761444092,
+      "Revising": 0.2287251502275467
+    }
+  },
+  {
+    "event": "The arraignment was held for People of the State of California, Plaintiff vs. Rodney James Alcala, Defendant at the Municipal Court in the West Judicial District of Orange County, California.",
+    "animal": "Directing",
+    "confidence": 0.16219592094421387,
+    "similarities": {
+      "Seeking": 0.030451571568846703,
+      "Directing": 0.24727636575698853,
+      "Conferring": 0.12308181822299957,
+      "Revising": 0.10170791298151016
+    }
+  },
+  {
+    "event": "Alcala pled innocent to the charges of kidnapping, lewd or lascivious act upon a child under fourteen, murder, and robbery that were filed against him by M. Evans, Deputy District Attorney. Alcala was held without bail.",
+    "animal": "Directing",
+    "confidence": 0.19648073613643646,
+    "similarities": {
+      "Seeking": 0.09243975579738617,
+      "Directing": 0.33537447452545166,
+      "Conferring": 0.14936406910419464,
+      "Revising": 0.17487742006778717
+    }
+  },
+  {
+    "event": "Alcala\u2019s deputy public defender, Chris Strople, was forced to step down due to a conflict of interest. John Barnett was appointed as Alcala\u2019s new public defender.",
+    "animal": "Directing",
+    "confidence": 0.1559518277645111,
+    "similarities": {
+      "Seeking": 0.08671296387910843,
+      "Directing": 0.22215186059474945,
+      "Conferring": 0.06696009635925293,
+      "Revising": 0.04492705687880516
+    }
+  },
+  {
+    "event": "\"Preliminary hearings on the Samsoe case began.\"",
+    "animal": "Conferring",
+    "confidence": 0.07516573369503021,
+    "similarities": {
+      "Seeking": 0.1706043928861618,
+      "Directing": 0.2368086725473404,
+      "Conferring": 0.2596619725227356,
+      "Revising": 0.14607565104961395
+    }
+  },
+  {
+    "event": "\"Was ordered by judge John Wyatt to stand trial on kidnapping and murder charges.\"",
+    "animal": "Directing",
+    "confidence": 0.17629335820674896,
+    "similarities": {
+      "Seeking": 0.07572808116674423,
+      "Directing": 0.3210568130016327,
+      "Conferring": 0.23245517909526825,
+      "Revising": 0.1261071115732193
+    }
+  },
+  {
+    "event": "Alcala was also supposed to appear in court for the attack on Victim 3 in Riverside, CA. However, Victim 3 was determined unfit to testify against Alcala and required to undergo psychiatric evaluation.",
+    "animal": "Directing",
+    "confidence": 0.15237820148468018,
+    "similarities": {
+      "Seeking": 0.25663790106773376,
+      "Directing": 0.4169994294643402,
+      "Conferring": 0.2788429260253906,
+      "Revising": 0.2583828866481781
+    }
+  },
+  {
+    "event": "\"It was determined by the judge that Alcala\u2019s previous offenses related to abductions and sexual attacks would be allowed into evidence.\"",
+    "animal": "Directing",
+    "confidence": 0.15879392623901367,
+    "similarities": {
+      "Seeking": 0.2205902338027954,
+      "Directing": 0.418687105178833,
+      "Conferring": 0.30320054292678833,
+      "Revising": 0.2558887004852295
+    }
+  },
+  {
+    "event": "\"Opening day of statements in People of the State of California vs. Rodney James Alcala.\"",
+    "animal": "Directing",
+    "confidence": 0.06689752638339996,
+    "similarities": {
+      "Seeking": 0.17429585754871368,
+      "Directing": 0.25803419947624207,
+      "Conferring": 0.21405403316020966,
+      "Revising": 0.18506011366844177
+    }
+  },
+  {
+    "event": "Dana Crappa, considered to be the prosecutions key witness, testified that she saw Alcala forcefully steering a blonde girl into the woods in June 20, 1979 and that she saw him again the following evening, June 21, 1979, at the same location as the previous night. She also claimed to have returned to the same site on June 25, 1979 which was when she first saw the body. While on the witness stand, she confirmed that Rodney Alcala was the man she saw on June 20 and June 21.",
+    "animal": "Conferring",
+    "confidence": 0.05416911840438843,
+    "similarities": {
+      "Seeking": 0.16733813285827637,
+      "Directing": 0.20527414977550507,
+      "Conferring": 0.22727245092391968,
+      "Revising": 0.14669771492481232
+    }
+  },
+  {
+    "event": "\"Barnett cross-examined Crappa by focusing on her decision to keep all the events she witnessed to herself and why she would not report them to the police.\"",
+    "animal": "Directing",
+    "confidence": 0.0770624577999115,
+    "similarities": {
+      "Seeking": 0.26629185676574707,
+      "Directing": 0.3415127396583557,
+      "Conferring": 0.31322792172431946,
+      "Revising": 0.2138310670852661
+    }
+  },
+  {
+    "event": "Inmate Robert J. Dove testified that he heard Alcala tell another Orange County Jail inmate, Michael Herrera, discuss the death of Robin Samsoe.",
+    "animal": "Directing",
+    "confidence": 0.04463969171047211,
+    "similarities": {
+      "Seeking": 0.14684414863586426,
+      "Directing": 0.19681642949581146,
+      "Conferring": 0.1738666445016861,
+      "Revising": 0.13581940531730652
+    }
+  },
+  {
+    "event": "\"Inmate Michael Herrera testified by elaborating on his conversation with Alcala discussing the details of Samsoe\u2019s kidnapping and death.\"",
+    "animal": "Directing",
+    "confidence": 0.0973617434501648,
+    "similarities": {
+      "Seeking": 0.17403380572795868,
+      "Directing": 0.28460389375686646,
+      "Conferring": 0.22139574587345123,
+      "Revising": 0.16629688441753387
+    }
+  },
+  {
+    "event": "\"The State rested its case.\"",
+    "animal": "Directing",
+    "confidence": 0.02259548008441925,
+    "similarities": {
+      "Seeking": 0.13642644882202148,
+      "Directing": 0.15118637681007385,
+      "Conferring": 0.12955935299396515,
+      "Revising": 0.11978688091039658
+    }
+  },
+  {
+    "event": "The defense asked for a dismissal of the kidnapping charge because there seemed to be no physical proof that a kidnapping occurred. According to the California death penalty law, if kidnapping and murder occurred together, the defendant may be eligible to be sentenced to death. Due to this special circumstance law and his belief that the prosecution did not provided sufficient evidence for the charge, the judge approved the defenses request for the dismissal of performing a lewd or lascivious act on a child under fourteen.",
+    "animal": "Directing",
+    "confidence": 0.2227630913257599,
+    "similarities": {
+      "Seeking": 0.17387215793132782,
+      "Directing": 0.4270665943622589,
+      "Conferring": 0.23431360721588135,
+      "Revising": 0.2047247588634491
+    }
+  },
+  {
+    "event": "\"The defense began their arguments by focusing on alibi witnesses.\"",
+    "animal": "Directing",
+    "confidence": 0.10677529871463776,
+    "similarities": {
+      "Seeking": 0.20262669026851654,
+      "Directing": 0.31590962409973145,
+      "Conferring": 0.3024858832359314,
+      "Revising": 0.12229035794734955
+    }
+  },
+  {
+    "event": "Alcala\u2019s sisters, Christine De La Cerda and Marie Toriano, and his girlfriend, Elizabeth Kelleher, were among three of the defense alibi witnesses, claiming Alcala could not have been involved in the death of Samsoe. They all were considered to be biased witnesses.",
+    "animal": "Directing",
+    "confidence": 0.11425274610519409,
+    "similarities": {
+      "Seeking": 0.1429763287305832,
+      "Directing": 0.2758658230304718,
+      "Conferring": 0.23311111330986023,
+      "Revising": 0.1087518259882927
+    }
+  },
+  {
+    "event": "\"Defense called inmate Joseph Drake who testified that the prosecutions inmate witnesses Dove and Herrera collaborated with him to lie about the conversations with Alcala about the Samsoe case in order to strike and informer\u2019s bargain with police officers.\"",
+    "animal": "Directing",
+    "confidence": 0.13456444442272186,
+    "similarities": {
+      "Seeking": 0.20592735707759857,
+      "Directing": 0.3775150179862976,
+      "Conferring": 0.2860281467437744,
+      "Revising": 0.23689621686935425
+    }
+  },
+  {
+    "event": "After calling a few other witnesses and further trying to discredit Crappa\u2019s testimony, the defense rested their case.",
+    "animal": "Directing",
+    "confidence": 0.09235996007919312,
+    "similarities": {
+      "Seeking": 0.13311097025871277,
+      "Directing": 0.25774580240249634,
+      "Conferring": 0.17339341342449188,
+      "Revising": 0.1896531730890274
+    }
+  },
+  {
+    "event": "\"Final arguments began.\"",
+    "animal": "Seeking",
+    "confidence": 0.09480254352092743,
+    "similarities": {
+      "Seeking": 0.18402694165706635,
+      "Directing": 0.13295869529247284,
+      "Conferring": 0.1010461375117302,
+      "Revising": 0.03366832807660103
+    }
+  },
+  {
+    "event": "\"First day of jury deliberations. They requested to have some of Crappa\u2019s testimony read back to them and were unable to reach a verdict by the end of the day.\"",
+    "animal": "Directing",
+    "confidence": 0.06069652736186981,
+    "similarities": {
+      "Seeking": 0.1731058806180954,
+      "Directing": 0.23309358954429626,
+      "Conferring": 0.15472406148910522,
+      "Revising": 0.18936125934123993
+    }
+  },
+  {
+    "event": "\"Jury reached a verdict on their second day of deliberations.\"",
+    "animal": "Directing",
+    "confidence": 0.04542312026023865,
+    "similarities": {
+      "Seeking": 0.16853515803813934,
+      "Directing": 0.241409033536911,
+      "Conferring": 0.19950032234191895,
+      "Revising": 0.2199222445487976
+    }
+  },
+  {
+    "event": "On the charges of first degree murder with the use of a deadly weapon and forced kidnapping, the jury found Alcala guilty.",
+    "animal": "Directing",
+    "confidence": 0.1655581146478653,
+    "similarities": {
+      "Seeking": 0.1249886155128479,
+      "Directing": 0.3557036817073822,
+      "Conferring": 0.21431395411491394,
+      "Revising": 0.23113420605659485
+    }
+  },
+  {
+    "event": "\"The penalty phase of the trial ended. Jurors reached a verdict of death after only about 4 hours of deliberation.\"",
+    "animal": "Directing",
+    "confidence": 0.09666867554187775,
+    "similarities": {
+      "Seeking": 0.12110162526369095,
+      "Directing": 0.26448559761047363,
+      "Conferring": 0.20282714068889618,
+      "Revising": 0.17952200770378113
+    }
+  },
+  {
+    "event": "\"Orange County Superior Court Judge Philip E. Schwab sentences Alcala to death after he is convicted of Samsoe's murder. He claimed he agreed with the punishment of death and that it would take place by gas chamber. Alcala would remain in San Quentin prison awaiting an appeal to the Supreme\"",
+    "animal": "Directing",
+    "confidence": 0.08345849812030792,
+    "similarities": {
+      "Seeking": 0.14305564761161804,
+      "Directing": 0.2665537893772125,
+      "Conferring": 0.18364155292510986,
+      "Revising": 0.2225886881351471
+    }
+  }
+]

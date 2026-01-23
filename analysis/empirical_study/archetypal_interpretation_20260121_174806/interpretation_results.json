@@ -1,0 +1,4554 @@
+{
+  "profiles": {
+    "SOURCES": {
+      "role": "SOURCES",
+      "n_members": 3,
+      "members": [
+        "Berdella_Robert",
+        "Bundy_Ted_-_2005",
+        "Black_Robert_-_spring_2006"
+      ],
+      "state_distribution": {
+        "mean": {
+          "Seeking": 0.09737678514825192,
+          "Directing": 0.6802753433224532,
+          "Conferring": 0.1577398545323704,
+          "Revising": 0.06460801699692445
+        },
+        "std": {
+          "Seeking": 0.030229312665137755,
+          "Directing": 0.05565566689325983,
+          "Conferring": 0.07286679426669514,
+          "Revising": 0.018851588556105994
+        }
+      },
+      "dominant_states": {
+        "Directing": 3
+      },
+      "common_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "common_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Conferring"
+          ],
+          1
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "escalation": {
+        "mean_score": 0.4425213675213675,
+        "pct_escalating": 1.0
+      },
+      "phase_patterns": {
+        "early": {
+          "mean": {
+            "Seeking": 0.21153846153846154,
+            "Directing": 0.42414529914529914,
+            "Conferring": 0.2435897435897436,
+            "Revising": 0.12072649572649573
+          },
+          "dominant": "Directing"
+        },
+        "middle": {
+          "mean": {
+            "Seeking": 0.05555555555555555,
+            "Directing": 0.7264957264957266,
+            "Conferring": 0.16452991452991453,
+            "Revising": 0.053418803418803416
+          },
+          "dominant": "Directing"
+        },
+        "late": {
+          "mean": {
+            "Seeking": 0.03333333333333333,
+            "Directing": 0.8666666666666667,
+            "Conferring": 0.07333333333333333,
+            "Revising": 0.02666666666666667
+          },
+          "dominant": "Directing"
+        }
+      },
+      "transition_matrix": {
+        "Seeking": {
+          "Seeking": 0.15,
+          "Directing": 0.37222222222222223,
+          "Conferring": 0.41111111111111115,
+          "Revising": 0.06666666666666667
+        },
+        "Directing": {
+          "Seeking": 0.06859849883105697,
+          "Directing": 0.7816845084286945,
+          "Conferring": 0.10794266026824166,
+          "Revising": 0.04177433247200688
+        },
+        "Conferring": {
+          "Seeking": 0.20175438596491227,
+          "Directing": 0.5921052631578947,
+          "Conferring": 0.08771929824561403,
+          "Revising": 0.11842105263157894
+        },
+        "Revising": {
+          "Seeking": 0.3333333333333333,
+          "Directing": 0.4444444444444444,
+          "Conferring": 0.05555555555555555,
+          "Revising": 0.16666666666666666
+        }
+      },
+      "narrative": {
+        "summary": "SOURCES archetype: Directing dominant (68.0%), dominated by control/exploitation behaviors, active surveillance/observation periods",
+        "dominant_behavior": {
+          "description": "Control and exploitation of others",
+          "psychological": "Dominance needs, lack of empathy, predatory focus",
+          "behavioral": "Manipulation, violence, coercion, murder",
+          "risk_indicator": "Active harm, peak danger phase"
+        },
+        "key_transitions": [
+          {
+            "from": "Seeking",
+            "to": "Directing",
+            "probability": 0.37222222222222223,
+            "interpretation": "Fantasy-to-action escalation"
+          },
+          {
+            "from": "Seeking",
+            "to": "Conferring",
+            "probability": 0.41111111111111115,
+            "interpretation": "Internal focus shifting to external observation"
+          },
+          {
+            "from": "Directing",
+            "to": "Directing",
+            "probability": 0.7816845084286945,
+            "interpretation": "Sustained predatory activity"
+          },
+          {
+            "from": "Conferring",
+            "to": "Directing",
+            "probability": 0.5921052631578947,
+            "interpretation": "Observation leading to action"
+          },
+          {
+            "from": "Revising",
+            "to": "Seeking",
+            "probability": 0.3333333333333333,
+            "interpretation": "Routine disruption causing introspection"
+          },
+          {
+            "from": "Revising",
+            "to": "Directing",
+            "probability": 0.4444444444444444,
+            "interpretation": "Ritual triggering offense"
+          }
+        ],
+        "trajectory": "Consistent Directing pattern throughout",
+        "escalation": "Strong escalation pattern - Directing behavior increases significantly over time",
+        "risk_profile": "Active harm, peak danger phase"
+      }
+    },
+    "SINKS": {
+      "role": "SINKS",
+      "n_members": 3,
+      "members": [
+        "Buenoano_Judias_-_fall_2005",
+        "Archer-Gilligan_Amy",
+        "Bunting_John_Justin"
+      ],
+      "state_distribution": {
+        "mean": {
+          "Seeking": 0.15695415695415696,
+          "Directing": 0.6802641802641802,
+          "Conferring": 0.11320901320901322,
+          "Revising": 0.04957264957264957
+        },
+        "std": {
+          "Seeking": 0.061763009284156616,
+          "Directing": 0.010525421277501223,
+          "Conferring": 0.017387812205442183,
+          "Revising": 0.048484973004043884
+        }
+      },
+      "dominant_states": {
+        "Directing": 3
+      },
+      "common_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking"
+          ],
+          2
+        ]
+      ],
+      "common_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Seeking"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          1
+        ]
+      ],
+      "escalation": {
+        "mean_score": 0.5464285714285715,
+        "pct_escalating": 1.0
+      },
+      "phase_patterns": {
+        "early": {
+          "mean": {
+            "Seeking": 0.45476190476190476,
+            "Directing": 0.38690476190476186,
+            "Conferring": 0.075,
+            "Revising": 0.08333333333333333
+          },
+          "dominant": "Seeking"
+        },
+        "middle": {
+          "mean": {
+            "Seeking": 0.03333333333333333,
+            "Directing": 0.6964285714285715,
+            "Conferring": 0.1952380952380952,
+            "Revising": 0.075
+          },
+          "dominant": "Directing"
+        },
+        "late": {
+          "mean": {
+            "Seeking": 0.0,
+            "Directing": 0.9333333333333332,
+            "Conferring": 0.06666666666666667,
+            "Revising": 0.0
+          },
+          "dominant": "Directing"
+        }
+      },
+      "transition_matrix": {
+        "Seeking": {
+          "Seeking": 0.26666666666666666,
+          "Directing": 0.5,
+          "Conferring": 0.06666666666666667,
+          "Revising": 0.16666666666666666
+        },
+        "Directing": {
+          "Seeking": 0.07850508624502432,
+          "Directing": 0.7841662980981866,
+          "Conferring": 0.09811292938227922,
+          "Revising": 0.0392156862745098
+        },
+        "Conferring": {
+          "Seeking": 0.08333333333333333,
+          "Directing": 0.5833333333333334,
+          "Conferring": 0.25,
+          "Revising": 0.08333333333333333
+        },
+        "Revising": {
+          "Seeking": 0.0,
+          "Directing": 0.5555555555555555,
+          "Conferring": 0.1111111111111111,
+          "Revising": 0.0
+        }
+      },
+      "narrative": {
+        "summary": "SINKS archetype: Directing dominant (68.0%), dominated by control/exploitation behaviors",
+        "dominant_behavior": {
+          "description": "Control and exploitation of others",
+          "psychological": "Dominance needs, lack of empathy, predatory focus",
+          "behavioral": "Manipulation, violence, coercion, murder",
+          "risk_indicator": "Active harm, peak danger phase"
+        },
+        "key_transitions": [
+          {
+            "from": "Seeking",
+            "to": "Directing",
+            "probability": 0.5,
+            "interpretation": "Fantasy-to-action escalation"
+          },
+          {
+            "from": "Directing",
+            "to": "Directing",
+            "probability": 0.7841662980981866,
+            "interpretation": "Sustained predatory activity"
+          },
+          {
+            "from": "Conferring",
+            "to": "Directing",
+            "probability": 0.5833333333333334,
+            "interpretation": "Observation leading to action"
+          },
+          {
+            "from": "Revising",
+            "to": "Directing",
+            "probability": 0.5555555555555555,
+            "interpretation": "Ritual triggering offense"
+          }
+        ],
+        "trajectory": "Trajectory shifts from Seeking to Directing",
+        "escalation": "Strong escalation pattern - Directing behavior increases significantly over time",
+        "risk_profile": "Active harm, peak danger phase"
+      }
+    },
+    "HUBS": {
+      "role": "HUBS",
+      "n_members": 4,
+      "members": [
+        "Bianchi_Kenneth",
+        "Baumeister_Herb_-_fall_2005",
+        "Armstrong_John_Eric",
+        "Brudos_Jerome"
+      ],
+      "state_distribution": {
+        "mean": {
+          "Seeking": 0.21572155473247098,
+          "Directing": 0.5213506861370074,
+          "Conferring": 0.15715222384812785,
+          "Revising": 0.10577553528239375
+        },
+        "std": {
+          "Seeking": 0.05224645982273225,
+          "Directing": 0.07336637962508859,
+          "Conferring": 0.0734838135134604,
+          "Revising": 0.037374918929817424
+        }
+      },
+      "dominant_states": {
+        "Directing": 4
+      },
+      "common_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          4
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Revising",
+            "Revising"
+          ],
+          1
+        ],
+        [
+          [
+            "Revising",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "common_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "escalation": {
+        "mean_score": 0.13531082887700538,
+        "pct_escalating": 0.75
+      },
+      "phase_patterns": {
+        "early": {
+          "mean": {
+            "Seeking": 0.3235294117647059,
+            "Directing": 0.4573529411764705,
+            "Conferring": 0.1125,
+            "Revising": 0.10661764705882354
+          },
+          "dominant": "Directing"
+        },
+        "middle": {
+          "mean": {
+            "Seeking": 0.18970588235294117,
+            "Directing": 0.5095588235294117,
+            "Conferring": 0.18799019607843137,
+            "Revising": 0.1127450980392157
+          },
+          "dominant": "Directing"
+        },
+        "late": {
+          "mean": {
+            "Seeking": 0.1412218296409473,
+            "Directing": 0.5926637700534759,
+            "Conferring": 0.16821046600458367,
+            "Revising": 0.09790393430099312
+          },
+          "dominant": "Directing"
+        }
+      },
+      "transition_matrix": {
+        "Seeking": {
+          "Seeking": 0.2215909090909091,
+          "Directing": 0.4517045454545454,
+          "Conferring": 0.20454545454545453,
+          "Revising": 0.12215909090909091
+        },
+        "Directing": {
+          "Seeking": 0.19523809523809524,
+          "Directing": 0.607936507936508,
+          "Conferring": 0.10039682539682539,
+          "Revising": 0.09642857142857142
+        },
+        "Conferring": {
+          "Seeking": 0.2794871794871795,
+          "Directing": 0.43525641025641026,
+          "Conferring": 0.22435897435897437,
+          "Revising": 0.060897435897435896
+        },
+        "Revising": {
+          "Seeking": 0.20833333333333331,
+          "Directing": 0.4305555555555555,
+          "Conferring": 0.15277777777777776,
+          "Revising": 0.20833333333333331
+        }
+      },
+      "narrative": {
+        "summary": "HUBS archetype: Directing dominant (52.1%), dominated by control/exploitation behaviors, significant introspective phases, active surveillance/observation periods, ritualistic/compulsive elements",
+        "dominant_behavior": {
+          "description": "Control and exploitation of others",
+          "psychological": "Dominance needs, lack of empathy, predatory focus",
+          "behavioral": "Manipulation, violence, coercion, murder",
+          "risk_indicator": "Active harm, peak danger phase"
+        },
+        "key_transitions": [
+          {
+            "from": "Seeking",
+            "to": "Directing",
+            "probability": 0.4517045454545454,
+            "interpretation": "Fantasy-to-action escalation"
+          },
+          {
+            "from": "Directing",
+            "to": "Directing",
+            "probability": 0.607936507936508,
+            "interpretation": "Sustained predatory activity"
+          },
+          {
+            "from": "Conferring",
+            "to": "Directing",
+            "probability": 0.43525641025641026,
+            "interpretation": "Observation leading to action"
+          },
+          {
+            "from": "Revising",
+            "to": "Directing",
+            "probability": 0.4305555555555555,
+            "interpretation": "Ritual triggering offense"
+          }
+        ],
+        "trajectory": "Consistent Directing pattern throughout",
+        "escalation": "Strong escalation pattern - Directing behavior increases significantly over time",
+        "risk_profile": "Active harm, peak danger phase"
+      }
+    },
+    "GENERAL": {
+      "role": "GENERAL",
+      "n_members": 16,
+      "members": [
+        "Alcala._Rodney__2012_",
+        "Allanson_Patricia",
+        "Anderson_Dale_-_2005",
+        "Barfield_Velma_-_2005_Fall",
+        "Bathory_Elizabeth_-_spring_2006",
+        "Beets_Betty_Lou__spring_2007_",
+        "Bernardo_Paul",
+        "Bittaker_Lawrence__fall_2007_",
+        "Bland_Warren_James__fall_2006_",
+        "Blank_Daniel__spring_2006_",
+        "Bonin_William_-_fall_2007",
+        "Browne_Robert_Charles__2008_spring_",
+        "Buono_Angelo",
+        "Burke_William__2008_spring_",
+        "Cleaned_Albright_Charles_table",
+        "campbell_charles"
+      ],
+      "state_distribution": {
+        "mean": {
+          "Seeking": 0.10508056967679939,
+          "Directing": 0.7406552869611296,
+          "Conferring": 0.09796139725597003,
+          "Revising": 0.05630274610610092
+        },
+        "std": {
+          "Seeking": 0.07445045852544657,
+          "Directing": 0.0827968284262725,
+          "Conferring": 0.06977332416183067,
+          "Revising": 0.05062881816131367
+        }
+      },
+      "dominant_states": {
+        "Directing": 16
+      },
+      "common_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          16
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          12
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          11
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          10
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          8
+        ]
+      ],
+      "common_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          16
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          10
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          8
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          7
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          6
+        ]
+      ],
+      "escalation": {
+        "mean_score": 0.23246776794437565,
+        "pct_escalating": 0.875
+      },
+      "phase_patterns": {
+        "early": {
+          "mean": {
+            "Seeking": 0.16961798433524938,
+            "Directing": 0.6173397927547292,
+            "Conferring": 0.12651902932042491,
+            "Revising": 0.08652319358959656
+          },
+          "dominant": "Directing"
+        },
+        "middle": {
+          "mean": {
+            "Seeking": 0.09096941655059032,
+            "Directing": 0.7465811391454658,
+            "Conferring": 0.10584641622278292,
+            "Revising": 0.056603028081160967
+          },
+          "dominant": "Directing"
+        },
+        "late": {
+          "mean": {
+            "Seeking": 0.05643146681749624,
+            "Directing": 0.8498075606991048,
+            "Conferring": 0.06654352081741788,
+            "Revising": 0.02721745166598108
+          },
+          "dominant": "Directing"
+        }
+      },
+      "transition_matrix": {
+        "Seeking": {
+          "Seeking": 0.13209776334776335,
+          "Directing": 0.6285522637085137,
+          "Conferring": 0.11505681818181818,
+          "Revising": 0.061793154761904764
+        },
+        "Directing": {
+          "Seeking": 0.08535012744785317,
+          "Directing": 0.7964128671602382,
+          "Conferring": 0.06530960338597565,
+          "Revising": 0.05292740200593313
+        },
+        "Conferring": {
+          "Seeking": 0.17772381756756758,
+          "Directing": 0.6976140202702703,
+          "Conferring": 0.11906672297297297,
+          "Revising": 0.005595439189189189
+        },
+        "Revising": {
+          "Seeking": 0.10416666666666667,
+          "Directing": 0.5338541666666666,
+          "Conferring": 0.0546875,
+          "Revising": 0.11979166666666666
+        }
+      },
+      "narrative": {
+        "summary": "GENERAL archetype: Directing dominant (74.1%), dominated by control/exploitation behaviors",
+        "dominant_behavior": {
+          "description": "Control and exploitation of others",
+          "psychological": "Dominance needs, lack of empathy, predatory focus",
+          "behavioral": "Manipulation, violence, coercion, murder",
+          "risk_indicator": "Active harm, peak danger phase"
+        },
+        "key_transitions": [
+          {
+            "from": "Seeking",
+            "to": "Directing",
+            "probability": 0.6285522637085137,
+            "interpretation": "Fantasy-to-action escalation"
+          },
+          {
+            "from": "Directing",
+            "to": "Directing",
+            "probability": 0.7964128671602382,
+            "interpretation": "Sustained predatory activity"
+          },
+          {
+            "from": "Conferring",
+            "to": "Directing",
+            "probability": 0.6976140202702703,
+            "interpretation": "Observation leading to action"
+          },
+          {
+            "from": "Revising",
+            "to": "Directing",
+            "probability": 0.5338541666666666,
+            "interpretation": "Ritual triggering offense"
+          }
+        ],
+        "trajectory": "Consistent Directing pattern throughout",
+        "escalation": "Strong escalation pattern - Directing behavior increases significantly over time",
+        "risk_profile": "Active harm, peak danger phase"
+      }
+    }
+  },
+  "signatures": {
+    "Alcala._Rodney__2012_": {
+      "name": "Alcala._Rodney__2012_",
+      "n_events": 124,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.6048387096774194,
+      "state_distribution": {
+        "Seeking": 0.06451612903225806,
+        "Directing": 0.6048387096774194,
+        "Conferring": 0.29838709677419356,
+        "Revising": 0.03225806451612903
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.7567567567567568,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          56
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring"
+          ],
+          21
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          12
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          11
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          4
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          43
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring",
+            "Conferring"
+          ],
+          16
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          9
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          7
+        ],
+        [
+          [
+            "Directing",
+            "Conferring",
+            "Directing"
+          ],
+          6
+        ]
+      ],
+      "escalation_score": 0.41579558652729376,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.07317073170731707,
+          "Directing": 0.5365853658536586,
+          "Conferring": 0.3170731707317073,
+          "Revising": 0.07317073170731707
+        },
+        "middle": {
+          "Seeking": 0.0975609756097561,
+          "Directing": 0.3170731707317073,
+          "Conferring": 0.5609756097560976,
+          "Revising": 0.024390243902439025
+        },
+        "late": {
+          "Seeking": 0.023809523809523808,
+          "Directing": 0.9523809523809523,
+          "Conferring": 0.023809523809523808,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Allanson_Patricia": {
+      "name": "Allanson_Patricia",
+      "n_events": 39,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7435897435897436,
+      "state_distribution": {
+        "Seeking": 0.1282051282051282,
+        "Directing": 0.7435897435897436,
+        "Conferring": 0.05128205128205128,
+        "Revising": 0.07692307692307693
+      },
+      "dominant_transition": [
+        "Seeking",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.8,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          22
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          2
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          17
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Revising",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.15384615384615385,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.15384615384615385,
+          "Directing": 0.6923076923076923,
+          "Conferring": 0.15384615384615385,
+          "Revising": 0.0
+        },
+        "middle": {
+          "Seeking": 0.15384615384615385,
+          "Directing": 0.6923076923076923,
+          "Conferring": 0.0,
+          "Revising": 0.15384615384615385
+        },
+        "late": {
+          "Seeking": 0.07692307692307693,
+          "Directing": 0.8461538461538461,
+          "Conferring": 0.0,
+          "Revising": 0.07692307692307693
+        }
+      }
+    },
+    "Anderson_Dale_-_2005": {
+      "name": "Anderson_Dale_-_2005",
+      "n_events": 60,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7166666666666667,
+      "state_distribution": {
+        "Seeking": 0.15,
+        "Directing": 0.7166666666666667,
+        "Conferring": 0.11666666666666667,
+        "Revising": 0.016666666666666666
+      },
+      "dominant_transition": [
+        "Conferring",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          32
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          7
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          6
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking"
+          ],
+          5
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          4
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          23
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          6
+        ],
+        [
+          [
+            "Directing",
+            "Conferring",
+            "Directing"
+          ],
+          6
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          5
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking",
+            "Seeking"
+          ],
+          4
+        ]
+      ],
+      "escalation_score": 0.29999999999999993,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.4,
+          "Directing": 0.55,
+          "Conferring": 0.0,
+          "Revising": 0.05
+        },
+        "middle": {
+          "Seeking": 0.05,
+          "Directing": 0.75,
+          "Conferring": 0.2,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 0.85,
+          "Conferring": 0.15,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Archer-Gilligan_Amy": {
+      "name": "Archer-Gilligan_Amy",
+      "n_events": 22,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.6818181818181818,
+      "state_distribution": {
+        "Seeking": 0.22727272727272727,
+        "Directing": 0.6818181818181818,
+        "Conferring": 0.09090909090909091,
+        "Revising": 0.0
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.8571428571428571,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          12
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          1
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          9
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking",
+            "Directing"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "escalation_score": 0.7142857142857143,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.7142857142857143,
+          "Directing": 0.2857142857142857,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        },
+        "middle": {
+          "Seeking": 0.0,
+          "Directing": 0.7142857142857143,
+          "Conferring": 0.2857142857142857,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 1.0,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Armstrong_John_Eric": {
+      "name": "Armstrong_John_Eric",
+      "n_events": 38,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.5,
+      "state_distribution": {
+        "Seeking": 0.2894736842105263,
+        "Directing": 0.5,
+        "Conferring": 0.13157894736842105,
+        "Revising": 0.07894736842105263
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.6111111111111112,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          11
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          4
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking"
+          ],
+          4
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          3
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          6
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": -0.16666666666666663,
+      "shows_escalation": false,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.25,
+          "Directing": 0.6666666666666666,
+          "Conferring": 0.08333333333333333,
+          "Revising": 0.0
+        },
+        "middle": {
+          "Seeking": 0.4166666666666667,
+          "Directing": 0.3333333333333333,
+          "Conferring": 0.08333333333333333,
+          "Revising": 0.16666666666666666
+        },
+        "late": {
+          "Seeking": 0.21428571428571427,
+          "Directing": 0.5,
+          "Conferring": 0.21428571428571427,
+          "Revising": 0.07142857142857142
+        }
+      }
+    },
+    "Barfield_Velma_-_2005_Fall": {
+      "name": "Barfield_Velma_-_2005_Fall",
+      "n_events": 98,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7448979591836735,
+      "state_distribution": {
+        "Seeking": 0.16326530612244897,
+        "Directing": 0.7448979591836735,
+        "Conferring": 0.061224489795918366,
+        "Revising": 0.030612244897959183
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.8333333333333334,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          60
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          8
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          7
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking"
+          ],
+          6
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          5
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          50
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          5
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          5
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          4
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          4
+        ]
+      ],
+      "escalation_score": 0.5055147058823529,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.40625,
+          "Directing": 0.40625,
+          "Conferring": 0.09375,
+          "Revising": 0.09375
+        },
+        "middle": {
+          "Seeking": 0.03125,
+          "Directing": 0.90625,
+          "Conferring": 0.0625,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.058823529411764705,
+          "Directing": 0.9117647058823529,
+          "Conferring": 0.029411764705882353,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Bathory_Elizabeth_-_spring_2006": {
+      "name": "Bathory_Elizabeth_-_spring_2006",
+      "n_events": 13,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.6153846153846154,
+      "state_distribution": {
+        "Seeking": 0.3076923076923077,
+        "Directing": 0.6153846153846154,
+        "Conferring": 0.07692307692307693,
+        "Revising": 0.0
+      },
+      "dominant_transition": [
+        "Conferring",
+        "Seeking"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          5
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Conferring"
+          ],
+          1
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Conferring"
+          ],
+          1
+        ],
+        [
+          [
+            "Seeking",
+            "Conferring",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "escalation_score": 0.050000000000000044,
+      "shows_escalation": false,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.25,
+          "Directing": 0.75,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        },
+        "middle": {
+          "Seeking": 0.5,
+          "Directing": 0.25,
+          "Conferring": 0.25,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.2,
+          "Directing": 0.8,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Baumeister_Herb_-_fall_2005": {
+      "name": "Baumeister_Herb_-_fall_2005",
+      "n_events": 46,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.41304347826086957,
+      "state_distribution": {
+        "Seeking": 0.2391304347826087,
+        "Directing": 0.41304347826086957,
+        "Conferring": 0.2826086956521739,
+        "Revising": 0.06521739130434782
+      },
+      "dominant_transition": [
+        "Revising",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.6666666666666666,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          8
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking"
+          ],
+          5
+        ],
+        [
+          [
+            "Seeking",
+            "Conferring"
+          ],
+          5
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          5
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          5
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          5
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking",
+            "Conferring"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.10416666666666669,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.4,
+          "Directing": 0.3333333333333333,
+          "Conferring": 0.26666666666666666,
+          "Revising": 0.0
+        },
+        "middle": {
+          "Seeking": 0.13333333333333333,
+          "Directing": 0.4666666666666667,
+          "Conferring": 0.3333333333333333,
+          "Revising": 0.06666666666666667
+        },
+        "late": {
+          "Seeking": 0.1875,
+          "Directing": 0.4375,
+          "Conferring": 0.25,
+          "Revising": 0.125
+        }
+      }
+    },
+    "Beets_Betty_Lou__spring_2007_": {
+      "name": "Beets_Betty_Lou__spring_2007_",
+      "n_events": 50,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7,
+      "state_distribution": {
+        "Seeking": 0.22,
+        "Directing": 0.7,
+        "Conferring": 0.08,
+        "Revising": 0.0
+      },
+      "dominant_transition": [
+        "Conferring",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.75,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          24
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          8
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          8
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking"
+          ],
+          2
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          17
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          6
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          5
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          5
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Seeking"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.20833333333333337,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.3125,
+          "Directing": 0.625,
+          "Conferring": 0.0625,
+          "Revising": 0.0
+        },
+        "middle": {
+          "Seeking": 0.1875,
+          "Directing": 0.625,
+          "Conferring": 0.1875,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.16666666666666666,
+          "Directing": 0.8333333333333334,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Berdella_Robert": {
+      "name": "Berdella_Robert",
+      "n_events": 41,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7073170731707317,
+      "state_distribution": {
+        "Seeking": 0.12195121951219512,
+        "Directing": 0.7073170731707317,
+        "Conferring": 0.0975609756097561,
+        "Revising": 0.07317073170731707
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.8928571428571429,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          25
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          22
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking",
+            "Seeking"
+          ],
+          1
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking",
+            "Directing"
+          ],
+          1
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          1
+        ]
+      ],
+      "escalation_score": 0.7692307692307692,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.38461538461538464,
+          "Directing": 0.23076923076923078,
+          "Conferring": 0.23076923076923078,
+          "Revising": 0.15384615384615385
+        },
+        "middle": {
+          "Seeking": 0.0,
+          "Directing": 0.8461538461538461,
+          "Conferring": 0.07692307692307693,
+          "Revising": 0.07692307692307693
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 1.0,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Bernardo_Paul": {
+      "name": "Bernardo_Paul",
+      "n_events": 88,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7272727272727273,
+      "state_distribution": {
+        "Seeking": 0.056818181818181816,
+        "Directing": 0.7272727272727273,
+        "Conferring": 0.18181818181818182,
+        "Revising": 0.03409090909090909
+      },
+      "dominant_transition": [
+        "Seeking",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.8,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          46
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          13
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          11
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring"
+          ],
+          3
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          36
+        ],
+        [
+          [
+            "Directing",
+            "Conferring",
+            "Directing"
+          ],
+          10
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          8
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          7
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Conferring"
+          ],
+          3
+        ]
+      ],
+      "escalation_score": 0.21149425287356327,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.1724137931034483,
+          "Directing": 0.6551724137931034,
+          "Conferring": 0.10344827586206896,
+          "Revising": 0.06896551724137931
+        },
+        "middle": {
+          "Seeking": 0.0,
+          "Directing": 0.6551724137931034,
+          "Conferring": 0.3103448275862069,
+          "Revising": 0.034482758620689655
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 0.8666666666666667,
+          "Conferring": 0.13333333333333333,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Bianchi_Kenneth": {
+      "name": "Bianchi_Kenneth",
+      "n_events": 62,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.5645161290322581,
+      "state_distribution": {
+        "Seeking": 0.1774193548387097,
+        "Directing": 0.5645161290322581,
+        "Conferring": 0.0967741935483871,
+        "Revising": 0.16129032258064516
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.7428571428571429,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          26
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          4
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Revising",
+            "Revising"
+          ],
+          3
+        ],
+        [
+          [
+            "Revising",
+            "Seeking"
+          ],
+          3
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          20
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Revising",
+            "Seeking",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.4272727272727273,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.35,
+          "Directing": 0.3,
+          "Conferring": 0.1,
+          "Revising": 0.25
+        },
+        "middle": {
+          "Seeking": 0.15,
+          "Directing": 0.65,
+          "Conferring": 0.1,
+          "Revising": 0.1
+        },
+        "late": {
+          "Seeking": 0.045454545454545456,
+          "Directing": 0.7272727272727273,
+          "Conferring": 0.09090909090909091,
+          "Revising": 0.13636363636363635
+        }
+      }
+    },
+    "Bittaker_Lawrence__fall_2007_": {
+      "name": "Bittaker_Lawrence__fall_2007_",
+      "n_events": 33,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.6666666666666666,
+      "state_distribution": {
+        "Seeking": 0.09090909090909091,
+        "Directing": 0.6666666666666666,
+        "Conferring": 0.09090909090909091,
+        "Revising": 0.15151515151515152
+      },
+      "dominant_transition": [
+        "Conferring",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          17
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Revising",
+            "Revising"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          2
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          13
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Conferring",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "escalation_score": 0.18181818181818188,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.18181818181818182,
+          "Directing": 0.5454545454545454,
+          "Conferring": 0.09090909090909091,
+          "Revising": 0.18181818181818182
+        },
+        "middle": {
+          "Seeking": 0.09090909090909091,
+          "Directing": 0.7272727272727273,
+          "Conferring": 0.0,
+          "Revising": 0.18181818181818182
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 0.7272727272727273,
+          "Conferring": 0.18181818181818182,
+          "Revising": 0.09090909090909091
+        }
+      }
+    },
+    "Black_Robert_-_spring_2006": {
+      "name": "Black_Robert_-_spring_2006",
+      "n_events": 26,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7307692307692307,
+      "state_distribution": {
+        "Seeking": 0.11538461538461539,
+        "Directing": 0.7307692307692307,
+        "Conferring": 0.11538461538461539,
+        "Revising": 0.038461538461538464
+      },
+      "dominant_transition": [
+        "Conferring",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          14
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          1
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          9
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Revising"
+          ],
+          1
+        ]
+      ],
+      "escalation_score": 0.17500000000000004,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.125,
+          "Directing": 0.625,
+          "Conferring": 0.125,
+          "Revising": 0.125
+        },
+        "middle": {
+          "Seeking": 0.125,
+          "Directing": 0.75,
+          "Conferring": 0.125,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.1,
+          "Directing": 0.8,
+          "Conferring": 0.1,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Bland_Warren_James__fall_2006_": {
+      "name": "Bland_Warren_James__fall_2006_",
+      "n_events": 46,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7391304347826086,
+      "state_distribution": {
+        "Seeking": 0.08695652173913043,
+        "Directing": 0.7391304347826086,
+        "Conferring": 0.08695652173913043,
+        "Revising": 0.08695652173913043
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.8181818181818182,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          27
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          2
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          20
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Revising"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.21666666666666667,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.13333333333333333,
+          "Directing": 0.5333333333333333,
+          "Conferring": 0.13333333333333333,
+          "Revising": 0.2
+        },
+        "middle": {
+          "Seeking": 0.0,
+          "Directing": 0.9333333333333333,
+          "Conferring": 0.0,
+          "Revising": 0.06666666666666667
+        },
+        "late": {
+          "Seeking": 0.125,
+          "Directing": 0.75,
+          "Conferring": 0.125,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Blank_Daniel__spring_2006_": {
+      "name": "Blank_Daniel__spring_2006_",
+      "n_events": 17,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.8235294117647058,
+      "state_distribution": {
+        "Seeking": 0.058823529411764705,
+        "Directing": 0.8235294117647058,
+        "Conferring": 0.11764705882352941,
+        "Revising": 0.0
+      },
+      "dominant_transition": [
+        "Seeking",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          12
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring"
+          ],
+          1
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          1
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          1
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          10
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring",
+            "Directing"
+          ],
+          1
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          1
+        ]
+      ],
+      "escalation_score": 0.2571428571428571,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.0,
+          "Directing": 0.6,
+          "Conferring": 0.4,
+          "Revising": 0.0
+        },
+        "middle": {
+          "Seeking": 0.0,
+          "Directing": 1.0,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.14285714285714285,
+          "Directing": 0.8571428571428571,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Bonin_William_-_fall_2007": {
+      "name": "Bonin_William_-_fall_2007",
+      "n_events": 28,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.9285714285714286,
+      "state_distribution": {
+        "Seeking": 0.0,
+        "Directing": 0.9285714285714286,
+        "Conferring": 0.03571428571428571,
+        "Revising": 0.03571428571428571
+      },
+      "dominant_transition": [
+        "Conferring",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          23
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          1
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          1
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          1
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          21
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Revising"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Revising",
+            "Directing"
+          ],
+          1
+        ],
+        [
+          [
+            "Revising",
+            "Directing",
+            "Conferring"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Conferring",
+            "Directing"
+          ],
+          1
+        ]
+      ],
+      "escalation_score": 0.2222222222222222,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.0,
+          "Directing": 0.7777777777777778,
+          "Conferring": 0.1111111111111111,
+          "Revising": 0.1111111111111111
+        },
+        "middle": {
+          "Seeking": 0.0,
+          "Directing": 1.0,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 1.0,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Browne_Robert_Charles__2008_spring_": {
+      "name": "Browne_Robert_Charles__2008_spring_",
+      "n_events": 56,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7142857142857143,
+      "state_distribution": {
+        "Seeking": 0.125,
+        "Directing": 0.7142857142857143,
+        "Conferring": 0.05357142857142857,
+        "Revising": 0.10714285714285714
+      },
+      "dominant_transition": [
+        "Conferring",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          27
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          5
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          5
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          5
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          5
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          18
+        ],
+        [
+          [
+            "Directing",
+            "Revising",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          3
+        ]
+      ],
+      "escalation_score": 0.2944444444444444,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.2222222222222222,
+          "Directing": 0.5555555555555556,
+          "Conferring": 0.0,
+          "Revising": 0.2222222222222222
+        },
+        "middle": {
+          "Seeking": 0.1111111111111111,
+          "Directing": 0.7222222222222222,
+          "Conferring": 0.05555555555555555,
+          "Revising": 0.1111111111111111
+        },
+        "late": {
+          "Seeking": 0.05,
+          "Directing": 0.85,
+          "Conferring": 0.1,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Brudos_Jerome": {
+      "name": "Brudos_Jerome",
+      "n_events": 51,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.6078431372549019,
+      "state_distribution": {
+        "Seeking": 0.1568627450980392,
+        "Directing": 0.6078431372549019,
+        "Conferring": 0.11764705882352941,
+        "Revising": 0.11764705882352941
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.6333333333333333,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          19
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          5
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          5
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          4
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          3
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          11
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Revising"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.17647058823529416,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.29411764705882354,
+          "Directing": 0.5294117647058824,
+          "Conferring": 0.0,
+          "Revising": 0.17647058823529413
+        },
+        "middle": {
+          "Seeking": 0.058823529411764705,
+          "Directing": 0.5882352941176471,
+          "Conferring": 0.23529411764705882,
+          "Revising": 0.11764705882352941
+        },
+        "late": {
+          "Seeking": 0.11764705882352941,
+          "Directing": 0.7058823529411765,
+          "Conferring": 0.11764705882352941,
+          "Revising": 0.058823529411764705
+        }
+      }
+    },
+    "Buenoano_Judias_-_fall_2005": {
+      "name": "Buenoano_Judias_-_fall_2005",
+      "n_events": 30,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.6666666666666666,
+      "state_distribution": {
+        "Seeking": 0.16666666666666666,
+        "Directing": 0.6666666666666666,
+        "Conferring": 0.13333333333333333,
+        "Revising": 0.03333333333333333
+      },
+      "dominant_transition": [
+        "Revising",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          15
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Seeking"
+          ],
+          1
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          11
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Seeking"
+          ],
+          1
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          1
+        ]
+      ],
+      "escalation_score": 0.5,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.4,
+          "Directing": 0.5,
+          "Conferring": 0.1,
+          "Revising": 0.0
+        },
+        "middle": {
+          "Seeking": 0.1,
+          "Directing": 0.5,
+          "Conferring": 0.3,
+          "Revising": 0.1
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 1.0,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Bundy_Ted_-_2005": {
+      "name": "Bundy_Ted_-_2005",
+      "n_events": 73,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.6027397260273972,
+      "state_distribution": {
+        "Seeking": 0.0547945205479452,
+        "Directing": 0.6027397260273972,
+        "Conferring": 0.2602739726027397,
+        "Revising": 0.0821917808219178
+      },
+      "dominant_transition": [
+        "Directing",
+        "Directing"
+      ],
+      "dominant_transition_prob": 0.6744186046511628,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          29
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          10
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          10
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring"
+          ],
+          5
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          4
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          16
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          10
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          8
+        ],
+        [
+          [
+            "Directing",
+            "Conferring",
+            "Directing"
+          ],
+          7
+        ],
+        [
+          [
+            "Revising",
+            "Directing",
+            "Directing"
+          ],
+          4
+        ]
+      ],
+      "escalation_score": 0.38333333333333336,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.125,
+          "Directing": 0.4166666666666667,
+          "Conferring": 0.375,
+          "Revising": 0.08333333333333333
+        },
+        "middle": {
+          "Seeking": 0.041666666666666664,
+          "Directing": 0.5833333333333334,
+          "Conferring": 0.2916666666666667,
+          "Revising": 0.08333333333333333
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 0.8,
+          "Conferring": 0.12,
+          "Revising": 0.08
+        }
+      }
+    },
+    "Bunting_John_Justin": {
+      "name": "Bunting_John_Justin",
+      "n_events": 26,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.6923076923076923,
+      "state_distribution": {
+        "Seeking": 0.07692307692307693,
+        "Directing": 0.6923076923076923,
+        "Conferring": 0.11538461538461539,
+        "Revising": 0.11538461538461539
+      },
+      "dominant_transition": [
+        "Conferring",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          12
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          2
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Conferring"
+          ],
+          2
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          8
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Revising",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Conferring",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.42500000000000004,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.25,
+          "Directing": 0.375,
+          "Conferring": 0.125,
+          "Revising": 0.25
+        },
+        "middle": {
+          "Seeking": 0.0,
+          "Directing": 0.875,
+          "Conferring": 0.0,
+          "Revising": 0.125
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 0.8,
+          "Conferring": 0.2,
+          "Revising": 0.0
+        }
+      }
+    },
+    "Buono_Angelo": {
+      "name": "Buono_Angelo",
+      "n_events": 60,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.8666666666666667,
+      "state_distribution": {
+        "Seeking": 0.08333333333333333,
+        "Directing": 0.8666666666666667,
+        "Conferring": 0.016666666666666666,
+        "Revising": 0.03333333333333333
+      },
+      "dominant_transition": [
+        "Conferring",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          45
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          4
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          2
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          38
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          4
+        ],
+        [
+          [
+            "Seeking",
+            "Directing",
+            "Directing"
+          ],
+          4
+        ],
+        [
+          [
+            "Directing",
+            "Seeking",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Revising"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.19999999999999996,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.15,
+          "Directing": 0.75,
+          "Conferring": 0.05,
+          "Revising": 0.05
+        },
+        "middle": {
+          "Seeking": 0.1,
+          "Directing": 0.9,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 0.95,
+          "Conferring": 0.0,
+          "Revising": 0.05
+        }
+      }
+    },
+    "Burke_William__2008_spring_": {
+      "name": "Burke_William__2008_spring_",
+      "n_events": 26,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7307692307692307,
+      "state_distribution": {
+        "Seeking": 0.038461538461538464,
+        "Directing": 0.7307692307692307,
+        "Conferring": 0.19230769230769232,
+        "Revising": 0.038461538461538464
+      },
+      "dominant_transition": [
+        "Seeking",
+        "Conferring"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          16
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking"
+          ],
+          1
+        ],
+        [
+          [
+            "Seeking",
+            "Conferring"
+          ],
+          1
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          14
+        ],
+        [
+          [
+            "Conferring",
+            "Conferring",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Conferring",
+            "Seeking",
+            "Conferring"
+          ],
+          1
+        ],
+        [
+          [
+            "Seeking",
+            "Conferring",
+            "Conferring"
+          ],
+          1
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          1
+        ]
+      ],
+      "escalation_score": 0.19999999999999996,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.125,
+          "Directing": 0.5,
+          "Conferring": 0.375,
+          "Revising": 0.0
+        },
+        "middle": {
+          "Seeking": 0.0,
+          "Directing": 1.0,
+          "Conferring": 0.0,
+          "Revising": 0.0
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 0.7,
+          "Conferring": 0.2,
+          "Revising": 0.1
+        }
+      }
+    },
+    "Cleaned_Albright_Charles_table": {
+      "name": "Cleaned_Albright_Charles_table",
+      "n_events": 46,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.8260869565217391,
+      "state_distribution": {
+        "Seeking": 0.043478260869565216,
+        "Directing": 0.8260869565217391,
+        "Conferring": 0.043478260869565216,
+        "Revising": 0.08695652173913043
+      },
+      "dominant_transition": [
+        "Seeking",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          30
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          3
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          24
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Revising"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Revising",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Revising",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Seeking"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.0708333333333333,
+      "shows_escalation": false,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.06666666666666667,
+          "Directing": 0.8666666666666667,
+          "Conferring": 0.0,
+          "Revising": 0.06666666666666667
+        },
+        "middle": {
+          "Seeking": 0.06666666666666667,
+          "Directing": 0.6666666666666666,
+          "Conferring": 0.06666666666666667,
+          "Revising": 0.2
+        },
+        "late": {
+          "Seeking": 0.0,
+          "Directing": 0.9375,
+          "Conferring": 0.0625,
+          "Revising": 0.0
+        }
+      }
+    },
+    "campbell_charles": {
+      "name": "campbell_charles",
+      "n_events": 47,
+      "dominant_state": "Directing",
+      "dominant_state_pct": 0.7021276595744681,
+      "state_distribution": {
+        "Seeking": 0.06382978723404255,
+        "Directing": 0.7021276595744681,
+        "Conferring": 0.06382978723404255,
+        "Revising": 0.1702127659574468
+      },
+      "dominant_transition": [
+        "Seeking",
+        "Directing"
+      ],
+      "dominant_transition_prob": 1.0,
+      "top_bigrams": [
+        [
+          [
+            "Directing",
+            "Directing"
+          ],
+          25
+        ],
+        [
+          [
+            "Directing",
+            "Revising"
+          ],
+          6
+        ],
+        [
+          [
+            "Seeking",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Revising",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Conferring",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "top_trigrams": [
+        [
+          [
+            "Directing",
+            "Directing",
+            "Directing"
+          ],
+          18
+        ],
+        [
+          [
+            "Directing",
+            "Directing",
+            "Revising"
+          ],
+          6
+        ],
+        [
+          [
+            "Directing",
+            "Revising",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Revising",
+            "Directing",
+            "Directing"
+          ],
+          3
+        ],
+        [
+          [
+            "Conferring",
+            "Directing",
+            "Directing"
+          ],
+          2
+        ]
+      ],
+      "escalation_score": 0.2313725490196078,
+      "shows_escalation": true,
+      "phase_distributions": {
+        "early": {
+          "Seeking": 0.06666666666666667,
+          "Directing": 0.5333333333333333,
+          "Conferring": 0.13333333333333333,
+          "Revising": 0.26666666666666666
+        },
+        "middle": {
+          "Seeking": 0.06666666666666667,
+          "Directing": 0.8,
+          "Conferring": 0.0,
+          "Revising": 0.13333333333333333
+        },
+        "late": {
+          "Seeking": 0.058823529411764705,
+          "Directing": 0.7647058823529411,
+          "Conferring": 0.058823529411764705,
+          "Revising": 0.11764705882352941
+        }
+      }
+    }
+  },
+  "characteristic_events": {
+    "Alcala._Rodney__2012_": {
+      "Directing": [
+        "\"Rodney\u2019s older brother",
+        "Rodney\u2019s older sister, Marie Therese, was born in San Antonio, TX",
+        "His youngest sister, Marie Christine, was born in San Antonio, TX",
+        "His maternal grandmother became ill and wanted to spend her final years in Mexico. The family moved to Mexico where Rodney attended his first non-Catholic school. While living in Mexico, his grandmother passed away.",
+        "After three years of living in Mexico, his father left the family to return to the United States. Soon after, the family relocated to Los Angeles, California.  Rodney was enrolled in St. Alphonsus in East Los Angeles where he attended for two years."
+      ],
+      "Conferring": [
+        "Rodrigo Jacques Alcala-Buquor was born in San Antonio, Texas to Raou Alcala-Buquor and Anna Maria Gutierrez. He lived with his parents, two sisters, one brother and maternal grandmother.",
+        "Graduated from the public high school, Montebello High School.",
+        "Accepted to New York University\u2019s School of the Arts undergraduate program under the alias, John Berger.",
+        "Hired as an arts and drama counselor at a summer camp in George Mills, New Hampshire under the alias John Berger",
+        "Graduated from NYU and began his third summer working at the arts and drama camp in George Mills, New Hampshire."
+      ],
+      "Revising": [
+        "He attended kindergarten, first at St. Joseph Catholic Elementary and then moved to Mount Sacred Heart",
+        "Alcala was determined, by a state prison psychiatrist, to have considerably improved during his time incarcerated and was released on parole in Los Angeles, CA under the stipulation that he register as a sex offender with the Monterey Park Police Department.",
+        "Released on parole after being pronounced \u201cre-reformed\u201d due to the self-improvement programs completed while in prison, under the condition that he report to a parole officer weekly.",
+        "\"Alcala changed the carpet in his car; claiming he spilled gasoline on it.\""
+      ],
+      "Seeking": [
+        "He finished eighth grade and then attended high school at private Cantwell-Sacred Heart of Mary. During his last semester in high school, he felt like he had enough religious education and insisted on attending public school.",
+        "\"Unexpectedly showed up at his mother\u2019s door. Hs said that he had hitchhiked from Fort Bragg and traveled about three thousand miles to go AWOL.\"",
+        "Medically discharged from the U.S. Army after having a nervous breakdown. He was then diagnosed with an antisocial personality disorder, chronic, severe. When he was released from the hospital, he returned home where he began to feel more like himself.",
+        "\"Alcala chemically straightened his naturally curly hair.\"",
+        "Once his curls start to grow back, Alcala decides to cut his hair short."
+      ]
+    },
+    "Allanson_Patricia": {
+      "Conferring": [
+        "Born in 1937 as Mary Linda Patricia Vann in Wilmington, North Carolina.",
+        "Pat, Gil, Susan, and Debbie move to the Philippines where Gil is stationed."
+      ],
+      "Seeking": [
+        "All indulgences filled by grandmother \u201cMama\u201d and her stepfather Colonel Clifford Radcliffe.",
+        "Son Ronnie is born.",
+        "Met Tom Allanson. His parents, Walter & Carolyn Allanson, disapproved of divorce and refused to accept Pat as a new woman in Tom\u2019s life.",
+        "Pat Radcliffe and Tom Allanson got married in a show tent at Morgan Horse Show in Stone Mountain, Georgia. The wedding was exactly what she wanted as she dressed as her idol, Scarlett O\u2019Hara.",
+        "Pat convinces Tom into a suicide pact."
+      ],
+      "Directing": [
+        "Pat\u2019s brother Kent is born.",
+        "Pat\u2019s mother, Margureitte,  marries Lt. Clifford Radcliffe in Fort Bragg, NC.",
+        "Patricia constantly berated her stepbrother, Kent, since his birth.",
+        "Would throw temper tantrums until she got what she wanted. If she didn\u2019t get what she wanted, she would manipulate her way towards her goal.",
+        "Married SGT Gilbert \u201cJunior\u201d Taylor in Atlanta, Georgia. She had three children with Gil, Susan, Debbie and Ronnie."
+      ],
+      "Revising": [
+        "Pat and Tom moved to Zebulon, Georgia.",
+        "Tom and Pat purchase a farm in Zebulon, Georgia. They began their dream of raising and showing horses on their farm, Kentwood Morgan Farm.",
+        "Judge Holt sentences Pat to two 10-year prison sentences, to be served consecutively. She is sent to Hardwick Correctional Institute in Milledgeville, GA."
+      ]
+    },
+    "Anderson_Dale_-_2005": {
+      "Seeking": [
+        "Anderson was born in Canton, Ohio, to George \u201cDick\u201d and Vera Anderson.  His father worked on a dairy farm and later became a miner.",
+        "\"Anderson attended Galesburg High School and Graduated from Belleville West High School. A loner who didn\u2019t date he was an almost invisible student. More than twenty people who attended his high school were unable to recall who he was.\"",
+        "\"Anderson turned 21-years of age.\"",
+        "Anderson began his college career at Illinois State University in Normal, IL. He majored in history and minored in sociology. He wanted to be a school teacher and regularly made the dean\u2019s list.",
+        "One evening in the summer, Vera Anderson was standing in the kitchen of her Belleville home, putting her financial records back in a neat file where she kept them. Her son just arrived home from the coal mines. He was angry.  \u201cI just bet you spent all my money,\u201d Anderson said  His mother said it wasn\u2019t true. Something in her son\u2019s look alarmed her. He suddenly grabbed her by the throat. He stopped choking her when the telephone rang. His mother, hysterical, her neck red from her son's fingers, ran to a neighbor\u2019s house. Dale Anderson had just revealed a sinister new personality trait with shocking clarity. There would be other explosive outbursts."
+      ],
+      "Directing": [
+        "The Family moved to Galesburg, Illinois",
+        "A few weeks after moving to Galesburg, the family moved to Belleville, Missouri.",
+        "Anderson was a quiet baby. His first sentence didn\u2019t come until he was almost three years old. He spoke when his grandmother tried to discipline him. \u201cIf you don\u2019t stop that I\u2019ll spank you,\u201d she said \u201cI\u2019ll spank you right back,\u201d the toddler replied.",
+        "\"Anderson applied for a job with the Illinois State police department. He was crushed when he was rejected. He had spoken often of his desire to become a police officer.\"",
+        "\"He got a job at an Allstate insurance agency as a claim adjuster. Allstate eventually fired him for falsifying his records.\""
+      ],
+      "Revising": [
+        "After being fired from his last job, he had fallen into the habit of telling people he was an undercover police operative."
+      ],
+      "Conferring": [
+        "\"The story ran two days later.\"",
+        "Audrey Cardenas joined the News-Democrat as an intern. A recent graduate of Texas A&M, she was an eager, willing learner.",
+        "Anderson bought two more briefcases. Those would later be found on his bedroom floor. Busch, the crime scene investigator who wrote about Anderson, called them \"assassin kits.\"",
+        "Audrey Cardenas' body was found in a dry creek bed on the campus of Belleville Township High School East. Police arrested a California transient, Rodney Woidtke, who had wandered onto the high school athletic field 150 yards from Cardenas' body.",
+        "\"Anderson continues to insist that Cardenas was at his house the day before she disappeared and that she told him she was investigating the public-aid supervisors for corruption.\""
+      ]
+    },
+    "Archer-Gilligan_Amy": {
+      "Seeking": [
+        "Born in Litchfield, CT to James Duggan and Mary Kennedy Duggan.",
+        "\"Amy attended New Britain Normal School\"",
+        "\"Marries James Archer\"",
+        "\"Amy gives birth to a daughter named Mary Archer.\"",
+        "Amy and James moved into Windsor, Connecticut, and purchased a redbrick house that they turned into the Archer Home for the Elderly and Infirmed."
+      ],
+      "Directing": [
+        "Amy and James moved into the home of John D. Seymour in Newington, CT, to take care of him.",
+        "\"John Seymour died. Seymour\u2019s heirs turned the house into a home for the elderly which was run by Amy and James.\"",
+        "James Archer died suddenly from Bright\u2019s disease. Amy had taken out an insurance policy weeks prior to his death. The Archer home began experiencing financial problems after James\u2019 death.",
+        "\"81-year-old Hilton Griffin died of 'general debility and old age'\"",
+        "Franklin Andrews entered the Archer home. Amy had 10 residents and an additional 15 deaths."
+      ],
+      "Conferring": [
+        "\"May 29",
+        "\"June 11"
+      ]
+    },
+    "Armstrong_John_Eric": {
+      "Conferring": [
+        "Armstrong was born in New Bern, North Carolina",
+        "Joined the Navy in Raleigh, North Carolina",
+        "\"Married Katie Rednoske whom he met on the USS Nimitz\"",
+        "Armstrong was questioned after he 'found' Wendy Jordan\u2019s body in the river. He told police he was feeling nauseous and pulled over to get sick in the river and saw her body. A few weeks later a DNA test found a match between Armstrong and the victim but prosecutors waited for a full DNA lab report before issuing an arrest warrant. In that interval three bodies were found in the Detroit rail yard.",
+        "\"Investigators find the bodies of three strangled prostitutes in a railroad yard in southwest Detroit\""
+      ],
+      "Directing": [
+        "\"Armstrong fell out of a window and broke his leg while under his father\u2019s supervision\"",
+        "\"Younger brother died of SIDS when two months old\"",
+        "\"Armstrong attempted to kill himself by riding his bike across a populated street.  This suicide attempt was due to the grief of wanting to be with his younger brother\"",
+        "His biological father, John left after the loss of his younger brother, Michael",
+        "\"His father was very abusive and neglectful toward him and his mother\""
+      ],
+      "Seeking": [
+        "\"Spent one month in a mental hospital after locking himself in a bathroom because a girl from his high school was pressuring him to have sex\"",
+        "\"Visited a psychologist to receive treatment for his brother\u2019s death\"",
+        "\"Graduated from New Bern High School as an unmemorable student with no discipline problems\"",
+        "Enjoyed baseball, fishing, and earned decent grades throughout his high school years",
+        "Stationed on the U.S.S. Nimitz where he traveled around the world, including Asia and the Middle East"
+      ],
+      "Revising": [
+        "\"Not a discipline problem while in the Navy\"",
+        "\"Received 5 medals and 4 ribbons for good conduct and good service during his time in the Navy\"",
+        "Believed to be linked to 11 other slayings since 1992, including three in Seattle, two in Hawaii, two in Hong Kong and one each in Virginia, North Carolina, Thailand, and Singapore"
+      ]
+    },
+    "Barfield_Velma_-_2005_Fall": {
+      "Directing": [
+        "\"Margie Velma Bullard was born in South Carolina to Murphy and Lillie Bullard. She was the oldest girl and second of a large family of nine children.\"",
+        "She lived in Wade, NC on her father\u2019s small farm.  Her home had no electricity or running water and no outhouse. She learned to take trips to the woods or use chamber pots to relieve herself.",
+        "She slept in the same bedroom with her parents through high school. Her father physically abused her mother, was hot tempered, and went on 'drinking binges.' She feared him throughout her childhood.",
+        "\"Velma\u2019s family moves to Robeson county where she meets Thomas Burke.\"",
+        "\"Velma stays home from school being ill with the flu and her father rapes her.\""
+      ],
+      "Conferring": [
+        "Velma begins first grade. She likes school and her teacher, working very hard achieving good grades.",
+        "\"Thomas Burke proposes to Velma at a local movie theatre.\"",
+        "\"Velma begins working two jobs to support her family. She is a clerk in a Department Store (Belk) and a machine operator in a cotton mill.\"",
+        "Montgomery Edwards (WM, 95) dies in Lumberton, North Carolina.",
+        "\"Velma was hired as live-in caretaker for John Henry Lee and Record Lee. She would be paid $50 a week.\""
+      ],
+      "Seeking": [
+        "\"Her father worked late shift at a textile mill so she didn\u2019t see him much.\"",
+        "Velma\u2019s father surprises her and buys her an expensive pink, ruffled gown and it the happiest day that she can remember.",
+        "\"She begins regularly attending the Baptist church and was baptized. She begins to date Thomas Burke after waiting many months for her 16th birthday to arrive so her father would allow her to date.\"",
+        "\"Thomas quits school and begins working at a textile mill in Red Springs.\"",
+        "She moves in with Thomas and his parents, attending the Baptist church with them."
+      ],
+      "Revising": [
+        "Velma\u2019s chores included keeping the house, washing and ironing clothing, and mending for a family of 11. Her father would dismiss her from school early on days that she needed to do extra laundry because using the wash board took so long. Velma resented this.",
+        "Velma begins cooking all of her family\u2019s meals, each day.",
+        "\"Twice each summer her family sent her to Presbyterian Bible School.\""
+      ]
+    },
+    "Bathory_Elizabeth_-_spring_2006": {
+      "Seeking": [
+        "\"Elizabeth 'Erzebet' Bathory born to George and Anna Bathory. Spent her childhood in Ecsed Castle.\"",
+        "\"While Elizabeth\u2019s husband was away she found herself spending more time admiring her beauty in the mirror. She took on young men as lovers and even ran off with one but the Count forgave her.\"",
+        "\"Elizabeth became acquainted with the art of inflicting pain and suffering. Elizabeth started a fascination with Black Magic. A servant",
+        "\"Ferencz Nadasdy dies apparently of poisoning but some believed it could be witchcraft\""
+      ],
+      "Directing": [
+        "\"Elizabeth had quite violent seizures where she would ultimate pass out. One uncle was known to be a devil-worshiper and other members of the family were mentally insane and perverted. Saw her two sisters raped and hanged. Saw their murderer put on hot iron throne and burned to death\"",
+        "\"Elizabeth was forced to become engaged to Count Nadasdy\"",
+        "\"Elizabeth gave birth to an illegitimate child fathered by a peasant boy\"",
+        "Elizabeth marries Count Ferencz Nadasdy, who was 25 years old. They moved to castle Cachtice, which lies over the north-western part of Hungary. Count Ferencz spent a lot of time away from home fighting against the Turks",
+        "One day Elizabeth wrote to her husband, 'Thorko has taught me a lovely new one. Catch a black hen and beat it to death with a white can. Keep the blood and smear a little of it on your enemy. If you get no chance to smear it on his body, obtain one of his garments and smear it'"
+      ],
+      "Conferring": [
+        "\"While home alone"
+      ]
+    },
+    "Baumeister_Herb_-_fall_2005": {
+      "Conferring": [
+        "Born to Dr. Herbert E. and Elizabeth Baumeister in Indiana.",
+        "Started attending high school at North Central High. Was active in biology, geology, government, international relations, and chess clubs.",
+        "Found a dead crow in the road, put it in his pocket and placed on teachers desk when she wasn\u2019t looking.",
+        "Not part of the 'in-crowd', usually alone, never dated.",
+        "Body of Eric Roetiger (WM, 17) found in Indiana."
+      ],
+      "Directing": [
+        "Sister Barbara born.",
+        "Brother Brad born.",
+        "Brother Richard born.",
+        "Married Juliana Saitor in United Methodist Church in Indiana.",
+        "Worked at Bureau of Motor Vehicles. Odd behavior evident during this time. Sent Christmas cards with him and another man dressed in drag. Earned title of Program Director. Urinated on a letter addressed to the governor and was terminated."
+      ],
+      "Seeking": [
+        "Friend remembers that Herb used to 'ponder what it would be like to taste human urine'.",
+        "Father secretly took him to take psychological tests; limited records show diagnosed with schizophrenia with possibly more than one personality. No further documentation.",
+        "Graduated high school and was accepted into Indiana University. Met Juliana here. They were drawn to each other due to their strong conservative views.",
+        "Dropped out of college after freshman year. Worked at the Indianapolis Star as copy boy.",
+        "Spent two months in psychiatric hospital (6 months after being married)."
+      ],
+      "Revising": [
+        "After making $50,000 in his first year of owning SAV-A-LOT, he opened his second store.",
+        "Arrested for drinking and driving in Rochester, Indiana. Sentenced to 3 days in jail and 1 year probation.",
+        "Herb shows up at gay bar and Tony Harris gets his license plate number. Suspicion of Herb growing."
+      ]
+    },
+    "Beets_Betty_Lou__spring_2007_": {
+      "Conferring": [
+        "Born in Roxboro, North Carolina",
+        "Married Billy York Lane",
+        "Met Ronnie Threlkold",
+        "Betty began topless dancing"
+      ],
+      "Directing": [
+        "Got measles and lost her hearing",
+        "Raped by father",
+        "Her brother Jimmy was born",
+        "Her sister Jackie was born",
+        "Began taking care of her little brother and sister because her mother was institutionalized (did not return to school)"
+      ],
+      "Seeking": [
+        "Moved to Danville, Virginia",
+        "Married Robert Franklin Branson after finishing 9th grade",
+        "Reconciled with her husband",
+        "Moved to Mesquite Texas",
+        "Had third child Shirley"
+      ]
+    },
+    "Berdella_Robert": {
+      "Conferring": [
+        "Robert Berdella was born in Cuyahoga Falls, Ohio.",
+        "Watched the movie 'The Collector,' which was about a man who kidnapped a woman and kept her captive. He would later admit that this movie left a lasting impression on him.",
+        "Became more accomplished as a chef and worked for many well-known restaurants and country clubs. Joined local chefs association where he helped set up training classes for aspiring chefs. Helped organize local crime prevention and neighborhood watch association",
+        "Met Mark Wallace after he had helped with some yard work for him."
+      ],
+      "Seeking": [
+        "Brother, Daniel, was born",
+        "Berdella was baptized as a Catholic",
+        "Stopped attending church services",
+        "Dropped out of art school",
+        "Began renting space at the local flea-market where he sold oddities, antiques, and artifacts. Became open about his homosexuality"
+      ],
+      "Directing": [
+        "Father dies of a sudden heart attack at age 39. Mother remarries soon after. Berdella resented it.",
+        "Raped by a man he worked with in an Ohio restaurant.",
+        "Bought a house where he would live until his arrest",
+        "Became seriously emotionally involved with an unstable Vietnam veteran, however, the relationship did not last long. Began picking up young male prostitutes.  He would become a friend with many of them, often allowing them to live with him in exchange for helping with housework. He tried to get many of them to quit prostituting and get their lives in order.",
+        "Began hanging out with 19-year-old Jerry Howell, one of the young prostitutes."
+      ],
+      "Revising": [
+        "Arrested, and plead guilty, for selling amphetamines to an undercover agent. He received a five year suspended sentence.",
+        "Arrested for possession of LSD and marijuana. After spending 5 days in jail the charges were dropped for lack of evidence.",
+        "Quit work as a cook and begin to work full time at his shop, which he named 'Bob\u2019s Bazaar Bizarre'."
+      ]
+    },
+    "Bernardo_Paul": {
+      "Directing": [
+        "Paul was born to Kenneth and Marilyn Bernardo, as a result of her affair with a former boyfriend, in Scarborough Canada. He was the last of three children",
+        "Karla Homolka was born to Karel and Dorothy Homolka. She was the first of three children",
+        "Bernardo\u2019s mother locates her blood sisters and begins to visit with them on weekends leaving Bernardo and his siblings unsupervised",
+        "Nadine breaks off the relationship with Paul due to her involvement with his good friend Steve. After this Paul is enraged and sets fire to all of the things that Nadine,Nadine breaks off the relationship with Paul due to her involvement with his good friend Steve. After this Paul is enraged and starts fire to all of the things that Nadine had given him",
+        "Paul dates many women but the relationships usually lasted no more than a month. If any of the women told about what he had done to them, he threatened to kill them."
+      ],
+      "Conferring": [
+        "Bernardo becomes close friends with two neighborhood boys, Van and Steve. They are always together and all members of the boy scouts where Bernardo receives the chief scout award. The boys begin to start fires using magnifying glasses and twigs/kindling",
+        "Paul graduates from Sir Wilfred Lauier High School. Paul begins going to bars where he lies to women in order to have sex with them.",
+        "Bernardo and Van meet Karla Homolka and Debbie Purdie, in a Howard Johnson Hotel. The night that they meet they have sex and Paul gets her phone number and address which is unlike Paul for a one night stand.",
+        "2 detectives interview Paul for 35 minutes, Paul gives them hair, saliva, and blood samples for testing, swears that he isn\u2019t the Scarborough rapist",
+        "Tammy\u2019s funeral takes place and Paul gets caught stroking her hair in the open casket."
+      ],
+      "Revising": [
+        "Paul gets his first job working in a restaurant that is owned by a friend of his father",
+        "Karla\u2019s friends find handcuffs in her bedroom; Karla reveals that Paul enjoys 'playing games' in bed and their relationship: Never let anyone know our relationship is anything but perfect; Don't talk back to Paul; Be a perfect girlfriend for Paul; If Paul asks for a drink, bring him one quickly and happily; Remember you're stupid; Remember you're ugly; Remember you're fat; I don't know why I tell you these things because you never change.",
+        "Paul is driven back to Scarborough and charged on a number of accounts"
+      ],
+      "Seeking": [
+        "Paul began high school and was doing well, but his parents never thought that anything was good enough.",
+        "Paul meets his first love, Nadine Brammer, an attractive blonde, to whom he lost his virginity. She said that Paul was very controlling and over protective. Paul\u2019s mother reveals that Kenneth was not his real father. After this Paul referred to his mother as a slut and whore and she began to call him a bastard.",
+        "Paul enrolls at the University of Toronto, Scarborough campus. Paul begins talking with his friend Van about his 'Virgin Farm Fantasy' in which Paul would have stockpile of women that wanted to have sex with him.",
+        "Paul's father is discovered to be a Peeping Tom in his neighborhood. Paul\u2019s lifestyle begins to change along with his attitude toward women. Due to his abusive nature and strange sexual preferences, all of his girlfriends end up leaving him.",
+        "Paul graduates from college and gets a job as a junior accountant for the accounting firm Price Waterhouse. After dating Jennifer Thompson who threatened to go to the police, his dating starts to slow down."
+      ]
+    },
+    "Bianchi_Kenneth": {
+      "Directing": [
+        "Kenneth Bianchi is born in Rochester, New York to a 17-year-old alcoholic prostitute who gives him up for adoption",
+        "Kenneth is adopted by Frances Scioliono Bianchi and her husband who is a worker in the American Brake-Shoe Factory. Frances is Angelo Buono\u2019s mother\u2019s sister making him Angelo\u2019s adoptive cousin. Named Kenneth Alessio Bianchi, he is their only child.",
+        "First taken to hospital by his mother with complaints of not being able to sleep and wetting the bed 5 times. Quote from doctor after first hospital visit \u2013 'Mother needs help'",
+        "Proposes to a woman named Susan but is turned down",
+        "Writes his girlfriend saying that he has been suspected in the Alphabet murders and that he had in fact killed a man. However, she thinks this is a sick joke and does not take the confession seriously.**(the exact date of this letter can not be confirmed, some sources list the time period as 1969 while others say it was 1972)"
+      ],
+      "Seeking": [
+        "By the time he could talk his mother knew he would be a compulsive liar. Throughout his childhood he idolizes Prince Valiant",
+        "Kenneth has frequent lapses into trance-like states of daydreaming. Frances consults a physician. These trance-like states of daydreaming are typified by his eyes rolling back in his head and inattentiveness. He is prone to temper tantrums and quick to anger as well. Doctor diagnoses him with petit mal syndrome and assures the Bianchi\u2019s that there is nothing to worry about and that Kenneth will eventually grow out of these episodes. Episodes only last a moment or so",
+        "Kenneth is moved twice from schools because he could not get along with his teachers. The mother believed the teachers made him nervous. His IQ is measured at 116. Mother says he is lazy, inattentive, and angry. Teachers say he is working below his capacity",
+        "Kenneth\u2019s father, Mr. Bianchi, suddenly dies and Kenneth refuses to cry or show any emotion for his loss",
+        "Attends Gates-Chili high school (just outside Rochester). During this time he dates frequently, is clean-cut, and respective of elders. Joins a motorcycle club and gets a tattoo that reads, 'Satan\u2019s Own M.C.'"
+      ],
+      "Conferring": [
+        "Is checked by doctors for urinary dribbling",
+        "Kenneth enrolls at Monroe Community College to become a police officer.",
+        "Applies with the Los Angeles Police Reserves",
+        "Applies to Los Angeles Police Department but there are no openings",
+        "Police in Bellingham, Washington are notified that two young women from Western Washington University, Karen Mandic and Diane Wilder, are missing. The police later find out that Kenneth Bianchi had offered the girls $100 to housesit for him."
+      ],
+      "Revising": [
+        "Is treated briefly at a psychiatric center in Rochester for mental problems",
+        "Begins having involuntary urination (Frances eventually makes him wear sanitary napkins).",
+        "Is sent to DePaul Psychiatric Clinic because of 'involuntary urination, tics, absenteeism, and behavior problems.' Doctors perform a cystoscopy and retrograde pyelogram on Kenneth",
+        "Decides that he likes pulling younger girls pants down and does just that to a six year old girl",
+        "Proposes to Susan a second time. However, she turns him down again and claims that he needs to have a stable job."
+      ]
+    },
+    "Bittaker_Lawrence__fall_2007_": {
+      "Conferring": [
+        "Born in Pittsburgh, Pennsylvania. Adopted by Mr. & Mrs. George Bittaker. Moved around a lot. PA, FL, OH, then finally CA",
+        "Wrote to Norris and arranged to meet at a cheap downtown hotel",
+        "Bittaker was given a jury trial; the prosecutor was seeking the death penalty. During trial Bittaker showed no remorse for the killings. He also wrote a book called The Last Ride which illustrated his partnership with Norris as well as details about their killing spree"
+      ],
+      "Directing": [
+        "Dropped out of school. Arrested for auto theft, hit & run, & evading arrest in Long Beach, CA",
+        "\"Released from California Youth Authority\"",
+        "Convicted of Interstate Motor Vehicle Theft.Sentenced to serve 18 months at federal reformatory in Oklahoma. Transferred to U.S. medical center in Springfield Missouri for good behavior at the federal reformatory in Oklahoma.",
+        "Released by doctors from U.S. medical center in Springfield Missouri",
+        "Arrested in Los Angeles for robbery"
+      ],
+      "Seeking": [
+        "Diagnosed as 'borderline psychotic' and 'basically paranoid' while in state prison. Said to be manipulative, and a great deal of pent up hostility.",
+        "Psychiatrist noted him as having 'poor control of impulse behavior'",
+        "Diagnosed again as 'borderline psychosis' in jail; bragged about how stealing cars made him feel important; also stated he felt as if he were misunderstood, mistreated and falsely accused his whole life; medication was administered"
+      ],
+      "Revising": [
+        "Paroled after serving barely 1/6 of his possible maximum sentence",
+        "Jailed for parole violation & suspicion of robbery",
+        "Arrested for burglary and parole violation",
+        "Convicted on both counts, receiving an additional sentence of 6 months to 15 years",
+        "Bittaker was sentenced to death on March 24, 1981. The judge included an extra 199-year life sentence just in case his death sentence ever commuted to life. As of 2007,,Bittaker is still on death row at San Quentin Prison,Bittaker is still on death row at San Quentin Prison"
+      ]
+    },
+    "Black_Robert_-_spring_2006": {
+      "Conferring": [
+        "Grangemouth, about 20 miles from Edinburgh, on the Firth of Forth",
+        "Met Eddie and Kathy Rayson in a pub in Stamford Hill.  Raysons\u2019 let Black live in their attic. Kathy said that Black seemed like a 'big softie.'  After Black\u2019s conviction in 1994, Eddie Rayson remembered Black as 'a perfect tenant.' 'He always paid the rent on time and never caused any problems.'",
+        "5-year-old Caroline Hogg was abducted. Lived in the seaside resort of Portobello on the outskirts of Edinburgh. Body found on 18 July in a lay-by at Twycross in Leicestershire near to the A444, the road that goes from Northampton to Coventry. Body was left some 300 miles from where she was abducted. Susan and Caroline\u2019s bodies were found within just 24 miles of each other."
+      ],
+      "Directing": [
+        "Was in care before being fostered to Jack and Margaret Tulip in the Highlands. Tulips lived in Kinlochleven, near Glencoe in the West Highlands. Robert lived here for the next eleven years, the majority of which were spent in the care of Margaret Tulip.",
+        "Jack Tulip died. Black claims to have no memory of him, indeed, no memories at all before the age of five. Although locals remember how Robert Black was frequently heavily bruised as a boy, Black himself cannot recall how he got these injuries.  He recalls no abusive behavior from Jack, though he does remember how Margaret used to lock him in the house as a punishment for bad behavior, or alternatively, pull down his trousers and underwear and spank him with a belt. At nights Robbie was scared that there was a monster under his bed waiting to get him, and used to suffer from a recurring nightmare featuring a 'big hairy monster' in a cellar full of water. When he awoke he frequently found that he had wet the bed, which invariably provoked a beating. To his classmates at primary school Robert - or 'Smelly Robbie Tulip' as he was known - is remembered as having been an aggressive and slightly wayward boy. Having said this, in the period that he was living with the Tulips, Robert never really got himself into any serious trouble: he had childish fights, played up at school, and bullied the younger children, yet he seemed to avoid anything more serious than a rebuke from Williams for swearing in front of ladies. His first sexual experience, which is one of his first memories, was when he was only five. Black vividly recalls himself and a little girl undressing and looking at each other's sexual parts",
+        "Margaret Tulip died. Once again deprived of a mother. Although a local couple offered to take him in, it was decided that Black would go to the Redding Children's Home near Falkirk, close to the place of his birth.",
+        "Black made his first inept attempt at rape. He told Ray Wyre: 'Me and two other boys went into a field with a girl the same age. We took her knickers off, lifted her skirt and all tried to put our penises in.' Finding that they couldn't complete the act of penetration, the boys contented themselves instead with touching the girl's vagina. When asked if she was consenting to this, Black told Wyre: 'I was forcing her, like, you know?' The incident was exposed and the authorities decided that Black would be better suited to a home with stricter discipline, not to mention an all-male environment.",
+        "Red House in Musselburgh. For at least a year, possibly two, out of the three that Black was at the Red House, a male member of staff - now dead - regularly sexually abused him. During this time Robert had obtained a place at Musselburgh Grammar School. Slightly above average academically, but it was sport that he was really interested in, especially football, swimming and athletics."
+      ],
+      "Revising": [
+        "Highland Dance classes, he remembers being far more interested in lying on the floor and looking up the girls\u2019 skirts than dancing."
+      ],
+      "Seeking": [
+        "While looking after a neighbor's baby, he took off her nappy to look at her vagina. Both vaginas and anuses fascinated him, and he was obsessed with discovering how big they were, how much they could hold.",
+        "\"Moved to London. Poor eyesight put a career in professional football beyond his reach. Obsession with young girls was growing",
+        "Opening arguments started."
+      ]
+    },
+    "Bland_Warren_James__fall_2006_": {
+      "Conferring": [
+        "Warren James Bland was born in Culver City, California.",
+        "Released from U.S. Marines.",
+        "Phoebe Ho\u2019s body found in Riverside County, CA.",
+        "Search warrant obtained to search Bland\u2019s house. Forensic matches for a fiber from Bland\u2019s car and a hair found in search"
+      ],
+      "Directing": [
+        "Father dies of heart attack.",
+        "Marries Sue Ellen Sweeney, raped her on their wedding night then continuously for their marriage 2 months 10 days.",
+        "Sue Ellen files for annulment citing grounds of extreme cruelty and grievous mental suffering.",
+        "Suspect in murder case of an officer on duty, never charged with crime.",
+        "Arrested for taking a 1956 Thunderbird for a test drive and keeping it."
+      ],
+      "Seeking": [
+        "Bland enlisted for a three-year stint in the Marine Corps, immediately shipped to San Diego for basic training. Five weeks later went AWOL, found one month later, sent to the brig for 6 months of hard labor, brought back for basic training.",
+        "Bland\u2019s daughter, Debbie Ann Bland born.",
+        "Norma Williams (woman he lived with) felt she could turn him around with Christianity and married Bland.",
+        "Bland goes on the run, changes name to James Thaddeus Sterling and Charles St. Germain."
+      ],
+      "Revising": [
+        "AWOL second time, classified a deserter.",
+        "Arrested, court-martialed, sentenced to another 6 months of hard labor, discharged for bad conduct from the Marine Corps.",
+        "Pleaded guilty to grand theft auto, sentenced to 30 days in county jail and 3 years probation.",
+        "Committed to Atascadero State Hospital for 90 day observation period, in June determined to commit Bland to the hospital for an indeterminate period."
+      ]
+    },
+    "Blank_Daniel__spring_2006_": {
+      "Conferring": [
+        "Born in Paulina, Louisiana.",
+        "\"info missing\""
+      ],
+      "Directing": [
+        "Murdered Victor Rossi (WM, 41), beat him to death in his home in St. Amant, Louisiana. Blank worked at Rossi\u2019s car repair shop",
+        "Murdered Lillian Phillipe (WF, 71) of Gonzales, Louisiana. She was stabbed to death in her home. Blank previously bought car parts from the store that Phillipe\u2019s husband had started.",
+        "Murdered Barbara Bourgeois (WF, 58), of Paulina, Louisiana. She was stabbed to death at her home, a quarter mile away from Blank\u2019s home.",
+        "Daniel bludgeoned to death, Sam Arcuri (WM, 76) and Louella Arcuri (WF, 69) in their LaPlace, Louisiana home.",
+        "Daniel murdered Joan Brock (WF, 55), in the back yard of her LaPlace home. She was beaten to death. Blank had worked at Brock\u2019s husband\u2019s car repair shop in Reserve."
+      ],
+      "Seeking": [
+        "Daniel Blank escaped during a pause in the hearing through a second-floor bathroom window. He was caught after a short chase."
+      ]
+    },
+    "Bonin_William_-_fall_2007": {
+      "Directing": [
+        "Born in Connecticut.",
+        "Neglected and abused by parents and grandfather",
+        "1st sexual experience, aware asked for restraints.",
+        "First arrest for sexually assaulting young boys. Sent to Atascadero State Hospital and diagnosed as having a manic-depressive illness.",
+        "Released from Atascadero State Hospital."
+      ],
+      "Revising": [
+        "Served time in a juvenile hall for stealing license plates. Bonin became the sexual play things of others, sexual sadism, punishments such as submersion in ice water, and threats at the point of a knife."
+      ],
+      "Conferring": [
+        "Joined the Air Force."
+      ]
+    },
+    "Browne_Robert_Charles__2008_spring_": {
+      "Directing": [
+        "Born in Coushatta, Louisiana",
+        "Grandfather throws himself down a well",
+        "Aunt brutally murdered",
+        "Joined the Army",
+        "Divorces Terry Laverne Ward"
+      ],
+      "Seeking": [
+        "Dropped out of high school",
+        "Marries 13-year-old Terry Laverne Ward",
+        "Marries second wife, Tuyet Minh Huynh in Bexar County, Texas",
+        "Marries third wife, Brenda Gayle Ware",
+        "Divorces Brenda Gayle Ware"
+      ],
+      "Revising": [
+        "Receives bronze star in Vietnam for service",
+        "Awarded 'exemplary behavior, efficiency and fidelity' from Army",
+        "Awarded \u201cexemplary behavior, efficiency and fidelity\u201d from Army",
+        "Receives dishonorable discharge from the army for drug use",
+        "Continued to still use marijuana and cocaine and sell it to dealers for money."
+      ],
+      "Conferring": [
+        "31",
+        "Charlie Hess begins talking to him",
+        "Shot motorcyclist in New Mexico"
+      ]
+    },
+    "Brudos_Jerome": {
+      "Directing": [
+        "Born in Webster, South Dakota. He was the second son of Henry and Eileen and brother to Larry. Jerry was an accidental birth and his parents preferred a daughter over a second son, despite the fact that they lived on a farm.",
+        "At this time Jerry was living in Portland, Oregon and his family was financially stable. Jerry became fascinated with women\u2019s high-heeled shoes. He found a pair of open-toed high-heeled shoes in a junkyard while wandering and playing alone, and wore them home. His mother scolded him repeatedly for wearing the shoes and eventually burned them.",
+        "Family moves to Riverton, California and Jerry enters the first grade. His teacher wears high-heeled shoes and keeps two pairs in the classroom. Jerry hides the second pair of shoes from the teacher so that he can take them home. A classmate intercedes and Jerry confesses to his attempted theft. His teacher gets angry and Jerry becomes embarrassed and leaves the room.",
+        "Jerry\u2019s family moves twice more during this time to Grants Pass, Oregon and then to Wallace Pond, Oregon. At Grants Pass Jerry\u2019s neighbors had several teenage girls and Jerry began to sneak into the house with the girl\u2019s brother and play with girls\u2019 clothes. At this time Jerry\u2019s shoe fetish expands to women\u2019s undergarments. At Wallace Pond Jerry\u2019s father enters back into the agricultural industry.",
+        "His brother Larry was now 16 and had a normal fascination with the nude female body. Larry drew several pictures of nude females and kept them hidden in the fear that his disapproving mother would find them and become angry. Jerry eventually found the box the drawings were hidden inside and picked the lock. He was caught in the process and took the blame instead of telling on Larry."
+      ],
+      "Seeking": [
+        "Jerry fails second grade. He is diagnosed with the measles, sore throats, swollen glands and laryngitis during this time. He had to get several operations on his extremities to fight against fungal infections. He also complained of frequent headaches that often left him unable to see clearly. School officials thought that eyeglasses might solve these problems, and also alleviate the problems he was having in school. However, the optometrist did not find a significant need for glasses. A thin prescription was given to Jerry with the thought that they might function similar to a drug placebo. His headaches persisted, and eventually his IQ was tested which came out to be within the normal range.",
+        "Initial diagnosis of 'adjustment reaction of adolescence with sexual deviation and fetishism'.",
+        "While hospitalized Jerry was allowed to attend high school during the day at North Salem High School in Dallas Oregon. Jerry is diagnosed as 'borderline schizophrenic', a diagnosis that was often given at this time. Jerry remained hospitalized for 8-9 months and was eventually discharged and deemed not to be a danger to society.",
+        "Jerry began to have dreams that a Korean girl who would seduce him.",
+        "Jerry decided to go see the army chaplain who referred him to the army psychiatrist, Captain Theodore J. Barry. Barry discharged Jerry Brudos from the army because of his 'bizarre obsessions'"
+      ],
+      "Revising": [
+        "Jerry begins to go through puberty. His mother again shows her disgust for anything sexual in nature, even forcing Jerry to wash his stained sheets by hand. Jerry begins to have bizarre fantasies. He fantasized that he would capture a girl force her to obey his commands and beg for mercy. His family moves again to Corvallis Oregon where Larry is studying electronics at Oregon State University. Jerry continues his habit of stealing women\u2019s shoes and undergarments, and uses them to enhance the pleasure of masturbation.",
+        "Jerry was released from Oregon State Hospital and went back to high school in Corvallis. He graduated high school with a low GPA in the lower 30% of his graduating class.",
+        "Jerry tried his hand at college and advanced technology schools including Oregon State university and Salem Technical Vocational School. His attendance was erratic and he eventually gave up on school.",
+        "Jerry obtained his FCC license and began working at the Corvallis radio station",
+        "Jerry manages to get a job as a technician at a West Salem electronics firm. He leaves the job after a while and the family continues moving around."
+      ],
+      "Conferring": [
+        "Stephanie Vikkois reported missing in Portland.",
+        "Jan Susan Whitney a 23-year-old college student at the University of Oregon goes missing.",
+        "Karen Sprinkler a 19-year-old college student goes missing. Two young girls inform police that a large man dressed in drag was on the parking garage roof where Karen\u2019s abandoned car was found on the day Karen went missing.",
+        "A local fisherman discovers Linda Salee\u2019s body in the Long Tom River. Her body had been weighed down by an auto transmission. Two days later Karen Sprinkler\u2019s body is found a mere fifty feet away.  Karen was tied to an old engine which caused her to remain submerged. Jerry had cut out her breasts as souvenirs and filled the holes with brown paper towels. He had also placed a bra from his collection of undergarments over her mangled chest.",
+        "Jerry begins to phone dorm rooms at Oregon State University. He is somehow able to arrange several blind dates through this method. At this point police are onto the killer\u2019s pattern and are staking out all areas where young attractive women are present. A female student that claimed to have gone on one of the blind dates gives the police a description of Jerome Brudos."
+      ]
+    },
+    "Buenoano_Judias_-_fall_2005": {
+      "Seeking": [
+        "Born in Quanah, Texas",
+        "Judias\u2019 father remarries",
+        "First son Michael Shultz is born (later changed to Michael Goodyear)",
+        "Judias marries James Goodyear",
+        "Judias and John move in together"
+      ],
+      "Directing": [
+        "Judias\u2019 mother dies of TB",
+        "She is sent to jail for 60 days for attacking stepbrothers and stepmother",
+        "Graduates from Foothills High, a juvenile detention center",
+        "Kimberly is born to James and Judias",
+        "James Goodyear, her husband, dies in Orange County, Florida (arsenic poisoning). Judias receives life insurance."
+      ],
+      "Conferring": [
+        "James Goodyear, Jr. is born",
+        "Met Bobby Joe Morris",
+        "Moves in with Bobby Morris in Trinidad, Colorado",
+        "Meets John Gentry"
+      ],
+      "Revising": [
+        "Burns a home and collects insurance policy"
+      ]
+    },
+    "Bundy_Ted_-_2005": {
+      "Conferring": [
+        "Eleanor Louis Cowell gives birth to Theodore Robert Cowell in Burlington, VT; speculated that Eleanor\u2019s father was also Ted\u2019s father.",
+        "Bundy graduates from Woodrow Wilson High School in Tacoma, Washington",
+        "Enrolls at University of Puget Sound and attends the school until the next spring",
+        "Enrolls at University of Washington. Attends until spring 1969.",
+        "Meets Stephanie Brooks"
+      ],
+      "Directing": [
+        "Ted and mother moved in with Ted grandparents. From this point until 1969 he believes that his mother is his sister and his grandparents are his parents.",
+        "Eleanor and Ted move to Tacoma, Washington; changes name from Cowell to Nelson for unknown reasons",
+        "Eleanor marries Johnnie Bundy and her son takes his step-father\u2019s last name.",
+        "There is no evidence that Johnnie ever abused Ted, but the two were not close, and Ted felt uncomfortable around him as he made attempts to bond with him.",
+        "Ted is told he is illegitimate."
+      ],
+      "Revising": [
+        "Caught standing beside his aunt\u2019s bed grinning after he placed knives in bed. All knives pointed to her.",
+        "Upon his graduation, he admittedly began stealing regularly",
+        "Portions of the bodies of Ott, Naslund, and Hawkins are recovered two miles from Lake Sammammish St. Park",
+        "Is arrested for possession of burglary tools during a traffic stop in Salt Lake City. The incident eventually results in an arrest in the DeRonch attack.",
+        "Obtains a stay of execution only fifteen minutes before he is scheduled to die"
+      ],
+      "Seeking": [
+        "Brooks breaks off relationship with Bundy.",
+        "Visits his birthplace, and learns for certain that his mother is Eleanor and that he is illegitimate.",
+        "Abruptly stops seeing Brooks. This was revenge for her dumping him. She never saw or heard from him again.",
+        "Campbell's body is found near the motel she disappeared from"
+      ]
+    },
+    "Bunting_John_Justin": {
+      "Seeking": [
+        "Inala, Queensland, Australia; born without a sense of smell",
+        "First sexual experience and he got the girl pregnant."
+      ],
+      "Directing": [
+        "Beaten and sexually assaulted by friend\u2019s older brother.",
+        "Worked at SA Meat Corporation. He would brag about slaughtering the animals \u2013 saying that\u2019s what he enjoyed the most. Shared house with Kevin Reid and Kevin\u2019s girlfriend in N. Adelaide. Bunting killed Kevin\u2019s terrier bulldog.",
+        "Strong hatred discovered for homosexuals and pedophiles.",
+        "Tripp and Bunting got married. He now has a step-son, James, but only Veronika moved into the house that he shared with Kevin.",
+        "Killed Clinton Trezise. (First victim murdered)"
+      ],
+      "Revising": [
+        "He had a job at a crematorium.",
+        "Bunting began taking a class for metal work. Also met Veronika Tripp during this time.",
+        "Bunting moved with Tripp to 203 Waterloo Corner Rd, Salisburry North Australia."
+      ],
+      "Conferring": [
+        "Enjoyed weaponry, photography, and anatomy.",
+        "Suzanne Allen disappeared",
+        "Police tap Bunting\u2019s home phone"
+      ]
+    },
+    "Buono_Angelo": {
+      "Conferring": [
+        "Angelo Buono is born in Rochester, New York."
+      ],
+      "Directing": [
+        "After his parents divorce, Angelo moves to Glendale, California with his mother Jenny, and his sister Cecilia.",
+        "Angelo boasts to his friends about sodomizing and raping girls. He idolizes Caryl Chessman, a notorious rapist known as the 'red light bandit'. He considers Chessman to be his hero even though he thinks that Chessman should have killed his victims, instead of just sexually assaulting them. He begins calling his mother demeaning names like 'whore' and 'cunt'.",
+        "Angelo drops out of school and is arrested several times for larceny. He is sent to reform school but escapes.",
+        "Angelo is recaptured by the California Youth Authority",
+        "Angelo impregnates Geraldine Vinal, a 17 year-old girl from his high school. He  marries Geraldine only to leave her less than a week later."
+      ],
+      "Seeking": [
+        "Angelo marries Mary Castillo.",
+        "Mary gives birth to their second child Peter (Angelo\u2019s third child).",
+        "Mary files for divorce because of Angelo\u2019s perverse sexual desires and his violence. He shows no concern of the fact that his children had witnessed all of the abuse he inflicted on their mother.",
+        "Angelo marries Deborah Taylor. The two never live together, and never bother to get a divorce.",
+        "Angelo\u2019s adoptive cousin, Kenneth Bianchi, moves to L.A. to live with him."
+      ],
+      "Revising": [
+        "Angelo is arrested for stealing cars and sentenced to one year in prison. However, because of his large family, the sentence is suspended so that he may work. (There are conflicting dates as to when this arrest actually occurred. Some sources report it as being 1967 while others report it as 1968)",
+        "Jury selection in the trial begins which lasts for three and a half months"
+      ]
+    },
+    "Burke_William__2008_spring_": {
+      "Conferring": [
+        "Born in 1792",
+        "Moves in with Nelly McDougal and Mickey Culzean",
+        "Meets William Hare, moves in to his house with Nelly",
+        "James Gray, neighbor of Burke, goes to the police after his wife discovers the corpse of Mrs. Docherty. Nelly and Burke are taken in for questioning.",
+        "Police discover the corpse of Mrs. Docherty in Dr. Knox\u2019s basement. The body was identified by neighbors of Burke; Burke, Hare, Nelly and Maggie are charged with murder."
+      ],
+      "Seeking": [
+        "Follows older brother Constantine in to army"
+      ],
+      "Directing": [
+        "Hare\u2019s lodger, Donald, dies; Burke and Hare sell deceased body to Dr. Knox to cover debt owed by Donald. Sold for \u20a47 10 shillings",
+        "Hare\u2019s lodger, Joseph, falls ill; Burke and Hare smother him with a pillow, sell his body to Dr. Knox for \u20a410.",
+        "Another lodger, man from Cheshire, ill with jaundice; body sold to Dr. Knox for \u20a410.",
+        "Went out drinking with Abagail Simpson; she returned to Hare\u2019s home because she was sick from drinking, Hare and Burke smother her. Sold to Dr. Knox for \u20a410.",
+        "Burke, while drinking, meets two prostitutes; buys them more alcohol, takes them back to his brother\u2019s house. One prostitute, Mary Paterson, passes out on the dining table; Burke and Hare smother her. Body sold to Dr. Knox for \u20a48."
+      ],
+      "Revising": [
+        "Trial begins"
+      ]
+    },
+    "Cleaned_Albright_Charles_table": {
+      "Directing": [
+        "Born in Amarillo Texas, adopted as the only child of Fred and Delle Albright",
+        "As a child he was doted upon and would be dressed in girl\u2019s clothes and given a doll at times when his aunt was present. He was an impulsive child and would always manage to get out of the yard behind where his mother worked. She searched the fence and found no openings, but later learned he would wait for people passing by and simply would ask them to lift him over. Della ended up tying him to the porch to keep him away from the fence.",
+        "As soon as he received his first gun, he began shooting small animals such as squirrels and rabbits.  He wanted to become a taxidermist and with Delle\u2019s help, learned to skin and stuff animals but grew bored of small animals. \nAs a teen he helped his mother in her real estate business",
+        "Convicted of aggravated assault.",
+        "Owned property that his adoptive parents bought for him"
+      ],
+      "Revising": [
+        "Sentenced to prison for theft and receiving stolen goods and served 6 months of a 2 year term. This began his fate of the 10\u2019s\u2026 he has trouble with the law approximately every 10 years, but was apparently a \nsuccessful thief and con artist in between!",
+        "Sentenced to 3 years probation in Hunt County for forgery and altering official records (to change his grades and get undeserved academic recognition for jobs).",
+        "Arrested for forging cashier\u2019s checks. Only received probation.",
+        "Was sentenced to a year of probation after stealing 2 perfume atomizers from a Dallas store (he always loved giving gifts, even when \nunemployed, so assumed most were stolen)."
+      ],
+      "Seeking": [
+        "Married Bettye Nestor two days after Christmas. Rarely keeps a job more than 3 months and became a bullfighter to show friends he could, styled hair, manufactured baseball bats, became and illustrator, and was a designer for a company that made airplanes.",
+        "He tries to start a romantic relationship with Glenda Durham until she learns about Dixie."
+      ],
+      "Conferring": [
+        "Albright has an early morning shift delivering newspapers around which questions as well as alibis arose.",
+        "Defense Forensic expert, Samuel J. Palenik, a small particles expert, testified that hair samples representing much of the evidence against Albright may not belong to him, Charles Albright\u2019s girlfriend Dixie also testified saying that Albright was not capable of committing such violent crimes and also insists he was with her for at least one murder time. Palenik also questioned if the evidence from Albright\u2019s vacuum cleaner even came from the victims, while the prosecution expert, Charles Linch of Dallas, listened"
+      ]
+    },
+    "campbell_charles": {
+      "Conferring": [
+        "Born in Hawaii",
+        "Caught with a friend in the cemetery pushing over headstones",
+        "Rosalie Campbell comes forward and tells the cops about Charles raping her."
+      ],
+      "Directing": [
+        "Charles and family moved to Washington",
+        "A problem with one of Charles testicle and he had to have it removed",
+        "Charles and friend Thomas Hawkins were caught vandalizing a 2 \u00bd ton cattle truck",
+        "An elementary school was broken into and witnesses said that it was Charlie and a friend but there was not enough evidence to charge them",
+        "Charged with auto theft for stealing the family car, his father turned him in.  While in custody of the police he made his one phone call to a friend and was overheard telling the person on the other end to shoot his father, he repeated this three times."
+      ],
+      "Revising": [
+        "Problems in school began, he began to skip class, smoke cigarettes and drink beer",
+        "Charles was now experimenting with speed and amphetamines",
+        "Charles tried heroin for the first time and also began to steal",
+        "Charles was caught smoking marijuana by his father",
+        "Dad found 31 amphetamine tablets on Charlie"
+      ],
+      "Seeking": [
+        "Gradually stopped attending school",
+        "Married Rosalie Kinner",
+        "Got his girlfriend pregnant and adopted a pet.  He named his new dog Loser.  People said that he appeared to show the dog more affection than his girlfriend."
+      ]
+    }
+  }
+}

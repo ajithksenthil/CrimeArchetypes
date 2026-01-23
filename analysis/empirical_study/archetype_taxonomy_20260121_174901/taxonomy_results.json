@@ -1,0 +1,715 @@
+{
+  "predefined_archetypes": {
+    "The Stalker-Striker": {
+      "n_members": 8,
+      "members": [
+        {
+          "name": "Alcala._Rodney__2012_",
+          "confidence": 1.0
+        },
+        {
+          "name": "Anderson_Dale_-_2005",
+          "confidence": 1.0
+        },
+        {
+          "name": "Armstrong_John_Eric",
+          "confidence": 1.0
+        },
+        {
+          "name": "Bernardo_Paul",
+          "confidence": 1.0
+        },
+        {
+          "name": "Bittaker_Lawrence__fall_2007_",
+          "confidence": 1.0
+        },
+        {
+          "name": "Black_Robert_-_spring_2006",
+          "confidence": 1.0
+        },
+        {
+          "name": "Bundy_Ted_-_2005",
+          "confidence": 1.0
+        },
+        {
+          "name": "Bunting_John_Justin",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "The Fantasy-Actor": {
+      "n_members": 5,
+      "members": [
+        {
+          "name": "Allanson_Patricia",
+          "confidence": 1.0
+        },
+        {
+          "name": "Archer-Gilligan_Amy",
+          "confidence": 1.0
+        },
+        {
+          "name": "Bathory_Elizabeth_-_spring_2006",
+          "confidence": 0.9
+        },
+        {
+          "name": "Beets_Betty_Lou__spring_2007_",
+          "confidence": 1.0
+        },
+        {
+          "name": "Bland_Warren_James__fall_2006_",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "The Late Bloomer": {
+      "n_members": 4,
+      "members": [
+        {
+          "name": "Barfield_Velma_-_2005_Fall",
+          "confidence": 1.0
+        },
+        {
+          "name": "Berdella_Robert",
+          "confidence": 1.0
+        },
+        {
+          "name": "Burke_William__2008_spring_",
+          "confidence": 1.0
+        },
+        {
+          "name": "campbell_charles",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "The Chameleon": {
+      "n_members": 4,
+      "members": [
+        {
+          "name": "Baumeister_Herb_-_fall_2005",
+          "confidence": 1.0
+        },
+        {
+          "name": "Bianchi_Kenneth",
+          "confidence": 1.0
+        },
+        {
+          "name": "Brudos_Jerome",
+          "confidence": 1.0
+        },
+        {
+          "name": "Buenoano_Judias_-_fall_2005",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "The Pure Predator": {
+      "n_members": 4,
+      "members": [
+        {
+          "name": "Blank_Daniel__spring_2006_",
+          "confidence": 1.0
+        },
+        {
+          "name": "Bonin_William_-_fall_2007",
+          "confidence": 1.0
+        },
+        {
+          "name": "Buono_Angelo",
+          "confidence": 1.0
+        },
+        {
+          "name": "Cleaned_Albright_Charles_table",
+          "confidence": 1.0
+        }
+      ]
+    },
+    "The Ritualist": {
+      "n_members": 1,
+      "members": [
+        {
+          "name": "Browne_Robert_Charles__2008_spring_",
+          "confidence": 1.0
+        }
+      ]
+    }
+  },
+  "discovered_archetypes": {
+    "Cluster_5": {
+      "n_members": 7,
+      "members": [
+        "Alcala._Rodney__2012_",
+        "Barfield_Velma_-_2005_Fall",
+        "Bianchi_Kenneth",
+        "Browne_Robert_Charles__2008_spring_",
+        "Buenoano_Judias_-_fall_2005",
+        "Bundy_Ted_-_2005",
+        "Bunting_John_Justin"
+      ],
+      "state_distribution": {
+        "Seeking": 0.11836929344730078,
+        "Directing": 0.6557503710258317,
+        "Conferring": 0.14556416143008802,
+        "Revising": 0.08031617409677957
+      },
+      "dominant_state": "Directing",
+      "dominant_pct": 0.6557503710258317,
+      "self_loops": {
+        "Seeking": 0.016177957532861477,
+        "Directing": 0.5977437895206604,
+        "Conferring": 0.04116142478211444,
+        "Revising": 0.010714285714285714
+      },
+      "escalation": 0.42162297106573593,
+      "description": "Highly Directing-dominant (66%), with strong escalation, high Directing persistence"
+    },
+    "Cluster_3": {
+      "n_members": 11,
+      "members": [
+        "Allanson_Patricia",
+        "Anderson_Dale_-_2005",
+        "Beets_Betty_Lou__spring_2007_",
+        "Bernardo_Paul",
+        "Bittaker_Lawrence__fall_2007_",
+        "Black_Robert_-_spring_2006",
+        "Bland_Warren_James__fall_2006_",
+        "Blank_Daniel__spring_2006_",
+        "Brudos_Jerome",
+        "Burke_William__2008_spring_",
+        "campbell_charles"
+      ],
+      "state_distribution": {
+        "Seeking": 0.10602283075104833,
+        "Directing": 0.7171240826464499,
+        "Conferring": 0.11040442954441185,
+        "Revising": 0.06644865705808979
+      },
+      "dominant_state": "Directing",
+      "dominant_pct": 0.7171240826464499,
+      "self_loops": {
+        "Seeking": 0.012457912457912458,
+        "Directing": 0.6414555323646233,
+        "Conferring": 0.01748819362455726,
+        "Revising": 0.006993006993006993
+      },
+      "escalation": 0.2101949620850598,
+      "description": "Highly Directing-dominant (72%), with strong escalation, high Directing persistence"
+    },
+    "Cluster_4": {
+      "n_members": 2,
+      "members": [
+        "Archer-Gilligan_Amy",
+        "Berdella_Robert"
+      ],
+      "state_distribution": {
+        "Seeking": 0.1746119733924612,
+        "Directing": 0.6945676274944568,
+        "Conferring": 0.0942350332594235,
+        "Revising": 0.036585365853658534
+      },
+      "dominant_state": "Directing",
+      "dominant_pct": 0.6945676274944568,
+      "self_loops": {
+        "Seeking": 0.07894736842105263,
+        "Directing": 0.6945773524720893,
+        "Conferring": 0.0,
+        "Revising": 0.0
+      },
+      "escalation": 0.7417582417582418,
+      "description": "Highly Directing-dominant (69%), with strong escalation, high Directing persistence"
+    },
+    "Cluster_1": {
+      "n_members": 3,
+      "members": [
+        "Armstrong_John_Eric",
+        "Bathory_Elizabeth_-_spring_2006",
+        "Baumeister_Herb_-_fall_2005"
+      ],
+      "state_distribution": {
+        "Seeking": 0.27876547556181425,
+        "Directing": 0.5094760312151617,
+        "Conferring": 0.1637035733145573,
+        "Revising": 0.04805491990846681
+      },
+      "dominant_state": "Directing",
+      "dominant_pct": 0.5094760312151617,
+      "self_loops": {
+        "Seeking": 0.05128205128205129,
+        "Directing": 0.37515262515262515,
+        "Conferring": 0.0,
+        "Revising": 0.0
+      },
+      "escalation": -0.004166666666666634,
+      "description": "Directing-leaning (51%)"
+    },
+    "Cluster_2": {
+      "n_members": 3,
+      "members": [
+        "Bonin_William_-_fall_2007",
+        "Buono_Angelo",
+        "Cleaned_Albright_Charles_table"
+      ],
+      "state_distribution": {
+        "Seeking": 0.042270531400966184,
+        "Directing": 0.8737750172532781,
+        "Conferring": 0.03195307108350586,
+        "Revising": 0.052001380262249826
+      },
+      "dominant_state": "Directing",
+      "dominant_pct": 0.8737750172532781,
+      "self_loops": {
+        "Seeking": 0.0,
+        "Directing": 0.7971085120207927,
+        "Conferring": 0.0,
+        "Revising": 0.0
+      },
+      "escalation": 0.16435185185185183,
+      "description": "Highly Directing-dominant (87%), with strong escalation, high Directing persistence"
+    }
+  },
+  "classifications": {
+    "Alcala._Rodney__2012_": [
+      [
+        "The Stalker-Striker",
+        "STK",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Escalator",
+        "ESC",
+        0.8
+      ]
+    ],
+    "Allanson_Patricia": [
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Pure Predator",
+        "PRD",
+        0.875
+      ]
+    ],
+    "Anderson_Dale_-_2005": [
+      [
+        "The Stalker-Striker",
+        "STK",
+        1.0
+      ],
+      [
+        "The Chameleon",
+        "CHA",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ]
+    ],
+    "Archer-Gilligan_Amy": [
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Pure Predator",
+        "PRD",
+        0.875
+      ]
+    ],
+    "Armstrong_John_Eric": [
+      [
+        "The Stalker-Striker",
+        "STK",
+        1.0
+      ],
+      [
+        "The Chameleon",
+        "CHA",
+        1.0
+      ],
+      [
+        "The Cycler",
+        "CYC",
+        1.0
+      ]
+    ],
+    "Barfield_Velma_-_2005_Fall": [
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.9
+      ],
+      [
+        "The Stalker-Striker",
+        "STK",
+        0.875
+      ]
+    ],
+    "Bathory_Elizabeth_-_spring_2006": [
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.9
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        0.8333333333333334
+      ],
+      [
+        "The Stalker-Striker",
+        "STK",
+        0.75
+      ]
+    ],
+    "Baumeister_Herb_-_fall_2005": [
+      [
+        "The Chameleon",
+        "CHA",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Cycler",
+        "CYC",
+        1.0
+      ]
+    ],
+    "Beets_Betty_Lou__spring_2007_": [
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Stalker-Striker",
+        "STK",
+        0.875
+      ]
+    ],
+    "Berdella_Robert": [
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Pure Predator",
+        "PRD",
+        0.875
+      ],
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.8
+      ]
+    ],
+    "Bernardo_Paul": [
+      [
+        "The Stalker-Striker",
+        "STK",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.9
+      ]
+    ],
+    "Bianchi_Kenneth": [
+      [
+        "The Chameleon",
+        "CHA",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Cycler",
+        "CYC",
+        1.0
+      ]
+    ],
+    "Bittaker_Lawrence__fall_2007_": [
+      [
+        "The Stalker-Striker",
+        "STK",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Pure Predator",
+        "PRD",
+        0.875
+      ]
+    ],
+    "Black_Robert_-_spring_2006": [
+      [
+        "The Stalker-Striker",
+        "STK",
+        1.0
+      ],
+      [
+        "The Chameleon",
+        "CHA",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ]
+    ],
+    "Bland_Warren_James__fall_2006_": [
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.9
+      ],
+      [
+        "The Pure Predator",
+        "PRD",
+        0.875
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        0.6666666666666666
+      ]
+    ],
+    "Blank_Daniel__spring_2006_": [
+      [
+        "The Pure Predator",
+        "PRD",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.9
+      ]
+    ],
+    "Bonin_William_-_fall_2007": [
+      [
+        "The Pure Predator",
+        "PRD",
+        1.0
+      ],
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.8
+      ],
+      [
+        "The Monomaniac",
+        "MON",
+        0.75
+      ]
+    ],
+    "Browne_Robert_Charles__2008_spring_": [
+      [
+        "The Ritualist",
+        "RIT",
+        1.0
+      ],
+      [
+        "The Chameleon",
+        "CHA",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ]
+    ],
+    "Brudos_Jerome": [
+      [
+        "The Chameleon",
+        "CHA",
+        1.0
+      ],
+      [
+        "The Cycler",
+        "CYC",
+        1.0
+      ],
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.8
+      ]
+    ],
+    "Buenoano_Judias_-_fall_2005": [
+      [
+        "The Chameleon",
+        "CHA",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Cycler",
+        "CYC",
+        1.0
+      ]
+    ],
+    "Bundy_Ted_-_2005": [
+      [
+        "The Stalker-Striker",
+        "STK",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Escalator",
+        "ESC",
+        0.8
+      ]
+    ],
+    "Bunting_John_Justin": [
+      [
+        "The Stalker-Striker",
+        "STK",
+        1.0
+      ],
+      [
+        "The Chameleon",
+        "CHA",
+        1.0
+      ],
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ]
+    ],
+    "Buono_Angelo": [
+      [
+        "The Pure Predator",
+        "PRD",
+        1.0
+      ],
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.9
+      ],
+      [
+        "The Monomaniac",
+        "MON",
+        0.75
+      ]
+    ],
+    "Burke_William__2008_spring_": [
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Stalker-Striker",
+        "STK",
+        0.875
+      ],
+      [
+        "The Pure Predator",
+        "PRD",
+        0.875
+      ]
+    ],
+    "Cleaned_Albright_Charles_table": [
+      [
+        "The Pure Predator",
+        "PRD",
+        1.0
+      ],
+      [
+        "The Monomaniac",
+        "MON",
+        1.0
+      ],
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.8
+      ]
+    ],
+    "campbell_charles": [
+      [
+        "The Late Bloomer",
+        "LTB",
+        1.0
+      ],
+      [
+        "The Fantasy-Actor",
+        "FAN",
+        0.9
+      ],
+      [
+        "The Ritualist",
+        "RIT",
+        0.9
+      ]
+    ]
+  }
+}

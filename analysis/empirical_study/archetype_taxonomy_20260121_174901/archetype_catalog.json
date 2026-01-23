@@ -1,0 +1,123 @@
+[
+  {
+    "name": "The Escalator",
+    "code": "ESC",
+    "description": "Progresses from internal fantasy through surveillance to action",
+    "dominant_state": null,
+    "min_dominant_pct": 0.3,
+    "trajectory": "escalating",
+    "complexity": "moderate",
+    "psychology": "Classic fantasy-to-action escalation. Builds internal pressure, then externalizes through observation before striking.",
+    "risk_profile": "HIGH - Clear escalation trajectory. Intervention possible during Seeking/Conferring phases before transition to Directing."
+  },
+  {
+    "name": "The Fantasy-Actor",
+    "code": "FAN",
+    "description": "Direct leap from internal fantasy to violent action",
+    "dominant_state": "Directing",
+    "min_dominant_pct": 0.4,
+    "trajectory": "escalating",
+    "complexity": "simple",
+    "psychology": "Rapid fantasy-to-action without surveillance phase. Impulsive translation of internal urges into violence.",
+    "risk_profile": "CRITICAL - Fast escalation. Short window for intervention between fantasy development and action."
+  },
+  {
+    "name": "The Stalker-Striker",
+    "code": "STK",
+    "description": "Methodical observation followed by calculated action",
+    "dominant_state": "Directing",
+    "min_dominant_pct": 0.4,
+    "trajectory": null,
+    "complexity": "moderate",
+    "psychology": "Patient, methodical predator. Extended surveillance and target selection before striking.",
+    "risk_profile": "HIGH - Surveillance phase offers detection opportunity. Once in Directing, highly dangerous."
+  },
+  {
+    "name": "The Ritualist",
+    "code": "RIT",
+    "description": "Cycles between action and ritual reinforcement",
+    "dominant_state": "Directing",
+    "min_dominant_pct": 0.4,
+    "trajectory": null,
+    "complexity": "moderate",
+    "psychology": "Compulsive pattern. Actions followed by ritualistic processing, which then triggers next action. Trophy-collector type.",
+    "risk_profile": "HIGH - Predictable MO but compulsive drive. Rituals may provide behavioral indicators."
+  },
+  {
+    "name": "The Pure Predator",
+    "code": "PRD",
+    "description": "Overwhelming dominance of exploitation behavior",
+    "dominant_state": "Directing",
+    "min_dominant_pct": 0.75,
+    "trajectory": null,
+    "complexity": "simple",
+    "psychology": "Pure exploitation focus. Minimal internal conflict or planning. Direct, sustained predatory behavior.",
+    "risk_profile": "CRITICAL - Persistent danger. High Directing persistence means once active, remains active."
+  },
+  {
+    "name": "The Brooder",
+    "code": "BRD",
+    "description": "Extended internal struggle with periodic outbursts",
+    "dominant_state": "Seeking",
+    "min_dominant_pct": 0.3,
+    "trajectory": null,
+    "complexity": "moderate",
+    "psychology": "Predominantly internal focus. Extended fantasy/conflict periods punctuated by explosive action. May appear withdrawn.",
+    "risk_profile": "MODERATE - Long dormant periods but sudden violent episodes. Internal state may not signal imminent danger."
+  },
+  {
+    "name": "The Watcher",
+    "code": "WCH",
+    "description": "Prolonged observation with delayed action",
+    "dominant_state": "Conferring",
+    "min_dominant_pct": 0.25,
+    "trajectory": null,
+    "complexity": "moderate",
+    "psychology": "Extended surveillance orientation. Patient, methodical, information-gathering focus. May stalk for long periods.",
+    "risk_profile": "MODERATE - Surveillance phase offers detection window. Danger increases as they move toward Directing."
+  },
+  {
+    "name": "The Chameleon",
+    "code": "CHA",
+    "description": "Utilizes all four behavioral modes fluidly",
+    "dominant_state": null,
+    "min_dominant_pct": 0.25,
+    "trajectory": null,
+    "complexity": "complex",
+    "psychology": "Most adaptable and unpredictable. Cycles through all states. May appear normal during Seeking/Conferring phases.",
+    "risk_profile": "HIGH - Unpredictable transitions. Complexity makes behavior hard to anticipate. Corresponds to HUB role."
+  },
+  {
+    "name": "The Monomaniac",
+    "code": "MON",
+    "description": "Locked into single behavioral mode",
+    "dominant_state": "Directing",
+    "min_dominant_pct": 0.8,
+    "trajectory": "stable",
+    "complexity": "simple",
+    "psychology": "Rigid, inflexible pattern. Locked into exploitation mode. Limited behavioral repertoire.",
+    "risk_profile": "CRITICAL - Constant danger while active. Predictable but relentless. No de-escalation phases."
+  },
+  {
+    "name": "The Late Bloomer",
+    "code": "LTB",
+    "description": "Dramatic escalation from passive to active in later phases",
+    "dominant_state": null,
+    "min_dominant_pct": 0.3,
+    "trajectory": "escalating",
+    "complexity": "moderate",
+    "psychology": "Long dormant or passive period followed by sudden activation. May have extensive Seeking/Conferring history before first offense.",
+    "risk_profile": "MODERATE initially, CRITICAL after transition. Early phases may not predict later violence."
+  },
+  {
+    "name": "The Cycler",
+    "code": "CYC",
+    "description": "Regular cycling through multiple states",
+    "dominant_state": null,
+    "min_dominant_pct": 0.3,
+    "trajectory": null,
+    "complexity": "complex",
+    "psychology": "Rhythmic behavioral pattern. May correspond to cooling-off periods. Cycles of buildup, action, and processing.",
+    "risk_profile": "VARIABLE - Risk depends on current phase. Pattern may be predictable once identified."
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "n_individuals": 26,
+  "stationarity_test": {
+    "chi2_statistic": 136.10885653400106,
+    "p_value": 1.3447731834384243e-21,
+    "degrees_of_freedom": 15,
+    "stationary": false,
+    "interpretation": "Significant non-stationarity detected",
+    "early_total_transitions": 593,
+    "late_total_transitions": 601
+  },
+  "escalation_summary": {
+    "mean_slope": 0.13899187345130476,
+    "std_slope": 0.09839020174394145,
+    "n_escalating": 25,
+    "n_deescalating": 1,
+    "t_statistic": 7.063298529107011,
+    "p_value": 2.1039254816070324e-07,
+    "significant": true
+  },
+  "change_points_summary": {
+    "total": 105,
+    "escalations": 58,
+    "deescalations": 47,
+    "mean_normalized_position": 0.4732572341811434
+  }
+}
