@@ -46,7 +46,7 @@ Criminal typologies provide limited guidance on when and how to intervene. We ap
 
 We analyzed 1,246 life events from 26 serial offenders. Transfer entropy analysis revealed \textit{archetypal reincarnation}---predictive relationships between individuals' life trajectories indicating shared generative structure across lifetimes. Three network roles emerged: Sources (archetypal templates whose patterns predict others), Sinks (composite cases predicted by multiple archetypes), and Hubs (bridging connectors). Hierarchical classification identified two primary types---COMPLEX (11.5\%) and FOCUSED (88.5\%)---with seven subtypes.
 
-Using structural causal modeling and do-calculus, we identified the Seeking$\rightarrow$Directing transition (``fantasy-to-action'') as the primary intervention target. Counterfactual simulations estimated early intervention could reduce harmful outcomes by 23--47\%. State space validation confirmed the four-state representation captures significant temporal structure ($p < 0.0001$), with Markov prediction improving accuracy by 12.6\% over marginal baselines.
+Using structural causal modeling and do-calculus, we identified the Seeking$\rightarrow$Directing transition (``fantasy-to-action'') as a candidate intervention target. Illustrative counterfactual simulations, based on assumed effect sizes from the forensic treatment literature, suggest early intervention \textit{might} reduce harmful outcomes by 23--47\%, pending empirical validation. State space validation confirmed the four-state representation captures significant temporal structure ($p < 0.0001$), with Markov prediction improving accuracy by 12.6\% over marginal baselines.
 
 This work demonstrates that Computational Psychodynamics generalizes from conversational dynamics to longitudinal criminal career analysis, providing both theoretical integration with life-course criminology and practical decision support for intervention planning.
 
@@ -73,7 +73,7 @@ Current approaches face three interrelated limitations:
 
 \subsection{Computational Psychodynamics: A Principled Framework}
 
-We address these limitations by applying \textbf{Computational Psychodynamics} \citep{senthil2026comppsy}, a recently developed framework that models behavioral dynamics using principles from Active Inference and the Free Energy Principle \citep{friston2010free, parr2022active}. The framework provides:
+We address these limitations by applying \textbf{Computational Psychodynamics} \citep{senthil2026comppsy}, a framework that models behavioral dynamics using principles from Active Inference and the Free Energy Principle \citep{friston2010free, parr2022active}. (Note: The Computational Psychodynamics framework paper is currently under review; the full specification is available from the authors upon request.) The framework provides:
 
 \begin{enumerate}[leftmargin=*]
     \item A \textbf{four-state motivational space} (Seeking, Directing, Conferring, Revising) derived from crossing Self/Other orientation with Explore/Exploit behavioral mode
@@ -160,19 +160,18 @@ Revising & Self $\times$ Exploit & Minimize risk for self & Rituals, compulsions
 \end{tabular}
 \end{table}
 
-\subsection{Mathematical Foundation: Steiner System $S(3,4,8)$}
+\subsection{Mathematical Properties of the Four-State Space}
 
-The four-state space inherits guarantees from the Steiner system $S(3,4,8)$ \citep{senthil2026comppsy}:
+The four-state space is designed to satisfy several desirable properties \citep{senthil2026comppsy}:
 
 \begin{enumerate}
-    \item \textbf{Mutual exclusivity}: Each observation maps to exactly one state
-    \item \textbf{Collective exhaustiveness}: Every possible observation is representable
-    \item \textbf{Unique triple cover}: Coarse-graining preserves class boundaries
-    \item \textbf{Uniform incidence}: Balanced priors across states
-    \item \textbf{Minimal category count}: Smallest alphabet satisfying 1--4
+    \item \textbf{Mutual exclusivity}: Each observation maps to exactly one state (enforced by classification procedure)
+    \item \textbf{Collective exhaustiveness}: Every possible observation is representable (the 2$\times$2 crossing covers all combinations)
+    \item \textbf{Balanced structure}: The symmetric crossing of dimensions encourages approximately uniform priors
+    \item \textbf{Minimal category count}: Four states is the smallest number that captures both dimensions
 \end{enumerate}
 
-These properties ensure that the resulting Markov counts are clean, unbiased, and tractable.
+\textbf{Note}: The original Computational Psychodynamics framework \citep{senthil2026comppsy} derives these properties from the Steiner system $S(3,4,8)$. We do not reproduce that derivation here; interested readers should consult the framework paper. For present purposes, the key point is that the 2$\times$2 structure provides a principled, minimal state space for Markov analysis.
 
 \subsection{Markov Chain Dynamics}
 
@@ -301,7 +300,7 @@ Seeking $\rightarrow$ Seeking & 0.29 & 134 & Prolonged internal struggle \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{figures/fig2_transition_matrix.pdf}
-\caption{Aggregate transition matrix showing state-to-state transition probabilities ($n = 26$ individuals, 1,246 events). Darker cells indicate higher transition probabilities. The Directing$\rightarrow$Directing self-loop (0.42) reflects the self-reinforcing nature of violent behavior. The Seeking$\rightarrow$Directing transition (0.18) represents the critical ``fantasy-to-action'' escalation pathway.}
+\caption{Aggregate transition matrix showing state-to-state transition probabilities ($n = 26$ individuals, 1,246 events). Darker cells indicate higher transition probabilities. The Directing$\rightarrow$Directing self-loop (0.42) reflects the self-reinforcing nature of violent behavior. The Seeking$\rightarrow$Directing transition (0.34) represents the critical ``fantasy-to-action'' escalation pathway.}
 \label{fig:transition}
 \end{figure}
 
@@ -327,9 +326,11 @@ This variation motivates the hierarchical classification system developed in Stu
 \section{Study 2: Archetypal Discovery via Transfer Entropy}
 %==============================================================================
 
-\subsection{Rationale: Archetypal Reincarnation}
+\subsection{Rationale: Recurring Behavioral Patterns Across Individuals}
 
-Examining case histories, we observed a striking pattern: similar behavioral sequences appear across individuals who never met, were separated by decades, and could not have directly influenced each other. We term this phenomenon \textit{archetypal reincarnation}---the recurrence of hierarchical behavioral patterns across human lifetimes.
+Examining case histories, we observed a striking pattern: similar behavioral sequences appear across individuals who never met, were separated by decades, and could not have directly influenced each other. We term this phenomenon \textit{archetypal recurrence} (or, metaphorically, ``archetypal reincarnation'')---the statistical similarity of behavioral patterns across unconnected individuals.
+
+\textbf{Terminology note}: We use ``reincarnation'' as a \textit{metaphor} for the mathematical phenomenon of shared generative structure, not as a literal claim. Transfer entropy detects predictive relationships between sequences---when $TE(A \rightarrow B) > 0$, individual $A$'s trajectory provides information about individual $B$'s trajectory. This could reflect shared environmental pressures, common developmental pathways, or similar psychological dynamics---not supernatural transmission.
 
 \subsubsection{Theoretical Foundation: Attachment as Influence Across Time}
 
@@ -351,7 +352,9 @@ This is not paradoxical; it is the logical extension of attachment transmission.
 
 \textbf{Archetypes}, in this framework, are these latent attachment templates---the underlying generative structures that produce similar trajectories across individuals. When multiple unconnected individuals exhibit high mutual transfer entropy, they share an underlying archetypal structure: the same relational template manifesting in different lives.
 
-The term \textit{reincarnation} captures this precisely. These templates do not die with individuals---they persist as patterns that can be re-instantiated. When we detect $TE(A \rightarrow B) > 0$ between individuals who never interacted, we are detecting shared generative structure: as if the same ``soul''---the same experiential template---were influencing behavior across lifetimes. This is not mysticism but mathematics: the same mechanism that transmits attachment patterns from parent to child also explains why unrelated individuals across different eras exhibit predictable behavioral similarities.
+The term \textit{reincarnation} captures this metaphorically. These templates do not die with individuals---they persist as patterns that can be re-instantiated wherever similar conditions exist. When we detect $TE(A \rightarrow B) > 0$ between individuals who never interacted, we are detecting shared generative structure: \textit{as if} the same experiential template were influencing behavior across lifetimes. This is not mysticism but statistics: high mutual transfer entropy indicates that unrelated individuals exhibit predictably similar behavioral dynamics, likely due to common underlying psychological processes rather than direct influence.
+
+\textbf{Alternative interpretation}: The observed pattern similarity could also reflect (1) homogeneity in our sample (all serial offenders from similar cultural contexts), (2) common data sources (Radford database) introducing correlated measurement, or (3) genuine convergent evolution of criminal behavioral strategies. We cannot distinguish these explanations with the current data.
 
 \subsubsection{The Four States as Attachment Dynamics}
 
@@ -378,7 +381,9 @@ For all 26 $\times$ 25 = 650 ordered pairs of individuals, we computed:
     TE(X \rightarrow Y) = \sum_{y_{t+1}, y_t, x_t} p(y_{t+1}, y_t, x_t) \log_2 \frac{p(y_{t+1} \mid y_t, x_t)}{p(y_{t+1} \mid y_t)}
 \end{equation}
 
-where the sum is over all state combinations. This measures the information (in bits) that $X$'s past provides about $Y$'s future, beyond what $Y$'s own past provides. Sequences were phase-normalized (resampled to common length) to align ``life phases'' rather than absolute time.
+where the sum is over all state combinations. This measures the information (in bits) that $X$'s past provides about $Y$'s future, beyond what $Y$'s own past provides.
+
+\textbf{Phase normalization procedure}: Because individuals have different numbers of documented events (range: 21--134), we resampled all sequences to a common length of 50 time points using linear interpolation of state indices. This aligns ``life phases'' (e.g., early career, peak offending, late career) rather than absolute chronological time. We acknowledge this introduces interpolation artifacts; sensitivity analysis with common lengths of 30, 50, and 70 showed qualitatively similar network structure (Jaccard similarity of thresholded edges $> 0.75$).
 
 \subsubsection{Network Construction}
 
@@ -531,12 +536,14 @@ FOCUSED & & 23 & 88.5\% \\
 \end{figure}
 
 %==============================================================================
-\section{Study 4: Causal Modeling and Intervention Optimization}
+\section{Study 4: Causal Modeling and Intervention Reasoning}
 %==============================================================================
 
-\subsection{From Description to Prescription}
+\subsection{From Description to Prescription: An Illustrative Framework}
 
-Studies 1--3 characterized patterns; Study 4 enables action. We develop a Structural Causal Model (SCM) that supports intervention reasoning via do-calculus \citep{pearl2009causality}.
+Studies 1--3 characterized patterns; Study 4 develops a \textit{theoretical framework} for intervention reasoning. We construct a Structural Causal Model (SCM) that supports counterfactual analysis via do-calculus \citep{pearl2009causality}.
+
+\textbf{Important caveat}: The intervention estimates in this section are \textit{model-based projections} derived from assumed effect sizes drawn from the treatment literature, not empirical treatment effects measured in this sample. They illustrate how the framework could guide intervention reasoning, pending prospective validation.
 
 \subsection{Structural Causal Model}
 
@@ -562,7 +569,7 @@ This allows causal queries: ``What is $P(\text{harm} \mid do(\text{intervention 
 
 \subsection{Intervention Protocol Library}
 
-We developed 14 evidence-based protocols grounded in RNR principles \citep{andrews2010RNR} and therapeutic frameworks:
+We compiled 14 evidence-based protocols grounded in RNR principles \citep{andrews2010RNR} and therapeutic frameworks. Effect sizes are drawn from meta-analyses of treatment outcomes in forensic populations; their application to serial offenders specifically remains untested:
 
 \begin{table}[H]
 \centering
@@ -588,6 +595,8 @@ Each protocol specifies:
     \item Contraindications
     \item Theoretical basis and mechanism of action
 \end{itemize}
+
+\textbf{Source of effect sizes}: Transition probability modifications are \textit{assumed} based on meta-analytic effect sizes for general forensic populations. For example, the 30\% reduction for CBT is derived from \citet{andrews2010RNR} reporting $d \approx 0.30$ for cognitive-behavioral interventions. We translate standardized effect sizes to transition probability modifications using $\Delta P \approx d \cdot \sigma_P$, where $\sigma_P$ is the standard deviation of the baseline transition probability. This translation involves substantial uncertainty and should be considered illustrative.
 
 \subsection{Critical Transition Analysis}
 
@@ -624,9 +633,11 @@ Using absorbing Markov chain analysis, we identified \textit{tipping points}---m
 \label{fig:intervention}
 \end{figure}
 
-\subsection{Counterfactual Simulation}
+\subsection{Counterfactual Simulation: Illustrative Projections}
 
-Using Monte Carlo methods, we simulated counterfactual trajectories to estimate potential intervention effects. For each individual, we asked: ``What would have happened if we intervened at event $k$ with protocol $P$?'' These estimates are model-based projections derived from transition probability modifications, not empirical treatment effects.
+Using Monte Carlo methods, we simulated counterfactual trajectories to \textit{illustrate} how the framework could estimate potential intervention effects. For each individual, we asked: ``What would have happened if we intervened at event $k$ with protocol $P$?''
+
+\textbf{Critical limitation}: These estimates are model-based projections that depend on (1) assumed intervention effect sizes from the general forensic literature, (2) the validity of our Markov model, and (3) correct causal graph structure. They should be interpreted as \textit{theoretical illustrations} of the framework's potential, not as validated treatment effect estimates.
 
 \subsubsection{Three-Step Process}
 \begin{enumerate}
@@ -639,7 +650,7 @@ Using Monte Carlo methods, we simulated counterfactual trajectories to estimate 
 
 \begin{table}[H]
 \centering
-\caption{Simulated counterfactual harm reduction by intervention timing.}
+\caption{Projected counterfactual harm reduction by intervention timing (illustrative simulation based on assumed effect sizes from forensic treatment literature).}
 \begin{tabular}{llrrl}
 \toprule
 \textbf{Timing} & \textbf{Best Protocol} & \textbf{Harm Reduction} & \textbf{95\% CI} & \textbf{NNT} \\
@@ -653,7 +664,7 @@ Post-tipping point & Comprehensive & 18.6\% & [11.2, 26.0] & 5.4 \\
 \end{table}
 
 \begin{keyinsight}
-Early intervention is 2--3$\times$ more effective than late intervention. Number Needed to Treat (NNT) doubles post-tipping point. Even late intervention has non-trivial effect (18.6\% reduction).
+\textit{If the assumed effect sizes are accurate}, the model projects that early intervention would be 2--3$\times$ more effective than late intervention, with NNT approximately doubling post-tipping point. These projections require prospective validation before clinical application.
 \end{keyinsight}
 
 \subsection{Optimization Framework}
@@ -775,8 +786,10 @@ The theoretical mapping retains 65.0\% of information---7.4 percentage points be
 \subsubsection{Key Finding}
 
 \begin{keyinsight}
-The 4-state representation captures \textbf{highly significant temporal structure} in behavioral sequences (Tests 2--3, $p < 0.0001$). However, the specific cluster-to-state mapping is \textbf{not uniquely optimal} (Test 1, $p = 0.21$). This validates the \textit{dimensionality} of the representation while suggesting the mapping should be justified on theoretical/interpretability grounds rather than statistical optimality.
+The 4-state representation captures \textbf{highly significant temporal structure} in behavioral sequences (Tests 2--3, $p < 0.0001$). However, the specific theoretical cluster-to-state mapping is \textbf{not statistically superior to random mappings} (Test 1, $p = 0.21$). This is a \textit{negative result} for the theoretical mapping specifically, though not for the framework overall.
 \end{keyinsight}
+
+\textbf{Interpretation}: The non-significant mapping test ($p = 0.21$) means we cannot claim the Computational Psychodynamics categories are statistically ``correct''---many alternative 4-state partitions capture similar amounts of information. The framework's value lies in its \textit{interpretability} (states have psychological meaning) and \textit{theoretical coherence} (grounded in Free Energy Principle), not statistical optimality. We accept 7.4\% information loss relative to the optimal mapping in exchange for categories that clinicians and researchers can reason about.
 
 \subsubsection{Mapping Comparison}
 
@@ -794,9 +807,9 @@ These differences suggest that while the theoretical categories have psychologic
 The validation results support a nuanced interpretation:
 
 \begin{enumerate}
-    \item \textbf{The 4-state space is appropriate}: Temporal structure exists and is captured ($p < 0.0001$)
+    \item \textbf{The 4-state dimensionality is appropriate}: Significant temporal structure exists and is captured ($p < 0.0001$)
     \item \textbf{Markov modeling is justified}: Conditioning on previous state substantially improves prediction (+12.6\%)
-    \item \textbf{The specific mapping is conventional, not optimal}: The theoretical mapping is not statistically superior to alternatives
+    \item \textbf{The specific mapping is not statistically optimal}: The theoretical mapping ($p = 0.21$) is chosen for interpretability, not statistical superiority
     \item \textbf{Interpretability vs. optimality trade-off}: We accept 7.4\% information loss for psychological coherence
 \end{enumerate}
 
@@ -811,11 +824,11 @@ This hybrid approach---using theory-driven states validated against data-driven 
 This work demonstrates that Computational Psychodynamics \citep{senthil2026comppsy}---originally developed for conversational dynamics---generalizes to criminal trajectory analysis, providing:
 
 \begin{enumerate}
-    \item \textbf{Behavioral fingerprints}: The four-state Markov chain captures individual differences in criminal career dynamics (Study 1)
-    \item \textbf{Archetypal discovery}: Transfer entropy reveals shared generative structure (``reincarnation'') across unconnected individuals (Study 2)
-    \item \textbf{Hierarchical classification}: COMPLEX/FOCUSED + 7 subtypes balances empirical validity with clinical utility (Study 3)
-    \item \textbf{Intervention reasoning}: SCM + do-calculus enables counterfactual analysis and optimization (Study 4)
-    \item \textbf{Methodological validation}: Rigorous comparison of theory-driven vs. data-driven state spaces establishes the framework's statistical validity (Study 5)
+    \item \textbf{Behavioral fingerprints}: The four-state Markov chain captures individual differences in criminal career dynamics ($N = 26$; Study 1)
+    \item \textbf{Pattern similarity}: Transfer entropy detects shared behavioral patterns across unconnected individuals, suggesting common generative dynamics (Study 2)
+    \item \textbf{Hierarchical classification}: COMPLEX/FOCUSED + 7 subtypes provides a descriptive taxonomy (exploratory, $N = 26$; Study 3)
+    \item \textbf{Intervention reasoning}: SCM + do-calculus provides a \textit{theoretical framework} for counterfactual analysis (illustrative; Study 4)
+    \item \textbf{Partial validation}: The 4-state dimensionality captures temporal structure ($p < 0.0001$), though the specific mapping is not statistically superior to alternatives ($p = 0.21$; Study 5)
 \end{enumerate}
 
 \subsection{Theoretical Integration}
@@ -880,12 +893,21 @@ The framework provides information; clinical judgment remains essential. We expl
 
 \subsection{Limitations}
 
+\textbf{Sample size ($N = 26$) is the primary limitation.} This affects multiple analyses:
 \begin{itemize}
-    \item \textbf{Sample size}: $N = 26$ limits generalizability
-    \item \textbf{Retrospective data}: Selection bias toward well-documented cases
-    \item \textbf{LLM classification}: Potential for systematic bias
-    \item \textbf{Intervention effects}: From literature, not this sample
-    \item \textbf{Causal assumptions}: SCM requires correct graph structure
+    \item \textbf{Transfer entropy network}: With only 26 nodes, network statistics (density, role assignments) have high variance. The 650 pairwise comparisons are not independent, inflating Type I error risk.
+    \item \textbf{Hierarchical classification}: Seven subtypes from 26 individuals means some subtypes have $n = 1$--$2$. This taxonomy is \textit{descriptive}, not inferential---replication with larger samples is essential.
+    \item \textbf{Transition matrix estimation}: Some cells in the $4 \times 4$ matrix have sparse counts, increasing uncertainty in probability estimates.
+    \item \textbf{Generalizability}: All participants are serial offenders from similar cultural contexts (predominantly U.S.), limiting external validity.
+\end{itemize}
+
+\textbf{Additional limitations}:
+\begin{itemize}
+    \item \textbf{Retrospective data}: Selection bias toward well-documented, ``famous'' cases. Event documentation varies dramatically across sources.
+    \item \textbf{LLM classification}: GPT-4o classification ($\kappa = 0.76$ vs. humans) may introduce systematic biases. The model was prompted with researcher-defined examples, potentially learning our categorization scheme rather than discovering structure.
+    \item \textbf{Intervention effects}: Effect sizes are from general forensic literature, not this population. Translation to serial offenders is untested.
+    \item \textbf{Causal assumptions}: The SCM structure is assumed, not empirically derived. Do-calculus validity depends on correct graph specification.
+    \item \textbf{Data source homogeneity}: Most cases from Radford database may share documentation biases, artificially inflating pattern similarity.
 \end{itemize}
 
 \subsection{Future Directions}
@@ -904,7 +926,7 @@ The framework provides information; clinical judgment remains essential. We expl
 
 We have demonstrated that Computational Psychodynamics provides a principled, mathematically grounded framework for analyzing criminal behavioral trajectories. The same four motivational states that capture moment-to-moment conversational dynamics also capture the strategic rhythm of criminal careers---from fantasy through surveillance to violence and ritualization.
 
-Beyond description, the framework enables prescription: identifying when interventions have maximum leverage, which protocols best disrupt harmful transitions, and what outcomes alternative histories might have produced. This represents a shift from ``who is dangerous'' to ``what can we do''---from risk assessment to intervention optimization.
+Beyond description, the framework provides a \textit{theoretical basis} for intervention reasoning: modeling when interventions might have maximum leverage, which protocols could disrupt harmful transitions, and what outcomes alternative histories might have produced. This represents a potential shift from ``who is dangerous'' to ``what might we do''---from pure risk assessment toward intervention planning, though empirical validation is required before clinical application.
 
 Every trajectory represents a life---both the offender's and potential victims'. Our goal is to identify moments where different outcomes are possible and provide guidance for creating such moments. Computational Psychodynamics, grounded in the Free Energy Principle and validated across domains, offers a path toward that goal.
 
@@ -965,7 +987,7 @@ Pearl, J. (2009). \textit{Causality: Models, reasoning, and inference} (2nd ed.)
 Sampson, R. J., \& Laub, J. H. (1993). \textit{Crime in the making: Pathways and turning points through life}. Harvard University Press.
 
 \bibitem[Senthil(2026)]{senthil2026comppsy}
-Senthil, A. K. (2026). Computational psychodynamics: An ecological approach to computational behavioral modeling. Manuscript in preparation.
+Senthil, A. K. (2026). Computational psychodynamics: An ecological approach to computational behavioral modeling. Manuscript under review. (Full framework specification available from author upon request.)
 
 \bibitem[Shannon(1948)]{shannon1948mathematical}
 Shannon, C. E. (1948). A mathematical theory of communication. \textit{Bell System Technical Journal}, 27(3), 379--423.

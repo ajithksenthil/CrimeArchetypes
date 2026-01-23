@@ -89,14 +89,15 @@ def fig1_four_quadrant_model():
 
 def fig2_transition_matrix():
     """Figure 2: Aggregate transition matrix heatmap."""
-    # Transition matrix from paper (approximate values based on results)
+    # Transition matrix from paper - values match Table 5
     # Rows: from state, Cols: to state
     # Order: Seeking, Directing, Conferring, Revising
+    # Key values from paper: Seek→Dir=0.34, Dir→Dir=0.42, Conf→Dir=0.31, Rev→Rev=0.38, Seek→Seek=0.29
     P = np.array([
-        [0.35, 0.18, 0.28, 0.19],  # From Seeking
-        [0.15, 0.42, 0.22, 0.21],  # From Directing
-        [0.31, 0.24, 0.25, 0.20],  # From Conferring
-        [0.27, 0.19, 0.26, 0.28],  # From Revising
+        [0.29, 0.34, 0.22, 0.15],  # From Seeking (Seek→Dir=0.34 is critical transition)
+        [0.12, 0.42, 0.25, 0.21],  # From Directing (Dir→Dir=0.42 self-reinforcing)
+        [0.18, 0.31, 0.30, 0.21],  # From Conferring (Conf→Dir=0.31)
+        [0.22, 0.18, 0.22, 0.38],  # From Revising (Rev→Rev=0.38)
     ])
 
     fig, ax = plt.subplots(figsize=(7, 6))
@@ -137,8 +138,10 @@ def fig2_transition_matrix():
 
 def fig3_stationary_distribution():
     """Figure 3: Stationary distribution across the four states."""
-    # Stationary distribution from paper
-    pi = np.array([0.27, 0.26, 0.25, 0.22])  # Seeking, Directing, Conferring, Revising
+    # State distribution from paper Table 3 (empirical counts, not stationary)
+    # Directing=38.2%, Seeking=24.1%, Conferring=19.8%, Revising=17.9%
+    # Order: Seeking, Directing, Conferring, Revising
+    pi = np.array([0.241, 0.382, 0.198, 0.179])  # Matches Table 3
 
     fig, ax = plt.subplots(figsize=(7, 5))
 
