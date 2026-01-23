@@ -2,12 +2,19 @@
 Data Loader for Dashboard
 
 Loads and provides access to all analysis outputs from empirical_study directory.
+Includes methods for individual trajectory and transition matrix loading
+for intervention analysis.
 """
 import json
 import numpy as np
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Tuple
 from functools import lru_cache
+from collections import Counter
+
+
+# State names for the 4-animal model
+STATE_NAMES = ['Seeking', 'Directing', 'Conferring', 'Revising']
 
 
 class DashboardDataLoader:
@@ -25,6 +32,7 @@ class DashboardDataLoader:
         self._label_to_theme = None
         self._llm_results = None
         self._llm_detailed = None
+        self._detailed_classifications = None  # For event-level data
 
     def _find_latest_dir(self, pattern: str) -> Optional[Path]:
         """Find the most recent results directory matching pattern."""
@@ -156,6 +164,172 @@ class DashboardDataLoader:
             if self._llm_detailed is None:
                 self._llm_detailed = []
         return self._llm_detailed
+
+    @property
+    def detailed_classifications(self) -> Dict[str, List[Dict]]:
+        """
+        Load detailed event classifications organized by individual.
+
+        Returns:
+            Dict mapping criminal name to list of event dicts
+        """
+        if self._detailed_classifications is None:
+            self._detailed_classifications = {}
+            # Get from llm_detailed which has per-event classifications
+            for event in self.llm_detailed:
+                criminal = event.get('criminal', '')
+                if criminal:
+                    if criminal not in self._detailed_classifications:
+                        self._detailed_classifications[criminal] = []
+                    self._detailed_classifications[criminal].append(event)
+        return self._detailed_classifications
+
+    def load_individual_trajectory(self, criminal_name: str) -> List[str]:
+        """
+        Load the state sequence (trajectory) for an individual.
+
+        Args:
+            criminal_name: Name of the individual
+
+        Returns:
+            List of state names in chronological order
+
+        Raises:
+            ValueError: If no data found for the individual
+        """
+        events = self.detailed_classifications.get(criminal_name, [])
+        if not events:
+            raise ValueError(f"No trajectory data found for {criminal_name}")
+
+        # Extract state sequence in order (events are already chronological)
+        trajectory = [e.get('state') for e in events if e.get('state')]
+        return trajectory
+
+    def load_individual_transition_matrix(self, criminal_name: str) -> np.ndarray:
+        """
+        Load or compute the transition matrix for an individual.
+
+        First tries to get from signature data, falls back to computing
+        from trajectory.
+
+        Args:
+            criminal_name: Name of the individual
+
+        Returns:
+            4x4 numpy array representing transition probabilities
+        """
+        # Try to get from signatures (has pre-computed transition matrix)
+        signature = self.signatures.get(criminal_name, {})
+        if 'transition_matrix' in signature:
+            tm = signature['transition_matrix']
+            # Convert from dict format to numpy array
+            matrix = np.zeros((4, 4))
+            for i, from_state in enumerate(STATE_NAMES):
+                for j, to_state in enumerate(STATE_NAMES):
+                    if from_state in tm and to_state in tm[from_state]:
+                        matrix[i, j] = tm[from_state][to_state]
+            # Normalize rows to ensure they sum to 1
+            row_sums = matrix.sum(axis=1, keepdims=True)
+            row_sums[row_sums == 0] = 1  # Avoid division by zero
+            matrix = matrix / row_sums
+            return matrix
+
+        # Fall back to computing from trajectory
+        trajectory = self.load_individual_trajectory(criminal_name)
+        return self._compute_transition_matrix(trajectory)
+
+    def _compute_transition_matrix(self, trajectory: List[str]) -> np.ndarray:
+        """
+        Compute transition matrix from a state sequence.
+
+        Args:
+            trajectory: List of state names
+
+        Returns:
+            4x4 transition probability matrix
+        """
+        # Count transitions
+        counts = np.zeros((4, 4))
+        state_to_idx = {s: i for i, s in enumerate(STATE_NAMES)}
+
+        for i in range(len(trajectory) - 1):
+            from_state = trajectory[i]
+            to_state = trajectory[i + 1]
+            if from_state in state_to_idx and to_state in state_to_idx:
+                counts[state_to_idx[from_state], state_to_idx[to_state]] += 1
+
+        # Normalize to probabilities
+        row_sums = counts.sum(axis=1, keepdims=True)
+        row_sums[row_sums == 0] = 1  # Avoid division by zero
+        matrix = counts / row_sums
+
+        return matrix
+
+    def get_individual_events(self, criminal_name: str) -> List[Dict]:
+        """
+        Get detailed events for an individual with state classifications.
+
+        Args:
+            criminal_name: Name of the individual
+
+        Returns:
+            List of event dicts with keys: event, state, confidence, reasoning
+        """
+        events = self.detailed_classifications.get(criminal_name, [])
+        if not events:
+            raise ValueError(f"No event data found for {criminal_name}")
+        return events
+
+    def get_trajectory_statistics(self, criminal_name: str) -> Dict:
+        """
+        Get trajectory statistics for an individual.
+
+        Args:
+            criminal_name: Name of the individual
+
+        Returns:
+            Dict with trajectory statistics
+        """
+        trajectory = self.load_individual_trajectory(criminal_name)
+        events = self.get_individual_events(criminal_name)
+
+        # State distribution
+        state_counts = Counter(trajectory)
+        total = len(trajectory)
+        state_distribution = {
+            state: state_counts.get(state, 0) / total if total > 0 else 0
+            for state in STATE_NAMES
+        }
+
+        # Dominant state
+        dominant_state = max(state_distribution.items(), key=lambda x: x[1])
+
+        # Transition counts
+        transition_counts = Counter()
+        for i in range(len(trajectory) - 1):
+            transition_counts[(trajectory[i], trajectory[i + 1])] += 1
+
+        # Critical transitions
+        critical_transitions = []
+        for trans, count in transition_counts.most_common():
+            if trans[1] == 'Directing' and trans[0] != 'Directing':
+                critical_transitions.append({
+                    'transition': f"{trans[0]} → {trans[1]}",
+                    'count': count
+                })
+
+        # Confidence distribution
+        confidence_counts = Counter(e.get('confidence', 'UNKNOWN') for e in events)
+
+        return {
+            'n_events': len(trajectory),
+            'state_distribution': state_distribution,
+            'dominant_state': dominant_state[0],
+            'dominant_state_pct': dominant_state[1],
+            'critical_transitions': critical_transitions,
+            'confidence_distribution': dict(confidence_counts),
+            'trajectory': trajectory
+        }
 
     def get_llm_stats(self) -> Dict:
         """Get LLM classification statistics for display."""
@@ -320,6 +494,35 @@ class DashboardDataLoader:
     def get_all_individuals(self) -> List[str]:
         """Get list of all individual names."""
         return [c['name'] for c in self.classifications.get('classifications', [])]
+
+    def get_individuals_with_trajectory_data(self) -> List[str]:
+        """
+        Get list of individuals who have trajectory data available.
+
+        Returns:
+            List of criminal names with event-level data
+        """
+        return list(self.detailed_classifications.keys())
+
+    def get_individual_intervention_data(self, criminal_name: str) -> Dict:
+        """
+        Get all data needed for intervention analysis for an individual.
+
+        Args:
+            criminal_name: Name of the individual
+
+        Returns:
+            Dict containing trajectory, transition_matrix, events,
+            classification, and signature
+        """
+        return {
+            'name': criminal_name,
+            'trajectory': self.load_individual_trajectory(criminal_name),
+            'transition_matrix': self.load_individual_transition_matrix(criminal_name),
+            'events': self.get_individual_events(criminal_name),
+            'statistics': self.get_trajectory_statistics(criminal_name),
+            'classification': self.get_individual_data(criminal_name)
+        }
 
     def get_archetype_members(self, primary: str = None, subtype: str = None) -> List[Dict]:
         """Get members of a specific archetype."""

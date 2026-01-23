@@ -21,8 +21,9 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from data.loader import DashboardDataLoader
+from data.loader import DashboardDataLoader, STATE_NAMES
 from config import DATA_DIR, ANIMAL_COLORS, RISK_COLORS
+from components.report_export import generate_html_report
 
 # Import intervention module
 try:
@@ -305,9 +306,15 @@ analysis_mode = st.radio(
 st.divider()
 
 if analysis_mode == "Individual Analysis":
-    all_individuals = data.get_all_individuals()
+    # Get individuals with trajectory data available
+    individuals_with_data = data.get_individuals_with_trajectory_data()
 
-    if not all_individuals:
+    if not individuals_with_data:
+        # Fall back to all individuals
+        individuals_with_data = data.get_all_individuals()
+        st.warning("Using default data - no trajectory data found")
+
+    if not individuals_with_data:
         st.warning("No individual data available.")
         st.stop()
 
@@ -316,7 +323,7 @@ if analysis_mode == "Individual Analysis":
     with col1:
         selected = st.selectbox(
             "Select Individual",
-            options=all_individuals,
+            options=individuals_with_data,
             format_func=lambda x: f"{x.split('_')[0]} {x.split('_')[1]}" if '_' in x else x
         )
 
@@ -324,13 +331,24 @@ if analysis_mode == "Individual Analysis":
         include_retrospective = st.checkbox("Include Retrospective Analysis", value=True)
 
     if selected:
+        # Load real individual data
         ind_data = data.get_individual_data(selected)
         signature = ind_data.get('signature', {})
         classification = ind_data.get('classification', {})
 
-        trajectory = extract_trajectory_from_signature(signature)
-        transition_matrix = get_default_transition_matrix()
-        state_names = ['Seeking', 'Directing', 'Conferring', 'Revising']
+        # Try to load real trajectory and transition matrix
+        try:
+            trajectory = data.load_individual_trajectory(selected)
+            transition_matrix = data.load_individual_transition_matrix(selected)
+            data_source = "actual"
+        except (ValueError, KeyError) as e:
+            # Fall back to signature-based data
+            trajectory = extract_trajectory_from_signature(signature)
+            transition_matrix = get_default_transition_matrix()
+            data_source = "estimated"
+            st.info(f"Using estimated data (real data unavailable: {e})")
+
+        state_names = STATE_NAMES
 
         try:
             scm = BehavioralSCM(transition_matrix, state_names)
@@ -383,6 +401,12 @@ if analysis_mode == "Individual Analysis":
             ])
 
             with tab1:
+                # Show data source indicator
+                if data_source == "actual":
+                    st.success(f"Using actual trajectory data ({len(trajectory)} events)")
+                else:
+                    st.warning("Using estimated trajectory data")
+
                 fig_timeline = create_trajectory_timeline(
                     trajectory=trajectory,
                     critical_transitions=critical_transitions,
@@ -420,6 +444,27 @@ if analysis_mode == "Individual Analysis":
                             )
                     else:
                         st.info("No intervention windows identified")
+
+                # Show event details if real data is available
+                if data_source == "actual":
+                    st.divider()
+                    st.subheader("Event Details")
+                    try:
+                        events = data.get_individual_events(selected)
+                        # Event timeline with expandable details
+                        event_idx = st.slider(
+                            "Select event to view details",
+                            0, len(events) - 1, 0
+                        )
+                        event = events[event_idx]
+                        st.markdown(f"**Event {event_idx}:** {event.get('state', 'Unknown')}")
+                        st.markdown(f"**Confidence:** {event.get('confidence', 'N/A')}")
+                        with st.expander("Event Description"):
+                            st.write(event.get('event', 'No description'))
+                            if event.get('reasoning'):
+                                st.caption(f"Reasoning: {event.get('reasoning', '')[:300]}...")
+                    except Exception as e:
+                        st.caption(f"Event details not available: {e}")
 
             with tab2:
                 st.subheader("Recommended Interventions")
@@ -486,46 +531,112 @@ if analysis_mode == "Individual Analysis":
                     st.info("Enable retrospective analysis to see missed opportunities")
 
                 st.subheader("Counterfactual Simulation")
+                st.markdown("*What if we had intervened at a different point in the trajectory?*")
 
                 if len(trajectory) > 5:
-                    intervention_point = st.slider(
-                        "Intervention Point",
-                        min_value=0,
-                        max_value=len(trajectory) - 1,
-                        value=len(trajectory) // 3
-                    )
+                    col1, col2 = st.columns(2)
 
-                    available_protocols = list(INTERVENTION_PROTOCOLS.keys())
-                    selected_protocol = st.selectbox(
-                        "Select Protocol for Simulation",
-                        options=available_protocols,
-                        format_func=lambda x: INTERVENTION_PROTOCOLS[x].display_name
-                    )
+                    with col1:
+                        intervention_point = st.slider(
+                            "Select intervention point in trajectory",
+                            min_value=0,
+                            max_value=len(trajectory) - 1,
+                            value=len(trajectory) // 3,
+                            help="Choose when in the trajectory to apply the intervention"
+                        )
+                        # Show context around intervention point
+                        context_start = max(0, intervention_point - 2)
+                        context_end = min(len(trajectory), intervention_point + 3)
+                        context = trajectory[context_start:context_end]
+                        st.caption(f"Context: ...{' → '.join(context)}...")
 
-                    if st.button("Run Counterfactual Simulation"):
+                    with col2:
+                        available_protocols = list(INTERVENTION_PROTOCOLS.keys())
+                        selected_protocol = st.selectbox(
+                            "Select intervention protocol",
+                            options=available_protocols,
+                            format_func=lambda x: INTERVENTION_PROTOCOLS[x].display_name
+                        )
+                        # Show protocol details
+                        protocol = INTERVENTION_PROTOCOLS[selected_protocol]
+                        st.caption(f"Effectiveness: {protocol.effectiveness_estimate:.0%} | Cost: ${protocol.cost_per_week * protocol.duration_weeks:,}")
+
+                    # Show event at intervention point
+                    st.markdown("---")
+                    st.markdown(f"**Intervention at Event {intervention_point}:** State = `{trajectory[intervention_point]}`")
+
+                    # Try to show actual event description if available
+                    if data_source == "actual":
                         try:
-                            cf_engine = CounterfactualEngine(scm)
-                            result = cf_engine.counterfactual_query(
-                                observed_trajectory=trajectory,
-                                intervention_name=selected_protocol,
-                                intervention_time=intervention_point
-                            )
+                            events = data.get_individual_events(selected)
+                            if intervention_point < len(events):
+                                event = events[intervention_point]
+                                with st.expander("View actual event at this point"):
+                                    st.write(event.get('event', 'No description')[:300])
+                        except Exception:
+                            pass
 
-                            col1, col2 = st.columns(2)
-                            with col1:
-                                st.markdown("**Observed Outcome**")
-                                st.write(f"Reached Directing: {'Yes' if result.observed_reached_harm else 'No'}")
-                                st.write(f"P(Directing): {result.observed_p_harm:.1%}")
+                    if st.button("Run Counterfactual Simulation", type="primary"):
+                        with st.spinner("Simulating counterfactual..."):
+                            try:
+                                cf_engine = CounterfactualEngine(scm)
+                                result = cf_engine.counterfactual_query(
+                                    observed_trajectory=trajectory,
+                                    intervention_name=selected_protocol,
+                                    intervention_time=intervention_point
+                                )
 
-                            with col2:
-                                st.markdown("**Counterfactual (with intervention)**")
-                                st.write(f"P(Directing): {result.counterfactual_p_harm:.1%}")
-                                st.write(f"Harm Reduction: {result.harm_reduction_estimate:.1%}")
+                                # Display results in a more visual way
+                                st.markdown("### Simulation Results")
 
-                            st.success(f"Intervention would reduce harm by approximately {result.harm_reduction_estimate:.1%}")
+                                col1, col2, col3 = st.columns(3)
+                                with col1:
+                                    st.metric(
+                                        "Actual P(Directing)",
+                                        f"{result.observed_p_harm:.1%}",
+                                        help="Probability of reaching harmful state in actual trajectory"
+                                    )
+                                with col2:
+                                    st.metric(
+                                        "Counterfactual P(Directing)",
+                                        f"{result.counterfactual_p_harm:.1%}",
+                                        delta=f"-{(result.observed_p_harm - result.counterfactual_p_harm):.1%}",
+                                        delta_color="inverse",
+                                        help="Probability with intervention applied"
+                                    )
+                                with col3:
+                                    st.metric(
+                                        "Harm Reduction",
+                                        f"{result.harm_reduction_estimate:.1%}",
+                                        help="Expected reduction in harmful outcomes"
+                                    )
 
-                        except Exception as e:
-                            st.error(f"Simulation error: {str(e)}")
+                                # Visual comparison
+                                comparison_data = pd.DataFrame({
+                                    'Scenario': ['Actual', 'With Intervention'],
+                                    'P(Directing)': [result.observed_p_harm, result.counterfactual_p_harm]
+                                })
+                                fig_cf = px.bar(
+                                    comparison_data,
+                                    x='Scenario',
+                                    y='P(Directing)',
+                                    color='Scenario',
+                                    color_discrete_map={'Actual': '#e74c3c', 'With Intervention': '#27ae60'},
+                                    title='Actual vs Counterfactual Outcome'
+                                )
+                                fig_cf.update_layout(height=300, showlegend=False)
+                                st.plotly_chart(fig_cf, use_container_width=True)
+
+                                # Interpretation
+                                if result.harm_reduction_estimate > 0.2:
+                                    st.success(f"**High Impact:** Intervention at this point would substantially reduce harm ({result.harm_reduction_estimate:.1%})")
+                                elif result.harm_reduction_estimate > 0.1:
+                                    st.info(f"**Moderate Impact:** Intervention would moderately reduce harm ({result.harm_reduction_estimate:.1%})")
+                                else:
+                                    st.warning(f"**Low Impact:** Intervention at this point may have limited effect ({result.harm_reduction_estimate:.1%})")
+
+                            except Exception as e:
+                                st.error(f"Simulation error: {str(e)}")
                 else:
                     st.info("Need at least 5 events in trajectory for counterfactual simulation")
 
@@ -534,7 +645,7 @@ if analysis_mode == "Individual Analysis":
 
                 report_format = st.radio(
                     "Format",
-                    ["Preview", "Markdown", "JSON"],
+                    ["Preview", "HTML", "Markdown", "JSON"],
                     horizontal=True
                 )
 
@@ -556,6 +667,33 @@ if analysis_mode == "Individual Analysis":
                         st.markdown("**Escalation Triggers:**")
                         for trigger in report.monitoring_plan.escalation_triggers:
                             st.warning(trigger)
+
+                    # Add recommended interventions preview
+                    if report.recommended_interventions:
+                        st.markdown("### Top Recommended Interventions")
+                        for i, rec in enumerate(report.recommended_interventions[:3], 1):
+                            st.markdown(f"{i}. **{rec.protocol.display_name}** - "
+                                       f"Expected benefit: {rec.expected_benefit:.1%}")
+
+                elif report_format == "HTML":
+                    # Generate HTML report with styling
+                    html_report = generate_html_report(
+                        individual_name=selected,
+                        report=report,
+                        trajectory=trajectory,
+                        classification=classification,
+                        data_source=data_source
+                    )
+                    st.download_button(
+                        "Download HTML Report",
+                        html_report,
+                        file_name=f"clinical_report_{selected}.html",
+                        mime="text/html",
+                        type="primary"
+                    )
+                    st.info("Click above to download the formatted HTML report.")
+                    with st.expander("Preview HTML"):
+                        st.components.v1.html(html_report, height=600, scrolling=True)
 
                 elif report_format == "Markdown":
                     markdown_report = report.to_markdown()
@@ -689,34 +827,49 @@ elif analysis_mode == "Protocol Explorer":
 else:
     st.subheader("Population Intervention Overview")
 
-    all_individuals = data.get_all_individuals()
+    # Prefer individuals with trajectory data
+    individuals_with_data = data.get_individuals_with_trajectory_data()
+    if individuals_with_data:
+        all_individuals = individuals_with_data
+        using_real_data = True
+    else:
+        all_individuals = data.get_all_individuals()
+        using_real_data = False
 
     if not all_individuals:
         st.warning("No data available")
         st.stop()
 
-    st.info(f"Analyzing {len(all_individuals)} individuals")
+    if using_real_data:
+        st.success(f"Analyzing {len(all_individuals)} individuals with real trajectory data")
+    else:
+        st.info(f"Analyzing {len(all_individuals)} individuals with estimated data")
 
-    sample_size = min(20, len(all_individuals))
-    sample = np.random.choice(all_individuals, size=sample_size, replace=False)
-
-    transition_matrix = get_default_transition_matrix()
-    state_names = ['Seeking', 'Directing', 'Conferring', 'Revising']
-    report_gen = ClinicalReportGenerator(transition_matrix, state_names)
+    sample_size = min(len(all_individuals), len(all_individuals))  # Use all available
+    sample = all_individuals[:sample_size]  # Don't randomize to be deterministic
 
     population_stats = {
         'risk_levels': {'Low': 0, 'Moderate': 0, 'High': 0, 'Critical': 0},
         'intervention_opportunities': 0,
         'avg_mfpt': [],
-        'recommendations_by_protocol': {}
+        'recommendations_by_protocol': {},
+        'state_distributions': []
     }
 
     with st.spinner("Analyzing population..."):
         for ind_id in sample:
             try:
-                ind_data = data.get_individual_data(ind_id)
-                signature = ind_data.get('signature', {})
-                trajectory = extract_trajectory_from_signature(signature)
+                # Try to use real data first
+                try:
+                    trajectory = data.load_individual_trajectory(ind_id)
+                    transition_matrix = data.load_individual_transition_matrix(ind_id)
+                except (ValueError, KeyError):
+                    ind_data = data.get_individual_data(ind_id)
+                    signature = ind_data.get('signature', {})
+                    trajectory = extract_trajectory_from_signature(signature)
+                    transition_matrix = get_default_transition_matrix()
+
+                report_gen = ClinicalReportGenerator(transition_matrix, STATE_NAMES)
 
                 report = report_gen.generate_individual_report(
                     individual_id=ind_id,
