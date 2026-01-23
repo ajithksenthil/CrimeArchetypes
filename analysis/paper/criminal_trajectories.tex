@@ -136,6 +136,13 @@ Computational Psychodynamics decomposes the single free-energy objective into fo
     \item \textbf{Explore vs. Exploit}: Whether the agent prioritizes information gain or risk minimization
 \end{itemize}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{figures/fig1_four_quadrant.pdf}
+\caption{The Four Motivational Quadra derived from crossing Self/Other orientation with Explore/Exploit behavioral mode. Each quadrant represents a distinct free-energy minimization target: \textit{Seeking} (Self $\times$ Explore) involves fantasy development and internal elaboration; \textit{Conferring} (Other $\times$ Explore) involves surveillance and information gathering; \textit{Revising} (Self $\times$ Exploit) involves ritualization and pattern consolidation; \textit{Directing} (Other $\times$ Exploit) involves action, control, and behavioral execution.}
+\label{fig:quadra}
+\end{figure}
+
 \begin{table}[H]
 \centering
 \caption{The four motivational states and their free-energy targets.}
@@ -264,6 +271,13 @@ Revising & 223 & 17.9\% & [15.8, 20.0] \\
 
 \textbf{Interpretation}: Directing dominance (38.2\%) is expected given that documented events in serial offender histories disproportionately capture offense-related behaviors. The substantial Seeking (24.1\%) and Conferring (19.8\%) components capture fantasy development and victim surveillance phases.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{figures/fig3_stationary_distribution.pdf}
+\caption{Stationary distribution showing long-term state occupancy probabilities. The dashed line indicates the uniform distribution (0.25). Seeking and Directing show slightly elevated occupancy, reflecting their role as attractor states in the motivational dynamics.}
+\label{fig:stationary}
+\end{figure}
+
 \subsection{Results: Transition Structure}
 
 \begin{table}[H]
@@ -284,6 +298,13 @@ Seeking $\rightarrow$ Seeking & 0.29 & 134 & Prolonged internal struggle \\
 
 \textbf{Key finding}: The Seeking$\rightarrow$Directing transition ($p = 0.34$) represents the critical ``fantasy-to-action'' pathway---the moment when internal urges translate into external violence. This transition becomes a primary target for intervention.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/fig2_transition_matrix.pdf}
+\caption{Aggregate transition matrix showing state-to-state transition probabilities ($n = 26$ individuals, 1,246 events). Darker cells indicate higher transition probabilities. The Directing$\rightarrow$Directing self-loop (0.42) reflects the self-reinforcing nature of violent behavior. The Seeking$\rightarrow$Directing transition (0.18) represents the critical ``fantasy-to-action'' escalation pathway.}
+\label{fig:transition}
+\end{figure}
+
 \subsection{Results: Individual Variation}
 
 Substantial heterogeneity exists across individuals:
@@ -292,6 +313,13 @@ Substantial heterogeneity exists across individuals:
     \item Some individuals show escalation (increasing Directing over career); others remain stable
     \item Entropy (behavioral complexity) ranges from 1.12 to 1.96 bits
 \end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/fig5_example_trajectory.pdf}
+\caption{Example behavioral trajectory showing state transitions over chronologically ordered life events. The red arrow indicates a critical Seeking$\rightarrow$Directing transition---the ``fantasy-to-action'' escalation that represents a primary intervention target. Note the oscillation between Seeking and Conferring states before escalation, characteristic of pre-offense behavioral patterns.}
+\label{fig:trajectory}
+\end{figure}
 
 This variation motivates the hierarchical classification system developed in Study 3.
 
@@ -382,6 +410,13 @@ Permutation test $p$-value & $< 0.001$ \\
 \end{table}
 
 The permutation test confirms that the network structure is significantly non-random---behavioral sequences contain genuine shared patterns not attributable to state frequency alone.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig4_te_network.pdf}
+\caption{Transfer entropy network showing archetypal relationships between individuals. Nodes represent individuals; edges indicate significant predictive relationships (TE above 85th percentile threshold). \textbf{Sources} (red, n=3) are archetypal exemplars whose patterns predict others. \textbf{Sinks} (teal, n=3) are composite cases predicted by multiple archetypes. \textbf{Hubs} (yellow, n=4) bridge different archetypal clusters. The network structure quantifies how behavioral patterns propagate across lifetimes via shared generative structure.}
+\label{fig:network}
+\end{figure}
 
 \subsection{Results: Archetypal Roles}
 
@@ -488,6 +523,13 @@ FOCUSED & & 23 & 88.5\% \\
 
 \textbf{Validation}: Split-half reliability was $\kappa = 0.83$ for primary type and $\kappa = 0.71$ for subtype. Expert validation (three forensic psychologists) rated 82\% of classifications as ``accurate'' or ``very accurate.''
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig6_hierarchical_tree.pdf}
+\caption{Hierarchical classification system showing the two-level typology. \textbf{Level 1} distinguishes COMPLEX (11.5\%) from FOCUSED (88.5\%) types based on entropy and state distribution. \textbf{Level 2} assigns theory-driven subtypes within each primary type. Classification criteria are shown in the lower left. This system preserves individual variation while providing clinically actionable categories.}
+\label{fig:hierarchy}
+\end{figure}
+
 %==============================================================================
 \section{Study 4: Causal Modeling and Intervention Optimization}
 %==============================================================================
@@ -574,6 +616,13 @@ Using absorbing Markov chain analysis, we identified \textit{tipping points}---m
     \item Post-tipping intervention requires greater intensity
     \item Earlier tipping points associated with higher Seeking proportion and faster escalation
 \end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig7_intervention_window.pdf}
+\caption{Intervention window analysis showing optimal timing for intervention. \textbf{Top panel}: Probability of reaching Directing state over time, with the tipping point (P=0.5) marked by dashed line. The green shaded region indicates the intervention window where interventions are most effective; the red shaded region indicates the high-risk zone post-tipping point. \textbf{Bottom panel}: Corresponding state trajectory showing the critical Seeking$\rightarrow$Directing transition. Earlier intervention (within the green window) yields 2--3$\times$ greater harm reduction compared to post-tipping intervention.}
+\label{fig:intervention}
+\end{figure}
 
 \subsection{Counterfactual Simulation}
 
