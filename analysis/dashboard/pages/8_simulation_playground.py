@@ -36,7 +36,6 @@ try:
         get_protocol,
         RiskLevel
     )
-    from intervention.counterfactual import InterventionScenario
     INTERVENTION_AVAILABLE = True
 except ImportError as e:
     INTERVENTION_AVAILABLE = False
