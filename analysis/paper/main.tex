@@ -131,9 +131,19 @@ Scientific criminal typology emerged in the late 19th century with Lombroso's at
 
 The FBI's Behavioral Science Unit developed influential typologies for serial offenders. The organized/disorganized dichotomy \citep{ressler1986} distinguished offenders whose crimes reflected planning and control from those whose crimes appeared impulsive and disorganized. \citet{douglas1986} extended this framework, linking crime scene characteristics to offender psychology.
 
-\citet{holmes1998} proposed a motivational typology for serial murderers: visionary, mission, hedonistic, and power/control. \citet{keppel1999} developed a rape-murder classification distinguishing power-assertive, power-reassurance, anger-retaliatory, and anger-excitation subtypes.
+\citet{holmes1998} proposed a motivational typology for serial murderers: visionary, mission, hedonistic, and power/control. \citet{dietz1986mass} distinguished psychopathic sexual sadists, crime spree killers, organized crime functionaries, custodial killers, and psychotic killers. \citet{keppel1999} developed a rape-murder classification distinguishing power-assertive, power-reassurance, anger-retaliatory, and anger-excitation subtypes.
 
 These typologies share common limitations: categories were typically derived from clinical observation rather than empirical analysis; inter-rater reliability is often poor; many cases are ``mixed''; and the typologies treat categorical membership as fixed, ignoring developmental change.
+
+\subsection{Behavioral Sequence Analysis}
+
+A promising alternative to static typologies is Behavioral Sequence Analysis (BSA), which examines transitions between life events rather than isolated risk factors. \citet{keatley2018bsa} applied BSA to 25 serial killers, coding 199 life events and constructing transition matrices around focal points (birth, first murder, arrest, trial). Their work demonstrated that ``rather than focusing on individual frequencies of risk factors, BSA looks at the transitions between events and behaviors,'' providing ``maps, or state transition diagrams, which can be easily read and interpreted.''
+
+Extending this approach, \citet{keatley2019abuse} examined associations between childhood abuse types and offending characteristics in 233 serial killers, finding distinct sequences linking sexual abuse to power-oriented killing and physical abuse to rape/lust typologies. Their work highlighted how BSA can reveal temporal pathways obscured by frequency-based analyses.
+
+A strength of BSA noted by these authors is its ``additive'' nature---newer cases can be coded and added to existing datasets, allowing results to be updated as new data become available. Our framework builds on this foundation while introducing several methodological advances: (1) a theoretically-grounded four-state behavioral space rather than ad-hoc event categories, (2) transfer entropy to quantify directed predictive relationships between individuals, and (3) LLM-assisted classification to address lexical variance in life event descriptions.
+
+\citet{joseph2021motivation} proposed a complementary theoretical model based on interview data, identifying Nature (intrinsic traits), Deep Resting Life Factors (environmental circumstances), Key Incidents (pivotal events), and Triggers as components in the evolution toward serial killing. This model maps productively onto our state-transition framework: Nature and Deep Resting Life Factors may predispose certain transition probabilities, Key Incidents correspond to state changes, and Triggers represent transitions into the Directing state.
 
 \subsection{The Criminal Career Paradigm}
 
@@ -172,7 +182,7 @@ In this framework, an archetype corresponds to an attractor structure: a charact
 
 \subsection{Sample}
 
-Data were drawn from the Radford University/FGCU Serial Killer Database, supplemented by published case materials. We selected cases meeting the following criteria: (a) classified as serial homicide ($\geq$3 victims with cooling-off period), (b) sufficient documented life history ($\geq$20 life events), and (c) English-language sources available.
+Data were drawn from the Radford University/FGCU Serial Killer Database \citep{yaksic2016serial}, supplemented by published case materials. This database, established collaboratively by academic researchers, contains over 170 variables per case and has been validated for research use. We selected cases meeting the following criteria: (a) classified as serial homicide ($\geq$3 victims with cooling-off period), (b) sufficient documented life history ($\geq$20 life events), and (c) English-language sources available.
 
 The final sample comprised 26 serial offenders with 1,246 coded life events ($M = 47.9$, $SD = 28.3$, range = 21--134). Table \ref{tab:sample} presents sample characteristics.
 
@@ -484,6 +494,14 @@ Life-course emphases on developmental pathways connect to our event clusters (e.
 
 Our four-state behavioral space also connects productively to Merton's strain theory \citep{merton1938}. In strain-theoretic terms, the Seeking state captures the experience of anomie—the disjunction between culturally prescribed goals and available means. Individuals experiencing strain may retreat into fantasy (Seeking), attempt to manipulate their environment to achieve goals through illegitimate means (Directing), observe others for alternative scripts (Conferring), or develop ritualized coping behaviors (Revising). The transitions we observe—particularly the high probability of moving from Seeking to Directing—may reflect the strain-driven escalation from frustrated goal-seeking to instrumental aggression. This connection suggests that intervention strategies targeting the Seeking state, before escalation to Directing, may address the underlying motivational dynamics that strain theory identifies as criminogenic.
 
+\subsection{Comparison with Prior Behavioral Sequence Analysis}
+
+Our approach extends the BSA framework developed by \citet{keatley2018bsa} in several ways. Where Keatley and colleagues coded 199 discrete life events and examined transitions around focal points (birth, first murder, arrest, trial), we employ a theoretically-derived four-state space that reduces dimensionality while preserving behavioral meaning. This abstraction enables comparison across individuals whose specific life events differ but whose behavioral dynamics are similar.
+
+The transfer entropy network represents a novel contribution not present in prior BSA work. While \citet{keatley2019abuse} examined population-level transition patterns (e.g., abuse type $\rightarrow$ offending typology), our approach quantifies \textit{individual-level} predictive relationships, revealing which offenders share generative structure. This enables the identification of archetypal exemplars (Sources), composite cases (Sinks), and bridging cases (Hubs)—structural roles invisible to aggregate analysis.
+
+Our LLM-assisted classification addresses a limitation noted in prior work: the labor-intensive nature of manual coding. By combining semantic embeddings with chain-of-thought prompting, we achieve reliable classification ($\kappa = .76$) while enabling scalability to larger datasets. This supports the ``additive'' strength of BSA noted by \citet{keatley2018bsa}—our framework can readily incorporate new cases as they become available.
+
 \subsection{Practical Implications}
 
 \subsubsection{Threat Assessment}
@@ -500,7 +518,9 @@ Several limitations warrant acknowledgment: (1) \textit{Sample size}: $N = 26$ l
 
 \subsection{Future Directions}
 
-Extensions include: Hidden Markov Models for latent state discovery; variational autoencoders for continuous representations; integration of temporal, geographic, and neuropsychological data; prospective validation; and cross-cultural replication.
+Several extensions merit investigation. Methodologically, Hidden Markov Models could discover latent states beyond our a priori four-state space, and variational autoencoders could learn continuous behavioral representations. As \citet{keatley2018bsa} suggested, integrating geographical information (abduction sites, murder locations, body disposal sites) would enable sequential spatial mapping of offending patterns.
+
+Substantively, examining female serial killers in greater depth represents an important direction, as they are underrepresented in both our sample and the broader literature \citep{holmes2010serial}. The ``MacDonald Triad'' (arson, bed-wetting, cruelty to animals) has been critiqued as more predictive of childhood trauma than adult violence \citep{macdonald2018triad}; our behavioral state approach may offer more reliable developmental indicators. Finally, prospective validation with ongoing cases and cross-cultural replication would strengthen the framework's generalizability.
 
 %===============================================================================
 % CONCLUSION
