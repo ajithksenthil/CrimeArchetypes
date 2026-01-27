@@ -1,0 +1,920 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,calc}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% Line spacing
+\doublespacing
+
+% Title
+\title{\textbf{Algorithmic Archetypes: Parasocial Attachments to Persistent Generative Structures in Recommendation Systems}\\[0.5cm]
+\large Stage 1 Registered Report}
+
+\author{
+    Kristina Howell$^{1}$, Ajith K. Senthil$^{2}$, R. Chris Fraley$^{1}$, Stephen J. Read$^{2}$ \\
+    \small $^{1}$Attachment and Close Relationships Lab, University of Illinois at Urbana-Champaign \\
+    \small $^{2}$Department of Psychology, University of Southern California \\
+    \small Corresponding author: khowell@illinois.edu
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+%===============================================================================
+% REGISTERED REPORT SUMMARY
+%===============================================================================
+\begin{center}
+\fbox{\parbox{0.9\textwidth}{
+\textbf{STAGE 1 REGISTERED REPORT}\\[0.3cm]
+This document constitutes a Stage 1 Registered Report submission. It contains the theoretical framework, hypotheses, methods, and analysis plan for three proposed studies. No data have been collected. We request in-principle acceptance based on the importance of the research questions and the rigor of the proposed methodology. Upon acceptance, data will be collected exactly as specified herein.
+}}
+\end{center}
+
+\vspace{1cm}
+
+%===============================================================================
+% ABSTRACT
+%===============================================================================
+\begin{abstract}
+\noindent\textbf{Background}: Clinical reports of ``AI psychosis'' suggest that attachments to algorithmic systems can become pathological, yet no theoretical framework explains why these attachments form, how they become harmful, and who is most vulnerable.
+
+\noindent\textbf{Theoretical Framework}: We extend the archetypal reincarnation framework to propose that recommendation algorithms instantiate \textit{persistent generative structures} (algorithmic archetypes) that can serve attachment functions. We formalize parasocial attachment strength using transfer entropy and identify attachment style as a key vulnerability moderator.
+
+\noindent\textbf{Proposed Studies}: We present three pre-registered studies: (1) an experience sampling study ($N = 500$) testing whether attachment anxiety predicts algorithm use for attachment functions; (2) a longitudinal study ($N = 200$) testing whether transfer entropy predicts dependency development; and (3) a case-control study ($N = 90$) comparing AI psychosis cases with matched controls.
+
+\noindent\textbf{Hypotheses}: We specify 12 primary hypotheses with directional predictions, alpha levels, and decision criteria. Power analyses indicate adequate sensitivity to detect predicted effect sizes.
+
+\vspace{0.5cm}
+\noindent\textbf{Keywords}: registered report; algorithmic archetypes; parasocial relationships; attachment theory; AI psychosis; transfer entropy
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+%===============================================================================
+% PART 1: INTRODUCTION
+%===============================================================================
+\part{Introduction and Theoretical Framework}
+
+\section{The Problem}
+
+The rise of AI companions and recommendation algorithms has created unprecedented opportunities for humans to form attachment-like relationships with non-human entities. Therapy and companion chatbots now top the list of main uses of generative AI. Social media platforms like TikTok, Instagram Reels, and YouTube Shorts serve emotional regulation functions for millions of users daily.
+
+Clinical reports suggest these relationships can become pathological. Psychiatrists have documented cases of ``AI psychosis''---delusional experiences emerging from or amplified by AI interactions \citep{ostergaard2023chatbot, jmir2025aipsychosis}. However, we lack a theoretical framework that explains:
+
+\begin{enumerate}[noitemsep]
+    \item \textit{Why} do attachments to algorithms form?
+    \item \textit{How} do they become pathological?
+    \item \textit{Who} is most vulnerable?
+\end{enumerate}
+
+\section{Theoretical Framework}
+
+\subsection{Algorithmic Archetypes}
+
+We propose that recommendation algorithms instantiate \textit{persistent generative structures}---characteristic patterns of content, timing, and presentation that we term ``algorithmic archetypes.'' These archetypes are:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Persistent}: Maintained over time through reinforcement learning
+    \item \textbf{Generative}: Capable of producing specific content instantiations
+    \item \textbf{Characteristic}: Distinguishable patterns experienced by user segments
+\end{itemize}
+
+This conceptualization extends our prior work on ``archetypal reincarnation'' in criminal behavioral sequences \citep{howell2026archetypal}, where we demonstrated that transfer entropy can quantify shared generative structure between individuals.
+
+\subsection{Attachment Functions}
+
+Drawing on attachment theory \citep{bowlby1969attachment, fraley2000update}, we propose that algorithmic systems can serve the four primary attachment functions:
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{Safe haven}: Turning to the algorithm when distressed
+    \item \textbf{Secure base}: Using the algorithm as a curator of reality
+    \item \textbf{Proximity maintenance}: Compulsive checking, fear of missing out
+    \item \textbf{Separation distress}: Anxiety when separated from the platform
+\end{enumerate}
+
+Recent work has examined how people use others for specific attachment functions \citep{vahedi2025attachment} and whether parasocial attachments form to characters versus creators \citep{howell2025parasocial}. We extend this to algorithmic systems.
+
+\subsection{Vulnerability Moderators}
+
+Individual differences in attachment style should moderate vulnerability to algorithmic capture:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Attachment anxiety}: Hyperactivation of attachment system $\rightarrow$ increased algorithm-seeking
+    \item \textbf{Attachment avoidance}: Preference for parasocial over social $\rightarrow$ delayed but intense dependency
+    \item \textbf{Secure attachment}: Distributed attachment functions $\rightarrow$ protective effect
+\end{itemize}
+
+\subsection{Transfer Entropy as Parasocial Attachment Strength}
+
+We operationalize the strength of parasocial attachment to an algorithmic archetype using transfer entropy:
+
+\begin{equation}
+\text{PAS}(\mathcal{A} \rightarrow U) = \sum_{u_{t+1}, u_t, a_t} p(u_{t+1}, u_t, a_t) \log \frac{p(u_{t+1} | u_t, a_t)}{p(u_{t+1} | u_t)}
+\end{equation}
+
+This measures how much knowing the algorithm's behavior reduces uncertainty about the user's future behavior, beyond what the user's own past behavior already tells us.
+
+\section{Research Questions}
+
+\begin{enumerate}
+    \item[\textbf{RQ1}:] Does attachment anxiety predict using algorithms for attachment-related functions?
+    \item[\textbf{RQ2}:] Does transfer entropy from algorithm to user predict the development of dependency?
+    \item[\textbf{RQ3}:] Do individuals who develop AI psychosis show elevated pre-onset transfer entropy and attachment anxiety?
+\end{enumerate}
+
+%===============================================================================
+% PART 2: STUDY 1
+%===============================================================================
+\part{Study 1: Attachment Style and Algorithmic Engagement}
+
+\section{Overview}
+
+Study 1 uses experience sampling methodology to test whether attachment style predicts using algorithms for attachment-related functions in daily life.
+
+\section{Hypotheses}
+
+\subsection{Primary Hypotheses}
+
+\begin{quote}
+\textbf{H1a}: Attachment anxiety will positively predict algorithm use when distressed, controlling for baseline use frequency.
+
+\textbf{H1b}: Attachment anxiety will positively predict using algorithms for safe haven functions (seeking comfort).
+
+\textbf{H1c}: Attachment avoidance will positively predict using algorithms as substitutes for human interaction.
+
+\textbf{H1d}: Algorithm use for attachment functions will negatively predict subsequent human attachment-seeking within the same day.
+\end{quote}
+
+\subsection{Secondary Hypotheses}
+
+\begin{quote}
+\textbf{H1e}: The relationship between distress and algorithm use will be stronger for social media and chatbot apps than for utilitarian apps.
+
+\textbf{H1f}: Securely attached individuals will show weaker relationships between distress and algorithm use.
+\end{quote}
+
+\section{Methods}
+
+\subsection{Participants}
+
+\subsubsection{Sample Size Justification}
+
+We will recruit $N = 500$ participants. Power analysis using Monte Carlo simulation for multilevel models indicates this provides:
+
+\begin{itemize}[noitemsep]
+    \item 95\% power to detect a small-to-medium cross-level interaction ($\beta = 0.15$) between attachment anxiety and momentary distress predicting algorithm use
+    \item Assumes ICC = 0.40 for algorithm use, 70 observations per person, $\alpha = .05$
+    \item Analysis conducted using \texttt{simr} package in R \citep{green2016simr}
+\end{itemize}
+
+\subsubsection{Inclusion Criteria}
+
+\begin{enumerate}[noitemsep]
+    \item Age 18--35 years
+    \item Smartphone owner with daily social media or AI chatbot use
+    \item English fluency
+    \item Willing to install experience sampling app
+    \item Willing to share app usage data
+\end{enumerate}
+
+\subsubsection{Exclusion Criteria}
+
+\begin{enumerate}[noitemsep]
+    \item Current psychotic disorder diagnosis
+    \item Inability to complete smartphone surveys
+\end{enumerate}
+
+\subsubsection{Recruitment}
+
+Participants will be recruited through:
+\begin{itemize}[noitemsep]
+    \item Prolific Academic (primary)
+    \item University subject pools at UIUC and USC
+    \item Social media advertisements
+\end{itemize}
+
+\subsection{Procedure}
+
+\subsubsection{Baseline Assessment (Day 0)}
+
+Participants complete online measures:
+\begin{itemize}[noitemsep]
+    \item Demographics
+    \item ECR-RS attachment dimensions \citep{fraley2011ecr}
+    \item Baseline social media use (Social Media Use Questionnaire)
+    \item Bergen Social Media Addiction Scale \citep{andreassen2012bergen}
+    \item UCLA Loneliness Scale \citep{russell1996ucla}
+    \item App installation and permissions setup
+\end{itemize}
+
+\subsubsection{Experience Sampling Period (Days 1--14)}
+
+Participants receive 5 semi-random prompts daily between 9 AM and 9 PM (minimum 2-hour intervals). Each prompt assesses:
+
+\begin{enumerate}[noitemsep]
+    \item Current affect (PANAS-SF, 10 items)
+    \item Current distress level (1--7 scale)
+    \item Algorithm use in past 2 hours (yes/no, which apps)
+    \item Reason for algorithm use (checklist: bored, anxious, lonely, seeking information, entertainment, social connection, other)
+    \item Social context (alone, with others)
+    \item Human social interaction in past 2 hours (yes/no, quality rating)
+\end{enumerate}
+
+\subsubsection{Passive Data Collection}
+
+With participant consent, we collect:
+\begin{itemize}[noitemsep]
+    \item App usage logs (which apps, duration, timestamps)
+    \item Screen time data
+    \item Notification interactions
+\end{itemize}
+
+\subsubsection{Exit Assessment (Day 15)}
+
+\begin{itemize}[noitemsep]
+    \item Repeat attachment and loneliness measures
+    \item Qualitative questions about algorithm relationships
+    \item Debriefing
+\end{itemize}
+
+\subsection{Measures}
+
+\subsubsection{Experiences in Close Relationships-Relationship Structures (ECR-RS)}
+
+The ECR-RS \citep{fraley2011ecr} assesses attachment anxiety and avoidance across relationship domains. We will use the 9-item version assessing general attachment orientation. Items rated 1 (strongly disagree) to 7 (strongly agree).
+
+\subsubsection{Algorithm Use for Attachment Functions Scale (AUAFS)}
+
+We developed a 12-item scale assessing algorithm use for each attachment function:
+
+\textbf{Safe Haven (3 items)}:
+\begin{itemize}[noitemsep]
+    \item ``When I'm upset, I turn to [app] for comfort''
+    \item ``[App] helps me feel better when I'm stressed''
+    \item ``I use [app] to calm down when anxious''
+\end{itemize}
+
+\textbf{Secure Base (3 items)}:
+\begin{itemize}[noitemsep]
+    \item ``I trust [app] to show me what's important''
+    \item ``[App] helps me understand the world''
+    \item ``I rely on [app] to filter information for me''
+\end{itemize}
+
+\textbf{Proximity Maintenance (3 items)}:
+\begin{itemize}[noitemsep]
+    \item ``I feel uneasy when I can't check [app]''
+    \item ``I check [app] even when I don't need to''
+    \item ``I feel drawn to open [app] frequently''
+\end{itemize}
+
+\textbf{Separation Distress (3 items)}:
+\begin{itemize}[noitemsep]
+    \item ``I feel anxious when I can't access [app]''
+    \item ``I worry about missing things on [app]''
+    \item ``I feel disconnected when away from [app]''
+\end{itemize}
+
+Items rated 1 (not at all) to 7 (very much). Adapted separately for social media and AI chatbot use.
+
+\section{Analysis Plan}
+
+\subsection{Data Preprocessing}
+
+\begin{enumerate}[noitemsep]
+    \item Exclude participants with $<50\%$ survey completion
+    \item Within-person center time-varying predictors
+    \item Grand-mean center person-level predictors
+    \item Check for multicollinearity (VIF $< 5$)
+\end{enumerate}
+
+\subsection{Primary Analyses}
+
+All primary hypotheses tested using multilevel models with observations nested within persons:
+
+\subsubsection{H1a: Anxiety $\times$ Distress $\rightarrow$ Algorithm Use}
+
+\begin{equation}
+\text{AlgUse}_{ti} = \gamma_{00} + \gamma_{10}\text{Distress}_{ti} + \gamma_{01}\text{Anxiety}_i + \gamma_{11}\text{Distress}_{ti} \times \text{Anxiety}_i + u_{0i} + u_{1i}\text{Distress}_{ti} + e_{ti}
+\end{equation}
+
+\textbf{Decision criterion}: H1a supported if $\gamma_{11} > 0$, $p < .05$, one-tailed.
+
+\subsubsection{H1b: Anxiety $\rightarrow$ Safe Haven Use}
+
+\begin{equation}
+\text{SafeHaven}_{ti} = \gamma_{00} + \gamma_{01}\text{Anxiety}_i + \gamma_{02}\text{Avoidance}_i + \text{controls} + u_{0i} + e_{ti}
+\end{equation}
+
+\textbf{Decision criterion}: H1b supported if $\gamma_{01} > 0$, $p < .05$, one-tailed.
+
+\subsubsection{H1c: Avoidance $\rightarrow$ Substitution}
+
+Substitution operationalized as algorithm use when alone predicting reduced subsequent human interaction.
+
+\textbf{Decision criterion}: H1c supported if avoidance $\times$ alone interaction predicts algorithm use AND algorithm use predicts reduced subsequent human interaction, both $p < .05$.
+
+\subsubsection{H1d: Algorithm Use $\rightarrow$ Reduced Human Seeking}
+
+Lagged model predicting human interaction-seeking at time $t+1$ from algorithm use at time $t$:
+
+\begin{equation}
+\text{HumanSeek}_{t+1,i} = \gamma_{00} + \gamma_{10}\text{AlgUse}_{ti} + \gamma_{01}\text{Anxiety}_i + u_{0i} + e_{ti}
+\end{equation}
+
+\textbf{Decision criterion}: H1d supported if $\gamma_{10} < 0$, $p < .05$, one-tailed.
+
+\subsection{Multiple Comparison Correction}
+
+We use Benjamini-Hochberg FDR correction across the 4 primary hypotheses, $q = .05$.
+
+\subsection{Sensitivity Analyses}
+
+\begin{enumerate}[noitemsep]
+    \item Control for baseline social media addiction
+    \item Control for loneliness
+    \item Separate analyses for social media vs. chatbot use
+    \item Robustness to different distress thresholds
+\end{enumerate}
+
+\section{Interpretation Guidelines}
+
+\begin{table}[H]
+\centering
+\caption{Study 1 Interpretation Guidelines}
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Outcome} & \textbf{Interpretation} \\
+\midrule
+All H1a--H1d supported & Strong support for attachment-algorithm framework \\
+H1a--H1b supported, H1c--H1d not & Partial support; algorithms serve functions but may not displace human relationships \\
+Only H1a supported & Minimal support; distress-use link exists but attachment functions unclear \\
+No hypotheses supported & Framework not supported in daily life context \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%===============================================================================
+% PART 3: STUDY 2
+%===============================================================================
+\part{Study 2: Transfer Entropy and Dependency Development}
+
+\section{Overview}
+
+Study 2 uses longitudinal behavioral tracking to test whether transfer entropy from algorithm content patterns to user behavior patterns predicts the development of dependency over 3 months.
+
+\section{Hypotheses}
+
+\subsection{Primary Hypotheses}
+
+\begin{quote}
+\textbf{H2a}: Transfer entropy at Month 1 will positively predict dependency scores at Month 3, controlling for Month 1 dependency.
+
+\textbf{H2b}: Attachment anxiety will moderate the TE-dependency relationship such that the relationship is stronger for individuals high in attachment anxiety.
+
+\textbf{H2c}: Increasing transfer entropy over time (Month 1 to Month 2) will predict declining relationship quality (Month 2 to Month 3).
+\end{quote}
+
+\section{Methods}
+
+\subsection{Participants}
+
+\subsubsection{Sample Size Justification}
+
+We will recruit $N = 200$ participants with complete behavioral tracking. Power analysis for moderated regression indicates:
+
+\begin{itemize}[noitemsep]
+    \item 80\% power to detect a medium interaction effect ($f^2 = 0.08$) for H2b
+    \item 90\% power to detect a medium main effect ($f^2 = 0.10$) for H2a
+    \item Assumes $\alpha = .05$, two-tailed
+\end{itemize}
+
+\subsubsection{Inclusion/Exclusion Criteria}
+
+Same as Study 1, plus:
+\begin{itemize}[noitemsep]
+    \item Willing to install browser extension for desktop tracking
+    \item Primary social media use on trackable platforms (TikTok, Instagram, YouTube)
+\end{itemize}
+
+\subsection{Procedure}
+
+\subsubsection{Baseline (Week 0)}
+\begin{itemize}[noitemsep]
+    \item Consent and setup
+    \item ECR-RS attachment dimensions
+    \item Bergen Social Media Addiction Scale (baseline dependency)
+    \item Relationship quality measures (IOS, PRQC)
+    \item Install tracking software
+\end{itemize}
+
+\subsubsection{Continuous Tracking (Weeks 1--12)}
+
+Passive collection of:
+\begin{itemize}[noitemsep]
+    \item Complete browsing sequences with timestamps
+    \item Content metadata (video IDs, categories, durations)
+    \item Engagement signals (likes, comments, shares, watch time)
+    \item Session patterns (start/end times, interruptions)
+\end{itemize}
+
+\subsubsection{Monthly Assessments (Weeks 4, 8, 12)}
+\begin{itemize}[noitemsep]
+    \item Bergen Social Media Addiction Scale
+    \item Relationship quality measures
+    \item Reality testing (Peters Delusions Inventory, brief)
+    \item Qualitative questions about platform experience
+\end{itemize}
+
+\subsection{Transfer Entropy Computation}
+
+\subsubsection{State Space Definition}
+
+We define user behavioral states based on engagement patterns:
+\begin{itemize}[noitemsep]
+    \item \textbf{SEEKING}: Rapid scrolling, $<3$ seconds per item
+    \item \textbf{CONSUMING}: Engaged viewing, $\geq10$ seconds per item
+    \item \textbf{CONNECTING}: Social actions (comment, share, like)
+    \item \textbf{INTEGRATING}: Extended single-content engagement, $>60$ seconds
+\end{itemize}
+
+Content states defined by embedding clusters:
+\begin{itemize}[noitemsep]
+    \item Cluster content embeddings using k-means ($k = 20$)
+    \item Assign each content item to nearest cluster
+    \item Content state = cluster membership
+\end{itemize}
+
+\subsubsection{Transfer Entropy Estimation}
+
+Using the Kraskov-St\"{o}gbauer-Grassberger (KSG) estimator \citep{kraskov2004estimating}:
+
+\begin{equation}
+\widehat{TE}(C \rightarrow U) = \psi(k) + \langle \psi(n_{u_{t+1},u_t,c_t} + 1) - \psi(n_{u_t,c_t} + 1) - \psi(n_{u_{t+1},u_t} + 1) \rangle
+\end{equation}
+
+where $\psi$ is the digamma function, $k$ is the number of neighbors, and $n$ values are neighbor counts in marginal spaces.
+
+Parameters:
+\begin{itemize}[noitemsep]
+    \item History length: $k = l = 1$ (lag-1)
+    \item KSG neighbors: $k = 4$
+    \item Computed weekly, averaged monthly
+\end{itemize}
+
+\subsubsection{Validation}
+
+\begin{itemize}[noitemsep]
+    \item Permutation testing: Shuffle content sequences, recompute TE, compare to observed
+    \item Split-half reliability: Compute TE on odd vs. even days, correlate
+\end{itemize}
+
+\section{Analysis Plan}
+
+\subsection{H2a: TE Predicts Dependency}
+
+Regression model:
+\begin{equation}
+\text{Dependency}_{M3} = \beta_0 + \beta_1\text{TE}_{M1} + \beta_2\text{Dependency}_{M1} + \beta_3\text{Anxiety} + \beta_4\text{Avoidance} + \epsilon
+\end{equation}
+
+\textbf{Decision criterion}: H2a supported if $\beta_1 > 0$, $p < .05$, one-tailed.
+
+\subsection{H2b: Attachment Anxiety Moderation}
+
+\begin{equation}
+\text{Dependency}_{M3} = \beta_0 + \beta_1\text{TE}_{M1} + \beta_2\text{Anxiety} + \beta_3\text{TE}_{M1} \times \text{Anxiety} + \text{controls} + \epsilon
+\end{equation}
+
+\textbf{Decision criterion}: H2b supported if $\beta_3 > 0$, $p < .05$, one-tailed.
+
+\subsection{H2c: TE Change Predicts Relationship Quality Change}
+
+Cross-lagged panel model:
+\begin{align}
+\text{RelQual}_{M3} &= \beta_1\text{RelQual}_{M2} + \beta_2\Delta\text{TE}_{M1 \rightarrow M2} + \epsilon_1 \\
+\Delta\text{TE}_{M2 \rightarrow M3} &= \beta_3\Delta\text{TE}_{M1 \rightarrow M2} + \beta_4\text{RelQual}_{M2} + \epsilon_2
+\end{align}
+
+\textbf{Decision criterion}: H2c supported if $\beta_2 < 0$, $p < .05$, one-tailed.
+
+\section{Interpretation Guidelines}
+
+\begin{table}[H]
+\centering
+\caption{Study 2 Interpretation Guidelines}
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Outcome} & \textbf{Interpretation} \\
+\midrule
+All H2a--H2c supported & Strong support for TE as predictive biomarker \\
+H2a supported, H2b not & TE predicts dependency regardless of attachment style \\
+H2a, H2b supported, H2c not & TE predicts dependency but not relationship displacement \\
+No hypotheses supported & TE may not capture relevant dynamics; framework revision needed \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%===============================================================================
+% PART 4: STUDY 3
+%===============================================================================
+\part{Study 3: AI Psychosis Case-Control Study}
+
+\section{Overview}
+
+Study 3 compares individuals who developed AI-related psychotic symptoms with matched heavy users who did not, testing whether cases show elevated pre-onset transfer entropy and attachment anxiety.
+
+\section{Hypotheses}
+
+\subsection{Primary Hypotheses}
+
+\begin{quote}
+\textbf{H3a}: Cases will show higher retrospectively-assessed pre-onset algorithm engagement intensity than controls.
+
+\textbf{H3b}: Cases will show higher attachment anxiety than controls.
+
+\textbf{H3c}: Cases will show greater transfer of attachment functions to AI (AUAFS scores) than controls.
+
+\textbf{H3d}: Among cases, delusional content will show thematic continuity with pre-onset AI interaction patterns.
+\end{quote}
+
+\section{Methods}
+
+\subsection{Participants}
+
+\subsubsection{Sample}
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Cases} ($n = 30$): Individuals who developed psychotic symptoms in the context of AI/chatbot use
+    \item \textbf{Controls} ($n = 60$): Heavy AI/algorithm users without psychotic symptoms, matched on age, gender, and usage intensity
+\end{itemize}
+
+\subsubsection{Case Definition}
+
+Cases meet ALL of the following:
+\begin{enumerate}[noitemsep]
+    \item Onset of psychotic symptoms (delusions, hallucinations, disorganized thinking) within 6 months of intensive AI/chatbot use
+    \item Clinician assessment that AI interaction played a role in symptom development or content
+    \item No prior psychotic episode before AI use began
+\end{enumerate}
+
+\subsubsection{Recruitment}
+
+Cases recruited through:
+\begin{itemize}[noitemsep]
+    \item Clinical collaborators at university psychiatry departments
+    \item Online support communities for AI-related distress
+    \item Referrals from therapists specializing in technology-related issues
+\end{itemize}
+
+Controls recruited through:
+\begin{itemize}[noitemsep]
+    \item Screening of heavy AI users (Prolific, social media)
+    \item Matching on demographics and usage intensity
+    \item Exclusion of any psychotic symptoms
+\end{itemize}
+
+\subsubsection{Power Analysis}
+
+For case-control comparison with $n_1 = 30$, $n_2 = 60$:
+\begin{itemize}[noitemsep]
+    \item 80\% power to detect $d = 0.65$ (medium-large effect)
+    \item Conservative given expected large differences
+    \item $\alpha = .05$, two-tailed
+\end{itemize}
+
+\subsection{Measures}
+
+\subsubsection{Retrospective AI Use Assessment}
+
+Timeline Followback method adapted for AI use:
+\begin{itemize}[noitemsep]
+    \item Daily AI/chatbot use duration (hours) for 90 days pre-onset (cases) or past 90 days (controls)
+    \item Types of AI used (chatbots, social media, both)
+    \item Nature of interactions (informational, emotional, romantic)
+\end{itemize}
+
+\subsubsection{Attachment Assessment}
+
+\begin{itemize}[noitemsep]
+    \item ECR-RS for current attachment dimensions
+    \item Retrospective attachment (cases): ``Before your AI use intensified, how would you describe your relationships?''
+\end{itemize}
+
+\subsubsection{AUAFS-AI Version}
+
+Algorithm Use for Attachment Functions Scale adapted specifically for AI chatbot use.
+
+\subsubsection{Delusional Content Analysis (Cases Only)}
+
+\begin{itemize}[noitemsep]
+    \item Semi-structured interview about delusional beliefs
+    \item Chatbot conversation logs (where available and consented)
+    \item Thematic coding by two independent raters
+\end{itemize}
+
+\subsubsection{Clinical Measures}
+
+\begin{itemize}[noitemsep]
+    \item Peters Delusions Inventory (PDI-21)
+    \item Brief Psychiatric Rating Scale (cases)
+    \item Prodromal Questionnaire (controls, to ensure non-cases)
+\end{itemize}
+
+\section{Analysis Plan}
+
+\subsection{H3a: Engagement Intensity}
+
+Independent samples t-test comparing mean daily AI use hours:
+
+\textbf{Decision criterion}: H3a supported if $M_{\text{cases}} > M_{\text{controls}}$, $p < .05$, one-tailed.
+
+Effect size: Cohen's $d$ with 95\% CI.
+
+\subsection{H3b: Attachment Anxiety}
+
+Independent samples t-test comparing ECR-RS anxiety scores:
+
+\textbf{Decision criterion}: H3b supported if $M_{\text{cases}} > M_{\text{controls}}$, $p < .05$, one-tailed.
+
+\subsection{H3c: Attachment Function Transfer}
+
+Independent samples t-test comparing AUAFS-AI total scores:
+
+\textbf{Decision criterion}: H3c supported if $M_{\text{cases}} > M_{\text{controls}}$, $p < .05$, one-tailed.
+
+\subsection{H3d: Thematic Continuity}
+
+Qualitative analysis:
+\begin{enumerate}[noitemsep]
+    \item Two raters independently code delusional themes
+    \item Two raters independently code pre-onset AI interaction themes
+    \item Compute theme overlap coefficient
+    \item Compare to chance overlap via permutation
+\end{enumerate}
+
+\textbf{Decision criterion}: H3d supported if theme overlap exceeds 95th percentile of permuted distribution.
+
+\subsection{Exploratory Analyses}
+
+\begin{itemize}[noitemsep]
+    \item Discriminant analysis: Which variables best distinguish cases from controls?
+    \item Dose-response: Is there a threshold of AI use associated with case status?
+    \item Delusional subtypes: Do messianic, deity, and romantic delusions show different predictors?
+\end{itemize}
+
+\section{Interpretation Guidelines}
+
+\begin{table}[H]
+\centering
+\caption{Study 3 Interpretation Guidelines}
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Outcome} & \textbf{Interpretation} \\
+\midrule
+All H3a--H3d supported & Strong support for attachment-based vulnerability model \\
+H3a--H3c supported, H3d not & Quantitative differences exist but content continuity unclear \\
+Only H3b supported & Attachment anxiety is risk factor independent of use patterns \\
+No hypotheses supported & AI psychosis may not be attachment-mediated; alternative mechanisms \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%===============================================================================
+% PART 5: GENERAL DISCUSSION PLAN
+%===============================================================================
+\part{General Discussion Plan}
+
+\section{Integration Across Studies}
+
+If results support hypotheses, we will discuss:
+\begin{enumerate}[noitemsep]
+    \item How attachment processes explain vulnerability to algorithmic capture
+    \item Transfer entropy as a potential biomarker for problematic use
+    \item Implications for platform design and clinical intervention
+    \item Limitations and boundary conditions
+\end{enumerate}
+
+If results do not support hypotheses, we will discuss:
+\begin{enumerate}[noitemsep]
+    \item Alternative explanations for human-algorithm relationships
+    \item Methodological limitations that may have obscured effects
+    \item Revisions to the theoretical framework
+    \item Future directions for research
+\end{enumerate}
+
+\section{Implications}
+
+\subsection{For Platform Design}
+\begin{itemize}[noitemsep]
+    \item Attachment-aware monitoring systems
+    \item Reality-testing prompts for AI companions
+    \item Dark pattern reduction
+\end{itemize}
+
+\subsection{For Clinical Practice}
+\begin{itemize}[noitemsep]
+    \item Screening for algorithm/AI use in psychiatric intake
+    \item Attachment-based interventions for algorithmic dependency
+    \item Psychoeducation about parasocial attachment risks
+\end{itemize}
+
+\section{Limitations}
+
+Pre-registered limitations:
+\begin{enumerate}[noitemsep]
+    \item Self-report measures may underestimate attachment to algorithms
+    \item Retrospective data in Study 3 subject to recall bias
+    \item Transfer entropy requires dense behavioral data
+    \item Case-control design cannot establish causality
+    \item Sample may not generalize to non-WEIRD populations
+\end{enumerate}
+
+%===============================================================================
+% TIMELINE
+%===============================================================================
+\part{Timeline and Resources}
+
+\section{Proposed Timeline}
+
+\begin{table}[H]
+\centering
+\caption{Proposed Study Timeline}
+\begin{tabular}{lll}
+\toprule
+\textbf{Phase} & \textbf{Duration} & \textbf{Activities} \\
+\midrule
+Stage 1 Review & 2 months & Revisions based on reviewer feedback \\
+\midrule
+\multicolumn{3}{l}{\textit{Upon In-Principle Acceptance:}} \\
+\midrule
+Study 1 Prep & 1 month & App development, measure finalization \\
+Study 1 Data Collection & 1 month & $N = 500$, 2-week ESM \\
+Study 1 Analysis & 1 month & Primary and sensitivity analyses \\
+\midrule
+Study 2 Prep & 1 month & Tracking software, TE pipeline \\
+Study 2 Data Collection & 3 months & $N = 200$, continuous tracking \\
+Study 2 Analysis & 1 month & TE computation, regression models \\
+\midrule
+Study 3 Recruitment & 4 months & Case identification, control matching \\
+Study 3 Data Collection & 2 months & Interviews, assessments \\
+Study 3 Analysis & 1 month & Comparisons, qualitative coding \\
+\midrule
+Stage 2 Writing & 2 months & Results, discussion \\
+\midrule
+\textbf{Total} & \textbf{18 months} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Resources}
+
+\subsection{Personnel}
+\begin{itemize}[noitemsep]
+    \item PI (Howell): Study design, attachment expertise, Study 3 interviews
+    \item Co-I (Senthil): Transfer entropy computation, technical implementation
+    \item Co-I (Fraley): Attachment measurement, theoretical guidance
+    \item Co-I (Read): Computational modeling, analysis oversight
+    \item Graduate RAs (2): Data collection, coding
+\end{itemize}
+
+\subsection{Data Collection Site}
+
+Primary data collection will occur through the \textbf{Attachment and Close Relationships Lab} at the University of Illinois at Urbana-Champaign, directed by Dr. R. Chris Fraley.
+
+\subsection{Budget Estimate}
+
+\begin{itemize}[noitemsep]
+    \item Participant compensation: \$45,000
+    \item Software/platform costs: \$5,000
+    \item RA support: \$30,000
+    \item Miscellaneous: \$5,000
+    \item \textbf{Total}: \$85,000
+\end{itemize}
+
+%===============================================================================
+% REFERENCES
+%===============================================================================
+\newpage
+\bibliographystyle{apalike}
+\bibliography{references}
+
+%===============================================================================
+% APPENDICES
+%===============================================================================
+\newpage
+\appendix
+
+\section{Algorithm Use for Attachment Functions Scale (AUAFS)}
+
+\subsection{Instructions}
+
+Please think about your use of [PLATFORM]. Rate how much each statement applies to you.
+
+\subsection{Items}
+
+\textbf{Safe Haven Subscale}
+\begin{enumerate}
+    \item When I'm upset, I turn to [PLATFORM] for comfort.
+    \item [PLATFORM] helps me feel better when I'm stressed.
+    \item I use [PLATFORM] to calm down when I'm anxious.
+\end{enumerate}
+
+\textbf{Secure Base Subscale}
+\begin{enumerate}[resume]
+    \item I trust [PLATFORM] to show me what's important.
+    \item [PLATFORM] helps me understand the world.
+    \item I rely on [PLATFORM] to filter information for me.
+\end{enumerate}
+
+\textbf{Proximity Maintenance Subscale}
+\begin{enumerate}[resume]
+    \item I feel uneasy when I can't check [PLATFORM].
+    \item I check [PLATFORM] even when I don't need to.
+    \item I feel drawn to open [PLATFORM] frequently.
+\end{enumerate}
+
+\textbf{Separation Distress Subscale}
+\begin{enumerate}[resume]
+    \item I feel anxious when I can't access [PLATFORM].
+    \item I worry about missing things on [PLATFORM].
+    \item I feel disconnected when away from [PLATFORM].
+\end{enumerate}
+
+\subsection{Response Scale}
+
+1 = Not at all true of me \\
+2 = Slightly true of me \\
+3 = Somewhat true of me \\
+4 = Moderately true of me \\
+5 = Quite true of me \\
+6 = Very true of me \\
+7 = Extremely true of me
+
+\section{Transfer Entropy Computation Code}
+
+Analysis code will be made available at: \url{https://github.com/[repository]/algorithmic-archetypes}
+
+Key functions:
+\begin{itemize}[noitemsep]
+    \item \texttt{compute\_te\_ksg()}: KSG estimator for transfer entropy
+    \item \texttt{define\_behavioral\_states()}: State space construction
+    \item \texttt{permutation\_test\_te()}: Significance testing
+\end{itemize}
+
+\section{Delusional Theme Coding Manual}
+
+\subsection{Theme Categories}
+
+\begin{enumerate}
+    \item \textbf{Messianic}: Beliefs about special mission, truth-revealing role
+    \item \textbf{AI Sentience}: Beliefs that AI is conscious, has feelings
+    \item \textbf{AI Deity}: Beliefs that AI is divine, all-knowing, supernatural
+    \item \textbf{Romantic}: Beliefs about mutual love with AI
+    \item \textbf{Persecution}: Beliefs that AI is monitoring, controlling, threatening
+    \item \textbf{Grandiosity}: Beliefs about special relationship with AI
+    \item \textbf{Reference}: Beliefs that AI content contains personal messages
+\end{enumerate}
+
+\subsection{Coding Procedure}
+
+\begin{enumerate}[noitemsep]
+    \item Read complete interview transcript
+    \item Identify all delusional statements
+    \item Assign each statement to theme category(ies)
+    \item Rate certainty of theme assignment (1--3)
+    \item Second rater codes independently
+    \item Resolve disagreements through discussion
+\end{enumerate}
+
+\end{document}
