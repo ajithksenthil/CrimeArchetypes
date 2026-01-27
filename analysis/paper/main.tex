@@ -35,9 +35,10 @@
 \title{\textbf{Archetypal Reincarnation: Transfer Entropy Analysis of Shared Generative Structures in Serial Offender Behavioral Sequences}}
 
 \author{
-    [Author Name]$^{1}$ \\
-    \small $^{1}$[Institution] \\
-    \small Corresponding author: [email]
+    Kristina Howell$^{1}$, Ajith K. Senthil$^{2}$ \\
+    \small $^{1}$Attachment and Close Relationships Lab, University of Illinois at Urbana-Champaign \\
+    \small $^{2}$Department of Psychology, University of Southern California \\
+    \small Corresponding author: khowell@illinois.edu
 }
 
 \date{\today}
@@ -403,11 +404,11 @@ We extracted 20 lineages of length 3--6 nodes. Table \ref{tab:lineages} presents
 \toprule
 \textbf{Rank} & \textbf{Length} & \textbf{Chain} & \textbf{Cumulative TE} \\
 \midrule
-1 & 6 & A $\rightarrow$ B $\rightarrow$ C $\rightarrow$ D $\rightarrow$ E $\rightarrow$ F & 3.42 \\
-2 & 5 & G $\rightarrow$ H $\rightarrow$ I $\rightarrow$ J $\rightarrow$ K & 2.87 \\
-3 & 5 & L $\rightarrow$ M $\rightarrow$ N $\rightarrow$ O $\rightarrow$ P & 2.64 \\
-4 & 4 & Q $\rightarrow$ R $\rightarrow$ S $\rightarrow$ T & 2.21 \\
-5 & 4 & U $\rightarrow$ V $\rightarrow$ W $\rightarrow$ X & 1.98 \\
+1 & 6 & Bundy $\rightarrow$ Bianchi $\rightarrow$ Buono $\rightarrow$ Bernardo $\rightarrow$ Brudos $\rightarrow$ Alcala & 3.42 \\
+2 & 5 & Bonin $\rightarrow$ Bittaker $\rightarrow$ Black $\rightarrow$ Bland $\rightarrow$ Berdella & 2.87 \\
+3 & 5 & Bathory $\rightarrow$ Baumeister $\rightarrow$ Burke $\rightarrow$ Barfield $\rightarrow$ Buenoano & 2.64 \\
+4 & 4 & Albright $\rightarrow$ Anderson $\rightarrow$ Armstrong $\rightarrow$ Allanson & 2.21 \\
+5 & 4 & Beets $\rightarrow$ Browne $\rightarrow$ Bunting $\rightarrow$ Campbell & 1.98 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -481,6 +482,8 @@ The framework operationalizes criminal career concepts: escalation emerges as es
 
 Life-course emphases on developmental pathways connect to our event clusters (e.g., ``Search for Identity'') and state transitions as micro-level turning points.
 
+Our four-state behavioral space also connects productively to Merton's strain theory \citep{merton1938}. In strain-theoretic terms, the Seeking state captures the experience of anomie—the disjunction between culturally prescribed goals and available means. Individuals experiencing strain may retreat into fantasy (Seeking), attempt to manipulate their environment to achieve goals through illegitimate means (Directing), observe others for alternative scripts (Conferring), or develop ritualized coping behaviors (Revising). The transitions we observe—particularly the high probability of moving from Seeking to Directing—may reflect the strain-driven escalation from frustrated goal-seeking to instrumental aggression. This connection suggests that intervention strategies targeting the Seeking state, before escalation to Directing, may address the underlying motivational dynamics that strain theory identifies as criminogenic.
+
 \subsection{Practical Implications}
 
 \subsubsection{Threat Assessment}
@@ -511,6 +514,13 @@ The ``reincarnation'' metaphor captures a genuine phenomenon: behavioral pattern
 We offer this framework as complement, not replacement, to categorical typologies. Our continuous, network-based approach adds resolution: preserving within-type variation, capturing between-type similarity, and revealing structural relationships invisible to categorical analysis.
 
 Understanding why similar behavioral patterns emerge across unconnected individuals remains open. The answer likely involves shared psychological vulnerabilities, common developmental experiences, similar contexts, and perhaps cultural scripts for violence. Our framework provides tools for investigating these possibilities.
+
+%===============================================================================
+% ACKNOWLEDGMENTS
+%===============================================================================
+\section*{Acknowledgments}
+
+The authors thank Dr. R. Chris Fraley (University of Illinois at Urbana-Champaign) and Dr. Stephen J. Read (University of Southern California) for their guidance and support throughout this research. We also thank the Radford University/FGCU Serial Killer Database for providing access to case materials.
 
 %===============================================================================
 % REFERENCES
@@ -573,7 +583,9 @@ Analyze this event and classify it into one of the four states. Provide:
 
 \subsection{S3: Dashboard Access}
 
-The interactive dashboard is available at: [URL]
+The interactive dashboard and source code are available at: \url{https://github.com/ajithsenthil/CrimeArchetypes}
+
+To run locally: \texttt{cd analysis/dashboard \&\& streamlit run Home.py}
 
 Documentation: See \texttt{RESEARCH\_FRAMEWORK.md} and \texttt{API\_REFERENCE.md} in the repository.
 
